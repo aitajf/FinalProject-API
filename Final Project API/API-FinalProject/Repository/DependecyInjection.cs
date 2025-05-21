@@ -10,7 +10,11 @@ namespace Repository
         {
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped<ISliderRepository, SliderRepository>();
-
+            services.AddScoped<ILandingBannerRepository, LandingBannerRepository>();
+            services.AddScoped<IAskUsFromRepository, AskUsFromRepository>();
+            services.AddScoped<ISubscribeImgRepository, SubscribeImgRepository>();
+            services.AddScoped<IInstagramRepository, InstagramRepository>();
+            
             return services;
         }
     }

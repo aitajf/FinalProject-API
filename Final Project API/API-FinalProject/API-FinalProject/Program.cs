@@ -1,7 +1,10 @@
 using System.IdentityModel.Tokens.Jwt;
+using System.Reflection;
 using System.Text;
 using API_FinalProject.Middlewares;
 using Domain.Entities;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +13,7 @@ using Repository;
 using Repository.Data;
 using Serilog;
 using Service;
+using Service.DTO.Admin.AskUsFrom;
 using Service.Helpers;
 
 
@@ -23,13 +27,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
-//builder.Services.AddFluentValidation(x =>
-//x.RegisterValidatorsFromAssemblyContaining<EducationCreateDtoValidator>());
-
-builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddFluentValidation(x =>
+x.RegisterValidatorsFromAssemblyContaining<AskUsFromCreateDtoValidator>());
 
 builder.Services.AddRepositoryLayer();
 builder.Services.AddServiceLayer();
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();

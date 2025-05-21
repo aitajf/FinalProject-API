@@ -14,5 +14,9 @@ namespace Repository.Data
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<Slider> Sliders { get; set; }
+        public DbSet<LandingBanner> LandingBanners { get; set; }
+        public DbSet<AskUsFrom> AskUsFroms { get; set; }
+        public DbSet<SubscribeImg> SubscribeImgs { get; set; }
+        public DbSet<Instagram> Instagrams { get; set; }      
     }
 }
