@@ -61,7 +61,7 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 
-JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear(); // => remove default claims
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 builder.Services
     .AddAuthentication(options =>
     {
@@ -78,7 +78,7 @@ builder.Services
             ValidIssuer = builder.Configuration["JWTSettings:Issuer"],
             ValidAudience = builder.Configuration["JWTSettings:Issuer"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWTSettings:Key"])),
-            ClockSkew = TimeSpan.Zero // remove delay of token when expire
+            ClockSkew = TimeSpan.Zero 
         };
     });
 
@@ -87,7 +87,6 @@ builder.Host.UseSerilog();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

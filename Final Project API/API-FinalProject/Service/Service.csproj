@@ -7,12 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTO\Account\" />
-    <Folder Include="DTO\Admin\" />
     <Folder Include="DTO\UI\" />
     <Folder Include="Helpers\Exceptions\" />
-    <Folder Include="Helpers\Account\" />
-    <Folder Include="Services\Interfaces\" />
   </ItemGroup>
 
   <ItemGroup>

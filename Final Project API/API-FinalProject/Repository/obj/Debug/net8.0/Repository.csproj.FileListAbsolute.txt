@@ -9,6 +9,7 @@ C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProj
 C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
 C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
 C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\Repository\obj\Debug\net8.0\Repository.sourcelink.json
 C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\Repository\obj\Debug\net8.0\Repository.csproj.Up2Date
 C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\Repository\obj\Debug\net8.0\Repository.dll
 C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\Repository\obj\Debug\net8.0\refint\Repository.dll

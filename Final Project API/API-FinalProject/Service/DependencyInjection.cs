@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using FluentValidation;
+using Microsoft.Extensions.DependencyInjection;
+using Service.Services;
+using Service.Services.Interfaces;
 
 namespace Service
 {
@@ -6,6 +9,9 @@ namespace Service
     {
         public static IServiceCollection AddServiceLayer(this IServiceCollection services)
         {
+            services.AddScoped<IAccountService, AccountService>();
+            services.AddScoped<IFileService, FileService>();
+            services.AddScoped<ISliderService, SliderService>();
             return services;
         }
     }

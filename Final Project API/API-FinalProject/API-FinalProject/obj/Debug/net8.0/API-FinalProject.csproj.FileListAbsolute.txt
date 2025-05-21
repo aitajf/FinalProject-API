@@ -160,6 +160,7 @@ C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProj
 C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\API-FinalProject\obj\Debug\net8.0\API-FinalProject.csproj.CoreCompileInputs.cache
 C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\API-FinalProject\obj\Debug\net8.0\API-FinalProject.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\API-FinalProject\obj\Debug\net8.0\API-FinalProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\API-FinalProject\obj\Debug\net8.0\API-FinalProject.sourcelink.json
 C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\API-FinalProject\obj\Debug\net8.0\scopedcss\bundle\API-FinalProject.styles.css
 C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\API-FinalProject\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\acer\OneDrive\İş masası\FinalProject\Final Project API\API-FinalProject\API-FinalProject\obj\Debug\net8.0\staticwebassets.development.json

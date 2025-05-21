@@ -13,5 +13,6 @@ namespace Repository.Data
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(BaseEntity).Assembly);
             base.OnModelCreating(modelBuilder);
         }
+        public DbSet<Slider> Sliders { get; set; }
     }
 }
