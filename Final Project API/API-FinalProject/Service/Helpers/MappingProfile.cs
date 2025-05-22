@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Domain.Entities;
 using Service.DTO.Account;
+using Service.DTO.Admin.AboutBannerImg;
 using Service.DTO.Admin.AskUsFrom;
 using Service.DTO.Admin.Instagram;
 using Service.DTO.Admin.LandingBanner;
@@ -33,6 +34,10 @@ namespace Service.Helpers
             CreateMap<Instagram, InstagramDto>();
             CreateMap<InstagramCreateDto, Instagram>();
             CreateMap<InstagramEditDto, Instagram>().ForMember(dest => dest.Img, opt => opt.Ignore());
+
+            CreateMap<AboutBannerImg, AboutBannerImgDto>();
+            CreateMap<AboutBannerImgCreateDto, AboutBannerImg>();
+            CreateMap<AboutBannerImgEditDto, AboutBannerImg>().ForMember(dest => dest.Img, opt => opt.Ignore());
         }
     }
 }

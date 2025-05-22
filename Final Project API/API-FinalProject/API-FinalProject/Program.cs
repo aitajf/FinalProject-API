@@ -32,6 +32,7 @@ x.RegisterValidatorsFromAssemblyContaining<AskUsFromCreateDtoValidator>());
 
 builder.Services.AddRepositoryLayer();
 builder.Services.AddServiceLayer();
+
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
@@ -81,7 +82,7 @@ builder.Services
             ValidIssuer = builder.Configuration["JWTSettings:Issuer"],
             ValidAudience = builder.Configuration["JWTSettings:Issuer"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWTSettings:Key"])),
-            ClockSkew = TimeSpan.Zero 
+            ClockSkew = TimeSpan.Zero
         };
     });
 
@@ -97,6 +98,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseExceptionHandler();
+app.UseStaticFiles();
 
 app.UseHttpsRedirection();
 

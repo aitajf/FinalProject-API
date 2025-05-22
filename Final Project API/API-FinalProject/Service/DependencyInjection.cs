@@ -16,7 +16,7 @@ namespace Service
             services.AddScoped<IAskUsFromService, AskUsFromService>();
             services.AddScoped<ISubscribeImgService, SubscribeImgService>();
             services.AddScoped<IInstagramService, InstagramService>();
-            
+            services.AddScoped<IAboutBannerImgService, AboutBannerImgService>();                   
             return services;
         }
     }

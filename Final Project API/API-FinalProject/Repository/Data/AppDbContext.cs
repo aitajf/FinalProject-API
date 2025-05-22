@@ -18,5 +18,6 @@ namespace Repository.Data
         public DbSet<AskUsFrom> AskUsFroms { get; set; }
         public DbSet<SubscribeImg> SubscribeImgs { get; set; }
         public DbSet<Instagram> Instagrams { get; set; }      
+        public DbSet<AboutBannerImg> AboutBannerImgs { get; set; }      
     }
 }

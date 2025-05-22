@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\FinalProject\\Final Project API\\API-FinalProject\\",
+  "WorkspaceRootPath": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\finalproject\\final project api\\api-finalproject\\api-finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|solutionrelative:api-finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\services\\aboutbannerimgservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\aboutbannerimgservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\finalproject\\final project api\\api-finalproject\\service\\services\\instagramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\instagramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CDF841F4-6CA0-46A5-895F-36F5815446E1}|Repository\\Repository.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\repository\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF841F4-6CA0-46A5-895F-36F5815446E1}|Repository\\Repository.csproj|solutionrelative:repository\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\finalproject\\final project api\\api-finalproject\\service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\finalproject\\final project api\\api-finalproject\\service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\finalproject\\final project api\\api-finalproject\\api-finalproject\\controllers\\admin\\instagramcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|solutionrelative:api-finalproject\\controllers\\admin\\instagramcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\finalproject\\final project api\\api-finalproject\\service\\services\\interfaces\\iinstagramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\iinstagramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\api-finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|solutionrelative:api-finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,89 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\FinalProject\\Final Project API\\API-FinalProject\\Service\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Service\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\FinalProject\\Final Project API\\API-FinalProject\\Service\\DependencyInjection.cs",
-              "RelativeToolTip": "Service\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T16:14:01.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\FinalProject\\Final Project API\\API-FinalProject\\API-FinalProject\\Program.cs",
-              "RelativeDocumentMoniker": "API-FinalProject\\Program.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\FinalProject\\Final Project API\\API-FinalProject\\API-FinalProject\\Program.cs",
-              "RelativeToolTip": "API-FinalProject\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAA1AAAAAAAAAA==",
+              "Title": "AboutBannerImgService.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\AboutBannerImgService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\AboutBannerImgService.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\AboutBannerImgService.cs",
+              "RelativeToolTip": "Service\\Services\\AboutBannerImgService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T16:13:12.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\FinalProject\\Final Project API\\API-FinalProject\\Service\\Helpers\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "Service\\Helpers\\MappingProfile.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\FinalProject\\Final Project API\\API-FinalProject\\Service\\Helpers\\MappingProfile.cs",
-              "RelativeToolTip": "Service\\Helpers\\MappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T16:12:09.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InstagramController.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\FinalProject\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Admin\\InstagramController.cs",
-              "RelativeDocumentMoniker": "API-FinalProject\\Controllers\\Admin\\InstagramController.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\FinalProject\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Admin\\InstagramController.cs",
-              "RelativeToolTip": "API-FinalProject\\Controllers\\Admin\\InstagramController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA1wAQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T16:03:57.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InstagramService.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\FinalProject\\Final Project API\\API-FinalProject\\Service\\Services\\InstagramService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\InstagramService.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\FinalProject\\Final Project API\\API-FinalProject\\Service\\Services\\InstagramService.cs",
-              "RelativeToolTip": "Service\\Services\\InstagramService.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAkwCIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T15:53:45.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IInstagramService.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\FinalProject\\Final Project API\\API-FinalProject\\Service\\Services\\Interfaces\\IInstagramService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IInstagramService.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\FinalProject\\Final Project API\\API-FinalProject\\Service\\Services\\Interfaces\\IInstagramService.cs",
-              "RelativeToolTip": "Service\\Services\\Interfaces\\IInstagramService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T15:53:33.901Z",
+              "WhenOpened": "2025-05-22T16:16:20.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DependecyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Repository\\DependecyInjection.cs",
+              "RelativeDocumentMoniker": "Repository\\DependecyInjection.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Repository\\DependecyInjection.cs",
+              "RelativeToolTip": "Repository\\DependecyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:09:52.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Service\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\DependencyInjection.cs",
+              "RelativeToolTip": "Service\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:09:28.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Program.cs",
+              "RelativeDocumentMoniker": "API-FinalProject\\Program.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Program.cs",
+              "RelativeToolTip": "API-FinalProject\\Program.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAIwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:01:17.041Z",
+              "EditorCaption": ""
             }
           ]
         },

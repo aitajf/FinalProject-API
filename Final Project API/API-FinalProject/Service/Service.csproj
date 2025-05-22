@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTO\UI\" />
-    <Folder Include="Helpers\Exceptions\" />
+    <Compile Remove="DTO\UI\**" />
+    <Compile Remove="Helpers\Exceptions\**" />
+    <EmbeddedResource Remove="DTO\UI\**" />
+    <EmbeddedResource Remove="Helpers\Exceptions\**" />
+    <None Remove="DTO\UI\**" />
+    <None Remove="Helpers\Exceptions\**" />
   </ItemGroup>
 
   <ItemGroup>

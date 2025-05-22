@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RUdSt+XVvRM=",
+  "dgSpecHash": "f5zCagM8pcM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\acer\\OneDrive\\İş masası\\FinalProject\\Final Project API\\API-FinalProject\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.16\\microsoft.aspnetcore.cryptography.internal.8.0.16.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.16\\microsoft.aspnetcore.cryptography.keyderivation.8.0.16.nupkg.sha512",
