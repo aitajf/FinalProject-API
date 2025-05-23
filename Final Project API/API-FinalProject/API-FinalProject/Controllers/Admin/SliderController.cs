@@ -42,6 +42,12 @@ namespace API_FinalProject.Controllers.Admin
             await _sliderService.DeleteAsync(id);
             return Ok();
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            return Ok(await _sliderService.GetAllAsync());
+        }
     }
 }
 

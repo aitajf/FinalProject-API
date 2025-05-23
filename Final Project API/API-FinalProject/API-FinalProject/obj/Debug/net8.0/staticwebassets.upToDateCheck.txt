@@ -1,3 +1,16 @@
+wwwroot\Uploads\aboutbannerimgs\111687f0-d4cd-411a-9d1d-540a51b4eaf9.jpg
+wwwroot\Uploads\aboutbannerimgs\778e9c89-c05b-41ca-8a45-0acf885ed699.jpg
+wwwroot\Uploads\aboutbannerimgs\99dcde85-479f-4de5-9ba8-ce583c86daae.jpg
+wwwroot\Uploads\aboutbannerimgs\e418623e-4b5e-4019-b68a-6beedec9a502.jpg
+wwwroot\Uploads\blogposts\185a1994-3a1f-478d-8a47-51f388ff14a8.jpg
+wwwroot\Uploads\blogposts\1e68c01b-38a9-4680-be5d-4902db67d6b0.jpg
+wwwroot\Uploads\blogposts\28b3c1e2-1d0f-4c6c-9650-8370b93d3578.jpg
+wwwroot\Uploads\blogposts\31439231-e9a3-4f25-843e-6dcb01c3e009.jpg
+wwwroot\Uploads\blogposts\4ce44d88-914c-4ef6-83eb-720685e1b0b4.jpg
+wwwroot\Uploads\blogposts\531b6fa2-5901-41c6-9e6b-7ff0308e1ca9.jpg
+wwwroot\Uploads\blogposts\5fed5503-b3cb-4a91-8dde-a2c054e632c7.jpg
+wwwroot\Uploads\blogposts\af554f9a-4c0f-49b6-a63b-251ac195a952.jpg
+wwwroot\Uploads\blogposts\d5eafa86-5622-4033-8184-8f93459bf80c.jpg
 wwwroot\Uploads\instagram\172743e4-711e-4645-9bf0-4be3b5111e91.jpg
 wwwroot\Uploads\instagram\225be0a8-3153-481a-9744-c63ddd9c3a9b.jpg
 wwwroot\Uploads\instagram\65c50467-11a9-4185-9623-d0b68afd207c.jpg

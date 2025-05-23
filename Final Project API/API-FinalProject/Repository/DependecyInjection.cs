@@ -15,8 +15,9 @@ namespace Repository
             services.AddScoped<ISubscribeImgRepository, SubscribeImgRepository>();
             services.AddScoped<IInstagramRepository, InstagramRepository>();
             services.AddScoped<IAboutBannerImgRepository, AboutBannerImgRepository>();
-         
-            
+            services.AddScoped<IBlogCategoryRepository, BlogCategoryRepository>();
+            services.AddScoped<IBlogPostRepository, BlogPostRepository>();
+                    
             return services;
         }
     }

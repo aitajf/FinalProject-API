@@ -3,6 +3,8 @@ using Domain.Entities;
 using Service.DTO.Account;
 using Service.DTO.Admin.AboutBannerImg;
 using Service.DTO.Admin.AskUsFrom;
+using Service.DTO.Admin.BlogCategory;
+using Service.DTO.Admin.BlogPost;
 using Service.DTO.Admin.Instagram;
 using Service.DTO.Admin.LandingBanner;
 using Service.DTO.Admin.Sliders;
@@ -38,6 +40,16 @@ namespace Service.Helpers
             CreateMap<AboutBannerImg, AboutBannerImgDto>();
             CreateMap<AboutBannerImgCreateDto, AboutBannerImg>();
             CreateMap<AboutBannerImgEditDto, AboutBannerImg>().ForMember(dest => dest.Img, opt => opt.Ignore());
+
+            CreateMap<BlogCategory, BlogCategoryDto>();
+            CreateMap<BlogCategoryCreateDto, BlogCategory>();
+            CreateMap<BlogCategoryEditDto, BlogCategory>();
+
+            CreateMap<BlogPost, BlogPostDto>() .ForMember(dest => dest.Images,
+                opt => opt.MapFrom(src => src.Images.Select(img => img.Image).ToList()));
+            CreateMap<BlogPostImg, BlogPostImgDto>();
+            CreateMap<BlogPostCreateDto, BlogPost>().ForMember(dest => dest.Images, opt => opt.Ignore());
+            CreateMap<BlogPostEditDto, BlogPost>().ForMember(dest => dest.Images, opt => opt.Ignore());
         }
     }
 }

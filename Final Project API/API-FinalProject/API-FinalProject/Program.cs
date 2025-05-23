@@ -35,8 +35,8 @@ builder.Services.AddServiceLayer();
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
-builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
-builder.Services.AddProblemDetails();
+//builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+//builder.Services.AddProblemDetails();
 
 builder.Services.AddIdentity<AppUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppDbContext>()
@@ -97,7 +97,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseExceptionHandler();
+//app.UseExceptionHandler();
 app.UseStaticFiles();
 
 app.UseHttpsRedirection();
