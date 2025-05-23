@@ -39,14 +39,14 @@ namespace API_FinalProject.Controllers.Admin
         public async Task<IActionResult> Edit([FromQuery] int id, [FromBody] BlogCategoryEditDto model)
         {
             await _blogCategoryService.EditAsync(model, id);
-            return NoContent();
+            return Ok();
         }
 
         [HttpDelete]
         public async Task<IActionResult> Delete([FromQuery] int id)
         {
             await _blogCategoryService.DeleteAsync(id);
-            return NoContent();
+            return Ok();
         }
     }
 }

@@ -7,10 +7,12 @@ using Service.DTO.Admin.BlogCategory;
 using Service.DTO.Admin.BlogPost;
 using Service.DTO.Admin.Brand;
 using Service.DTO.Admin.Category;
+using Service.DTO.Admin.Color;
 using Service.DTO.Admin.Instagram;
 using Service.DTO.Admin.LandingBanner;
 using Service.DTO.Admin.Sliders;
 using Service.DTO.Admin.SubscribeImg;
+using Service.DTO.Admin.Tag;
 
 namespace Service.Helpers
 {
@@ -53,13 +55,21 @@ namespace Service.Helpers
             CreateMap<BlogPostCreateDto, BlogPost>().ForMember(dest => dest.Images, opt => opt.Ignore());
             CreateMap<BlogPostEditDto, BlogPost>().ForMember(dest => dest.Images, opt => opt.Ignore());
 
-            CreateMap<Category, CategoryDto>();
-            CreateMap<CategoryCreateDto, Category>();
-            CreateMap<CategoryEditDto, Category>().ForMember(dest => dest.Image, opt => opt.Ignore());
+            CreateMap<Category,CategoryDto>();
+            CreateMap<CategoryCreateDto,Category>();
+            CreateMap<CategoryEditDto,Category>().ForMember(dest => dest.Image, opt => opt.Ignore());
 
-            CreateMap<Brand, BrandDto>();
-            CreateMap<BrandCreateDto, Brand>();
-            CreateMap<BrandEditDto, Brand>().ForMember(dest => dest.Image, opt => opt.Ignore());
+            CreateMap<Brand,BrandDto>();
+            CreateMap<BrandCreateDto,Brand>();
+            CreateMap<BrandEditDto,Brand>().ForMember(dest => dest.Image, opt => opt.Ignore());
+
+            CreateMap<Tag,TagDto>();
+            CreateMap<TagCreateDto,Tag>();
+            CreateMap<TagEditDto,Tag>();
+                     
+            CreateMap<Color,ColorDto>();
+            CreateMap<ColorCreateDto,Color>();
+            CreateMap<ColorEditDto,Color>();
         }
     }
 }

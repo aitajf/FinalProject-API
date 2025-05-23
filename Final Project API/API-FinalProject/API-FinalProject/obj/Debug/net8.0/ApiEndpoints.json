@@ -544,6 +544,85 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_FinalProject.Controllers.Admin.ColorController",
+    "Method": "Create",
+    "RelativePath": "api/admin/Color/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Service.DTO.Admin.Color.ColorCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.ColorController",
+    "Method": "Delete",
+    "RelativePath": "api/admin/Color/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.ColorController",
+    "Method": "Edit",
+    "RelativePath": "api/admin/Color/Edit/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Service.DTO.Admin.Color.ColorEditDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.ColorController",
+    "Method": "GetAll",
+    "RelativePath": "api/admin/Color/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.ColorController",
+    "Method": "GetById",
+    "RelativePath": "api/admin/Color/GetById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_FinalProject.Controllers.Admin.InstagramController",
     "Method": "Create",
     "RelativePath": "api/admin/Instagram/Create",
@@ -877,6 +956,85 @@
     "ContainingType": "API_FinalProject.Controllers.Admin.SubscribeImgController",
     "Method": "GetById",
     "RelativePath": "api/admin/SubscribeImg/GetById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.TagController",
+    "Method": "Create",
+    "RelativePath": "api/admin/Tag/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Service.DTO.Admin.Tag.TagCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.TagController",
+    "Method": "Delete",
+    "RelativePath": "api/admin/Tag/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.TagController",
+    "Method": "Edit",
+    "RelativePath": "api/admin/Tag/Edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "model",
+        "Type": "Service.DTO.Admin.Tag.TagEditDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.TagController",
+    "Method": "GetAll",
+    "RelativePath": "api/admin/Tag/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.TagController",
+    "Method": "GetById",
+    "RelativePath": "api/admin/Tag/GetById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

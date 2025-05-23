@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Domain.Entities;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Org.BouncyCastle.Asn1.X509;
-using Repository.Repositories;
 using Repository.Repositories.Interface;
 using Service.DTO.Admin.BlogPost;
 using Service.Services;

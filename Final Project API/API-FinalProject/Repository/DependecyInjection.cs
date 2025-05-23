@@ -19,6 +19,8 @@ namespace Repository
             services.AddScoped<IBlogPostRepository, BlogPostRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IBrandRepository, BrandRepository>();
+            services.AddScoped<ITagRepository, TagRepository>();
+            services.AddScoped<IColorRepository, ColorRepository>();
                     
             return services;
         }
