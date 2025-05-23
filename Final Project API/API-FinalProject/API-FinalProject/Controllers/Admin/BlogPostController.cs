@@ -47,5 +47,13 @@ namespace API_FinalProject.Controllers.Admin
         {
             return Ok(await _blogPostService.GetByIdAsync(id));
         }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteImage(int blogPostId, int blogPostImageId)
+        {
+            await _blogPostService.DeleteImageAsync(blogPostId, blogPostImageId);
+
+            return Ok(new { message = "Image deleted successfully." });
+        }
     }
 }

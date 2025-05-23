@@ -10,5 +10,6 @@ namespace Repository.Repositories.Interface
     public interface IBlogPostRepository : IBaseRepository<BlogPost>
     {
         IQueryable<BlogPost> ApplyIncludes();
+        Task<BlogPost> GetByIdWithIncludesAsync(int id);
     }
 }

@@ -1,0 +1,1276 @@
+2025-05-23 15:23:27.789 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 15:23:27.963 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 15:23:27.964 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 15:23:28.010 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 15:23:28.012 +04:00 [INF] Hosting environment: Development
+2025-05-23 15:23:28.012 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 15:23:28.193 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 15:23:28.331 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 138.1314ms
+2025-05-23 15:23:28.342 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 15:23:28.342 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 15:23:28.351 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 9.2021ms
+2025-05-23 15:23:28.374 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.4673ms
+2025-05-23 15:23:28.483 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 15:23:28.515 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.9388ms
+2025-05-23 15:25:50.523 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 15:25:50.676 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 15:25:50.677 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 15:25:50.721 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 15:25:50.722 +04:00 [INF] Hosting environment: Development
+2025-05-23 15:25:50.723 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 15:25:51.279 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 15:25:51.451 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 173.3061ms
+2025-05-23 15:25:51.457 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 15:25:51.457 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 15:25:51.474 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 17.5795ms
+2025-05-23 15:25:51.499 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.2977ms
+2025-05-23 15:25:51.600 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 15:25:51.629 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.652ms
+2025-05-23 15:26:02.743 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - multipart/form-data; boundary=----WebKitFormBoundarysZAAGJpDj43UPZA2 35166
+2025-05-23 15:26:02.807 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:02.881 +04:00 [INF] Route matched with {action = "Create", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Brand.BrandCreateDto) on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:26:06.283 +04:00 [INF] Executed DbCommand (126ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Brands] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 15:26:06.433 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 15:26:06.491 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject) in 3595.1119ms
+2025-05-23 15:26:06.496 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:06.516 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - 201 null text/plain; charset=utf-8 3772.499ms
+2025-05-23 15:26:15.075 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - multipart/form-data; boundary=----WebKitFormBoundarypAoYrOBRzAgkEjTi 35167
+2025-05-23 15:26:15.088 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:15.091 +04:00 [INF] Route matched with {action = "Create", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Brand.BrandCreateDto) on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:26:15.280 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Brands] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 15:26:15.286 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 15:26:15.291 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject) in 195.4472ms
+2025-05-23 15:26:15.293 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:15.295 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - 201 null text/plain; charset=utf-8 220.7048ms
+2025-05-23 15:26:20.348 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - multipart/form-data; boundary=----WebKitFormBoundary7jI8WfgHgroFuJLb 35165
+2025-05-23 15:26:20.364 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:20.367 +04:00 [INF] Route matched with {action = "Create", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Brand.BrandCreateDto) on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:26:20.424 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Brands] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 15:26:20.429 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 15:26:20.432 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject) in 60.2902ms
+2025-05-23 15:26:20.434 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:20.437 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - 201 null text/plain; charset=utf-8 89.2543ms
+2025-05-23 15:26:30.661 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - multipart/form-data; boundary=----WebKitFormBoundaryubKLXOgBwNh77fzM 35165
+2025-05-23 15:26:30.664 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:30.666 +04:00 [INF] Route matched with {action = "Create", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Brand.BrandCreateDto) on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:26:30.681 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Brands] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 15:26:30.686 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 15:26:30.690 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject) in 21.0141ms
+2025-05-23 15:26:30.693 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:30.697 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - 201 null text/plain; charset=utf-8 35.954ms
+2025-05-23 15:26:37.317 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - multipart/form-data; boundary=----WebKitFormBoundaryPSsHJZ6HRnkPz6TQ 35169
+2025-05-23 15:26:37.325 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:37.330 +04:00 [INF] Route matched with {action = "Create", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Brand.BrandCreateDto) on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:26:37.346 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Brands] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 15:26:37.353 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 15:26:37.355 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject) in 22.7422ms
+2025-05-23 15:26:37.358 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:37.360 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - 201 null text/plain; charset=utf-8 42.3264ms
+2025-05-23 15:26:41.583 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - multipart/form-data; boundary=----WebKitFormBoundaryAblfn9Sd9pIvLaZN 35162
+2025-05-23 15:26:41.612 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:41.614 +04:00 [INF] Route matched with {action = "Create", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Brand.BrandCreateDto) on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:26:41.633 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Brands] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 15:26:41.639 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 15:26:41.642 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject) in 23.9182ms
+2025-05-23 15:26:41.644 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:41.646 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - 201 null text/plain; charset=utf-8 63.5119ms
+2025-05-23 15:26:47.230 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - multipart/form-data; boundary=----WebKitFormBoundarykkkpG9j8mNZh5NRc 35164
+2025-05-23 15:26:47.235 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:47.238 +04:00 [INF] Route matched with {action = "Create", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Brand.BrandCreateDto) on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:26:47.258 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Brands] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 15:26:47.264 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 15:26:47.269 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject) in 24.4616ms
+2025-05-23 15:26:47.272 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:26:47.275 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - 201 null text/plain; charset=utf-8 45.24ms
+2025-05-23 15:27:15.027 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/Brand/GetAll - null null
+2025-05-23 15:27:15.031 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.GetAll (API-FinalProject)'
+2025-05-23 15:27:15.041 +04:00 [INF] Route matched with {action = "GetAll", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:27:15.512 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name]
+FROM [Brands] AS [b]
+2025-05-23 15:27:15.553 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Brand.BrandDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 15:27:15.570 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.GetAll (API-FinalProject) in 524.5658ms
+2025-05-23 15:27:15.572 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.GetAll (API-FinalProject)'
+2025-05-23 15:27:15.573 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/Brand/GetAll - 200 null application/json; charset=utf-8 546.3564ms
+2025-05-23 15:28:11.104 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/Brand/GetById/7 - null null
+2025-05-23 15:28:11.108 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.GetById (API-FinalProject)'
+2025-05-23 15:28:11.116 +04:00 [INF] Route matched with {action = "GetById", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:28:11.298 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 15:28:11.309 +04:00 [INF] Executing OkObjectResult, writing value of type 'Service.DTO.Admin.Brand.BrandDto'.
+2025-05-23 15:28:11.313 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.GetById (API-FinalProject) in 192.9977ms
+2025-05-23 15:28:11.315 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.GetById (API-FinalProject)'
+2025-05-23 15:28:11.316 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/Brand/GetById/7 - 200 null application/json; charset=utf-8 212.2975ms
+2025-05-23 15:28:16.008 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/Brand/GetById/77 - null null
+2025-05-23 15:28:16.013 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.GetById (API-FinalProject)'
+2025-05-23 15:28:16.015 +04:00 [INF] Route matched with {action = "GetById", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:28:16.033 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 15:28:16.039 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.GetById (API-FinalProject) in 20.2363ms
+2025-05-23 15:28:16.041 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.GetById (API-FinalProject)'
+2025-05-23 15:28:16.050 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: Brand with ID 77 not found.
+   at Service.Services.BrandService.GetByIdAsync(Int32 id) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\BrandService.cs:line 75
+   at API_FinalProject.Controllers.Admin.BrandController.GetById(Int32 id) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\BrandController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-23 15:28:16.159 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/Brand/GetById/77 - 500 null text/plain; charset=utf-8 151.3877ms
+2025-05-23 15:28:56.879 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7004/api/admin/Brand/Edit/7 - multipart/form-data; boundary=----WebKitFormBoundaryBPojiUBPAglr6XY5 48702
+2025-05-23 15:28:56.883 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.Edit (API-FinalProject)'
+2025-05-23 15:28:56.890 +04:00 [INF] Route matched with {action = "Edit", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32, Service.DTO.Admin.Brand.BrandEditDto) on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:28:56.914 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 15:28:56.967 +04:00 [INF] Executed DbCommand (15ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Brands] SET [CreatedDate] = @p0, [Image] = @p1, [Name] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2025-05-23 15:28:56.985 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-05-23 15:28:56.987 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.Edit (API-FinalProject) in 95.1874ms
+2025-05-23 15:28:56.989 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.Edit (API-FinalProject)'
+2025-05-23 15:28:56.992 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7004/api/admin/Brand/Edit/7 - 200 0 null 112.7476ms
+2025-05-23 15:29:07.579 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 15:29:07.592 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 13.0181ms
+2025-05-23 15:29:07.614 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 15:29:07.614 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 15:29:07.620 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 5.6133ms
+2025-05-23 15:29:07.633 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.2257ms
+2025-05-23 15:29:07.687 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 15:29:07.728 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 41.1576ms
+2025-05-23 15:34:07.714 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/Brand/GetAll - null null
+2025-05-23 15:34:07.717 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.GetAll (API-FinalProject)'
+2025-05-23 15:34:07.719 +04:00 [INF] Route matched with {action = "GetAll", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:34:07.739 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name]
+FROM [Brands] AS [b]
+2025-05-23 15:34:07.746 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Brand.BrandDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 15:34:07.752 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.GetAll (API-FinalProject) in 29.4419ms
+2025-05-23 15:34:07.754 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.GetAll (API-FinalProject)'
+2025-05-23 15:34:07.757 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/Brand/GetAll - 200 null application/json; charset=utf-8 43.5352ms
+2025-05-23 15:34:23.550 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:7004/api/admin/Brand/Delete?id=7 - null null
+2025-05-23 15:34:23.554 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.Delete (API-FinalProject)'
+2025-05-23 15:34:23.571 +04:00 [INF] Route matched with {action = "Delete", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:34:23.593 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 15:34:23.622 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Brands]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-05-23 15:34:23.634 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-05-23 15:34:23.636 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.Delete (API-FinalProject) in 60.2353ms
+2025-05-23 15:34:23.638 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.Delete (API-FinalProject)'
+2025-05-23 15:34:23.640 +04:00 [INF] Request finished HTTP/2 DELETE https://localhost:7004/api/admin/Brand/Delete?id=7 - 200 0 null 89.6964ms
+2025-05-23 15:34:32.017 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/Brand/GetAll - null null
+2025-05-23 15:34:32.021 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.GetAll (API-FinalProject)'
+2025-05-23 15:34:32.026 +04:00 [INF] Route matched with {action = "GetAll", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:34:32.037 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name]
+FROM [Brands] AS [b]
+2025-05-23 15:34:32.041 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Brand.BrandDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 15:34:32.046 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.GetAll (API-FinalProject) in 13.5615ms
+2025-05-23 15:34:32.048 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.GetAll (API-FinalProject)'
+2025-05-23 15:34:32.050 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/Brand/GetAll - 200 null application/json; charset=utf-8 32.7597ms
+2025-05-23 15:34:47.188 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 15:34:47.197 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 9.6964ms
+2025-05-23 15:34:47.214 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 15:34:47.214 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 15:34:47.220 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 6.7082ms
+2025-05-23 15:34:47.224 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.4477ms
+2025-05-23 15:34:47.280 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 15:34:47.302 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.9448ms
+2025-05-23 15:58:41.619 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 15:58:41.767 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 15:58:41.769 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 15:58:41.805 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 15:58:41.807 +04:00 [INF] Hosting environment: Development
+2025-05-23 15:58:41.807 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 15:58:42.507 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 15:58:42.632 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 125.5195ms
+2025-05-23 15:58:42.665 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 15:58:42.670 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 15:58:42.672 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 6.3714ms
+2025-05-23 15:58:42.707 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.1549ms
+2025-05-23 15:58:42.798 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 15:58:42.825 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.9129ms
+2025-05-23 16:00:01.309 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - null null
+2025-05-23 16:00:01.333 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 16:00:01.354 +04:00 [INF] Route matched with {action = "GetAll", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 16:00:02.784 +04:00 [INF] Executed DbCommand (152ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [b0].[CreatedDate], [b0].[Name]
+FROM [BlogPosts] AS [b]
+INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [b].[Id] = [b1].[BlogPostId]
+ORDER BY [b].[Id], [b0].[Id]
+2025-05-23 16:00:02.874 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.BlogPost.BlogPostDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 16:00:02.883 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject) in 1525.2027ms
+2025-05-23 16:00:02.885 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 16:00:02.890 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - 200 null application/json; charset=utf-8 1581.1976ms
+2025-05-23 16:01:38.462 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 16:01:38.470 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 7.7691ms
+2025-05-23 16:01:38.505 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 16:01:38.505 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 16:01:38.509 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 3.9795ms
+2025-05-23 16:01:38.517 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.7694ms
+2025-05-23 16:01:38.561 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 16:01:38.579 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.1613ms
+2025-05-23 16:01:39.028 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 16:01:39.033 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 4.9926ms
+2025-05-23 16:01:39.044 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 16:01:39.044 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 16:01:39.046 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 2.3448ms
+2025-05-23 16:01:39.052 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.4163ms
+2025-05-23 16:01:39.090 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 16:01:39.105 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.0734ms
+2025-05-23 16:01:39.212 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 16:01:39.214 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 2.5956ms
+2025-05-23 16:01:39.226 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 16:01:39.226 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 16:01:39.227 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 1.4154ms
+2025-05-23 16:01:39.232 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.1148ms
+2025-05-23 16:01:39.262 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 16:01:39.270 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.074ms
+2025-05-23 16:01:39.359 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 16:01:39.363 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 3.8586ms
+2025-05-23 16:01:39.372 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 16:01:39.372 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 16:01:39.376 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 3.0029ms
+2025-05-23 16:01:39.377 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.2465ms
+2025-05-23 16:01:39.408 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 16:01:39.417 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.2391ms
+2025-05-23 16:01:39.509 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 16:01:39.511 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 2.8733ms
+2025-05-23 16:01:39.523 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 16:01:39.523 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 16:01:39.525 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 1.4877ms
+2025-05-23 16:01:39.529 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.4789ms
+2025-05-23 16:01:39.559 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 16:01:39.575 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.0828ms
+2025-05-23 16:01:54.725 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 16:01:54.838 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 16:01:54.840 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 16:01:54.871 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 16:01:54.873 +04:00 [INF] Hosting environment: Development
+2025-05-23 16:01:54.874 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 16:01:55.449 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 16:01:55.559 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 109.9915ms
+2025-05-23 16:01:55.566 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 16:01:55.566 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 16:01:55.577 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 11.0686ms
+2025-05-23 16:01:55.591 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.8479ms
+2025-05-23 16:01:55.631 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 16:01:55.650 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.8621ms
+2025-05-23 16:03:15.603 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7004/api/admin/BlogPost/Update?id=5 - multipart/form-data; boundary=----WebKitFormBoundary5cknZWAalCunhaMV 117859
+2025-05-23 16:03:15.630 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Update (API-FinalProject)'
+2025-05-23 16:03:15.656 +04:00 [INF] Route matched with {action = "Update", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Service.DTO.Admin.BlogPost.BlogPostEditDto) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 16:03:17.367 +04:00 [INF] Executed DbCommand (77ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title]
+FROM [BlogPosts] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 16:03:17.438 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CreatedDate], [b].[Name]
+FROM [BlogCategories] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 16:03:17.628 +04:00 [INF] Executed DbCommand (34ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [BlogPosts] SET [BlogCategoryId] = @p0, [CreatedDate] = @p1, [Description] = @p2, [HighlightText] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2025-05-23 16:03:17.665 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.Update (API-FinalProject) in 1997.9627ms
+2025-05-23 16:03:17.672 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Update (API-FinalProject)'
+2025-05-23 16:03:17.678 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Service.Services.BlogPostService.EditAsync(Int32 id, BlogPostEditDto model) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\BlogPostService.cs:line 73
+   at API_FinalProject.Controllers.Admin.BlogPostController.Update(Int32 id, BlogPostEditDto model) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\BlogPostController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-23 16:03:17.759 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7004/api/admin/BlogPost/Update?id=5 - 500 null text/plain; charset=utf-8 2155.8278ms
+2025-05-23 16:05:00.381 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 16:05:00.498 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 16:05:00.499 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 16:05:00.536 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 16:05:00.537 +04:00 [INF] Hosting environment: Development
+2025-05-23 16:05:00.538 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 16:05:01.055 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 16:05:01.179 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 123.4151ms
+2025-05-23 16:05:01.183 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 16:05:01.184 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 16:05:01.193 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 10.7783ms
+2025-05-23 16:05:01.216 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.2608ms
+2025-05-23 16:05:01.257 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 16:05:01.276 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.6529ms
+2025-05-23 16:06:35.555 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 16:06:35.669 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 16:06:35.672 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 16:06:35.705 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 16:06:35.706 +04:00 [INF] Hosting environment: Development
+2025-05-23 16:06:35.707 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 16:06:36.050 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 16:06:36.164 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 114.2067ms
+2025-05-23 16:06:36.171 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 16:06:36.173 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 16:06:36.180 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 8.8826ms
+2025-05-23 16:06:36.201 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.6112ms
+2025-05-23 16:06:36.241 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 16:06:36.258 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.1787ms
+2025-05-23 16:07:09.908 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7004/api/admin/BlogPost/Update?id=5 - multipart/form-data; boundary=----WebKitFormBoundarydb3Pls1oVjBG3lHN 130376
+2025-05-23 16:07:09.929 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Update (API-FinalProject)'
+2025-05-23 16:07:09.955 +04:00 [INF] Route matched with {action = "Update", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Service.DTO.Admin.BlogPost.BlogPostEditDto) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 16:07:11.182 +04:00 [INF] Executed DbCommand (106ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title]
+FROM [BlogPosts] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 16:07:11.214 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CreatedDate], [b].[Name]
+FROM [BlogCategories] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 16:07:11.345 +04:00 [INF] Executed DbCommand (42ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [BlogPosts] SET [BlogCategoryId] = @p0, [CreatedDate] = @p1, [Description] = @p2, [HighlightText] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2025-05-23 16:07:11.368 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.Update (API-FinalProject) in 1408.4629ms
+2025-05-23 16:07:11.371 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Update (API-FinalProject)'
+2025-05-23 16:07:11.374 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Service.Services.BlogPostService.EditAsync(Int32 id, BlogPostEditDto model) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\BlogPostService.cs:line 73
+   at API_FinalProject.Controllers.Admin.BlogPostController.Update(Int32 id, BlogPostEditDto model) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\BlogPostController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-23 16:07:11.426 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7004/api/admin/BlogPost/Update?id=5 - 500 null text/plain; charset=utf-8 1518.3866ms
+2025-05-23 16:44:33.602 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 16:44:33.924 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 16:44:33.927 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 16:44:33.973 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 16:44:33.977 +04:00 [INF] Hosting environment: Development
+2025-05-23 16:44:33.979 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 16:44:34.858 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 16:44:35.058 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 206.7768ms
+2025-05-23 16:44:35.064 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 16:44:35.064 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 16:44:35.073 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 9.5728ms
+2025-05-23 16:44:35.108 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.1834ms
+2025-05-23 16:44:35.140 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 16:44:35.163 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.7295ms
+2025-05-23 16:44:49.783 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7004/api/admin/BlogPost/Update?id=5 - multipart/form-data; boundary=----WebKitFormBoundarycoBoVJgcWxPK8vN3 35480
+2025-05-23 16:44:49.841 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Update (API-FinalProject)'
+2025-05-23 16:44:49.873 +04:00 [INF] Route matched with {action = "Update", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Service.DTO.Admin.BlogPost.BlogPostEditDto) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 16:45:01.071 +04:00 [INF] Executed DbCommand (126ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title]
+FROM [BlogPosts] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 16:45:02.579 +04:00 [INF] Executed DbCommand (19ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CreatedDate], [b].[Name]
+FROM [BlogCategories] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 16:45:05.158 +04:00 [INF] Executed DbCommand (31ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [BlogPosts] SET [BlogCategoryId] = @p0, [CreatedDate] = @p1, [Description] = @p2, [HighlightText] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2025-05-23 16:47:05.196 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 16:47:05.324 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 16:47:05.327 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 16:47:05.361 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 16:47:05.362 +04:00 [INF] Hosting environment: Development
+2025-05-23 16:47:05.362 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 16:47:05.833 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 16:47:05.969 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 137.1174ms
+2025-05-23 16:47:05.986 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 16:47:05.989 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 16:47:05.994 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 8.1094ms
+2025-05-23 16:47:06.020 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.3555ms
+2025-05-23 16:47:06.110 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 16:47:06.127 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.3811ms
+2025-05-23 16:47:21.226 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7004/api/admin/BlogPost/Update?id=5 - multipart/form-data; boundary=----WebKitFormBoundary4wyo8x0K8AOle7NB 115202
+2025-05-23 16:47:21.250 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Update (API-FinalProject)'
+2025-05-23 16:47:21.280 +04:00 [INF] Route matched with {action = "Update", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Service.DTO.Admin.BlogPost.BlogPostEditDto) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 16:47:23.086 +04:00 [INF] Executed DbCommand (75ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title]
+FROM [BlogPosts] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 16:47:23.137 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CreatedDate], [b].[Name]
+FROM [BlogCategories] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 16:47:23.328 +04:00 [INF] Executed DbCommand (10ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [BlogPosts] SET [BlogCategoryId] = @p0, [CreatedDate] = @p1, [Description] = @p2, [HighlightText] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2025-05-23 16:47:23.358 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.Update (API-FinalProject) in 2070.1803ms
+2025-05-23 16:47:23.361 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Update (API-FinalProject)'
+2025-05-23 16:47:23.366 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Service.Services.BlogPostService.EditAsync(Int32 id, BlogPostEditDto model) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\BlogPostService.cs:line 73
+   at API_FinalProject.Controllers.Admin.BlogPostController.Update(Int32 id, BlogPostEditDto model) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\BlogPostController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-23 16:47:23.413 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7004/api/admin/BlogPost/Update?id=5 - 500 null text/plain; charset=utf-8 2186.9722ms
+2025-05-23 16:56:45.427 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 16:56:45.552 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 16:56:45.553 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 16:56:45.590 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 16:56:45.591 +04:00 [INF] Hosting environment: Development
+2025-05-23 16:56:45.592 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 16:56:45.869 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 16:56:46.088 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 220.5835ms
+2025-05-23 16:56:46.109 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 16:56:46.109 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 16:56:46.115 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 5.9342ms
+2025-05-23 16:56:46.139 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.5194ms
+2025-05-23 16:56:46.187 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 16:56:46.205 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.5332ms
+2025-05-23 16:57:43.679 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7004/api/admin/BlogPost/Update?id=5 - multipart/form-data; boundary=----WebKitFormBoundaryoKhsyg4iQnAidQCO 90772
+2025-05-23 16:57:43.699 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Update (API-FinalProject)'
+2025-05-23 16:57:43.721 +04:00 [INF] Route matched with {action = "Update", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Service.DTO.Admin.BlogPost.BlogPostEditDto) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 16:57:44.978 +04:00 [INF] Executed DbCommand (111ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [t].[Id0], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [t].[CreatedDate0], [t].[Name]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id] AS [Id0], [b0].[CreatedDate] AS [CreatedDate0], [b0].[Name]
+    FROM [BlogPosts] AS [b]
+    INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+    WHERE [b].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [t].[Id] = [b1].[BlogPostId]
+ORDER BY [t].[Id], [t].[Id0]
+2025-05-23 16:57:45.061 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CreatedDate], [b].[Name]
+FROM [BlogCategories] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 16:57:45.239 +04:00 [INF] Executed DbCommand (79ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p17='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+MERGE [BlogPostImgs] USING (
+VALUES (@p0, @p1, @p2, @p3, 0),
+(@p4, @p5, @p6, @p7, 1),
+(@p8, @p9, @p10, @p11, 2)) AS i ([BlogPostId], [CreatedDate], [Image], [IsMain], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([BlogPostId], [CreatedDate], [Image], [IsMain])
+VALUES (i.[BlogPostId], i.[CreatedDate], i.[Image], i.[IsMain])
+OUTPUT INSERTED.[Id], i._Position;
+UPDATE [BlogPosts] SET [BlogCategoryId] = @p12, [CreatedDate] = @p13, [Description] = @p14, [HighlightText] = @p15, [Title] = @p16
+OUTPUT 1
+WHERE [Id] = @p17;
+2025-05-23 16:57:45.267 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-23 16:57:45.276 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.Update (API-FinalProject) in 1547.953ms
+2025-05-23 16:57:45.278 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Update (API-FinalProject)'
+2025-05-23 16:57:45.284 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7004/api/admin/BlogPost/Update?id=5 - 200 null application/json; charset=utf-8 1604.9711ms
+2025-05-23 16:58:01.632 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 16:58:01.642 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 9.6359ms
+2025-05-23 16:58:01.663 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 16:58:01.663 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 16:58:01.666 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 3.5005ms
+2025-05-23 16:58:01.677 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.0357ms
+2025-05-23 16:58:01.721 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 16:58:01.742 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.3997ms
+2025-05-23 16:58:07.089 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - null null
+2025-05-23 16:58:07.095 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 16:58:07.100 +04:00 [INF] Route matched with {action = "GetAll", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 16:58:07.167 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [b0].[CreatedDate], [b0].[Name]
+FROM [BlogPosts] AS [b]
+INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [b].[Id] = [b1].[BlogPostId]
+ORDER BY [b].[Id], [b0].[Id]
+2025-05-23 16:58:07.178 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.BlogPost.BlogPostDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 16:58:07.181 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject) in 79.4225ms
+2025-05-23 16:58:07.183 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 16:58:07.183 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - 200 null application/json; charset=utf-8 94.2621ms
+2025-05-23 17:02:02.574 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?productId=5&productImageId=11 - null 0
+2025-05-23 17:02:02.580 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:02:02.585 +04:00 [INF] Route matched with {action = "DeleteImage", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteImage(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:02:02.608 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title]
+FROM [BlogPosts] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 17:02:02.611 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject) in 23.154ms
+2025-05-23 17:02:02.612 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:02:02.615 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Service.Services.BlogPostService.DeleteImageAsync(Int32 blogPostId, Int32 blogPostImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\BlogPostService.cs:line 117
+   at API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage(Int32 productId, Int32 productImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\BlogPostController.cs:line 54
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-23 17:02:02.663 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?productId=5&productImageId=11 - 500 null text/plain; charset=utf-8 89.0614ms
+2025-05-23 17:04:32.028 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 17:04:32.284 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 17:04:32.285 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 17:04:32.350 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 17:04:32.358 +04:00 [INF] Hosting environment: Development
+2025-05-23 17:04:32.359 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 17:04:32.821 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 17:04:33.042 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 17:04:33.042 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 17:04:33.047 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 231.4881ms
+2025-05-23 17:04:33.055 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 12.8765ms
+2025-05-23 17:04:33.086 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.2842ms
+2025-05-23 17:04:33.117 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 17:04:33.138 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.5543ms
+2025-05-23 17:04:46.879 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=11 - null 0
+2025-05-23 17:04:46.927 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:04:46.967 +04:00 [INF] Route matched with {action = "DeleteImage", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteImage(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:05:30.295 +04:00 [ERR] Failed executing DbCommand (32,965ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [t].[Id0], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [t].[CreatedDate0], [t].[Name]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id] AS [Id0], [b0].[CreatedDate] AS [CreatedDate0], [b0].[Name]
+    FROM [BlogPosts] AS [b]
+    INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+    WHERE [b].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [t].[Id] = [b1].[BlogPostId]
+ORDER BY [t].[Id], [t].[Id0]
+2025-05-23 17:05:30.369 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Repository.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:aaaaaf32-e379-421a-84cc-cc64eeb3db35
+Error Number:-2,State:0,Class:11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:aaaaaf32-e379-421a-84cc-cc64eeb3db35
+Error Number:-2,State:0,Class:11
+2025-05-23 17:05:30.558 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject) in 43582.1023ms
+2025-05-23 17:05:30.562 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:05:30.568 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Repository.Repositories.BlogPostRepository.GetByIdWithIncludesAsync(Int32 id) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Repository\Repositories\BlogPostRepository.cs:line 25
+   at Service.Services.BlogPostService.DeleteImageAsync(Int32 blogPostId, Int32 blogPostImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\BlogPostService.cs:line 111
+   at API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage(Int32 blogPostId, Int32 blogPostImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\BlogPostController.cs:line 54
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:aaaaaf32-e379-421a-84cc-cc64eeb3db35
+Error Number:-2,State:0,Class:11
+2025-05-23 17:05:30.744 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=11 - 500 null text/plain; charset=utf-8 43864.7893ms
+2025-05-23 17:05:56.079 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 17:05:56.272 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 17:05:56.273 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 17:05:56.310 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 17:05:56.312 +04:00 [INF] Hosting environment: Development
+2025-05-23 17:05:56.313 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 17:05:56.606 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 17:05:56.806 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 205.6359ms
+2025-05-23 17:05:56.808 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 17:05:56.808 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 17:05:56.817 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 8.5111ms
+2025-05-23 17:05:56.846 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.1255ms
+2025-05-23 17:05:56.890 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 17:05:56.908 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.1551ms
+2025-05-23 17:06:06.900 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=11 - null 0
+2025-05-23 17:06:06.954 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:06:06.997 +04:00 [INF] Route matched with {action = "DeleteImage", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteImage(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:06:14.542 +04:00 [INF] Executed DbCommand (1,004ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [t].[Id0], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [t].[CreatedDate0], [t].[Name]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id] AS [Id0], [b0].[CreatedDate] AS [CreatedDate0], [b0].[Name]
+    FROM [BlogPosts] AS [b]
+    INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+    WHERE [b].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [t].[Id] = [b1].[BlogPostId]
+ORDER BY [t].[Id], [t].[Id0]
+2025-05-23 17:06:21.579 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject) in 14573.7215ms
+2025-05-23 17:06:21.582 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:06:21.585 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: File not found at path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\blogposts\https://localhost:7004/Uploads/blogposts/9676d8af-1caa-49f1-aa09-1203607a67d3.jpg
+   at Service.Services.FileService.Delete(String fileName, String folder) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\FileService.cs:line 41
+   at Service.Services.BlogPostService.DeleteImageAsync(Int32 blogPostId, Int32 blogPostImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\BlogPostService.cs:line 122
+   at API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage(Int32 blogPostId, Int32 blogPostImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\BlogPostController.cs:line 54
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-23 17:06:21.612 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=11 - 500 null text/plain; charset=utf-8 14712.4192ms
+2025-05-23 17:06:24.786 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=11 - null 0
+2025-05-23 17:06:24.799 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:06:24.800 +04:00 [INF] Route matched with {action = "DeleteImage", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteImage(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:11:22.833 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 17:11:22.969 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 17:11:22.970 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 17:11:23.006 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 17:11:23.008 +04:00 [INF] Hosting environment: Development
+2025-05-23 17:11:23.009 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 17:11:23.323 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 17:11:23.473 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 151.2136ms
+2025-05-23 17:11:23.485 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 17:11:23.486 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 17:11:23.492 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 6.9935ms
+2025-05-23 17:11:23.514 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.6857ms
+2025-05-23 17:11:23.587 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 17:11:23.610 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.4948ms
+2025-05-23 17:11:41.760 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/Create - multipart/form-data; boundary=----WebKitFormBoundaryVi11NHDqEiRzdfhm 42225
+2025-05-23 17:11:41.786 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Create (API-FinalProject)'
+2025-05-23 17:11:41.830 +04:00 [INF] Route matched with {action = "Create", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.BlogPost.BlogPostCreateDto) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:11:43.580 +04:00 [INF] Executed DbCommand (89ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CreatedDate], [b].[Name]
+FROM [BlogCategories] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 17:11:43.836 +04:00 [INF] Executed DbCommand (61ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [BlogPosts] ([BlogCategoryId], [CreatedDate], [Description], [HighlightText], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-05-23 17:11:44.031 +04:00 [INF] Executed DbCommand (62ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p13='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+MERGE [BlogPostImgs] USING (
+VALUES (@p0, @p1, @p2, @p3, 0),
+(@p4, @p5, @p6, @p7, 1)) AS i ([BlogPostId], [CreatedDate], [Image], [IsMain], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([BlogPostId], [CreatedDate], [Image], [IsMain])
+VALUES (i.[BlogPostId], i.[CreatedDate], i.[Image], i.[IsMain])
+OUTPUT INSERTED.[Id], i._Position;
+UPDATE [BlogPosts] SET [BlogCategoryId] = @p8, [CreatedDate] = @p9, [Description] = @p10, [HighlightText] = @p11, [Title] = @p12
+OUTPUT 1
+WHERE [Id] = @p13;
+2025-05-23 17:11:44.060 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 17:11:44.093 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.Create (API-FinalProject) in 2253.2493ms
+2025-05-23 17:11:44.097 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Create (API-FinalProject)'
+2025-05-23 17:11:44.103 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/BlogPost/Create - 201 null text/plain; charset=utf-8 2342.9669ms
+2025-05-23 17:11:48.158 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - null null
+2025-05-23 17:11:48.173 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 17:11:48.180 +04:00 [INF] Route matched with {action = "GetAll", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:11:48.322 +04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [b0].[CreatedDate], [b0].[Name]
+FROM [BlogPosts] AS [b]
+INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [b].[Id] = [b1].[BlogPostId]
+ORDER BY [b].[Id], [b0].[Id]
+2025-05-23 17:11:48.365 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.BlogPost.BlogPostDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 17:11:48.377 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject) in 194.9183ms
+2025-05-23 17:11:48.379 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 17:11:48.381 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - 200 null application/json; charset=utf-8 223.37ms
+2025-05-23 17:12:00.412 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:7004/api/admin/BlogPost/Delete?id=7 - null null
+2025-05-23 17:12:00.427 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Delete (API-FinalProject)'
+2025-05-23 17:12:00.433 +04:00 [INF] Route matched with {action = "Delete", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:12:00.489 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [t].[Id0], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [t].[CreatedDate0], [t].[Name]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id] AS [Id0], [b0].[CreatedDate] AS [CreatedDate0], [b0].[Name]
+    FROM [BlogPosts] AS [b]
+    INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+    WHERE [b].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [t].[Id] = [b1].[BlogPostId]
+ORDER BY [t].[Id], [t].[Id0]
+2025-05-23 17:12:00.539 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [BlogPostImgs]
+OUTPUT 1
+WHERE [Id] = @p0;
+DELETE FROM [BlogPostImgs]
+OUTPUT 1
+WHERE [Id] = @p1;
+DELETE FROM [BlogPosts]
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-05-23 17:12:00.549 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-23 17:12:00.552 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.Delete (API-FinalProject) in 117.1129ms
+2025-05-23 17:12:00.554 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Delete (API-FinalProject)'
+2025-05-23 17:12:00.555 +04:00 [INF] Request finished HTTP/2 DELETE https://localhost:7004/api/admin/BlogPost/Delete?id=7 - 200 null application/json; charset=utf-8 143.0727ms
+2025-05-23 17:12:02.703 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 17:12:02.712 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 8.9347ms
+2025-05-23 17:12:02.731 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 17:12:02.734 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 17:12:02.736 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 2.2782ms
+2025-05-23 17:12:02.741 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.055ms
+2025-05-23 17:12:02.785 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 17:12:02.803 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.0532ms
+2025-05-23 17:12:08.258 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - null null
+2025-05-23 17:12:08.262 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 17:12:08.263 +04:00 [INF] Route matched with {action = "GetAll", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:12:08.271 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [b0].[CreatedDate], [b0].[Name]
+FROM [BlogPosts] AS [b]
+INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [b].[Id] = [b1].[BlogPostId]
+ORDER BY [b].[Id], [b0].[Id]
+2025-05-23 17:12:08.275 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.BlogPost.BlogPostDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 17:12:08.277 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject) in 12.8856ms
+2025-05-23 17:12:08.279 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 17:12:08.280 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - 200 null application/json; charset=utf-8 22.0501ms
+2025-05-23 17:12:40.585 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=11 - null 0
+2025-05-23 17:12:40.592 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:12:40.601 +04:00 [INF] Route matched with {action = "DeleteImage", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteImage(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:12:40.620 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [t].[Id0], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [t].[CreatedDate0], [t].[Name]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id] AS [Id0], [b0].[CreatedDate] AS [CreatedDate0], [b0].[Name]
+    FROM [BlogPosts] AS [b]
+    INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+    WHERE [b].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [t].[Id] = [b1].[BlogPostId]
+ORDER BY [t].[Id], [t].[Id0]
+2025-05-23 17:12:40.624 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject) in 20.4413ms
+2025-05-23 17:12:40.625 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:12:40.627 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: File not found at path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\blogposts\https://localhost:7004/Uploads/blogposts/9676d8af-1caa-49f1-aa09-1203607a67d3.jpg
+   at Service.Services.FileService.Delete(String fileName, String folder) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\FileService.cs:line 41
+   at Service.Services.BlogPostService.DeleteImageAsync(Int32 blogPostId, Int32 blogPostImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\BlogPostService.cs:line 119
+   at API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage(Int32 blogPostId, Int32 blogPostImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\BlogPostController.cs:line 54
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-23 17:12:40.661 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=11 - 500 null text/plain; charset=utf-8 76.0455ms
+2025-05-23 17:25:24.889 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 17:25:25.032 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 17:25:25.033 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 17:25:25.076 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 17:25:25.078 +04:00 [INF] Hosting environment: Development
+2025-05-23 17:25:25.078 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 17:25:25.531 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 17:25:25.687 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 157.832ms
+2025-05-23 17:25:25.721 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 17:25:25.721 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 17:25:25.729 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 8.2247ms
+2025-05-23 17:25:25.758 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.1476ms
+2025-05-23 17:25:25.825 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 17:25:25.841 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.7097ms
+2025-05-23 17:25:36.392 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=11 - null 0
+2025-05-23 17:25:36.419 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:25:36.463 +04:00 [INF] Route matched with {action = "DeleteImage", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteImage(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:25:38.448 +04:00 [INF] Executed DbCommand (135ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [t].[Id0], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [t].[CreatedDate0], [t].[Name]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id] AS [Id0], [b0].[CreatedDate] AS [CreatedDate0], [b0].[Name]
+    FROM [BlogPosts] AS [b]
+    INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+    WHERE [b].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [t].[Id] = [b1].[BlogPostId]
+ORDER BY [t].[Id], [t].[Id0]
+2025-05-23 17:25:38.569 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject) in 2098.0405ms
+2025-05-23 17:25:38.573 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:25:38.578 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: File not found at path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\blogposts\https://localhost:7004/Uploads/blogposts/9676d8af-1caa-49f1-aa09-1203607a67d3.jpg
+   at Service.Services.FileService.Delete(String fileName, String folder) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\FileService.cs:line 41
+   at Service.Services.BlogPostService.DeleteImageAsync(Int32 blogPostId, Int32 blogPostImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\BlogPostService.cs:line 124
+   at API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage(Int32 blogPostId, Int32 blogPostImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\BlogPostController.cs:line 54
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-23 17:25:38.636 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=11 - 500 null text/plain; charset=utf-8 2243.5488ms
+2025-05-23 17:27:08.411 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - null null
+2025-05-23 17:27:08.418 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 17:27:08.424 +04:00 [INF] Route matched with {action = "GetAll", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:27:08.537 +04:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [b0].[CreatedDate], [b0].[Name]
+FROM [BlogPosts] AS [b]
+INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [b].[Id] = [b1].[BlogPostId]
+ORDER BY [b].[Id], [b0].[Id]
+2025-05-23 17:27:08.567 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.BlogPost.BlogPostDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 17:27:08.579 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject) in 152.3453ms
+2025-05-23 17:27:08.580 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 17:27:08.581 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - 200 null application/json; charset=utf-8 170.3736ms
+2025-05-23 17:27:41.273 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=9 - null 0
+2025-05-23 17:27:41.279 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:27:41.285 +04:00 [INF] Route matched with {action = "DeleteImage", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteImage(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:27:41.310 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [t].[Id0], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [t].[CreatedDate0], [t].[Name]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id] AS [Id0], [b0].[CreatedDate] AS [CreatedDate0], [b0].[Name]
+    FROM [BlogPosts] AS [b]
+    INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+    WHERE [b].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [t].[Id] = [b1].[BlogPostId]
+ORDER BY [t].[Id], [t].[Id0]
+2025-05-23 17:27:41.315 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject) in 26.3313ms
+2025-05-23 17:27:41.316 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:27:41.317 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: File not found at path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\blogposts\https://localhost:7004/Uploads/blogposts/34e3ebc3-16f0-41bf-8a00-4c4a88d23152.jpg
+   at Service.Services.FileService.Delete(String fileName, String folder) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\FileService.cs:line 41
+   at Service.Services.BlogPostService.DeleteImageAsync(Int32 blogPostId, Int32 blogPostImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\BlogPostService.cs:line 124
+   at API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage(Int32 blogPostId, Int32 blogPostImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\BlogPostController.cs:line 54
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-23 17:27:41.323 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=9 - 500 null text/plain; charset=utf-8 49.3188ms
+2025-05-23 17:27:48.610 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=10 - null 0
+2025-05-23 17:27:48.622 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:27:48.624 +04:00 [INF] Route matched with {action = "DeleteImage", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteImage(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:27:48.628 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [t].[Id0], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [t].[CreatedDate0], [t].[Name]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id] AS [Id0], [b0].[CreatedDate] AS [CreatedDate0], [b0].[Name]
+    FROM [BlogPosts] AS [b]
+    INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+    WHERE [b].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [t].[Id] = [b1].[BlogPostId]
+ORDER BY [t].[Id], [t].[Id0]
+2025-05-23 17:27:48.633 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject) in 7.3819ms
+2025-05-23 17:27:48.635 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:27:48.636 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: File not found at path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\blogposts\https://localhost:7004/Uploads/blogposts/ecac8c19-e5da-4765-9704-3123ff3ec26a.jpg
+   at Service.Services.FileService.Delete(String fileName, String folder) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\FileService.cs:line 41
+   at Service.Services.BlogPostService.DeleteImageAsync(Int32 blogPostId, Int32 blogPostImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\BlogPostService.cs:line 124
+   at API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage(Int32 blogPostId, Int32 blogPostImageId) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\BlogPostController.cs:line 54
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-23 17:27:48.642 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=10 - 500 null text/plain; charset=utf-8 31.9026ms
+2025-05-23 17:32:55.215 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 17:32:55.323 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 17:32:55.324 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 17:32:55.360 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 17:32:55.361 +04:00 [INF] Hosting environment: Development
+2025-05-23 17:32:55.362 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 17:32:55.664 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger - null null
+2025-05-23 17:32:55.736 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger - 301 0 null 73.1812ms
+2025-05-23 17:32:55.739 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 17:32:55.784 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 45.1854ms
+2025-05-23 17:32:55.790 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/swagger-ui-bundle.js - null null
+2025-05-23 17:32:55.790 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-23 17:32:55.790 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/swagger-ui.css - null null
+2025-05-23 17:32:55.790 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 17:32:55.790 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 17:32:55.798 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 8.1103ms
+2025-05-23 17:32:55.806 +04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-05-23 17:32:55.806 +04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-05-23 17:32:55.808 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 17.9503ms
+2025-05-23 17:32:55.809 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/swagger-ui.css - 200 152034 text/css 19.5854ms
+2025-05-23 17:32:55.809 +04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-05-23 17:32:55.815 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 25.0455ms
+2025-05-23 17:32:55.821 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.9375ms
+2025-05-23 17:32:56.050 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 17:32:56.071 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.7129ms
+2025-05-23 17:32:56.078 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/favicon-32x32.png - null null
+2025-05-23 17:32:56.081 +04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-05-23 17:32:56.084 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/favicon-32x32.png - 200 628 image/png 5.9594ms
+2025-05-23 17:33:24.999 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=11 - null 0
+2025-05-23 17:33:25.036 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:33:25.068 +04:00 [INF] Route matched with {action = "DeleteImage", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteImage(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:33:26.823 +04:00 [INF] Executed DbCommand (61ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [t].[Id0], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [t].[CreatedDate0], [t].[Name]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id] AS [Id0], [b0].[CreatedDate] AS [CreatedDate0], [b0].[Name]
+    FROM [BlogPosts] AS [b]
+    INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+    WHERE [b].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [t].[Id] = [b1].[BlogPostId]
+ORDER BY [t].[Id], [t].[Id0]
+2025-05-23 17:33:27.182 +04:00 [INF] Executed DbCommand (42ms) [Parameters=[@p0='?' (DbType = Int32), @p6='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [BlogPostImgs]
+OUTPUT 1
+WHERE [Id] = @p0;
+UPDATE [BlogPosts] SET [BlogCategoryId] = @p1, [CreatedDate] = @p2, [Description] = @p3, [HighlightText] = @p4, [Title] = @p5
+OUTPUT 1
+WHERE [Id] = @p6;
+2025-05-23 17:33:27.225 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-23 17:33:27.239 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject) in 2161.198ms
+2025-05-23 17:33:27.242 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:33:27.251 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=11 - 200 null application/json; charset=utf-8 2251.9521ms
+2025-05-23 17:33:31.531 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 17:33:31.539 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 8.0492ms
+2025-05-23 17:33:31.561 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 17:33:31.561 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 17:33:31.565 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 4.1014ms
+2025-05-23 17:33:31.574 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.7452ms
+2025-05-23 17:33:31.642 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 17:33:31.663 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.4897ms
+2025-05-23 17:33:40.559 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - null null
+2025-05-23 17:33:40.567 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 17:33:40.571 +04:00 [INF] Route matched with {action = "GetAll", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:33:40.660 +04:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [b0].[CreatedDate], [b0].[Name]
+FROM [BlogPosts] AS [b]
+INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [b].[Id] = [b1].[BlogPostId]
+ORDER BY [b].[Id], [b0].[Id]
+2025-05-23 17:33:40.677 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.BlogPost.BlogPostDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 17:33:40.682 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject) in 109.0731ms
+2025-05-23 17:33:40.683 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 17:33:40.684 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - 200 null application/json; charset=utf-8 125.0173ms
+2025-05-23 17:33:53.276 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=10 - null 0
+2025-05-23 17:33:53.281 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:33:53.283 +04:00 [INF] Route matched with {action = "DeleteImage", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteImage(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:33:53.315 +04:00 [INF] Executed DbCommand (11ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [t].[Id0], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [t].[CreatedDate0], [t].[Name]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id] AS [Id0], [b0].[CreatedDate] AS [CreatedDate0], [b0].[Name]
+    FROM [BlogPosts] AS [b]
+    INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+    WHERE [b].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [t].[Id] = [b1].[BlogPostId]
+ORDER BY [t].[Id], [t].[Id0]
+2025-05-23 17:33:53.331 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32), @p6='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [BlogPostImgs]
+OUTPUT 1
+WHERE [Id] = @p0;
+UPDATE [BlogPosts] SET [BlogCategoryId] = @p1, [CreatedDate] = @p2, [Description] = @p3, [HighlightText] = @p4, [Title] = @p5
+OUTPUT 1
+WHERE [Id] = @p6;
+2025-05-23 17:33:53.335 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-23 17:33:53.336 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject) in 50.7686ms
+2025-05-23 17:33:53.337 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:33:53.339 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=10 - 200 null application/json; charset=utf-8 62.8126ms
+2025-05-23 17:33:56.539 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=9 - null 0
+2025-05-23 17:33:56.543 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:33:56.544 +04:00 [INF] Route matched with {action = "DeleteImage", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteImage(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:33:56.550 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [t].[Id0], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [t].[CreatedDate0], [t].[Name]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id] AS [Id0], [b0].[CreatedDate] AS [CreatedDate0], [b0].[Name]
+    FROM [BlogPosts] AS [b]
+    INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+    WHERE [b].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [t].[Id] = [b1].[BlogPostId]
+ORDER BY [t].[Id], [t].[Id0]
+2025-05-23 17:33:56.555 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p6='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [BlogPostImgs]
+OUTPUT 1
+WHERE [Id] = @p0;
+UPDATE [BlogPosts] SET [BlogCategoryId] = @p1, [CreatedDate] = @p2, [Description] = @p3, [HighlightText] = @p4, [Title] = @p5
+OUTPUT 1
+WHERE [Id] = @p6;
+2025-05-23 17:33:56.559 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-23 17:33:56.561 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject) in 14.5239ms
+2025-05-23 17:33:56.562 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:33:56.563 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=5&blogPostImageId=9 - 200 null application/json; charset=utf-8 23.6892ms
+2025-05-23 17:33:58.519 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 17:33:58.524 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 4.9589ms
+2025-05-23 17:33:58.542 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 17:33:58.546 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 17:33:58.548 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.3939ms
+2025-05-23 17:33:58.550 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 4.5498ms
+2025-05-23 17:33:58.589 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 17:33:58.597 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.5926ms
+2025-05-23 17:34:03.113 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - null null
+2025-05-23 17:34:03.115 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 17:34:03.117 +04:00 [INF] Route matched with {action = "GetAll", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:34:03.124 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [b0].[CreatedDate], [b0].[Name]
+FROM [BlogPosts] AS [b]
+INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [b].[Id] = [b1].[BlogPostId]
+ORDER BY [b].[Id], [b0].[Id]
+2025-05-23 17:34:03.128 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.BlogPost.BlogPostDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 17:34:03.130 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject) in 11.6279ms
+2025-05-23 17:34:03.131 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 17:34:03.132 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - 200 null application/json; charset=utf-8 19.2711ms
+2025-05-23 17:36:06.876 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 17:36:07.029 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 17:36:07.030 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 17:36:07.065 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 17:36:07.066 +04:00 [INF] Hosting environment: Development
+2025-05-23 17:36:07.066 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 17:36:07.572 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 17:36:07.708 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 136.7289ms
+2025-05-23 17:36:07.715 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 17:36:07.715 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 17:36:07.731 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 15.9167ms
+2025-05-23 17:36:07.757 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.5212ms
+2025-05-23 17:36:07.797 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 17:36:07.818 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.5413ms
+2025-05-23 17:36:39.645 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/Create - multipart/form-data; boundary=----WebKitFormBoundary4q2ABBhe0zsalpuT 175069
+2025-05-23 17:36:39.671 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Create (API-FinalProject)'
+2025-05-23 17:36:39.695 +04:00 [INF] Route matched with {action = "Create", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.BlogPost.BlogPostCreateDto) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:36:41.439 +04:00 [INF] Executed DbCommand (49ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CreatedDate], [b].[Name]
+FROM [BlogCategories] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-23 17:36:41.717 +04:00 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [BlogPosts] ([BlogCategoryId], [CreatedDate], [Description], [HighlightText], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-05-23 17:36:41.865 +04:00 [INF] Executed DbCommand (63ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = Int32), @p9='?' (DbType = DateTime2), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = Int32), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p21='?' (DbType = Int32), @p16='?' (DbType = Int32), @p17='?' (DbType = DateTime2), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+MERGE [BlogPostImgs] USING (
+VALUES (@p0, @p1, @p2, @p3, 0),
+(@p4, @p5, @p6, @p7, 1),
+(@p8, @p9, @p10, @p11, 2),
+(@p12, @p13, @p14, @p15, 3)) AS i ([BlogPostId], [CreatedDate], [Image], [IsMain], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([BlogPostId], [CreatedDate], [Image], [IsMain])
+VALUES (i.[BlogPostId], i.[CreatedDate], i.[Image], i.[IsMain])
+OUTPUT INSERTED.[Id], i._Position;
+UPDATE [BlogPosts] SET [BlogCategoryId] = @p16, [CreatedDate] = @p17, [Description] = @p18, [HighlightText] = @p19, [Title] = @p20
+OUTPUT 1
+WHERE [Id] = @p21;
+2025-05-23 17:36:41.898 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 17:36:41.934 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.Create (API-FinalProject) in 2229.8174ms
+2025-05-23 17:36:41.937 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.Create (API-FinalProject)'
+2025-05-23 17:36:41.952 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/BlogPost/Create - 201 null text/plain; charset=utf-8 2306.85ms
+2025-05-23 17:36:46.495 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - null null
+2025-05-23 17:36:46.503 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 17:36:46.508 +04:00 [INF] Route matched with {action = "GetAll", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:36:46.690 +04:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [b0].[CreatedDate], [b0].[Name]
+FROM [BlogPosts] AS [b]
+INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [b].[Id] = [b1].[BlogPostId]
+ORDER BY [b].[Id], [b0].[Id]
+2025-05-23 17:36:46.720 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.BlogPost.BlogPostDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 17:36:46.727 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject) in 217.8164ms
+2025-05-23 17:36:46.728 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetAll (API-FinalProject)'
+2025-05-23 17:36:46.729 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/BlogPost/GetAll - 200 null application/json; charset=utf-8 234.7287ms
+2025-05-23 17:37:17.998 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=8&blogPostImageId=17 - null 0
+2025-05-23 17:37:18.005 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:37:18.010 +04:00 [INF] Route matched with {action = "DeleteImage", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteImage(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-05-23 17:37:18.082 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [t].[Id0], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [t].[CreatedDate0], [t].[Name]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id] AS [Id0], [b0].[CreatedDate] AS [CreatedDate0], [b0].[Name]
+    FROM [BlogPosts] AS [b]
+    INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+    WHERE [b].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [t].[Id] = [b1].[BlogPostId]
+ORDER BY [t].[Id], [t].[Id0]
+2025-05-23 17:37:18.111 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p6='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [BlogPostImgs]
+OUTPUT 1
+WHERE [Id] = @p0;
+UPDATE [BlogPosts] SET [BlogCategoryId] = @p1, [CreatedDate] = @p2, [Description] = @p3, [HighlightText] = @p4, [Title] = @p5
+OUTPUT 1
+WHERE [Id] = @p6;
+2025-05-23 17:37:18.122 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-23 17:37:18.126 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject) in 113.8629ms
+2025-05-23 17:37:18.127 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.DeleteImage (API-FinalProject)'
+2025-05-23 17:37:18.128 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/BlogPost/DeleteImage?blogPostId=8&blogPostImageId=17 - 200 null application/json; charset=utf-8 129.9756ms
+2025-05-23 17:37:21.543 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 17:37:21.553 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 9.6745ms
+2025-05-23 17:37:21.564 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 17:37:21.567 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 17:37:21.569 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 2.4878ms
+2025-05-23 17:37:21.574 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.4924ms
+2025-05-23 17:37:21.616 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 17:37:21.635 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.0909ms

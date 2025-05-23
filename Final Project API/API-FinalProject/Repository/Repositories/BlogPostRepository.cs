@@ -20,5 +20,10 @@ namespace Repository.Repositories
                 .Include(x => x.Images) 
                 .Include(x => x.BlogCategory); 
         }
+        public async Task<BlogPost> GetByIdWithIncludesAsync(int id)
+        {
+            return await _context.BlogPosts.Include(x => x.Images).Include(x => x.BlogCategory)
+                                           .FirstOrDefaultAsync(bp => bp.Id == id); 
+        }
     }
 }

@@ -1468,3 +1468,402 @@ ORDER BY [b].[Id], [b0].[Id]
 2025-05-23 13:24:06.555 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.1662ms
 2025-05-23 13:24:06.600 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
 2025-05-23 13:24:06.627 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.5901ms
+2025-05-23 14:13:00.672 +04:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-23 14:13:00.741 +04:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-05-23 14:13:00.744 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-23 14:13:00.745 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-05-23 14:13:00.803 +04:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-05-23 14:13:00.819 +04:00 [INF] Applying migration '20250523101235_CreatedCategoryTable'.
+2025-05-23 14:13:00.916 +04:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Image] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([Id])
+);
+2025-05-23 14:13:00.941 +04:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250523101235_CreatedCategoryTable', N'8.0.16');
+2025-05-23 14:32:48.418 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 14:32:48.666 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 14:32:48.668 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 14:32:48.726 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 14:32:48.728 +04:00 [INF] Hosting environment: Development
+2025-05-23 14:32:48.729 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 14:32:49.862 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 14:32:50.114 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 253.0678ms
+2025-05-23 14:32:50.151 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 14:32:50.157 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 14:32:50.162 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 11.4302ms
+2025-05-23 14:32:50.241 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.9845ms
+2025-05-23 14:32:50.421 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 14:32:50.447 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.6318ms
+2025-05-23 14:33:09.098 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Category/Create - multipart/form-data; boundary=----WebKitFormBoundarynCAndRtBBowwBSsO 33943
+2025-05-23 14:33:09.182 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:33:09.251 +04:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Category.CategoryCreateDto) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:33:11.365 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-23 14:33:11.414 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject) in 2151.8652ms
+2025-05-23 14:33:11.418 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:33:11.429 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Category/Create - 499 null application/problem+json; charset=utf-8 2331.5954ms
+2025-05-23 14:34:10.060 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 14:34:10.236 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 14:34:10.237 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 14:34:10.286 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 14:34:10.287 +04:00 [INF] Hosting environment: Development
+2025-05-23 14:34:10.288 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 14:34:10.637 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 14:34:10.789 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 152.3973ms
+2025-05-23 14:34:10.794 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 14:34:10.794 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 14:34:10.805 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 10.8975ms
+2025-05-23 14:34:10.835 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.0855ms
+2025-05-23 14:34:10.887 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 14:34:10.914 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.8646ms
+2025-05-23 14:34:26.937 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Category/Create - multipart/form-data; boundary=----WebKitFormBoundarymwBGwbsCaiGuLAcr 12651
+2025-05-23 14:34:27.006 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:34:27.069 +04:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Category.CategoryCreateDto) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:34:30.817 +04:00 [INF] Executed DbCommand (212ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 14:34:30.949 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 14:34:30.994 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject) in 3909.3503ms
+2025-05-23 14:34:30.998 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:34:31.014 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Category/Create - 201 null text/plain; charset=utf-8 4077.0719ms
+2025-05-23 14:34:41.502 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Category/Create - multipart/form-data; boundary=----WebKitFormBoundaryRnQasDF92JTkemAr 6866
+2025-05-23 14:34:41.511 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:34:41.513 +04:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Category.CategoryCreateDto) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:34:41.701 +04:00 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 14:34:41.707 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 14:34:41.712 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject) in 196.3323ms
+2025-05-23 14:34:41.714 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:34:41.718 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Category/Create - 201 null text/plain; charset=utf-8 215.8432ms
+2025-05-23 14:34:48.769 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Category/Create - multipart/form-data; boundary=----WebKitFormBoundaryHfPUM3rbazzO58b6 6866
+2025-05-23 14:34:48.776 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:34:48.778 +04:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Category.CategoryCreateDto) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:34:48.837 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 14:34:48.842 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 14:34:48.846 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject) in 64.9043ms
+2025-05-23 14:34:48.849 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:34:48.853 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Category/Create - 201 null text/plain; charset=utf-8 83.9854ms
+2025-05-23 14:35:17.763 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Category/Create - multipart/form-data; boundary=----WebKitFormBoundaryKhIBeZyCpPgFJG17 6868
+2025-05-23 14:35:17.768 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:35:17.770 +04:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Category.CategoryCreateDto) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:35:17.784 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 14:35:17.789 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 14:35:17.795 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject) in 23.3791ms
+2025-05-23 14:35:17.797 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:35:17.799 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Category/Create - 201 null text/plain; charset=utf-8 35.6742ms
+2025-05-23 14:35:23.576 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Category/Create - multipart/form-data; boundary=----WebKitFormBoundaryCFc4NV1KhttatA3a 6872
+2025-05-23 14:35:23.582 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:35:23.584 +04:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Category.CategoryCreateDto) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:35:23.599 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 14:35:23.603 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 14:35:23.607 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject) in 20.927ms
+2025-05-23 14:35:23.609 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:35:23.611 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Category/Create - 201 null text/plain; charset=utf-8 34.0395ms
+2025-05-23 14:35:30.030 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Category/Create - multipart/form-data; boundary=----WebKitFormBoundarycAyK5G9eRzrBAHaa 6869
+2025-05-23 14:35:30.033 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:35:30.035 +04:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Category.CategoryCreateDto) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:35:30.050 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 14:35:30.060 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 14:35:30.065 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject) in 27.2763ms
+2025-05-23 14:35:30.067 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:35:30.071 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Category/Create - 201 null text/plain; charset=utf-8 40.4754ms
+2025-05-23 14:35:47.704 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Category/Create - multipart/form-data; boundary=----WebKitFormBoundaryErOHsPn4XYrIEBGx 6866
+2025-05-23 14:35:47.720 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:35:47.724 +04:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Category.CategoryCreateDto) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:35:47.750 +04:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 14:35:47.758 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 14:35:47.761 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject) in 30.6062ms
+2025-05-23 14:35:47.766 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:35:47.769 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Category/Create - 201 null text/plain; charset=utf-8 64.8781ms
+2025-05-23 14:35:54.780 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Category/Create - multipart/form-data; boundary=----WebKitFormBoundarysnNt25DqOsh2syVn 6868
+2025-05-23 14:35:54.786 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:35:54.788 +04:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Category.CategoryCreateDto) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:35:54.804 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-23 14:35:54.809 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-23 14:35:54.813 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject) in 20.8039ms
+2025-05-23 14:35:54.815 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-23 14:35:54.817 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Category/Create - 201 null text/plain; charset=utf-8 36.1702ms
+2025-05-23 14:36:03.043 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-05-23 14:36:03.047 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-05-23 14:36:03.059 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:36:03.480 +04:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-05-23 14:36:03.517 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 14:36:03.531 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 468.4391ms
+2025-05-23 14:36:03.533 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-05-23 14:36:03.535 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 492.005ms
+2025-05-23 14:36:28.903 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/Category/GetById/6 - null null
+2025-05-23 14:36:28.909 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetById (API-FinalProject)'
+2025-05-23 14:36:28.920 +04:00 [INF] Route matched with {action = "GetById", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:36:29.114 +04:00 [INF] Executed DbCommand (36ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-05-23 14:36:29.125 +04:00 [INF] Executing OkObjectResult, writing value of type 'Service.DTO.Admin.Category.CategoryDto'.
+2025-05-23 14:36:29.127 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetById (API-FinalProject) in 203.7039ms
+2025-05-23 14:36:29.129 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetById (API-FinalProject)'
+2025-05-23 14:36:29.132 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/Category/GetById/6 - 200 null application/json; charset=utf-8 228.995ms
+2025-05-23 14:36:33.070 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/Category/GetById/666 - null null
+2025-05-23 14:36:33.074 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetById (API-FinalProject)'
+2025-05-23 14:36:33.075 +04:00 [INF] Route matched with {action = "GetById", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:36:33.089 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-05-23 14:36:33.094 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetById (API-FinalProject) in 17.3593ms
+2025-05-23 14:36:33.099 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetById (API-FinalProject)'
+2025-05-23 14:36:33.107 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: Category with ID 666 not found.
+   at Service.Services.CategoryService.GetByIdAsync(Int32 id) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\CategoryService.cs:line 69
+   at API_FinalProject.Controllers.Admin.CategoryController.GetById(Int32 id) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\CategoryController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-23 14:36:33.209 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/Category/GetById/666 - 500 null text/plain; charset=utf-8 139.4087ms
+2025-05-23 14:37:12.239 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7004/api/admin/Category/Edit/3 - multipart/form-data; boundary=----WebKitFormBoundaryAEpCQTJeXrcgXzFK 12656
+2025-05-23 14:37:12.244 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Edit (API-FinalProject)'
+2025-05-23 14:37:12.254 +04:00 [INF] Route matched with {action = "Edit", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32, Service.DTO.Admin.Category.CategoryEditDto) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:37:12.273 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-05-23 14:37:12.312 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Categories] SET [CreatedDate] = @p0, [Image] = @p1, [Name] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2025-05-23 14:37:12.321 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-05-23 14:37:12.324 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.Edit (API-FinalProject) in 63.1257ms
+2025-05-23 14:37:12.327 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Edit (API-FinalProject)'
+2025-05-23 14:37:12.328 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7004/api/admin/Category/Edit/3 - 200 0 null 89.2706ms
+2025-05-23 14:37:15.117 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 14:37:15.127 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 9.7964ms
+2025-05-23 14:37:15.151 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 14:37:15.151 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 14:37:15.158 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 6.1485ms
+2025-05-23 14:37:15.169 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.7877ms
+2025-05-23 14:37:15.226 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 14:37:15.254 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.7632ms
+2025-05-23 14:37:22.111 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-05-23 14:37:22.114 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-05-23 14:37:22.116 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:37:22.121 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-05-23 14:37:22.128 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 14:37:22.129 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 11.9972ms
+2025-05-23 14:37:22.131 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-05-23 14:37:22.134 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 22.4404ms
+2025-05-23 14:37:39.111 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7004/api/admin/Category/Edit/3 - multipart/form-data; boundary=----WebKitFormBoundaryUROT64Cc0MTRNHiV 33946
+2025-05-23 14:37:39.113 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Edit (API-FinalProject)'
+2025-05-23 14:37:39.115 +04:00 [INF] Route matched with {action = "Edit", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32, Service.DTO.Admin.Category.CategoryEditDto) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:37:39.137 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-05-23 14:37:39.149 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Categories] SET [CreatedDate] = @p0, [Image] = @p1, [Name] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2025-05-23 14:37:39.152 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-05-23 14:37:39.153 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.Edit (API-FinalProject) in 25.9733ms
+2025-05-23 14:37:39.154 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Edit (API-FinalProject)'
+2025-05-23 14:37:39.156 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7004/api/admin/Category/Edit/3 - 200 0 null 44.9612ms
+2025-05-23 14:37:41.757 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 14:37:41.763 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 6.4133ms
+2025-05-23 14:37:41.783 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 14:37:41.787 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 14:37:41.790 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 3.6377ms
+2025-05-23 14:37:41.793 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.4838ms
+2025-05-23 14:37:41.837 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 14:37:41.865 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.222ms
+2025-05-23 14:37:47.527 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-05-23 14:37:47.530 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-05-23 14:37:47.531 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:37:47.536 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-05-23 14:37:47.541 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 14:37:47.543 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 9.0552ms
+2025-05-23 14:37:47.543 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-05-23 14:37:47.544 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 17.4017ms
+2025-05-23 14:37:57.312 +04:00 [INF] Request starting HTTP/2 DELETE https://localhost:7004/api/admin/Category/Delete?id=3 - null null
+2025-05-23 14:37:57.314 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Delete (API-FinalProject)'
+2025-05-23 14:37:57.318 +04:00 [INF] Route matched with {action = "Delete", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:37:57.329 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-05-23 14:37:57.349 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Categories]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-05-23 14:37:57.357 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-05-23 14:37:57.361 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.Delete (API-FinalProject) in 40.8609ms
+2025-05-23 14:37:57.362 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Delete (API-FinalProject)'
+2025-05-23 14:37:57.365 +04:00 [INF] Request finished HTTP/2 DELETE https://localhost:7004/api/admin/Category/Delete?id=3 - 200 0 null 53.4ms
+2025-05-23 14:37:59.002 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 14:37:59.007 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 5.1767ms
+2025-05-23 14:37:59.024 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 14:37:59.024 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 14:37:59.029 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 4.5749ms
+2025-05-23 14:37:59.034 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.8803ms
+2025-05-23 14:37:59.080 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 14:37:59.096 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.4953ms
+2025-05-23 14:38:04.730 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-05-23 14:38:04.733 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-05-23 14:38:04.749 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-23 14:38:04.756 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-05-23 14:38:04.758 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-23 14:38:04.759 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 9.3651ms
+2025-05-23 14:38:04.761 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-05-23 14:38:04.763 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 32.8342ms
+2025-05-23 15:21:05.043 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 15:21:05.192 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 15:21:05.193 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 15:21:05.236 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 15:21:05.238 +04:00 [INF] Hosting environment: Development
+2025-05-23 15:21:05.239 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 15:21:05.872 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 15:21:06.125 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 255.0065ms
+2025-05-23 15:21:06.191 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 15:21:06.195 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 15:21:06.203 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 11.5609ms
+2025-05-23 15:21:06.244 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.0089ms
+2025-05-23 15:21:06.358 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 15:21:06.385 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.3697ms
+2025-05-23 15:22:00.602 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - multipart/form-data; boundary=----WebKitFormBoundarysG5LIYo6pAe1Z74m 35166
+2025-05-23 15:22:00.691 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:22:00.752 +04:00 [INF] Route matched with {action = "Create", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Brand.BrandCreateDto) on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-23 15:22:02.961 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject) in 2194.1971ms
+2025-05-23 15:22:02.968 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-23 15:22:02.980 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot create a DbSet for 'Brand' because this type is not included in the model for the context.
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.EntryWithoutDetectChanges(TEntity entity)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.AddAsync(TEntity entity, CancellationToken cancellationToken)
+   at Repository.Repositories.BaseRepository`1.CreateAsync(T entity) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Repository\Repositories\BaseRepository.cs:line 22
+   at Service.Services.BrandService.CreateAsync(BrandCreateDto model) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\BrandService.cs:line 34
+   at API_FinalProject.Controllers.Admin.BrandController.Create(BrandCreateDto request) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\BrandController.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-23 15:22:03.108 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - 500 null text/plain; charset=utf-8 2506.0201ms
+2025-05-23 15:23:16.803 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-23 15:23:16.987 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-23 15:23:16.988 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-23 15:23:17.051 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-23 15:23:17.053 +04:00 [INF] Hosting environment: Development
+2025-05-23 15:23:17.055 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-23 15:23:17.254 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-23 15:23:17.399 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 145.4074ms
+2025-05-23 15:23:17.431 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-23 15:23:17.432 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-23 15:23:17.443 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 10.2311ms
+2025-05-23 15:23:17.463 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.7374ms
+2025-05-23 15:23:17.645 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-23 15:23:17.680 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 34.8112ms
+2025-05-23 15:23:27.642 +04:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-23 15:23:27.719 +04:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-05-23 15:23:27.722 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-23 15:23:27.724 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-05-23 15:23:27.773 +04:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-05-23 15:23:27.788 +04:00 [INF] Applying migration '20250523112316_CreatedBrandTable'.
+2025-05-23 15:23:27.884 +04:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Brands] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Image] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Brands] PRIMARY KEY ([Id])
+);
+2025-05-23 15:23:27.894 +04:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250523112316_CreatedBrandTable', N'8.0.16');

@@ -5,6 +5,8 @@ using Service.DTO.Admin.AboutBannerImg;
 using Service.DTO.Admin.AskUsFrom;
 using Service.DTO.Admin.BlogCategory;
 using Service.DTO.Admin.BlogPost;
+using Service.DTO.Admin.Brand;
+using Service.DTO.Admin.Category;
 using Service.DTO.Admin.Instagram;
 using Service.DTO.Admin.LandingBanner;
 using Service.DTO.Admin.Sliders;
@@ -50,6 +52,14 @@ namespace Service.Helpers
             CreateMap<BlogPostImg, BlogPostImgDto>();
             CreateMap<BlogPostCreateDto, BlogPost>().ForMember(dest => dest.Images, opt => opt.Ignore());
             CreateMap<BlogPostEditDto, BlogPost>().ForMember(dest => dest.Images, opt => opt.Ignore());
+
+            CreateMap<Category, CategoryDto>();
+            CreateMap<CategoryCreateDto, Category>();
+            CreateMap<CategoryEditDto, Category>().ForMember(dest => dest.Image, opt => opt.Ignore());
+
+            CreateMap<Brand, BrandDto>();
+            CreateMap<BrandCreateDto, Brand>();
+            CreateMap<BrandEditDto, Brand>().ForMember(dest => dest.Image, opt => opt.Ignore());
         }
     }
 }

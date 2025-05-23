@@ -22,7 +22,7 @@ namespace Repository.Data
         public DbSet<BlogCategory> BlogCategories { get; set; } 
         public DbSet<BlogPost> BlogPosts { get; set; } 
         public DbSet<BlogPostImg> BlogPostImgs { get; set; } 
-
-        
+        public DbSet<Category> Categories { get; set; }       
+        public DbSet<Brand> Brands { get; set; }       
     }
 }
