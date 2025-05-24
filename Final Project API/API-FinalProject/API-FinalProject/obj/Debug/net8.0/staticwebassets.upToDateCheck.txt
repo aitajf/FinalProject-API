@@ -1,3 +1,4 @@
+wwwroot\confirm\mailconfirm.html
 wwwroot\Uploads\aboutbannerimgs\111687f0-d4cd-411a-9d1d-540a51b4eaf9.jpg
 wwwroot\Uploads\aboutbannerimgs\778e9c89-c05b-41ca-8a45-0acf885ed699.jpg
 wwwroot\Uploads\aboutbannerimgs\99dcde85-479f-4de5-9ba8-ce583c86daae.jpg

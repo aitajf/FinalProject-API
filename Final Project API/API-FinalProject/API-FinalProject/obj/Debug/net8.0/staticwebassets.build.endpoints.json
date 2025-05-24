@@ -5085,6 +5085,88 @@
           "Value": "sha256-WNlvBZm6++o6K7Zgl4TCUejP36a0zCQsG4k+d79BaRc="
         }
       ]
+    },
+    {
+      "Route": "confirm/mailconfirm.html",
+      "AssetFile": "confirm/mailconfirm.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W5lkqp14TZJt4apQS1iWZm8m+olU9kIamDuw2sMguRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 10:24:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W5lkqp14TZJt4apQS1iWZm8m+olU9kIamDuw2sMguRM="
+        }
+      ]
+    },
+    {
+      "Route": "confirm/mailconfirm.jisw1ocizv.html",
+      "AssetFile": "confirm/mailconfirm.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W5lkqp14TZJt4apQS1iWZm8m+olU9kIamDuw2sMguRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 10:24:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jisw1ocizv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W5lkqp14TZJt4apQS1iWZm8m+olU9kIamDuw2sMguRM="
+        },
+        {
+          "Name": "label",
+          "Value": "confirm/mailconfirm.html"
+        }
+      ]
     }
   ]
 }

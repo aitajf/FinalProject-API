@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Service.DTO.Account;
+using Service.Services;
 using Service.Services.Interfaces;
 
 namespace API_FinalProject.Controllers.Client
@@ -28,6 +29,14 @@ namespace API_FinalProject.Controllers.Client
         public async Task<IActionResult> Login([FromBody] LoginDto request)
         {
             return Ok(await _accountService.LoginAsync(request));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> VerifyEmail(string verifyEmail, string token)
+        {
+            if (VerifyEmail == null || token == null) return BadRequest("Something went wrong");
+            var response = await _accountService.VerifyEmailAsync(verifyEmail, token);           
+            return Redirect("https://localhost:7004/api/Account/Login");
         }
     }
 }

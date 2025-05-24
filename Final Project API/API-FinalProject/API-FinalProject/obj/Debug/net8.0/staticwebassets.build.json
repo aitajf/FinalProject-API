@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bosPX9L2PwMA46ghLVCc59V+BmY5bPvWZrUMU71I1jY=",
+  "Hash": "Tm/brJisYdtifvzWzcuhBMqZwbEo+suGvsSGIFxf+wc=",
   "Source": "API-FinalProject",
   "BasePath": "_content/API-FinalProject",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\confirm\\mailconfirm.html",
+      "SourceId": "API-FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\",
+      "BasePath": "_content/API-FinalProject",
+      "RelativePath": "confirm/mailconfirm#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jisw1ocizv",
+      "Integrity": "W5lkqp14TZJt4apQS1iWZm8m+olU9kIamDuw2sMguRM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\confirm\\mailconfirm.html"
+    },
     {
       "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\aboutbannerimgs\\111687f0-d4cd-411a-9d1d-540a51b4eaf9.jpg",
       "SourceId": "API-FinalProject",
@@ -1320,6 +1341,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "confirm/mailconfirm.html",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\confirm\\mailconfirm.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W5lkqp14TZJt4apQS1iWZm8m+olU9kIamDuw2sMguRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 10:24:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W5lkqp14TZJt4apQS1iWZm8m+olU9kIamDuw2sMguRM="
+        }
+      ]
+    },
+    {
+      "Route": "confirm/mailconfirm.jisw1ocizv.html",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\confirm\\mailconfirm.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W5lkqp14TZJt4apQS1iWZm8m+olU9kIamDuw2sMguRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 10:24:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jisw1ocizv"
+        },
+        {
+          "Name": "label",
+          "Value": "confirm/mailconfirm.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W5lkqp14TZJt4apQS1iWZm8m+olU9kIamDuw2sMguRM="
+        }
+      ]
+    },
     {
       "Route": "Uploads/aboutbannerimgs/111687f0-d4cd-411a-9d1d-540a51b4eaf9.g2g4b5ll6s.jpg",
       "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\aboutbannerimgs\\111687f0-d4cd-411a-9d1d-540a51b4eaf9.jpg",

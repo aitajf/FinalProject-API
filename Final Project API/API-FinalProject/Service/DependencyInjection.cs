@@ -22,7 +22,8 @@ namespace Service
             services.AddScoped<ICategoryService, CategoryService>();                   
             services.AddScoped<IBrandService, BrandService>();                   
             services.AddScoped<ITagService, TagService>();                   
-            services.AddScoped<IColorService, ColorService>();                   
+            services.AddScoped<IColorService, ColorService>();
+            services.AddScoped<IEmailService, EmailService>();
             return services;
         }
     }

@@ -249,6 +249,10 @@
       "PackagePath": "staticwebassets\\Uploads\\subscribeImgs\\ea4d6a48-a5c0-457a-a59e-72bd8487aca5.jpg"
     },
     {
+      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\confirm\\mailconfirm.html",
+      "PackagePath": "staticwebassets\\confirm\\mailconfirm.html"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API-FinalProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

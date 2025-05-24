@@ -1,7 +1,6 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Reflection;
 using System.Text;
-using API_FinalProject.Middlewares;
 using Domain.Entities;
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -15,6 +14,7 @@ using Serilog;
 using Service;
 using Service.DTO.Admin.AskUsFrom;
 using Service.Helpers;
+using Service.Helpers.Account;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -51,8 +51,11 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.Password.RequiredLength = 6;
     options.Password.RequiredUniqueChars = 1;
 
+    options.SignIn.RequireConfirmedEmail = true;
     options.User.RequireUniqueEmail = true;
 });
+
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("Smtp"));
 
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JWTSettings"));
 
