@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Repository.Repositories;
 using Repository.Repositories.Interface;
+using Repository.Repositories.Interfaces;
 
 namespace Repository
 {
@@ -21,7 +22,8 @@ namespace Repository
             services.AddScoped<IBrandRepository, BrandRepository>();
             services.AddScoped<ITagRepository, TagRepository>();
             services.AddScoped<IColorRepository, ColorRepository>();
-                    
+            services.AddScoped<IWishlistRepository, WishlistRepository>();
+            services.AddScoped<ISettingRepository, SettingRepository>();
             return services;
         }
     }

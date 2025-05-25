@@ -24,6 +24,10 @@ namespace Service
             services.AddScoped<ITagService, TagService>();                   
             services.AddScoped<IColorService, ColorService>();
             services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<ISendEmail, SendEmail>();
+            services.AddScoped<IWishlistService, WishlistService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<ISettingService, SettingService>();
             return services;
         }
     }

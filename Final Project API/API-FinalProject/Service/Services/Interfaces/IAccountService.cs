@@ -9,7 +9,7 @@ namespace Service.Services.Interfaces
         Task<RegisterResponse> RegisterAsync(RegisterDto model);
         Task<LoginResponse> LoginAsync(LoginDto model);
         Task CreateRoleAsync();
-        Task<string> VerifyEmailAsync(string VerifyEmail, string token);
+        Task<string> VerifyEmail(string VerifyEmail, string token);
         string CreateToken(AppUser user, IList<string> roles);
     }
 }

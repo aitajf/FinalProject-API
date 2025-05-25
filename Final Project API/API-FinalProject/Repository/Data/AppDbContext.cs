@@ -25,6 +25,15 @@ namespace Repository.Data
         public DbSet<Category> Categories { get; set; }       
         public DbSet<Brand> Brands { get; set; }       
         public DbSet<Tag> Tags { get; set; }       
-        public DbSet<Color> Colors { get; set; }       
+        public DbSet<Color> Colors { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
+        public DbSet<ProductTag> ProductTags { get; set; } 
+        public DbSet<ProductColor> ProductColors { get; set; }
+        public DbSet<Wishlist> Wishlists { get; set; }
+        public DbSet<WishlistProduct> WishlistProducts { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<BasketProduct> BasketProducts { get; set; }
+        public DbSet<Setting> Settings { get; set; }
     }
 }

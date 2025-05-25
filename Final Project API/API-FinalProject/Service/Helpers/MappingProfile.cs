@@ -13,6 +13,8 @@ using Service.DTO.Admin.LandingBanner;
 using Service.DTO.Admin.Sliders;
 using Service.DTO.Admin.SubscribeImg;
 using Service.DTO.Admin.Tag;
+using Service.DTOs.Admin.Settings;
+using Service.DTOs.UI.Wishlists;
 
 namespace Service.Helpers
 {
@@ -70,6 +72,15 @@ namespace Service.Helpers
             CreateMap<Color,ColorDto>();
             CreateMap<ColorCreateDto,Color>();
             CreateMap<ColorEditDto,Color>();
+
+            CreateMap<Wishlist, WishlistDto>();
+            CreateMap<WishlistDto, Wishlist>();
+            CreateMap<WishlistProduct, WishlistProductDto>();
+            CreateMap<WishlistProductDto, WishlistProduct>();
+
+            CreateMap<Setting, SettingDto>();
+            CreateMap<SettingCreateDto, Setting>();
+            CreateMap<SettingEditDto, Setting>();
         }
     }
 }

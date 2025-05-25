@@ -121,7 +121,7 @@ namespace Service.Services
                 return new RegisterResponse
                 {
                     Success = false,
-                    Errors = result.Errors.Select(m => m.Description)
+                    Message = result.Errors.Select(m => m.Description)
                 };
             }
             await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
@@ -135,10 +135,10 @@ namespace Service.Services
             template = template.Replace("{{link}}", url);
             _emailService.Send(user.Email, "Email confirmation", template);
 
-            return new RegisterResponse { Success = true, Errors = null };
+            return new RegisterResponse {Success = true, Message = new List<string>() {token}};
         }
 
-        public async Task<string> VerifyEmailAsync(string verifyEmail, string token)
+        public async Task<string> VerifyEmail(string verifyEmail, string token)
         {
             var appUser = await _userManager.FindByEmailAsync(verifyEmail);
             if (appUser == null) return "User does not exist.";

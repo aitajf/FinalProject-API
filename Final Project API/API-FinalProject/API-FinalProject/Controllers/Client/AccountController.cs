@@ -35,8 +35,9 @@ namespace API_FinalProject.Controllers.Client
         public async Task<IActionResult> VerifyEmail(string verifyEmail, string token)
         {
             if (VerifyEmail == null || token == null) return BadRequest("Something went wrong");
-            var response = await _accountService.VerifyEmailAsync(verifyEmail, token);           
-            return Redirect("https://localhost:7004/api/Account/Login");
+            var response = await _accountService.VerifyEmail(verifyEmail, token);
+            //return Redirect("https://localhost:7004/api/Account/Login");
+            return Ok(response);
         }
     }
 }
