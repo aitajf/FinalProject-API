@@ -16,8 +16,7 @@ namespace Service.DTO.Admin.LandingBanner
         {
             RuleFor(s => s.Title).NotEmpty().MaximumLength(100);
             RuleFor(s => s.Description).NotEmpty().MaximumLength(250);
-            RuleFor(m => m.Image).NotEmpty();
-            RuleFor(m => m.Image).Must(m => m.ContentType.Contains("image/"))
+            RuleFor(m => m.Image).Must(m => m == null || m.ContentType.Contains("image/"))
                                  .WithMessage("File must be image type");
         }
     }

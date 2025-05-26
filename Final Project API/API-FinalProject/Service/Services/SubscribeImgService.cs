@@ -53,9 +53,12 @@ namespace Service.Services
             if (existSubscribeImg == null) throw new KeyNotFoundException($"SubscribeImg with ID {id} not found.");
             if (model.Img != null)
             {
-                string oldFileName = Path.GetFileName(existSubscribeImg.Img);
-                _fileService.Delete(oldFileName, "subscribeImgs");
 
+                if (!string.IsNullOrEmpty(existSubscribeImg.Img))
+                {
+                    string oldFileName = Path.GetFileName(existSubscribeImg.Img);
+                    _fileService.Delete(oldFileName, "subscribeImgs");
+                }
                 string newImageUrl = await _fileService.UploadFileAsync(model.Img, "subscribeImgs");
                 existSubscribeImg.Img = newImageUrl;
             }

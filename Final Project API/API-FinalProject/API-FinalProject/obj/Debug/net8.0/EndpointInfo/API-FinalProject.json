@@ -1211,6 +1211,18 @@
         }
       }
     },
+    "/api/admin/LandingBanner/GetAll": {
+      "get": {
+        "tags": [
+          "LandingBanner"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/admin/LandingBanner/Create": {
       "post": {
         "tags": [

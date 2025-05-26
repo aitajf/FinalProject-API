@@ -48,13 +48,15 @@ namespace Service.Services
 
             if (model.Image != null)
             {
-                string oldFileName = Path.GetFileName(existCategory.Image);
-                _fileService.Delete(oldFileName, "categories");
+                if (!string.IsNullOrEmpty(existCategory.Image))
+                {
+                    string oldFileName = Path.GetFileName(existCategory.Image);
+                    _fileService.Delete(oldFileName, "categories");
+                }
                 string newImage = await _fileService.UploadFileAsync(model.Image, "categories");
                 existCategory.Image = newImage;
             }
             _mapper.Map(model, existCategory);
-            existCategory.Image = existCategory.Image;
             await _categoryRepository.EditAsync(existCategory);
         }
 

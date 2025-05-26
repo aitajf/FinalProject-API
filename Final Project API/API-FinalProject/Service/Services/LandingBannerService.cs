@@ -49,13 +49,15 @@ namespace Service.Services
 
             if (model.Image != null)
             {
-                string oldFileName = Path.GetFileName(existBanner.Image);
-                _fileService.Delete(oldFileName, "landingbanners");
+                if (!string.IsNullOrEmpty(existBanner.Image))
+                {
+                    string oldFileName = Path.GetFileName(existBanner.Image);
+                    _fileService.Delete(oldFileName, "landingbanners");
+                }                           
                 string newImage = await _fileService.UploadFileAsync(model.Image, "landingbanners");
                 existBanner.Image = newImage;
             }
             _mapper.Map(model, existBanner);
-            existBanner.Image = existBanner.Image;
             await _landingBannerRepository.EditAsync(existBanner);
         }
 

@@ -797,6 +797,16 @@
   },
   {
     "ContainingType": "API_FinalProject.Controllers.Admin.LandingBannerController",
+    "Method": "GetAll",
+    "RelativePath": "api/admin/LandingBanner/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.LandingBannerController",
     "Method": "GetById",
     "RelativePath": "api/admin/LandingBanner/GetById/{id}",
     "HttpMethod": "GET",

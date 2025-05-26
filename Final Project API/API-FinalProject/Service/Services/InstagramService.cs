@@ -49,9 +49,11 @@ namespace Service.Services
             if (existImg == null) throw new KeyNotFoundException($"Image with ID {id} not found.");
             if (model.Img != null)
             {
-                string oldFileName = Path.GetFileName(existImg.Img);
-                _fileService.Delete(oldFileName, "instagram");
-
+                if (!string.IsNullOrEmpty(existImg.Img))
+                {
+                    string oldFileName = Path.GetFileName(existImg.Img);
+                    _fileService.Delete(oldFileName, "instagram");
+                }
                 string newImageUrl = await _fileService.UploadFileAsync(model.Img, "instagram");
                 existImg.Img = newImageUrl;
             }

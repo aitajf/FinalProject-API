@@ -15,6 +15,12 @@ namespace API_FinalProject.Controllers.Admin
            _landingBannerService = landingBannerService;
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            return Ok(await _landingBannerService.GetAllAsync());
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] LandingBannerCreateDto request)
         {

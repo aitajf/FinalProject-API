@@ -43,20 +43,40 @@ namespace Service.Services
             await _sliderRepository.DeleteAsync(slider);
         }
 
+        //public async Task EditAsync(SliderEditDto model, int id)
+        //{
+        //    Slider existSlider = await _sliderRepository.GetByIdAsync(id);
+        //    if (existSlider == null) throw new KeyNotFoundException($"Slider with ID {id} not found.");
+
+        //    if (model.Image != null)
+        //    {
+        //        string oldFileName = Path.GetFileName(existSlider.Image);
+        //        _fileService.Delete(oldFileName, "sliders");
+        //        string newImage = await _fileService.UploadFileAsync(model.Image, "sliders");
+        //        existSlider.Image = newImage;
+        //    }
+
+        //    _mapper.Map(model, existSlider);
+        //    existSlider.Image = existSlider.Image; 
+        //    await _sliderRepository.EditAsync(existSlider);
+        //}
+
         public async Task EditAsync(SliderEditDto model, int id)
         {
-            Slider existSlider = await _sliderRepository.GetByIdAsync(id);
-            if (existSlider == null) throw new KeyNotFoundException($"Slider with ID {id} not found.");
-
+            var existSlider = await _sliderRepository.GetByIdAsync(id);
+            if (existSlider == null)
+                throw new KeyNotFoundException($"Slider with ID {id} not found.");
             if (model.Image != null)
             {
-                string oldFileName = Path.GetFileName(existSlider.Image);
-                _fileService.Delete(oldFileName, "sliders");
+                if (!string.IsNullOrEmpty(existSlider.Image))
+                {
+                    string oldFileName = Path.GetFileName(existSlider.Image);
+                    _fileService.Delete(oldFileName, "sliders");
+                }
                 string newImage = await _fileService.UploadFileAsync(model.Image, "sliders");
                 existSlider.Image = newImage;
             }
-            _mapper.Map(model, existSlider);
-            existSlider.Image = existSlider.Image; 
+            _mapper.Map(model, existSlider); 
             await _sliderRepository.EditAsync(existSlider);
         }
 

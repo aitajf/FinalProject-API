@@ -63,6 +63,7 @@ C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Pro
 C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\bin\Debug\net8.0\Serilog.Sinks.File.dll
 C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\bin\Debug\net8.0\Serilog.Sinks.Seq.dll
+C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
