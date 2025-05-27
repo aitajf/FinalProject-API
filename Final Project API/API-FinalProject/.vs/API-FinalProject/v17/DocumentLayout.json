@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\dto\\admin\\subscribeimg\\subscribeimgeditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\dto\\admin\\subscribeimg\\subscribeimgeditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\api-finalproject\\controllers\\admin\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|solutionrelative:api-finalproject\\controllers\\admin\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\services\\subscribeimgservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\subscribeimgservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\dto\\admin\\blogpost\\blogpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\dto\\admin\\blogpost\\blogpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SubscribeImgService.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\SubscribeImgService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\SubscribeImgService.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\SubscribeImgService.cs",
-              "RelativeToolTip": "Service\\Services\\SubscribeImgService.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAIAwwDcAAAAAAAAAAAAAAA==",
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Helpers\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Service\\Helpers\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Helpers\\MappingProfile.cs",
+              "RelativeToolTip": "Service\\Helpers\\MappingProfile.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAuwDcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T15:59:13.326Z",
+              "WhenOpened": "2025-05-27T15:08:45.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BlogPostDto.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\DTO\\Admin\\BlogPost\\BlogPostDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTO\\Admin\\BlogPost\\BlogPostDto.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\DTO\\Admin\\BlogPost\\BlogPostDto.cs",
+              "RelativeToolTip": "Service\\DTO\\Admin\\BlogPost\\BlogPostDto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAtwBAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:02:09.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SubscribeImgEditDto.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\DTO\\Admin\\SubscribeImg\\SubscribeImgEditDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTO\\Admin\\SubscribeImg\\SubscribeImgEditDto.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\DTO\\Admin\\SubscribeImg\\SubscribeImgEditDto.cs",
-              "RelativeToolTip": "Service\\DTO\\Admin\\SubscribeImg\\SubscribeImgEditDto.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBAAAAAtAAAAAAAAAA==",
+              "Title": "BlogPostController.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Admin\\BlogPostController.cs",
+              "RelativeDocumentMoniker": "API-FinalProject\\Controllers\\Admin\\BlogPostController.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Admin\\BlogPostController.cs",
+              "RelativeToolTip": "API-FinalProject\\Controllers\\Admin\\BlogPostController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAADcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T15:57:41.183Z",
+              "WhenOpened": "2025-05-27T13:12:11.378Z",
               "EditorCaption": ""
             },
             {

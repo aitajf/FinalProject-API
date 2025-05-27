@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Domain.Entities;
+using Repository.Repositories;
 using Repository.Repositories.Interface;
 using Service.DTO.Admin.BlogCategory;
 using Service.DTO.Admin.Tag;
@@ -19,6 +20,8 @@ namespace Service.Services
         }
         public async Task CreateAsync(TagCreateDto model)
         {
+            var color = await _tagRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
+            if (color.ToList().Count > 0) throw new ArgumentException("This tag has already exist");
             await _tagRepository.CreateAsync(_mapper.Map<Tag>(model));
         }
 
@@ -32,6 +35,8 @@ namespace Service.Services
 
         public async Task EditAsync(TagEditDto model, int id)
         {
+            var color = await _tagRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
+            if (color.ToList().Count > 0) throw new ArgumentException("This tag has already exist");
             var tag = await _tagRepository.GetByIdAsync(id);
             if (tag == null) throw new KeyNotFoundException($"Tag with ID {id} not found.");
             _mapper.Map(model, tag);

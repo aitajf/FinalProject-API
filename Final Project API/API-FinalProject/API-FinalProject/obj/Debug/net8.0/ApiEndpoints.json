@@ -202,7 +202,7 @@
   {
     "ContainingType": "API_FinalProject.Controllers.Admin.BlogCategoryController",
     "Method": "Edit",
-    "RelativePath": "api/admin/BlogCategory/Edit",
+    "RelativePath": "api/admin/BlogCategory/Edit/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -210,7 +210,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "model",
@@ -301,20 +301,20 @@
   {
     "ContainingType": "API_FinalProject.Controllers.Admin.BlogPostController",
     "Method": "DeleteImage",
-    "RelativePath": "api/admin/BlogPost/DeleteImage",
-    "HttpMethod": "POST",
+    "RelativePath": "api/admin/BlogPost/DeleteImage/DeleteImage/{blogPostId}/{blogPostImageId}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "blogPostId",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "blogPostImageId",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -332,7 +332,7 @@
   {
     "ContainingType": "API_FinalProject.Controllers.Admin.BlogPostController",
     "Method": "GetById",
-    "RelativePath": "api/admin/BlogPost/GetById",
+    "RelativePath": "api/admin/BlogPost/GetById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -340,7 +340,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -1113,7 +1113,7 @@
   {
     "ContainingType": "API_FinalProject.Controllers.Admin.TagController",
     "Method": "Edit",
-    "RelativePath": "api/admin/Tag/Edit",
+    "RelativePath": "api/admin/Tag/Edit/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -1121,7 +1121,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "model",

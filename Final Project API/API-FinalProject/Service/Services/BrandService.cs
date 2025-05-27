@@ -54,13 +54,15 @@ namespace Service.Services
 
             if (model.Image != null)
             {
-                string oldFileName = Path.GetFileName(brand.Image);
-                _fileService.Delete(oldFileName, "brands");
+                if (!string.IsNullOrEmpty(brand.Image))
+                {
+                    string oldFileName = Path.GetFileName(brand.Image);
+                    _fileService.Delete(oldFileName, "brands");
+                }
                 string newImage = await _fileService.UploadFileAsync(model.Image, "brands");
                 brand.Image = newImage;
             }
             _mapper.Map(model, brand);
-            brand.Image = brand.Image;
             await _brandRepository.EditAsync(brand);
         }
 

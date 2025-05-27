@@ -36,8 +36,8 @@ namespace API_FinalProject.Controllers.Admin
             return Ok(category);
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Edit([FromQuery] int id, [FromBody] TagEditDto model)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Edit([FromRoute] int id, [FromBody] TagEditDto model)
         {
             await _tagService.EditAsync(model, id);
             return Ok();

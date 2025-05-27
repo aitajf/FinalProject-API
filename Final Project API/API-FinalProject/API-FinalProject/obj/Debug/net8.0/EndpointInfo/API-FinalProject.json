@@ -370,7 +370,7 @@
         }
       }
     },
-    "/api/admin/BlogCategory/Edit": {
+    "/api/admin/BlogCategory/Edit/{id}": {
       "put": {
         "tags": [
           "BlogCategory"
@@ -378,7 +378,8 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -597,7 +598,7 @@
         }
       }
     },
-    "/api/admin/BlogPost/GetById": {
+    "/api/admin/BlogPost/GetById/{id}": {
       "get": {
         "tags": [
           "BlogPost"
@@ -605,7 +606,8 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -619,15 +621,16 @@
         }
       }
     },
-    "/api/admin/BlogPost/DeleteImage": {
-      "post": {
+    "/api/admin/BlogPost/DeleteImage/DeleteImage/{blogPostId}/{blogPostImageId}": {
+      "delete": {
         "tags": [
           "BlogPost"
         ],
         "parameters": [
           {
             "name": "blogPostId",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -635,7 +638,8 @@
           },
           {
             "name": "blogPostImageId",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -1876,7 +1880,7 @@
         }
       }
     },
-    "/api/admin/Tag/Edit": {
+    "/api/admin/Tag/Edit/{id}": {
       "put": {
         "tags": [
           "Tag"
@@ -1884,7 +1888,8 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"

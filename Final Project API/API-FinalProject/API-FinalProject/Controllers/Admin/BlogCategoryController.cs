@@ -35,8 +35,8 @@ namespace API_FinalProject.Controllers.Admin
             return CreatedAtAction(nameof(Create), "Created success.");
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Edit([FromQuery] int id, [FromBody] BlogCategoryEditDto model)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Edit([FromRoute] int id, [FromBody] BlogCategoryEditDto model)
         {
             await _blogCategoryService.EditAsync(model, id);
             return Ok();

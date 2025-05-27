@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Domain.Entities;
+using Repository.Repositories;
 using Repository.Repositories.Interface;
 using Service.DTO.Admin.Category;
 using Service.Services.Interfaces;
@@ -22,6 +23,8 @@ namespace Service.Services
         }
         public async Task CreateAsync(CategoryCreateDto model)
         {
+            var categoryExists = await _categoryRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
+            if (categoryExists.ToList().Count > 0) throw new ArgumentException("This category has already exist");
             string imageUrl = await _fileService.UploadFileAsync(model.Image, "categories");
             Category category = _mapper.Map<Category>(model);
             category.Image = imageUrl;
@@ -43,6 +46,8 @@ namespace Service.Services
         
         public async Task EditAsync(CategoryEditDto model, int id)
         {
+            var category = await _categoryRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
+            if (category.ToList().Count > 0) throw new ArgumentException("This category has already exist");
             Category existCategory = await _categoryRepository.GetByIdAsync(id);
             if (existCategory == null) throw new KeyNotFoundException($"Category with ID {id} not found.");
 

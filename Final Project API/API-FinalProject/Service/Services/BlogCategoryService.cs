@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using Domain.Entities;
+using Repository.Repositories;
 using Repository.Repositories.Interface;
 using Service.DTO.Admin.BlogCategory;
 using Service.Services.Interfaces;
@@ -23,6 +24,8 @@ namespace Service.Services
         }
         public async Task CreateAsync(BlogCategoryCreateDto model)
         {
+            var category = await _blogCategoryRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
+            if (category.ToList().Count > 0) throw new ArgumentException("This Category has already exist");
             await _blogCategoryRepository.CreateAsync(_mapper.Map<BlogCategory>(model));
         }
 
@@ -36,6 +39,8 @@ namespace Service.Services
 
         public async Task EditAsync(BlogCategoryEditDto model, int id)
         {
+            var category = await _blogCategoryRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
+            if (category.ToList().Count > 0) throw new ArgumentException("This color has already exist");
             var existingCategory = await _blogCategoryRepository.GetByIdAsync(id);
             if (existingCategory == null) throw new KeyNotFoundException($"Category with ID {id} not found.");
             _mapper.Map(model, existingCategory);

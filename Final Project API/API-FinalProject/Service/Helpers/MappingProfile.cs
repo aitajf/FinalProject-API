@@ -51,11 +51,11 @@ namespace Service.Helpers
             CreateMap<BlogCategoryCreateDto, BlogCategory>();
             CreateMap<BlogCategoryEditDto, BlogCategory>();
 
-            CreateMap<BlogPost, BlogPostDto>() .ForMember(dest => dest.Images,
-                opt => opt.MapFrom(src => src.Images.Select(img => img.Image).ToList()));
-            CreateMap<BlogPostImg, BlogPostImgDto>();
+            CreateMap<BlogPost, BlogPostDto>().ForMember(dest => dest.Images, opt => opt.MapFrom(src => src.Images)); 
+            CreateMap<BlogPostImg, BlogPostImgDto>(); 
             CreateMap<BlogPostCreateDto, BlogPost>().ForMember(dest => dest.Images, opt => opt.Ignore());
             CreateMap<BlogPostEditDto, BlogPost>().ForMember(dest => dest.Images, opt => opt.Ignore());
+
 
             CreateMap<Category,CategoryDto>();
             CreateMap<CategoryCreateDto,Category>();
