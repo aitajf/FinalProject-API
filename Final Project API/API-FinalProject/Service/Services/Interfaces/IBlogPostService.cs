@@ -15,6 +15,6 @@ namespace Service.Services.Interfaces
         Task<IEnumerable<BlogPostDto>> GetAllAsync();
         Task<BlogPostDto> GetByIdAsync(int id);
 
-        Task DeleteImageAsync(int productId, int productImageId);
+        Task<bool> DeleteImageAsync(int productId, int productImageId);
     }
 }

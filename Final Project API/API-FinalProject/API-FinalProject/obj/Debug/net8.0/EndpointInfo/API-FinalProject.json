@@ -494,76 +494,6 @@
         }
       }
     },
-    "/api/admin/BlogPost/Update": {
-      "put": {
-        "tags": [
-          "BlogPost"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "Title": {
-                    "type": "string"
-                  },
-                  "Description": {
-                    "type": "string"
-                  },
-                  "HighlightText": {
-                    "type": "string"
-                  },
-                  "BlogCategoryId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Images": {
-                    "type": "array",
-                    "items": {
-                      "type": "string",
-                      "format": "binary"
-                    }
-                  }
-                }
-              },
-              "encoding": {
-                "Title": {
-                  "style": "form"
-                },
-                "Description": {
-                  "style": "form"
-                },
-                "HighlightText": {
-                  "style": "form"
-                },
-                "BlogCategoryId": {
-                  "style": "form"
-                },
-                "Images": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/admin/BlogPost/Delete": {
       "delete": {
         "tags": [
@@ -614,6 +544,83 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/BlogPost/Edit": {
+      "put": {
+        "tags": [
+          "BlogPost"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Title": {
+                    "type": "string"
+                  },
+                  "Description": {
+                    "type": "string"
+                  },
+                  "HighlightText": {
+                    "type": "string"
+                  },
+                  "BlogCategoryId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Images": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  },
+                  "MainImageId": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "Title": {
+                  "style": "form"
+                },
+                "Description": {
+                  "style": "form"
+                },
+                "HighlightText": {
+                  "style": "form"
+                },
+                "BlogCategoryId": {
+                  "style": "form"
+                },
+                "Images": {
+                  "style": "form"
+                },
+                "MainImageId": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"

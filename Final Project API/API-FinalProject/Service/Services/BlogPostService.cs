@@ -31,14 +31,15 @@ namespace Service.Services
 
         public async Task CreateAsync(BlogPostCreateDto model)
         {
-
             var categoryExists = await _categoryRepository.GetByIdAsync(model.BlogCategoryId);
             if (categoryExists == null)
             {
                 throw new KeyNotFoundException($"Category with ID {model.BlogCategoryId} not found.");
             }
+
             var blogPost = _mapper.Map<BlogPost>(model);
             await _postRepository.CreateAsync(blogPost);
+
             if (model.Images != null && model.Images.Any())
             {
                 blogPost.Images = new List<BlogPostImg>();
@@ -48,9 +49,43 @@ namespace Service.Services
                     string imageUrl = await _fileService.UploadFileAsync(file, "blogposts");
                     blogPost.Images.Add(new BlogPostImg { Image = imageUrl, BlogPostId = blogPost.Id });
                 }
+
+                var firstImage = blogPost.Images.FirstOrDefault();
+                if (firstImage != null)
+                {
+                    firstImage.IsMain = true;
+                }
+
                 await _postRepository.EditAsync(blogPost);
             }
         }
+
+        //public async Task EditAsync(int id, BlogPostEditDto model)
+        //{
+        //    var blogPost = await _postRepository.GetByIdWithIncludesAsync(id);
+        //    if (blogPost == null) throw new KeyNotFoundException($"Blog post with ID {id} not found.");
+
+        //    var categoryExists = await _categoryRepository.GetByIdAsync(model.BlogCategoryId);
+        //    if (categoryExists == null) throw new KeyNotFoundException($"Category with ID {model.BlogCategoryId} not found.");
+
+        //    _mapper.Map(model, blogPost);
+        //    blogPost.Images ??= new List<BlogPostImg>();
+
+        //    if (model.Images != null && model.Images.Any())
+        //    {
+        //        foreach (var file in model.Images)
+        //        {
+        //            string imageUrl = await _fileService.UploadFileAsync(file, "blogposts");
+        //            blogPost.Images.Add(new BlogPostImg { Image = imageUrl, BlogPostId = blogPost.Id, IsMain = false });
+        //        }
+        //    }
+
+
+
+        //    await _postRepository.EditAsync(blogPost);
+        //}
+
+
 
         public async Task EditAsync(int id, BlogPostEditDto model)
         {
@@ -72,16 +107,14 @@ namespace Service.Services
                 }
             }
 
-            //if (!string.IsNullOrEmpty(model.MainImageUrl) && blogPost.Images.Any(img => img.ImageUrl == model.MainImageUrl))
-            //{
-            //    foreach (var img in blogPost.Images)
-            //    {
-            //        img.IsMain = img.ImageUrl == model.MainImageUrl;
-            //    }
-            //}
+            foreach (var img in blogPost.Images)
+            {
+                img.IsMain = img.Id == model.MainImageId;
+            }
 
             await _postRepository.EditAsync(blogPost);
         }
+
 
         public async Task DeleteAsync(int id)
         {
@@ -104,22 +137,53 @@ namespace Service.Services
             return _mapper.Map<BlogPostDto>(blogPost);
         }
 
-        public async Task DeleteImageAsync(int blogPostId, int blogPostImageId)
+        //public async Task DeleteImageAsync(int blogPostId, int blogPostImageId)
+        //{
+        //    var blogPost = await _postRepository.GetByIdWithIncludesAsync(blogPostId);
+        //    if (blogPost == null) throw new KeyNotFoundException("Blog post not found.");
+
+        //    var image = blogPost.Images.FirstOrDefault(i => i.Id == blogPostImageId);
+        //    if (image == null) throw new KeyNotFoundException("Image not found.");
+
+        //    string imageName = Path.GetFileName(image.Image);
+        //    string filePath = Path.Combine(_env.WebRootPath, "Uploads", "blogposts", imageName);
+
+        //    if (File.Exists(filePath))  _fileService.Delete(imageName, "blogposts");
+
+        //    blogPost.Images.Remove(image);
+        //    await _postRepository.EditAsync(blogPost);
+        //}
+
+        public async Task<bool> DeleteImageAsync(int blogPostId, int blogPostImageId)
         {
             var blogPost = await _postRepository.GetByIdWithIncludesAsync(blogPostId);
-            if (blogPost == null) throw new KeyNotFoundException("Blog post not found.");
+            if (blogPost == null) return false;
 
             var image = blogPost.Images.FirstOrDefault(i => i.Id == blogPostImageId);
-            if (image == null) throw new KeyNotFoundException("Image not found.");
+            if (image == null) return false;
 
             string imageName = Path.GetFileName(image.Image);
             string filePath = Path.Combine(_env.WebRootPath, "Uploads", "blogposts", imageName);
 
-            if (File.Exists(filePath))  _fileService.Delete(imageName, "blogposts");
+            if (File.Exists(filePath))
+            {
+               _fileService.Delete(imageName, "blogposts");
+            }
 
             blogPost.Images.Remove(image);
+
+            // Əgər əsas şəkil silinirsə, yeni birini təyin edirik
+            if (image.IsMain && blogPost.Images.Any())
+            {
+                blogPost.Images.First().IsMain = true;
+            }
+
             await _postRepository.EditAsync(blogPost);
+
+            return true; // Uğurlu silmə əməliyyatı
         }
+
+
     }
 }
 
