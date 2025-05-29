@@ -27,27 +27,11 @@ namespace FinalProject.Controllers.Admin
             return CreatedAtAction(nameof(Create), new { response = "Data successfully created" });
         }
 
-        //[HttpGet]
-        //public async Task<IActionResult> GetAll()
-        //{
-        //    return Ok(await _productService.GetAllAsync(null));
-        //}
-
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById([FromRoute] int id)
         {
             var product = await _productService.GetByIdAsync(id);
             if (product is null) return NotFound();
-            return Ok(product);
-        }
-
-        [HttpGet("{id}")]
-        public async Task<IActionResult> ProductDetail([FromRoute] int id)
-        {
-            var product = await _productService.DetailAsync(id);
-
-            if (product is null) return NotFound();
-
             return Ok(product);
         }
 
@@ -67,24 +51,7 @@ namespace FinalProject.Controllers.Admin
             return Ok();
         }
 
-        //[HttpGet]
-        //public async Task<IActionResult> GetPaginateDatas([FromQuery] int page = 1, [FromQuery] int take = 5)
-        //{
-        //    return Ok(await _productService.GetPaginateAsync(page, take));
-        //}
-
-
-
-
-        [HttpGet]
-        public async Task<IActionResult> SortBy([FromQuery] string sortKey, bool isDescending)
-        {
-            return Ok(await _productService.SortBy(sortKey));
-        }
-
-      
         [HttpPost]
-
         public async Task<IActionResult> DeleteImage(int productId, int productImageId)
         {
             await _productService.DeleteImageAsync(productId, productImageId);

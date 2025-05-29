@@ -1017,43 +1017,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FinalProject.Controllers.Admin.ProductController",
-    "Method": "ProductDetail",
-    "RelativePath": "api/admin/Product/ProductDetail/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FinalProject.Controllers.Admin.ProductController",
-    "Method": "SortBy",
-    "RelativePath": "api/admin/Product/SortBy",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "sortKey",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "isDescending",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "FinalProject.Controllers.Admin.SettingController",
     "Method": "Create",
     "RelativePath": "api/admin/Setting/Create",
@@ -1445,6 +1408,79 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.ProductController",
+    "Method": "Filter",
+    "RelativePath": "api/Product/Filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "colorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tagName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "brandName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.ProductController",
+    "Method": "GetAll",
+    "RelativePath": "api/Product/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.ProductController",
+    "Method": "ProductDetail",
+    "RelativePath": "api/Product/ProductDetail/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.ProductController",
+    "Method": "SearchByName",
+    "RelativePath": "api/Product/SearchByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

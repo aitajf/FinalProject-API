@@ -83,20 +83,13 @@ namespace Service.Helpers
             CreateMap<SettingCreateDto, Setting>();
             CreateMap<SettingEditDto, Setting>();
 
-      CreateMap<Product, ProductDto>()
-      .ForMember(d => d.Brand, opt => opt.MapFrom(s => s.Brand.Name))
-      .ForMember(d => d.Category, opt => opt.MapFrom(s => s.Category.Name))
-      .ForMember(d => d.Tags, opt => opt.MapFrom(s => s.ProductTags.Select(m => new TagDto
-      {
-          Id = m.Tag.Id,
-          Name = m.Tag.Name,
-      }).ToList()))
-      .ForMember(d => d.Colors, opt => opt.MapFrom(s => s.ProductColors.Select(m => new ColorDto
-      {
-          Id = m.Color.Id,
-          Name = m.Color.Name,
-      }).ToList()))
-      .ForMember(d => d.MainImage, opt => opt.MapFrom(s => s.ProductImages.FirstOrDefault(i => i.IsMain).Img));
+            CreateMap<Product, ProductDto>()
+             .ForMember(d => d.Brand, opt => opt.MapFrom(s => s.Brand.Name))
+             .ForMember(d => d.Category, opt => opt.MapFrom(s => s.Category.Name))
+             .ForMember(d => d.Tags, opt => opt.MapFrom(s => s.ProductTags.Select(m => m.Tag.Name).ToList())) 
+             .ForMember(d => d.Colors, opt => opt.MapFrom(s => s.ProductColors.Select(m => m.Color.Name).ToList())) 
+             .ForMember(d => d.MainImage, opt => opt.MapFrom(s => s.ProductImages.FirstOrDefault(i => i.IsMain).Img)); 
+
 
 
             CreateMap<ProductCreateDto, Product>();

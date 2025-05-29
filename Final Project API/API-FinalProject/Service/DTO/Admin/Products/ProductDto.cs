@@ -14,7 +14,7 @@ namespace Service.DTOs.Admin.Products
         public string Brand { get; set; }
         public string MainImage { get; set; }
         public string Category { get; set; }
-        public IEnumerable<TagDto> Tags { get; set; }
-        public IEnumerable<ColorDto> Colors { get; set; }
+        public IEnumerable<string> Tags { get; set; }
+        public IEnumerable<string> Colors { get; set; }
     }
 }

@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using Domain.Entities;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Repository.Repositories.Interface;
 using Repository.Repositories.Interfaces;
 using Service.DTOs.Admin.Products;
@@ -96,19 +98,88 @@ namespace Service.Services
             throw new NotImplementedException();
         }
 
-        public Task<ProductDetailDto> DetailAsync(int id)
+        public async Task<ProductDetailDto> DetailAsync(int id)
         {
-            throw new NotImplementedException();
+            ArgumentNullException.ThrowIfNull(id);
+
+            var product = await _productRepository.GetByIdWithIncludesAsync(id) ?? throw new KeyNotFoundException($"Data with ID{id} not found");
+
+            return _mapper.Map<ProductDetailDto>(product);
         }
 
-        public Task EditAsync(int id, ProductEditDto model)
+        public async Task EditAsync(int id, ProductEditDto model)
         {
-            throw new NotImplementedException();
+            ArgumentNullException.ThrowIfNull(nameof(id));
+
+            var product = await _productRepository.GetByIdWithIncludesAsync(id) ?? throw new KeyNotFoundException("Data not found");
+
+            //if (await _productRepository.ExistAsync(model.Name))
+            //{
+            //    throw new ExistException("Product with this name already exists");
+            //}
+
+            List<ProductImage> images = new();
+
+            foreach (var item in model.UploadImages)
+            {
+                string fileUrl = await _fileService.UploadFileAsync(item, "productimages");
+                images.Add(new ProductImage { Img = fileUrl });
+            }
+
+            if (images.Any())
+            {
+                images.FirstOrDefault().IsMain = true;
+            }
+
+            model.ProductImages = images;
+            foreach (var item in model.ColorIds)
+            {
+                if (!product.ProductColors.Any(pc => pc.ColorId == item))
+                {
+                    var color = await _colorRepository.GetByIdAsync(item);
+                    if (color == null)
+                    {
+                        throw new KeyNotFoundException("Color not found");
+                    }
+                    product.ProductColors.Add(new ProductColor { ColorId = item, Product = product });
+                }
+            }
+
+            var colorsToRemove = product.ProductColors.Where(pc => !model.ColorIds.Contains(pc.ColorId)).ToList();
+            foreach (var color in colorsToRemove)
+            {
+                product.ProductColors.Remove(color);
+            }
+
+            foreach (var item in model.TagIds)
+            {
+                if (!product.ProductTags.Any(pt => pt.TagId == item))
+                {
+                    var tag = await _tagRepository.GetByIdAsync(item);
+                    if (tag == null)
+                    {
+                        throw new KeyNotFoundException("Tag not found");
+                    }
+                    product.ProductTags.Add(new ProductTag { TagId = item, Product = product });
+                }
+            }
+
+            var tagsToRemove = product.ProductTags.Where(pt => !model.TagIds.Contains(pt.TagId)).ToList();
+            foreach (var tag in tagsToRemove)
+            {
+                product.ProductTags.Remove(tag);
+            }
+
+            _mapper.Map(model, product);
+            await _productRepository.EditAsync(product);
         }
 
-        public Task<IEnumerable<ProductDto>> FilterAsync(string categoryName, string colorName, string tagName, string brandName)
+
+
+        public async Task<IEnumerable<ProductDto>> FilterAsync(string categoryName, string colorName, string tagName, string brandName)
         {
-            throw new NotImplementedException();
+            return _mapper.Map<IEnumerable<ProductDto>>(await _productRepository.FilterAsync(categoryName, colorName, tagName, brandName));
+
         }
 
         public async Task<IEnumerable<ProductDto>> GetAllAsync()
@@ -118,17 +189,22 @@ namespace Service.Services
 
         public async Task<ProductDto> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            ArgumentNullException.ThrowIfNull(id);
+            var product = await _productRepository.GetByIdWithIncludesAsync(id) ?? throw new KeyNotFoundException($"Data with ID{id} not found");
+            return _mapper.Map<ProductDto>(product);
         }
 
-        public async Task<IEnumerable<ProductDto>> SearchByName(string name)
+        public async Task<IEnumerable<ProductDto>> SearchByCategoryAndName(string categoryOrProductName)
         {
-            throw new NotImplementedException();
+            var products = _productRepository.GetAllWithExpression(x =>
+                x.Name.ToLower().Trim().Contains(categoryOrProductName.ToLower().Trim()) 
+             || x.Category.Name.ToLower().Trim().Contains(categoryOrProductName.ToLower().Trim()));
+            return _mapper.Map<IEnumerable<ProductDto>>(products);
         }
 
-        public Task<IEnumerable<ProductDto>> SortBy(string sortKey)
+        public async Task<IEnumerable<ProductDto>> SortBy(string sortKey)
         {
-            throw new NotImplementedException();
+            return _mapper.Map<IEnumerable<ProductDto>>(await _productRepository.SortBy(sortKey));
         }
     }
 }

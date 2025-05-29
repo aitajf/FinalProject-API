@@ -1,5 +1,6 @@
 ﻿
 
+using System.Text.Json.Serialization;
 using Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Swashbuckle.AspNetCore.Annotations;
@@ -17,8 +18,8 @@ namespace Service.DTOs.Admin.Products
         public List<int> TagIds { get; set; }
         public List<int> ColorIds { get; set; }
 
-        [SwaggerSchema(ReadOnly = true)]
-        public ICollection<ProductImage> ProductImages { get; set; }
+        [JsonIgnore]
+        public ICollection<ProductImage> ProductImages { get; set; } = new List<ProductImage>();
         public List<IFormFile> UploadImages { get; set; }
     }
 }
