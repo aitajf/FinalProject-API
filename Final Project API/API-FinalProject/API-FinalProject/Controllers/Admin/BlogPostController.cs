@@ -48,13 +48,13 @@ namespace API_FinalProject.Controllers.Admin
             return Ok(new { message = "Blog post updated successfully!" });
         }
 
-        [HttpDelete("DeleteImage/{blogPostId}/{blogPostImageId}")]
-        public async Task<IActionResult> DeleteImage(int blogPostId, int blogPostImageId)
+        [HttpDelete]
+        public async Task<IActionResult> DeleteImage([FromQuery]int blogPostId,[FromQuery] int blogPostImageId)
         {
             bool isDeleted = await _blogPostService.DeleteImageAsync(blogPostId, blogPostImageId);
             if (!isDeleted)
             {
-               return NotFound(new { message = "Image not found or blog post does not exist." });
+                return NotFound(new { message = "Image not found or blog post does not exist." });
             }
 
             return Ok(new { message = "Image deleted successfully." });

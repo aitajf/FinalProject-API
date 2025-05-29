@@ -91,10 +91,8 @@ namespace Service.Services
         {
             var blogPost = await _postRepository.GetByIdWithIncludesAsync(id);
             if (blogPost == null) throw new KeyNotFoundException($"Blog post with ID {id} not found.");
-
             var categoryExists = await _categoryRepository.GetByIdAsync(model.BlogCategoryId);
             if (categoryExists == null) throw new KeyNotFoundException($"Category with ID {model.BlogCategoryId} not found.");
-
             _mapper.Map(model, blogPost);
             blogPost.Images ??= new List<BlogPostImg>();
 
@@ -106,12 +104,10 @@ namespace Service.Services
                     blogPost.Images.Add(new BlogPostImg { Image = imageUrl, BlogPostId = blogPost.Id, IsMain = false });
                 }
             }
-
             foreach (var img in blogPost.Images)
             {
                 img.IsMain = img.Id == model.MainImageId;
             }
-
             await _postRepository.EditAsync(blogPost);
         }
 
@@ -164,25 +160,18 @@ namespace Service.Services
 
             string imageName = Path.GetFileName(image.Image);
             string filePath = Path.Combine(_env.WebRootPath, "Uploads", "blogposts", imageName);
-
             if (File.Exists(filePath))
             {
                _fileService.Delete(imageName, "blogposts");
             }
-
             blogPost.Images.Remove(image);
-
-            // Əgər əsas şəkil silinirsə, yeni birini təyin edirik
             if (image.IsMain && blogPost.Images.Any())
             {
                 blogPost.Images.First().IsMain = true;
             }
-
             await _postRepository.EditAsync(blogPost);
-
-            return true; // Uğurlu silmə əməliyyatı
+            return true;
         }
-
 
     }
 }

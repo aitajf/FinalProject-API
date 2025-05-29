@@ -13,6 +13,7 @@ using Service.DTO.Admin.LandingBanner;
 using Service.DTO.Admin.Sliders;
 using Service.DTO.Admin.SubscribeImg;
 using Service.DTO.Admin.Tag;
+using Service.DTOs.Admin.Products;
 using Service.DTOs.Admin.Settings;
 using Service.DTOs.UI.Wishlists;
 
@@ -81,6 +82,39 @@ namespace Service.Helpers
             CreateMap<Setting, SettingDto>();
             CreateMap<SettingCreateDto, Setting>();
             CreateMap<SettingEditDto, Setting>();
+
+      CreateMap<Product, ProductDto>()
+      .ForMember(d => d.Brand, opt => opt.MapFrom(s => s.Brand.Name))
+      .ForMember(d => d.Category, opt => opt.MapFrom(s => s.Category.Name))
+      .ForMember(d => d.Tags, opt => opt.MapFrom(s => s.ProductTags.Select(m => new TagDto
+      {
+          Id = m.Tag.Id,
+          Name = m.Tag.Name,
+      }).ToList()))
+      .ForMember(d => d.Colors, opt => opt.MapFrom(s => s.ProductColors.Select(m => new ColorDto
+      {
+          Id = m.Color.Id,
+          Name = m.Color.Name,
+      }).ToList()))
+      .ForMember(d => d.MainImage, opt => opt.MapFrom(s => s.ProductImages.FirstOrDefault(i => i.IsMain).Img));
+
+
+            CreateMap<ProductCreateDto, Product>();
+            CreateMap<ProductImage, ProductImageDto>();
+            CreateMap<Product, ProductDetailDto>()
+              .ForMember(d => d.Brand, opt => opt.MapFrom(s => s.Brand.Name))
+              //.ForMember(d => d.MainImage, opt => opt.MapFrom(s => s.ProductImages.FirstOrDefault(m => m.IsMain).Name))              
+               .ForMember(d => d.Tags, opt => opt.MapFrom(s => s.ProductTags.Select(m => new TagDto
+               {
+                   Id = m.Tag.Id,
+                   Name = m.Tag.Name,
+               }).ToList()))
+                .ForMember(d => d.Colors, opt => opt.MapFrom(s => s.ProductColors.Select(m => new ColorDto
+                {
+                    Id = m.Color.Id,
+                    Name = m.Color.Name,
+                }).ToList()));
+            CreateMap<ProductEditDto, Product>();
         }
     }
 }
