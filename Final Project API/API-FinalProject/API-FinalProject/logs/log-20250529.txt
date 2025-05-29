@@ -550,3 +550,679 @@ Error Number:207,State:1,Class:16
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
 2025-05-29 15:05:08.261 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/Product/GetAll - 500 null text/plain; charset=utf-8 2255.8195ms
+2025-05-29 15:17:00.797 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-29 15:17:01.218 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-29 15:17:01.235 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-05-29 15:17:01.237 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-29 15:17:01.238 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-05-29 15:17:01.254 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-05-29 15:17:01.264 +04:00 [INF] Applying migration '20250525070942_CreatedProductTables'.
+2025-05-29 15:17:01.340 +04:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Baskets] (
+    [Id] int NOT NULL IDENTITY,
+    [AppUserId] nvarchar(450) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Baskets] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Baskets_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 15:17:01.347 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [Id] int NOT NULL IDENTITY,
+    [Stock] int NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [Price] decimal(18,2) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [BrandId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Products_Brands_BrandId] FOREIGN KEY ([BrandId]) REFERENCES [Brands] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 15:17:01.350 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Wishlists] (
+    [Id] int NOT NULL IDENTITY,
+    [AppUserId] nvarchar(450) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Wishlists] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Wishlists_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 15:17:01.354 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [BasketProducts] (
+    [Id] int NOT NULL IDENTITY,
+    [ProductId] int NOT NULL,
+    [Quantity] int NOT NULL,
+    [BasketId] int NOT NULL,
+    [ColorId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_BasketProducts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_BasketProducts_Baskets_BasketId] FOREIGN KEY ([BasketId]) REFERENCES [Baskets] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_BasketProducts_Colors_ColorId] FOREIGN KEY ([ColorId]) REFERENCES [Colors] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_BasketProducts_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 15:17:01.358 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [CategoryProduct] (
+    [CategoriesId] int NOT NULL,
+    [ProductsId] int NOT NULL,
+    CONSTRAINT [PK_CategoryProduct] PRIMARY KEY ([CategoriesId], [ProductsId]),
+    CONSTRAINT [FK_CategoryProduct_Categories_CategoriesId] FOREIGN KEY ([CategoriesId]) REFERENCES [Categories] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_CategoryProduct_Products_ProductsId] FOREIGN KEY ([ProductsId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 15:17:01.363 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ProductColors] (
+    [Id] int NOT NULL IDENTITY,
+    [ProductId] int NOT NULL,
+    [ColorId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_ProductColors] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ProductColors_Colors_ColorId] FOREIGN KEY ([ColorId]) REFERENCES [Colors] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_ProductColors_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 15:17:01.368 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ProductImages] (
+    [Id] int NOT NULL IDENTITY,
+    [Img] nvarchar(max) NOT NULL,
+    [IsMain] bit NOT NULL,
+    [ProductId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_ProductImages] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ProductImages_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 15:17:01.373 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ProductTags] (
+    [Id] int NOT NULL IDENTITY,
+    [ProductId] int NOT NULL,
+    [TagId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_ProductTags] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ProductTags_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_ProductTags_Tags_TagId] FOREIGN KEY ([TagId]) REFERENCES [Tags] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 15:17:01.375 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [WishlistProducts] (
+    [Id] int NOT NULL IDENTITY,
+    [ProductId] int NOT NULL,
+    [WishlistId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_WishlistProducts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_WishlistProducts_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_WishlistProducts_Wishlists_WishlistId] FOREIGN KEY ([WishlistId]) REFERENCES [Wishlists] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 15:17:01.383 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_BasketProducts_BasketId] ON [BasketProducts] ([BasketId]);
+2025-05-29 15:17:01.385 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_BasketProducts_ColorId] ON [BasketProducts] ([ColorId]);
+2025-05-29 15:17:01.387 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_BasketProducts_ProductId] ON [BasketProducts] ([ProductId]);
+2025-05-29 15:17:01.388 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Baskets_AppUserId] ON [Baskets] ([AppUserId]);
+2025-05-29 15:17:01.389 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_CategoryProduct_ProductsId] ON [CategoryProduct] ([ProductsId]);
+2025-05-29 15:17:01.391 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProductColors_ColorId] ON [ProductColors] ([ColorId]);
+2025-05-29 15:17:01.392 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProductColors_ProductId] ON [ProductColors] ([ProductId]);
+2025-05-29 15:17:01.394 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProductImages_ProductId] ON [ProductImages] ([ProductId]);
+2025-05-29 15:17:01.396 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_BrandId] ON [Products] ([BrandId]);
+2025-05-29 15:17:01.397 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProductTags_ProductId] ON [ProductTags] ([ProductId]);
+2025-05-29 15:17:01.399 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProductTags_TagId] ON [ProductTags] ([TagId]);
+2025-05-29 15:17:01.401 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_WishlistProducts_ProductId] ON [WishlistProducts] ([ProductId]);
+2025-05-29 15:17:03.390 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_WishlistProducts_WishlistId] ON [WishlistProducts] ([WishlistId]);
+2025-05-29 15:17:03.392 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Wishlists_AppUserId] ON [Wishlists] ([AppUserId]);
+2025-05-29 15:17:03.397 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250525070942_CreatedProductTables', N'8.0.16');
+2025-05-29 15:17:03.402 +04:00 [INF] Applying migration '20250525095049_CreatedSettingTables'.
+2025-05-29 15:17:03.434 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Settings] (
+    [Id] int NOT NULL IDENTITY,
+    [Key] nvarchar(max) NOT NULL,
+    [Value] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Settings] PRIMARY KEY ([Id])
+);
+2025-05-29 15:17:03.435 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250525095049_CreatedSettingTables', N'8.0.16');
+2025-05-29 15:38:03.278 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-29 15:38:03.558 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-29 15:38:03.560 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-29 15:38:03.617 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-29 15:38:03.618 +04:00 [INF] Hosting environment: Development
+2025-05-29 15:38:03.620 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-29 15:38:04.755 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-29 15:38:04.938 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 184.5046ms
+2025-05-29 15:38:04.954 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-29 15:38:04.958 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-29 15:38:04.960 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 6.1523ms
+2025-05-29 15:38:05.012 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.3062ms
+2025-05-29 15:38:05.109 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-29 15:38:05.141 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.9067ms
+2025-05-29 16:06:26.473 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-29 16:06:26.708 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-29 16:07:36.320 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-29 16:07:36.845 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-29 16:07:47.832 +04:00 [INF] Executed DbCommand (10,922ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [FinalProjectDb];
+2025-05-29 16:07:49.760 +04:00 [INF] Executed DbCommand (1,923ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [FinalProjectDb] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2025-05-29 16:07:49.786 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-29 16:07:49.856 +04:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2025-05-29 16:07:49.858 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-05-29 16:07:49.873 +04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-05-29 16:07:49.906 +04:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-05-29 16:07:49.921 +04:00 [INF] Applying migration '20250529120627_CreatedDatabase'.
+2025-05-29 16:07:50.036 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AboutBannerImgs] (
+    [Id] int NOT NULL IDENTITY,
+    [Img] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_AboutBannerImgs] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.041 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AskUsFroms] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [Message] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_AskUsFroms] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.045 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.050 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [FullName] nvarchar(max) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.055 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [BlogCategories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_BlogCategories] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.059 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Brands] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Image] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Brands] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.063 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Image] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.066 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Colors] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Colors] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.070 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Instagrams] (
+    [Id] int NOT NULL IDENTITY,
+    [Img] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Instagrams] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.075 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [LandingBanners] (
+    [Id] int NOT NULL IDENTITY,
+    [Image] nvarchar(max) NOT NULL,
+    [Title] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_LandingBanners] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.079 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Settings] (
+    [Id] int NOT NULL IDENTITY,
+    [Key] nvarchar(max) NOT NULL,
+    [Value] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Settings] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.083 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Sliders] (
+    [Id] int NOT NULL IDENTITY,
+    [Image] nvarchar(max) NOT NULL,
+    [Title] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Sliders] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.089 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [SubscribeImgs] (
+    [Id] int NOT NULL IDENTITY,
+    [Img] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_SubscribeImgs] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.092 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Tags] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Tags] PRIMARY KEY ([Id])
+);
+2025-05-29 16:07:50.098 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:50.101 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:50.110 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:50.116 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:50.121 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:50.126 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Baskets] (
+    [Id] int NOT NULL IDENTITY,
+    [AppUserId] nvarchar(450) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Baskets] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Baskets_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:52.662 +04:00 [INF] Executed DbCommand (2,536ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Wishlists] (
+    [Id] int NOT NULL IDENTITY,
+    [AppUserId] nvarchar(450) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Wishlists] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Wishlists_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:52.670 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [BlogPosts] (
+    [Id] int NOT NULL IDENTITY,
+    [Title] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [HighlightText] nvarchar(max) NOT NULL,
+    [BlogCategoryId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_BlogPosts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_BlogPosts_BlogCategories_BlogCategoryId] FOREIGN KEY ([BlogCategoryId]) REFERENCES [BlogCategories] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:52.679 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [Id] int NOT NULL IDENTITY,
+    [Stock] int NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [Price] decimal(18,2) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [BrandId] int NOT NULL,
+    [CategoryId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Products_Brands_BrandId] FOREIGN KEY ([BrandId]) REFERENCES [Brands] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Products_Categories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Categories] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:52.687 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [BlogPostImgs] (
+    [Id] int NOT NULL IDENTITY,
+    [Image] nvarchar(max) NOT NULL,
+    [IsMain] bit NOT NULL,
+    [BlogPostId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_BlogPostImgs] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_BlogPostImgs_BlogPosts_BlogPostId] FOREIGN KEY ([BlogPostId]) REFERENCES [BlogPosts] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:52.697 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [BasketProducts] (
+    [Id] int NOT NULL IDENTITY,
+    [ProductId] int NOT NULL,
+    [Quantity] int NOT NULL,
+    [BasketId] int NOT NULL,
+    [ColorId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_BasketProducts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_BasketProducts_Baskets_BasketId] FOREIGN KEY ([BasketId]) REFERENCES [Baskets] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_BasketProducts_Colors_ColorId] FOREIGN KEY ([ColorId]) REFERENCES [Colors] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_BasketProducts_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:52.789 +04:00 [INF] Executed DbCommand (92ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ProductColors] (
+    [Id] int NOT NULL IDENTITY,
+    [ProductId] int NOT NULL,
+    [ColorId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_ProductColors] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ProductColors_Colors_ColorId] FOREIGN KEY ([ColorId]) REFERENCES [Colors] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_ProductColors_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:55.930 +04:00 [INF] Executed DbCommand (3,141ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ProductImages] (
+    [Id] int NOT NULL IDENTITY,
+    [Img] nvarchar(max) NOT NULL,
+    [IsMain] bit NOT NULL,
+    [ProductId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_ProductImages] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ProductImages_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:55.950 +04:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ProductTags] (
+    [Id] int NOT NULL IDENTITY,
+    [ProductId] int NOT NULL,
+    [TagId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_ProductTags] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ProductTags_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_ProductTags_Tags_TagId] FOREIGN KEY ([TagId]) REFERENCES [Tags] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:55.956 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [WishlistProducts] (
+    [Id] int NOT NULL IDENTITY,
+    [ProductId] int NOT NULL,
+    [WishlistId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_WishlistProducts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_WishlistProducts_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_WishlistProducts_Wishlists_WishlistId] FOREIGN KEY ([WishlistId]) REFERENCES [Wishlists] ([Id]) ON DELETE CASCADE
+);
+2025-05-29 16:07:55.964 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+2025-05-29 16:07:55.969 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2025-05-29 16:07:55.971 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+2025-05-29 16:07:55.974 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+2025-05-29 16:07:55.975 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+2025-05-29 16:07:55.977 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+2025-05-29 16:07:55.981 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2025-05-29 16:07:55.983 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_BasketProducts_BasketId] ON [BasketProducts] ([BasketId]);
+2025-05-29 16:07:55.985 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_BasketProducts_ColorId] ON [BasketProducts] ([ColorId]);
+2025-05-29 16:07:55.990 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_BasketProducts_ProductId] ON [BasketProducts] ([ProductId]);
+2025-05-29 16:07:55.992 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Baskets_AppUserId] ON [Baskets] ([AppUserId]);
+2025-05-29 16:07:58.870 +04:00 [INF] Executed DbCommand (2,878ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_BlogPostImgs_BlogPostId] ON [BlogPostImgs] ([BlogPostId]);
+2025-05-29 16:07:58.876 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_BlogPosts_BlogCategoryId] ON [BlogPosts] ([BlogCategoryId]);
+2025-05-29 16:07:58.880 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProductColors_ColorId] ON [ProductColors] ([ColorId]);
+2025-05-29 16:07:58.883 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProductColors_ProductId] ON [ProductColors] ([ProductId]);
+2025-05-29 16:07:58.886 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProductImages_ProductId] ON [ProductImages] ([ProductId]);
+2025-05-29 16:07:58.887 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_BrandId] ON [Products] ([BrandId]);
+2025-05-29 16:07:58.889 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_CategoryId] ON [Products] ([CategoryId]);
+2025-05-29 16:07:58.891 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProductTags_ProductId] ON [ProductTags] ([ProductId]);
+2025-05-29 16:07:58.893 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProductTags_TagId] ON [ProductTags] ([TagId]);
+2025-05-29 16:07:58.894 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_WishlistProducts_ProductId] ON [WishlistProducts] ([ProductId]);
+2025-05-29 16:07:58.896 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_WishlistProducts_WishlistId] ON [WishlistProducts] ([WishlistId]);
+2025-05-29 16:07:58.898 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Wishlists_AppUserId] ON [Wishlists] ([AppUserId]);
+2025-05-29 16:07:58.928 +04:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250529120627_CreatedDatabase', N'8.0.16');
+2025-05-29 16:08:49.617 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-29 16:08:49.759 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-29 16:08:49.761 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-29 16:08:49.808 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-29 16:08:49.810 +04:00 [INF] Hosting environment: Development
+2025-05-29 16:08:49.811 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-29 16:08:50.273 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger - null null
+2025-05-29 16:08:50.427 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger - 301 0 null 154.912ms
+2025-05-29 16:08:50.441 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-29 16:08:50.506 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 64.8834ms
+2025-05-29 16:08:50.543 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/swagger-ui.css - null null
+2025-05-29 16:08:50.561 +04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-05-29 16:08:50.561 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/swagger-ui-bundle.js - null null
+2025-05-29 16:08:50.561 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-29 16:08:50.562 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-29 16:08:50.563 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-29 16:08:50.565 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/swagger-ui.css - 200 152034 text/css 22.7125ms
+2025-05-29 16:08:50.575 +04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-05-29 16:08:50.580 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 18.226ms
+2025-05-29 16:08:50.586 +04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-05-29 16:08:50.593 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 32.0103ms
+2025-05-29 16:08:50.600 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 38.6274ms
+2025-05-29 16:08:50.635 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.1052ms
+2025-05-29 16:08:51.121 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-29 16:08:51.166 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.1306ms
+2025-05-29 16:08:51.192 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/favicon-32x32.png - null null
+2025-05-29 16:08:51.197 +04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-05-29 16:08:51.203 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/favicon-32x32.png - 200 628 image/png 11.1655ms
+2025-05-29 16:08:58.725 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/LandingBanner/GetAll - null null
+2025-05-29 16:08:58.822 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.LandingBannerController.GetAll (API-FinalProject)'
+2025-05-29 16:08:58.864 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Client.LandingBannerController (API-FinalProject).
+2025-05-29 16:09:00.547 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-05-29 16:09:02.276 +04:00 [INF] Executed DbCommand (86ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-05-29 16:09:02.445 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-29 16:09:02.471 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.LandingBannerController.GetAll (API-FinalProject) in 3593.5035ms
+2025-05-29 16:09:02.476 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.LandingBannerController.GetAll (API-FinalProject)'
+2025-05-29 16:09:02.493 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/LandingBanner/GetAll - 200 null application/json; charset=utf-8 3767.6735ms
+2025-05-29 16:10:00.803 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-29 16:10:00.816 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 12.2403ms
+2025-05-29 16:10:00.846 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-29 16:10:00.851 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-29 16:10:00.858 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 7.3353ms
+2025-05-29 16:10:00.861 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.7134ms
+2025-05-29 16:10:01.027 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-29 16:10:01.088 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.0907ms
+2025-05-29 16:10:20.470 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - multipart/form-data; boundary=----WebKitFormBoundaryhH6ZfNEdWM7mKmDa 15311
+2025-05-29 16:10:20.492 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-29 16:10:20.518 +04:00 [INF] Route matched with {action = "Create", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Brand.BrandCreateDto) on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-05-29 16:10:21.152 +04:00 [INF] Executed DbCommand (39ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Brands] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-29 16:10:21.210 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-29 16:10:21.244 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject) in 723.5239ms
+2025-05-29 16:10:21.247 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.Create (API-FinalProject)'
+2025-05-29 16:10:21.249 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Brand/Create - 201 null text/plain; charset=utf-8 779.145ms
+2025-05-29 16:10:37.402 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Category/Create - multipart/form-data; boundary=----WebKitFormBoundaryHqD4zZmW0oBtpXMn 13428
+2025-05-29 16:10:37.412 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-29 16:10:37.423 +04:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Category.CategoryCreateDto) on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-05-29 16:10:37.685 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+WHERE LOWER([c].[Name]) = @__ToLower_0
+2025-05-29 16:10:37.729 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([CreatedDate], [Image], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-29 16:10:37.736 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-29 16:10:37.739 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject) in 312.1889ms
+2025-05-29 16:10:37.740 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.Create (API-FinalProject)'
+2025-05-29 16:10:37.743 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Category/Create - 201 null text/plain; charset=utf-8 341.2798ms
+2025-05-29 16:10:48.585 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Color/Create - application/json 20
+2025-05-29 16:10:48.590 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.ColorController.Create (API-FinalProject)'
+2025-05-29 16:10:48.600 +04:00 [INF] Route matched with {action = "Create", controller = "Color"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Color.ColorCreateDto) on controller API_FinalProject.Controllers.Admin.ColorController (API-FinalProject).
+2025-05-29 16:10:48.651 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Name]
+FROM [Colors] AS [c]
+WHERE LOWER([c].[Name]) = @__ToLower_0
+2025-05-29 16:10:48.696 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Colors] ([CreatedDate], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-29 16:10:48.704 +04:00 [INF] Executing CreatedAtActionResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-29 16:10:48.709 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.ColorController.Create (API-FinalProject) in 105.2709ms
+2025-05-29 16:10:48.712 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.ColorController.Create (API-FinalProject)'
+2025-05-29 16:10:48.713 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Color/Create - 201 null application/json; charset=utf-8 127.9697ms
+2025-05-29 16:11:05.639 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Tag/Create - application/json 20
+2025-05-29 16:11:05.642 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.TagController.Create (API-FinalProject)'
+2025-05-29 16:11:05.650 +04:00 [INF] Route matched with {action = "Create", controller = "Tag"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.Tag.TagCreateDto) on controller API_FinalProject.Controllers.Admin.TagController (API-FinalProject).
+2025-05-29 16:11:05.683 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedDate], [t].[Name]
+FROM [Tags] AS [t]
+WHERE LOWER([t].[Name]) = @__ToLower_0
+2025-05-29 16:11:05.722 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tags] ([CreatedDate], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-05-29 16:11:05.731 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-05-29 16:11:05.735 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.TagController.Create (API-FinalProject) in 79.695ms
+2025-05-29 16:11:05.737 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.TagController.Create (API-FinalProject)'
+2025-05-29 16:11:05.743 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Tag/Create - 201 null text/plain; charset=utf-8 103.5226ms
+2025-05-29 16:11:52.073 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/Product/Create - multipart/form-data; boundary=----WebKitFormBoundaryOZYBi2YErHhn1D1b 18380
+2025-05-29 16:11:52.077 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.Create (API-FinalProject)'
+2025-05-29 16:11:52.112 +04:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTOs.Admin.Products.ProductCreateDto) on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-05-29 16:11:52.177 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock]
+FROM [Products] AS [p]
+WHERE LOWER([p].[Name]) = @__ToLower_0
+2025-05-29 16:11:52.219 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name]
+FROM [Brands] AS [b]
+WHERE [b].[Id] = @__id_0
+2025-05-29 16:11:52.245 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-05-29 16:11:52.401 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([BrandId], [CategoryId], [CreatedDate], [Description], [Name], [Price], [Stock])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-05-29 16:11:52.417 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p7='?' (DbType = DateTime2), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImages] ([CreatedDate], [Img], [IsMain], [ProductId])
+OUTPUT INSERTED.[Id]
+VALUES (@p7, @p8, @p9, @p10);
+2025-05-29 16:11:52.443 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedDate], [t].[Name]
+FROM [Tags] AS [t]
+WHERE [t].[Id] = @__id_0
+2025-05-29 16:11:52.481 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductTags] ([CreatedDate], [ProductId], [TagId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-29 16:11:52.499 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[Name]
+FROM [Colors] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-05-29 16:11:52.523 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductColors] ([ColorId], [CreatedDate], [ProductId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-29 16:11:52.529 +04:00 [INF] Executing CreatedAtActionResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-29 16:11:52.531 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.Create (API-FinalProject) in 415.7805ms
+2025-05-29 16:11:52.533 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.Create (API-FinalProject)'
+2025-05-29 16:11:52.534 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/Product/Create - 201 null application/json; charset=utf-8 460.5901ms
+2025-05-29 16:11:56.818 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-29 16:11:56.831 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 13.0067ms
+2025-05-29 16:11:56.854 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-29 16:11:56.854 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-29 16:11:56.859 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 4.8089ms
+2025-05-29 16:11:56.867 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.1545ms
+2025-05-29 16:11:56.917 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-29 16:11:56.954 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.9863ms
