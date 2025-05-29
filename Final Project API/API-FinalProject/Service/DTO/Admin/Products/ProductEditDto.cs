@@ -17,7 +17,6 @@ namespace Service.DTOs.Admin.Products
         public int CategoryId { get; set; }
         public List<int> TagIds { get; set; }
         public List<int> ColorIds { get; set; }
-
         [JsonIgnore]
         public ICollection<ProductImage> ProductImages { get; set; } = new List<ProductImage>();
         public List<IFormFile> UploadImages { get; set; }

@@ -10,7 +10,7 @@ namespace Service.DTOs.Admin.Products
         public int Stock { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
-        public string? Description { get; set; }
+        public string Description { get; set; }
         public string Brand { get; set; }
         public string MainImage { get; set; }
         public string Category { get; set; }

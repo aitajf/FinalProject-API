@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Domain.Entities;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Repository.Repositories.Interface;
 using Repository.Repositories.Interfaces;
 using Service.DTOs.Admin.Products;
@@ -110,14 +102,11 @@ namespace Service.Services
         public async Task EditAsync(int id, ProductEditDto model)
         {
             ArgumentNullException.ThrowIfNull(nameof(id));
+            var exist = await _productRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
+            if (exist.ToList().Count > 0) throw new ArgumentException("This product has already exist");
 
             var product = await _productRepository.GetByIdWithIncludesAsync(id) ?? throw new KeyNotFoundException("Data not found");
-
-            //if (await _productRepository.ExistAsync(model.Name))
-            //{
-            //    throw new ExistException("Product with this name already exists");
-            //}
-
+            
             List<ProductImage> images = new();
 
             foreach (var item in model.UploadImages)
