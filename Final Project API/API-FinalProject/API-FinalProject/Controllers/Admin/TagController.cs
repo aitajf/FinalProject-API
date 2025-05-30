@@ -49,5 +49,12 @@ namespace API_FinalProject.Controllers.Admin
             await _tagService.DeleteAsync(id);
             return Ok();
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetPaginateDatas([FromQuery] int page, [FromQuery] int take)
+        {
+            return Ok(await _tagService.GetPaginateAsync(page, take));
+
+        }
     }
 }

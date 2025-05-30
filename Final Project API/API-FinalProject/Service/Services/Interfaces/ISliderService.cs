@@ -1,4 +1,6 @@
-﻿using Service.DTO.Admin.Sliders;
+﻿using Service.DTO.Admin.Category;
+using Service.DTO.Admin.Sliders;
+using Service.Helpers;
 
 namespace Service.Services.Interfaces
 {
@@ -9,5 +11,6 @@ namespace Service.Services.Interfaces
         Task DeleteAsync(int id);
         Task<IEnumerable<SliderDto>> GetAllAsync();
         Task<SliderDto> GetByIdAsync(int id);
+        Task<PaginationResponse<SliderDto>> GetPaginateAsync(int page, int take);
     }
 }

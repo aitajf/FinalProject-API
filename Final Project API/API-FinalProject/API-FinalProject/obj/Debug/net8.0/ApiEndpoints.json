@@ -848,6 +848,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_FinalProject.Controllers.Admin.LandingBannerController",
+    "Method": "GetPaginateDatas",
+    "RelativePath": "api/admin/LandingBanner/GetPaginateDatas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FinalProject.Controllers.Admin.ProductController",
     "Method": "Create",
     "RelativePath": "api/admin/Product/Create",
@@ -1237,6 +1258,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_FinalProject.Controllers.Admin.SliderController",
+    "Method": "GetPaginateDatas",
+    "RelativePath": "api/admin/Slider/GetPaginateDatas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_FinalProject.Controllers.Admin.SubscribeImgController",
     "Method": "Create",
     "RelativePath": "api/admin/SubscribeImg/Create",
@@ -1390,6 +1432,27 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.TagController",
+    "Method": "GetPaginateDatas",
+    "RelativePath": "api/admin/Tag/GetPaginateDatas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

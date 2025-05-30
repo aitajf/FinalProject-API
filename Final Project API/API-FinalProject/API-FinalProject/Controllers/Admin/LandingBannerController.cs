@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Service.DTO.Admin.LandingBanner;
 using Service.DTO.Admin.Sliders;
+using Service.Services;
 using Service.Services.Interfaces;
 
 namespace API_FinalProject.Controllers.Admin
@@ -47,6 +48,13 @@ namespace API_FinalProject.Controllers.Admin
         {
             await _landingBannerService.DeleteAsync(id);
             return Ok();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetPaginateDatas([FromQuery] int page, [FromQuery] int take)
+        {
+            return Ok(await _landingBannerService.GetPaginateAsync(page, take));
+
         }
     }
 }

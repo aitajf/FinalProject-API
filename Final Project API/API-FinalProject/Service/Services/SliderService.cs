@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using AutoMapper;
 using Domain.Entities;
+using Repository.Repositories;
 using Repository.Repositories.Interface;
+using Service.DTO.Admin.Category;
 using Service.DTO.Admin.Sliders;
+using Service.Helpers;
 using Service.Services.Interfaces;
 
 namespace Service.Services
@@ -43,24 +46,6 @@ namespace Service.Services
             await _sliderRepository.DeleteAsync(slider);
         }
 
-        //public async Task EditAsync(SliderEditDto model, int id)
-        //{
-        //    Slider existSlider = await _sliderRepository.GetByIdAsync(id);
-        //    if (existSlider == null) throw new KeyNotFoundException($"Slider with ID {id} not found.");
-
-        //    if (model.Image != null)
-        //    {
-        //        string oldFileName = Path.GetFileName(existSlider.Image);
-        //        _fileService.Delete(oldFileName, "sliders");
-        //        string newImage = await _fileService.UploadFileAsync(model.Image, "sliders");
-        //        existSlider.Image = newImage;
-        //    }
-
-        //    _mapper.Map(model, existSlider);
-        //    existSlider.Image = existSlider.Image; 
-        //    await _sliderRepository.EditAsync(existSlider);
-        //}
-
         public async Task EditAsync(SliderEditDto model, int id)
         {
             var existSlider = await _sliderRepository.GetByIdAsync(id);
@@ -90,6 +75,23 @@ namespace Service.Services
             var slider = await _sliderRepository.GetByIdAsync(id);
             if (slider == null) throw new KeyNotFoundException($"Slider with ID {id} not found.");
             return _mapper.Map<SliderDto>(slider);
+        }
+
+        public async Task<PaginationResponse<SliderDto>> GetPaginateAsync(int page, int take)
+        {
+            var products = _sliderRepository.GetAllForPagination(null);
+            int totalItemCount = products.Count();
+
+            var paginated = products
+                .Skip((page - 1) * take)
+                .Take(take)
+                .ToList();
+
+            var mappedDatas = _mapper.Map<IEnumerable<SliderDto>>(paginated);
+
+            int totalPage = (int)Math.Ceiling((decimal)totalItemCount / take);
+
+            return new PaginationResponse<SliderDto>(mappedDatas, totalPage, page, totalItemCount);
         }
     }
 }

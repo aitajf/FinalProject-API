@@ -1406,6 +1406,36 @@
         }
       }
     },
+    "/api/admin/LandingBanner/GetPaginateDatas": {
+      "get": {
+        "tags": [
+          "LandingBanner"
+        ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "take",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Product/GetAll": {
       "get": {
         "tags": [
@@ -2152,6 +2182,36 @@
         }
       }
     },
+    "/api/admin/Slider/GetPaginateDatas": {
+      "get": {
+        "tags": [
+          "Slider"
+        ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "take",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/admin/SubscribeImg/GetAll": {
       "get": {
         "tags": [
@@ -2400,6 +2460,36 @@
         "parameters": [
           {
             "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/Tag/GetPaginateDatas": {
+      "get": {
+        "tags": [
+          "Tag"
+        ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "take",
             "in": "query",
             "schema": {
               "type": "integer",

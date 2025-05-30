@@ -3,7 +3,9 @@ using Domain.Entities;
 using Repository.Repositories;
 using Repository.Repositories.Interface;
 using Service.DTO.Admin.BlogCategory;
+using Service.DTO.Admin.Category;
 using Service.DTO.Admin.Tag;
+using Service.Helpers;
 using Service.Services.Interfaces;
 
 namespace Service.Services
@@ -53,6 +55,23 @@ namespace Service.Services
             var tag = await _tagRepository.GetByIdAsync(id);
             if (tag == null) throw new KeyNotFoundException($"Tag with ID {id} not found.");
             return _mapper.Map<TagDto>(tag);
+        }
+
+        public async Task<PaginationResponse<TagDto>> GetPaginateAsync(int page, int take)
+        {
+            var products = _tagRepository.GetAllForPagination(null);
+            int totalItemCount = products.Count();
+
+            var paginated = products
+                .Skip((page - 1) * take)
+                .Take(take)
+                .ToList();
+
+            var mappedDatas = _mapper.Map<IEnumerable<TagDto>>(paginated);
+
+            int totalPage = (int)Math.Ceiling((decimal)totalItemCount / take);
+
+            return new PaginationResponse<TagDto>(mappedDatas, totalPage, page, totalItemCount);
         }
     }
 }

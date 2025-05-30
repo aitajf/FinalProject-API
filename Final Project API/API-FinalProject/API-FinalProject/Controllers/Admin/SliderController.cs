@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Service.DTO.Admin.Sliders;
+using Service.Services;
 using Service.Services.Interfaces;
 
 namespace API_FinalProject.Controllers.Admin
@@ -47,6 +48,12 @@ namespace API_FinalProject.Controllers.Admin
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _sliderService.GetAllAsync());
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetPaginateDatas([FromQuery] int page, [FromQuery] int take)
+        {
+            return Ok(await _sliderService.GetPaginateAsync(page, take));
         }
     }
 }

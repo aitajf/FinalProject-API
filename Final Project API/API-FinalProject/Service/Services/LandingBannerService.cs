@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
 using Domain.Entities;
+using Repository.Repositories;
 using Repository.Repositories.Interface;
+using Service.DTO.Admin.Category;
 using Service.DTO.Admin.LandingBanner;
 using Service.DTO.Admin.Sliders;
+using Service.Helpers;
 using Service.Services.Interfaces;
 
 namespace Service.Services
@@ -71,6 +74,23 @@ namespace Service.Services
             var slider = await _landingBannerRepository.GetByIdAsync(id);
             if (slider == null) throw new KeyNotFoundException($"Banner with ID {id} not found.");
             return _mapper.Map<LandingBannerDto>(slider);
+        }
+
+        public async Task<PaginationResponse<LandingBannerDto>> GetPaginateAsync(int page, int take)
+        {
+            var products = _landingBannerRepository.GetAllForPagination(null);
+            int totalItemCount = products.Count();
+
+            var paginated = products
+                .Skip((page - 1) * take)
+                .Take(take)
+                .ToList();
+
+            var mappedDatas = _mapper.Map<IEnumerable<LandingBannerDto>>(paginated);
+
+            int totalPage = (int)Math.Ceiling((decimal)totalItemCount / take);
+
+            return new PaginationResponse<LandingBannerDto>(mappedDatas, totalPage, page, totalItemCount);
         }
     }
 }

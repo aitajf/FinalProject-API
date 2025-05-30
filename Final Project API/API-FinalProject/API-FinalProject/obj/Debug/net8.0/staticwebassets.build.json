@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rsdS9ixzi3Q6869SaUehyRAAcgppCl21EvxAAn2IZ6g=",
+  "Hash": "2JT7cVfelzT9u6z7xDQJnDBLEUUtRX6BHZRJYhfBZAI=",
   "Source": "API-FinalProject",
   "BasePath": "_content/API-FinalProject",
   "Mode": "Default",
@@ -1550,6 +1550,48 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\instagram\\ef074ec3-b220-4289-b55b-887b426fd583.jpg"
     },
     {
+      "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\1de16651-1dd0-4526-9562-adadc61e56e0.jpg",
+      "SourceId": "API-FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\",
+      "BasePath": "_content/API-FinalProject",
+      "RelativePath": "Uploads/landingbanners/1de16651-1dd0-4526-9562-adadc61e56e0#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pgfql9vnp4",
+      "Integrity": "yXlg6VqYkUknjDUCo3H6oYYP+RHlt67pBFIc0Alsgn0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\landingbanners\\1de16651-1dd0-4526-9562-adadc61e56e0.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\21b7da2f-6ffe-44b6-8514-07f5b548ba8e.jpg",
+      "SourceId": "API-FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\",
+      "BasePath": "_content/API-FinalProject",
+      "RelativePath": "Uploads/landingbanners/21b7da2f-6ffe-44b6-8514-07f5b548ba8e#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8jzvckreo5",
+      "Integrity": "pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\landingbanners\\21b7da2f-6ffe-44b6-8514-07f5b548ba8e.jpg"
+    },
+    {
       "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\223721ce-9130-4147-8eb3-a903f18e0aef.jpg",
       "SourceId": "API-FinalProject",
       "SourceType": "Discovered",
@@ -1569,6 +1611,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\landingbanners\\223721ce-9130-4147-8eb3-a903f18e0aef.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\3127e086-5033-47c0-9090-1d6db32361dc.jpg",
+      "SourceId": "API-FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\",
+      "BasePath": "_content/API-FinalProject",
+      "RelativePath": "Uploads/landingbanners/3127e086-5033-47c0-9090-1d6db32361dc#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8jzvckreo5",
+      "Integrity": "pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\landingbanners\\3127e086-5033-47c0-9090-1d6db32361dc.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\32b64b04-c5d1-4254-88c0-93a62f7007ec.jpg",
+      "SourceId": "API-FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\",
+      "BasePath": "_content/API-FinalProject",
+      "RelativePath": "Uploads/landingbanners/32b64b04-c5d1-4254-88c0-93a62f7007ec#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3dy16afdjq",
+      "Integrity": "N8JLo11aNXMsKN6Q/CfONptDQGGWTkI/iNLoW32xFBs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\landingbanners\\32b64b04-c5d1-4254-88c0-93a62f7007ec.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\3ecfc277-64a7-4562-b054-dd6a88acc79d.jpg",
+      "SourceId": "API-FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\",
+      "BasePath": "_content/API-FinalProject",
+      "RelativePath": "Uploads/landingbanners/3ecfc277-64a7-4562-b054-dd6a88acc79d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qzs18i0wdc",
+      "Integrity": "+iZ9QSCgUqjnCClmLXot418HtK+kW3jq4Sk3RBsXsI0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\landingbanners\\3ecfc277-64a7-4562-b054-dd6a88acc79d.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\607999f7-1216-47c5-8ab5-8faaf04249e7.jpg",
+      "SourceId": "API-FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\",
+      "BasePath": "_content/API-FinalProject",
+      "RelativePath": "Uploads/landingbanners/607999f7-1216-47c5-8ab5-8faaf04249e7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zhsq0u2eqd",
+      "Integrity": "x+o1o9rYpeFiMt/OTdSuW1ogJ7qUVNT0Kfo7bHFjqyA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\landingbanners\\607999f7-1216-47c5-8ab5-8faaf04249e7.jpg"
     },
     {
       "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\b2fb55d9-10d9-4759-aab9-86c0517793b4.jpg",
@@ -2453,6 +2579,27 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\sliders\\1aecb9ad-048b-4ca8-b93b-fe3cb56cb716.jpg"
     },
     {
+      "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\205bb9cc-c9fc-4a44-b6bb-e635d84b3a9c.jpg",
+      "SourceId": "API-FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\",
+      "BasePath": "_content/API-FinalProject",
+      "RelativePath": "Uploads/sliders/205bb9cc-c9fc-4a44-b6bb-e635d84b3a9c#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qwxo6ffi4x",
+      "Integrity": "Vmx6yR/goSz8ootUSF6VF62fPECJ0lirV8R7PefX9ig=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\sliders\\205bb9cc-c9fc-4a44-b6bb-e635d84b3a9c.jpg"
+    },
+    {
       "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\2431c235-e706-40bd-b25d-bfc0dbf9c997.jpg",
       "SourceId": "API-FinalProject",
       "SourceType": "Discovered",
@@ -2577,6 +2724,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\sliders\\59f06dcf-2a72-4cd0-b1f4-fe5286c1c04c.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\5c1f555a-8c91-4520-91fa-861dc3c83d50.jpg",
+      "SourceId": "API-FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\",
+      "BasePath": "_content/API-FinalProject",
+      "RelativePath": "Uploads/sliders/5c1f555a-8c91-4520-91fa-861dc3c83d50#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5lbhsk2n86",
+      "Integrity": "6aDkg+PuXRQ95iE0zfQCmuKKSmM8B+/fRj3MMLOFtP4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\sliders\\5c1f555a-8c91-4520-91fa-861dc3c83d50.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\6141a34f-6566-4d50-aafe-9c97620595f0.jpg",
+      "SourceId": "API-FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\",
+      "BasePath": "_content/API-FinalProject",
+      "RelativePath": "Uploads/sliders/6141a34f-6566-4d50-aafe-9c97620595f0#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rmd3cq8jw0",
+      "Integrity": "PSTOQYkPnEOqqvwRvar9ZMYV/WsXfHsHYQH9sgMVOgk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\sliders\\6141a34f-6566-4d50-aafe-9c97620595f0.jpg"
     },
     {
       "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\78295d7f-31cc-4aa6-9dc6-fc06110a945a.jpg",
@@ -2705,6 +2894,27 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\sliders\\a245ddfe-6815-432d-8d00-b2bea13ff7a8.jpg"
     },
     {
+      "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\bb96ca48-ff76-45e8-a4ec-aa6db5b0758e.jpg",
+      "SourceId": "API-FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\",
+      "BasePath": "_content/API-FinalProject",
+      "RelativePath": "Uploads/sliders/bb96ca48-ff76-45e8-a4ec-aa6db5b0758e#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8o4m9vks6h",
+      "Integrity": "2Hm5+xeIiHeWEI3ZDjuptvjkIHZdfn1WueBwOAzvvWA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\sliders\\bb96ca48-ff76-45e8-a4ec-aa6db5b0758e.jpg"
+    },
+    {
       "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\c2006119-80a2-43ad-90e6-92b2c62fbe89.jpg",
       "SourceId": "API-FinalProject",
       "SourceType": "Discovered",
@@ -2724,6 +2934,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\sliders\\c2006119-80a2-43ad-90e6-92b2c62fbe89.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\c26da97c-ccf8-4758-bf66-7d6c802789c5.jpg",
+      "SourceId": "API-FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\",
+      "BasePath": "_content/API-FinalProject",
+      "RelativePath": "Uploads/sliders/c26da97c-ccf8-4758-bf66-7d6c802789c5#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8jzvckreo5",
+      "Integrity": "pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\sliders\\c26da97c-ccf8-4758-bf66-7d6c802789c5.jpg"
     },
     {
       "Identity": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\subscribeImgs\\1de17c66-c36b-4c40-aebf-f8669312dd50.jpg",
@@ -8840,6 +9071,170 @@
       ]
     },
     {
+      "Route": "Uploads/landingbanners/1de16651-1dd0-4526-9562-adadc61e56e0.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\1de16651-1dd0-4526-9562-adadc61e56e0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "112788"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yXlg6VqYkUknjDUCo3H6oYYP+RHlt67pBFIc0Alsgn0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:07:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yXlg6VqYkUknjDUCo3H6oYYP+RHlt67pBFIc0Alsgn0="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/landingbanners/1de16651-1dd0-4526-9562-adadc61e56e0.pgfql9vnp4.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\1de16651-1dd0-4526-9562-adadc61e56e0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "112788"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yXlg6VqYkUknjDUCo3H6oYYP+RHlt67pBFIc0Alsgn0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:07:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pgfql9vnp4"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/landingbanners/1de16651-1dd0-4526-9562-adadc61e56e0.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yXlg6VqYkUknjDUCo3H6oYYP+RHlt67pBFIc0Alsgn0="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/landingbanners/21b7da2f-6ffe-44b6-8514-07f5b548ba8e.8jzvckreo5.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\21b7da2f-6ffe-44b6-8514-07f5b548ba8e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12029"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:07:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8jzvckreo5"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/landingbanners/21b7da2f-6ffe-44b6-8514-07f5b548ba8e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/landingbanners/21b7da2f-6ffe-44b6-8514-07f5b548ba8e.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\21b7da2f-6ffe-44b6-8514-07f5b548ba8e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12029"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:07:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA="
+        }
+      ]
+    },
+    {
       "Route": "Uploads/landingbanners/223721ce-9130-4147-8eb3-a903f18e0aef.jpg",
       "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\223721ce-9130-4147-8eb3-a903f18e0aef.jpg",
       "Selectors": [],
@@ -8914,6 +9309,334 @@
         {
           "Name": "label",
           "Value": "Uploads/landingbanners/223721ce-9130-4147-8eb3-a903f18e0aef.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x+o1o9rYpeFiMt/OTdSuW1ogJ7qUVNT0Kfo7bHFjqyA="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/landingbanners/3127e086-5033-47c0-9090-1d6db32361dc.8jzvckreo5.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\3127e086-5033-47c0-9090-1d6db32361dc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12029"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:06:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8jzvckreo5"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/landingbanners/3127e086-5033-47c0-9090-1d6db32361dc.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/landingbanners/3127e086-5033-47c0-9090-1d6db32361dc.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\3127e086-5033-47c0-9090-1d6db32361dc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12029"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:06:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/landingbanners/32b64b04-c5d1-4254-88c0-93a62f7007ec.3dy16afdjq.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\32b64b04-c5d1-4254-88c0-93a62f7007ec.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7585"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N8JLo11aNXMsKN6Q/CfONptDQGGWTkI/iNLoW32xFBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:06:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3dy16afdjq"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/landingbanners/32b64b04-c5d1-4254-88c0-93a62f7007ec.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N8JLo11aNXMsKN6Q/CfONptDQGGWTkI/iNLoW32xFBs="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/landingbanners/32b64b04-c5d1-4254-88c0-93a62f7007ec.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\32b64b04-c5d1-4254-88c0-93a62f7007ec.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7585"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N8JLo11aNXMsKN6Q/CfONptDQGGWTkI/iNLoW32xFBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:06:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N8JLo11aNXMsKN6Q/CfONptDQGGWTkI/iNLoW32xFBs="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/landingbanners/3ecfc277-64a7-4562-b054-dd6a88acc79d.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\3ecfc277-64a7-4562-b054-dd6a88acc79d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+iZ9QSCgUqjnCClmLXot418HtK+kW3jq4Sk3RBsXsI0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:06:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+iZ9QSCgUqjnCClmLXot418HtK+kW3jq4Sk3RBsXsI0="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/landingbanners/3ecfc277-64a7-4562-b054-dd6a88acc79d.qzs18i0wdc.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\3ecfc277-64a7-4562-b054-dd6a88acc79d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+iZ9QSCgUqjnCClmLXot418HtK+kW3jq4Sk3RBsXsI0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:06:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qzs18i0wdc"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/landingbanners/3ecfc277-64a7-4562-b054-dd6a88acc79d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+iZ9QSCgUqjnCClmLXot418HtK+kW3jq4Sk3RBsXsI0="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/landingbanners/607999f7-1216-47c5-8ab5-8faaf04249e7.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\607999f7-1216-47c5-8ab5-8faaf04249e7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30061"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x+o1o9rYpeFiMt/OTdSuW1ogJ7qUVNT0Kfo7bHFjqyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:06:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x+o1o9rYpeFiMt/OTdSuW1ogJ7qUVNT0Kfo7bHFjqyA="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/landingbanners/607999f7-1216-47c5-8ab5-8faaf04249e7.zhsq0u2eqd.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\landingbanners\\607999f7-1216-47c5-8ab5-8faaf04249e7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30061"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x+o1o9rYpeFiMt/OTdSuW1ogJ7qUVNT0Kfo7bHFjqyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:06:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zhsq0u2eqd"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/landingbanners/607999f7-1216-47c5-8ab5-8faaf04249e7.jpg"
         },
         {
           "Name": "integrity",
@@ -12366,6 +13089,88 @@
       ]
     },
     {
+      "Route": "Uploads/sliders/205bb9cc-c9fc-4a44-b6bb-e635d84b3a9c.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\205bb9cc-c9fc-4a44-b6bb-e635d84b3a9c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25525"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Vmx6yR/goSz8ootUSF6VF62fPECJ0lirV8R7PefX9ig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:08:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Vmx6yR/goSz8ootUSF6VF62fPECJ0lirV8R7PefX9ig="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/sliders/205bb9cc-c9fc-4a44-b6bb-e635d84b3a9c.qwxo6ffi4x.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\205bb9cc-c9fc-4a44-b6bb-e635d84b3a9c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25525"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Vmx6yR/goSz8ootUSF6VF62fPECJ0lirV8R7PefX9ig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:08:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qwxo6ffi4x"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/sliders/205bb9cc-c9fc-4a44-b6bb-e635d84b3a9c.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Vmx6yR/goSz8ootUSF6VF62fPECJ0lirV8R7PefX9ig="
+        }
+      ]
+    },
+    {
       "Route": "Uploads/sliders/2431c235-e706-40bd-b25d-bfc0dbf9c997.jpg",
       "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\2431c235-e706-40bd-b25d-bfc0dbf9c997.jpg",
       "Selectors": [],
@@ -12854,6 +13659,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-k/6FcarxxNJIloPhXX4D5UfqrIP3rKS0iPgA3aIcHUM="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/sliders/5c1f555a-8c91-4520-91fa-861dc3c83d50.5lbhsk2n86.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\5c1f555a-8c91-4520-91fa-861dc3c83d50.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "485237"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6aDkg+PuXRQ95iE0zfQCmuKKSmM8B+/fRj3MMLOFtP4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:08:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5lbhsk2n86"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/sliders/5c1f555a-8c91-4520-91fa-861dc3c83d50.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6aDkg+PuXRQ95iE0zfQCmuKKSmM8B+/fRj3MMLOFtP4="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/sliders/5c1f555a-8c91-4520-91fa-861dc3c83d50.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\5c1f555a-8c91-4520-91fa-861dc3c83d50.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "485237"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6aDkg+PuXRQ95iE0zfQCmuKKSmM8B+/fRj3MMLOFtP4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:08:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6aDkg+PuXRQ95iE0zfQCmuKKSmM8B+/fRj3MMLOFtP4="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/sliders/6141a34f-6566-4d50-aafe-9c97620595f0.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\6141a34f-6566-4d50-aafe-9c97620595f0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PSTOQYkPnEOqqvwRvar9ZMYV/WsXfHsHYQH9sgMVOgk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:08:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PSTOQYkPnEOqqvwRvar9ZMYV/WsXfHsHYQH9sgMVOgk="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/sliders/6141a34f-6566-4d50-aafe-9c97620595f0.rmd3cq8jw0.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\6141a34f-6566-4d50-aafe-9c97620595f0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PSTOQYkPnEOqqvwRvar9ZMYV/WsXfHsHYQH9sgMVOgk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:08:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rmd3cq8jw0"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/sliders/6141a34f-6566-4d50-aafe-9c97620595f0.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PSTOQYkPnEOqqvwRvar9ZMYV/WsXfHsHYQH9sgMVOgk="
         }
       ]
     },
@@ -13350,6 +14319,88 @@
       ]
     },
     {
+      "Route": "Uploads/sliders/bb96ca48-ff76-45e8-a4ec-aa6db5b0758e.8o4m9vks6h.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\bb96ca48-ff76-45e8-a4ec-aa6db5b0758e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13149"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2Hm5+xeIiHeWEI3ZDjuptvjkIHZdfn1WueBwOAzvvWA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:08:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8o4m9vks6h"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/sliders/bb96ca48-ff76-45e8-a4ec-aa6db5b0758e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Hm5+xeIiHeWEI3ZDjuptvjkIHZdfn1WueBwOAzvvWA="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/sliders/bb96ca48-ff76-45e8-a4ec-aa6db5b0758e.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\bb96ca48-ff76-45e8-a4ec-aa6db5b0758e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13149"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2Hm5+xeIiHeWEI3ZDjuptvjkIHZdfn1WueBwOAzvvWA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:08:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2Hm5+xeIiHeWEI3ZDjuptvjkIHZdfn1WueBwOAzvvWA="
+        }
+      ]
+    },
+    {
       "Route": "Uploads/sliders/c2006119-80a2-43ad-90e6-92b2c62fbe89.jaxom58i3h.jpg",
       "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\c2006119-80a2-43ad-90e6-92b2c62fbe89.jpg",
       "Selectors": [],
@@ -13428,6 +14479,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-i8hq7L1F2rdNjecOG7sjPNpn+gDYOQSmS92/FNDl6jw="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/sliders/c26da97c-ccf8-4758-bf66-7d6c802789c5.8jzvckreo5.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\c26da97c-ccf8-4758-bf66-7d6c802789c5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12029"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:08:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8jzvckreo5"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/sliders/c26da97c-ccf8-4758-bf66-7d6c802789c5.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/sliders/c26da97c-ccf8-4758-bf66-7d6c802789c5.jpg",
+      "AssetFile": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\c26da97c-ccf8-4758-bf66-7d6c802789c5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12029"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 10:08:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pFGp++WjQ/FixP0Y/FjwYKmpEp3xQmWFNXzpGRE5oJA="
         }
       ]
     },

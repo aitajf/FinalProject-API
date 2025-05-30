@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Linq;
 using System.Linq.Expressions;
 using Domain.Common;
+using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Repository.Data;
 using Repository.Repositories.Interface;
@@ -48,6 +50,12 @@ namespace Repository.Repositories
         public async Task<T> GetByIdAsync(int id)
         {
             return await _dbSet.AsNoTracking().FirstOrDefaultAsync(m => m.Id == id);
+        }
+
+        public IQueryable<T> GetAllForPagination(Expression<Func<T, bool>> predicate)
+        {
+            predicate ??= x => true;
+            return _dbSet.AsNoTracking().Where(predicate);
         }
     } 
 }
