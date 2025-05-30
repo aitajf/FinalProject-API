@@ -78,17 +78,11 @@ namespace Service.Services
             }
         }
 
-
         public async Task DeleteAsync(int id)
         {
             var product = await _productRepository.GetByIdWithIncludesAsync(id);
             if (product == null) throw new KeyNotFoundException($"Product with ID {id} not found.");
             await _productRepository.DeleteAsync(product);
-        }
-
-        public Task DeleteImageAsync(int productId, int productImageId)
-        {
-            throw new NotImplementedException();
         }
 
         public async Task<ProductDetailDto> DetailAsync(int id)
@@ -164,8 +158,6 @@ namespace Service.Services
             await _productRepository.EditAsync(product);
         }
 
-
-
         public async Task<IEnumerable<ProductDto>> FilterAsync(string categoryName, string colorName, string tagName, string brandName)
         {
             return _mapper.Map<IEnumerable<ProductDto>>(await _productRepository.FilterAsync(categoryName, colorName, tagName, brandName));
@@ -197,17 +189,6 @@ namespace Service.Services
             return _mapper.Map<IEnumerable<ProductDto>>(await _productRepository.SortBy(sortKey));
         }
 
-        //public async Task<PaginationResponse<ProductDto>> GetPaginateAsync(int page, int take)
-        //{
-        //    var products = _productRepository.GetAllWithExpression(null);
-        //    int totalItemCount = products.Count();
-        //    int totalPage = (int)Math.Ceiling((decimal)totalItemCount / take);
-        //    var mappedDatas = _mapper.Map<IEnumerable<ProductDto>>(products.Skip((page - 1) * take).Take(take).ToList());
-        //    //return new PaginationResponse<ProductDto>(mappedDatas, totalPage, page, totalItemCount);
-        //    return new PaginationResponse<ProductDto>(mappedDatas.ToList(), totalItemCount, page, take);
-
-        //}
-
         public async Task<PaginationResponse<ProductDto>> GetPaginateAsync(int page, int take)
         {
             var products = _productRepository.GetAllWithExpression(null);
@@ -223,6 +204,11 @@ namespace Service.Services
             int totalPage = (int)Math.Ceiling((decimal)totalItemCount / take);
 
             return new PaginationResponse<ProductDto>(mappedDatas, totalPage, page, totalItemCount);
+        }
+
+        public Task DeleteImageAsync(int productId, int productImageId)
+        {
+            throw new NotImplementedException();
         }
     }
 }
