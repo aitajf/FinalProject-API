@@ -2619,3 +2619,17 @@ ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
 2025-05-29 17:55:39.629 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 50.124ms
 2025-05-29 17:55:39.631 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
 2025-05-29 17:55:39.633 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 62.7393ms
+2025-05-29 18:53:34.462 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-29 18:53:34.583 +04:00 [INF] Now listening on: https://localhost:7004
+2025-05-29 18:53:34.584 +04:00 [INF] Now listening on: http://localhost:5209
+2025-05-29 18:53:34.622 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-29 18:53:34.623 +04:00 [INF] Hosting environment: Development
+2025-05-29 18:53:34.624 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-05-29 18:53:36.275 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-05-29 18:53:36.459 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 184.5872ms
+2025-05-29 18:53:36.467 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-29 18:53:36.471 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-05-29 18:53:36.476 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 9.1866ms
+2025-05-29 18:53:36.509 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.0633ms
+2025-05-29 18:53:36.545 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-05-29 18:53:36.578 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.3464ms
