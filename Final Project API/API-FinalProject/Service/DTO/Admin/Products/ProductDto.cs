@@ -16,5 +16,6 @@ namespace Service.DTOs.Admin.Products
         public string Category { get; set; }
         public IEnumerable<string> Tags { get; set; }
         public IEnumerable<string> Colors { get; set; }
+        public List<string> Images { get; set; }
     }
 }
