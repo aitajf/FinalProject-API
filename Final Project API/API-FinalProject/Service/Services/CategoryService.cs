@@ -2,7 +2,10 @@
 using Domain.Entities;
 using Repository.Repositories;
 using Repository.Repositories.Interface;
+using Repository.Repositories.Interfaces;
 using Service.DTO.Admin.Category;
+using Service.DTOs.Admin.Products;
+using Service.Helpers;
 using Service.Services.Interfaces;
 
 namespace Service.Services
@@ -75,6 +78,23 @@ namespace Service.Services
             var category = await _categoryRepository.GetByIdAsync(id);
             if (category == null) throw new KeyNotFoundException($"Category with ID {id} not found.");
             return _mapper.Map<CategoryDto>(category);
+        }
+
+        public async Task<PaginationResponse<CategoryDto>> GetPaginateAsync(int page, int take)
+        {
+            var products = _categoryRepository.GetAllWithExpression(null);
+            int totalItemCount = products.Count();
+
+            var paginated = products
+                .Skip((page - 1) * take)
+                .Take(take)
+                .ToList();
+
+            var mappedDatas = _mapper.Map<IEnumerable<CategoryDto>>(paginated);
+
+            int totalPage = (int)Math.Ceiling((decimal)totalItemCount / take);
+
+            return new PaginationResponse<CategoryDto>(mappedDatas, totalPage, page, totalItemCount);
         }
     }
 }

@@ -57,6 +57,7 @@ namespace Repository.Repositories
 
         public IQueryable<Product> GetAllWithExpression(Expression<Func<Product, bool>> predicate)
         {
+            predicate ??= x => true;
             return _context.Products
               .Include(m => m.Category)
               .Include(m => m.Brand)

@@ -1,6 +1,7 @@
 ﻿using API_FinalProject.Controllers.Admin;
 using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Admin.Products;
+using Service.Services;
 using Service.Services.Interfaces;
 
 namespace FinalProject.Controllers.Admin
@@ -8,7 +9,6 @@ namespace FinalProject.Controllers.Admin
     public class ProductController : BaseController
     {
         private readonly IProductService _productService;
-
         public ProductController(IProductService productService)
         {
             _productService = productService;
@@ -58,5 +58,12 @@ namespace FinalProject.Controllers.Admin
 
             return Ok(new { message = "Image deleted successfully." });
         }
-	}
+
+        [HttpGet]
+        public async Task<IActionResult> GetPaginateDatas([FromQuery] int page, [FromQuery] int take)
+        {
+            return Ok(await _productService.GetPaginateAsync(page, take));
+
+        }
+    }
 }

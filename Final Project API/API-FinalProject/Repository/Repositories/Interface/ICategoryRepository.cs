@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System.Linq.Expressions;
 using Domain.Entities;
 
 namespace Repository.Repositories.Interface
 {
     public interface ICategoryRepository : IBaseRepository<Category>
     {
+        IQueryable<Category> GetAllWithExpression(Expression<Func<Category, bool>> predicate);
     }
 }

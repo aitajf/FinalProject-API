@@ -3,6 +3,7 @@ using Domain.Entities;
 using Repository.Repositories.Interface;
 using Repository.Repositories.Interfaces;
 using Service.DTOs.Admin.Products;
+using Service.Helpers;
 using Service.Services.Interfaces;
 
 namespace Service.Services
@@ -194,6 +195,34 @@ namespace Service.Services
         public async Task<IEnumerable<ProductDto>> SortBy(string sortKey)
         {
             return _mapper.Map<IEnumerable<ProductDto>>(await _productRepository.SortBy(sortKey));
+        }
+
+        //public async Task<PaginationResponse<ProductDto>> GetPaginateAsync(int page, int take)
+        //{
+        //    var products = _productRepository.GetAllWithExpression(null);
+        //    int totalItemCount = products.Count();
+        //    int totalPage = (int)Math.Ceiling((decimal)totalItemCount / take);
+        //    var mappedDatas = _mapper.Map<IEnumerable<ProductDto>>(products.Skip((page - 1) * take).Take(take).ToList());
+        //    //return new PaginationResponse<ProductDto>(mappedDatas, totalPage, page, totalItemCount);
+        //    return new PaginationResponse<ProductDto>(mappedDatas.ToList(), totalItemCount, page, take);
+
+        //}
+
+        public async Task<PaginationResponse<ProductDto>> GetPaginateAsync(int page, int take)
+        {
+            var products = _productRepository.GetAllWithExpression(null);
+            int totalItemCount = products.Count();
+
+            var paginated = products
+                .Skip((page - 1) * take)
+                .Take(take)
+                .ToList();
+
+            var mappedDatas = _mapper.Map<IEnumerable<ProductDto>>(paginated);
+
+            int totalPage = (int)Math.Ceiling((decimal)totalItemCount / take);
+
+            return new PaginationResponse<ProductDto>(mappedDatas, totalPage, page, totalItemCount);
         }
     }
 }
