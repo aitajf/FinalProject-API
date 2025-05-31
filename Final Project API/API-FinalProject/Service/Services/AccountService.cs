@@ -130,7 +130,7 @@ namespace Service.Services
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             var request = _httpContextAccessor.HttpContext.Request;
             string baseUrl = $"{request.Scheme}://{request.Host}{request.PathBase}";
-            string url = $"{baseUrl}/api/ui/Account/VerifyEmail?verifyEmail={HttpUtility.UrlEncode(user.Email)}&token={HttpUtility.UrlEncode(token)}";
+            string url = $"https://localhost:7004/api/Account/VerifyEmail?verifyEmail={HttpUtility.UrlEncode(user.Email)}&token={HttpUtility.UrlEncode(token)}";
             var template = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "confirm", "mailconfirm.html"));
             template = template.Replace("{{link}}", url);
             _emailService.Send(user.Email, "Email confirmation", template);
