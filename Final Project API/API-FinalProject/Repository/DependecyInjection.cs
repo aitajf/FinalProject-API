@@ -27,6 +27,7 @@ namespace Repository
             services.AddScoped<IProductColorRepository, ProductColorRepository>();
             services.AddScoped<IProductTagRepository, ProductTagRepository>();
             services.AddScoped<IProductRepository, ProductRepository >();
+            services.AddScoped<IBasketRepository, BasketRepository >();
             return services;
         }
     }

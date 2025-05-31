@@ -57,5 +57,10 @@ namespace Repository.Repositories
             predicate ??= x => true;
             return _dbSet.AsNoTracking().Where(predicate);
         }
+
+        public IQueryable<T> FindAllWithIncludes()
+        {
+            return _dbSet.AsQueryable();
+        }
     } 
 }

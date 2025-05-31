@@ -68,9 +68,11 @@ wwwroot\Uploads\categories\e2262d24-ae2d-4d59-93d0-20f4ca1ea9c2.jpg
 wwwroot\Uploads\categories\f7288614-b5fc-47ae-9c9d-2de16a7f1ec6.jpg
 wwwroot\Uploads\instagram\18abeae1-403c-4e53-bc81-5dc597c571e3.jpg
 wwwroot\Uploads\instagram\22d717d8-ef40-4fb9-82e0-de0d004bd9fd.jpg
+wwwroot\Uploads\instagram\251c18ff-2462-4684-8273-245409e66c76.jpg
 wwwroot\Uploads\instagram\b1d08b8e-f228-4fb7-85c9-227d5f4e5017.jpg
 wwwroot\Uploads\instagram\bb12f959-7e7a-4288-8790-e5ede7a637fa.jpg
 wwwroot\Uploads\instagram\ef074ec3-b220-4289-b55b-887b426fd583.jpg
+wwwroot\Uploads\instagram\fef9c21b-6bd9-4734-8882-789085bb6ab9.jpg
 wwwroot\Uploads\landingbanners\1de16651-1dd0-4526-9562-adadc61e56e0.jpg
 wwwroot\Uploads\landingbanners\21b7da2f-6ffe-44b6-8514-07f5b548ba8e.jpg
 wwwroot\Uploads\landingbanners\223721ce-9130-4147-8eb3-a903f18e0aef.jpg
@@ -99,6 +101,7 @@ wwwroot\Uploads\productimages\3caaf049-1866-4226-8afe-2de2ff4b959f.jpg
 wwwroot\Uploads\productimages\3f03c049-ced8-49b6-9ebf-b823e4dbebb2.jpg
 wwwroot\Uploads\productimages\47e999da-7dd4-4182-839e-0a9b6fa42e94.jpg
 wwwroot\Uploads\productimages\501a38e5-e337-497f-acc3-24510ac7034d.jpg
+wwwroot\Uploads\productimages\52271dd0-0282-4707-89a3-e3c84bbf3949.jpg
 wwwroot\Uploads\productimages\59d9ee22-ddca-4e2c-94bb-9d5fd0c5ee60.jpg
 wwwroot\Uploads\productimages\62bde78c-a7b9-4027-9f66-dcb9949fa355.jpg
 wwwroot\Uploads\productimages\6ca1ffdf-2c96-4b2b-a7ce-b808be749749.jpg
@@ -152,6 +155,8 @@ wwwroot\Uploads\sliders\c26da97c-ccf8-4758-bf66-7d6c802789c5.jpg
 wwwroot\Uploads\subscribeImgs\1de17c66-c36b-4c40-aebf-f8669312dd50.jpg
 wwwroot\Uploads\subscribeImgs\2073e679-a817-4324-a487-11ed1ee74b95.jpg
 wwwroot\Uploads\subscribeImgs\3854b9af-373f-4a12-957e-4aa53d21bb8a.jpg
+wwwroot\Uploads\subscribeImgs\63b7301c-0faf-4b7c-9b3f-3e84175b717b.jpg
 wwwroot\Uploads\subscribeImgs\a63fade4-ebd5-4c24-9edd-42565de715dc.jpg
+wwwroot\Uploads\subscribeImgs\d14e4337-0ba1-4b31-964e-7e7b8a54a04d.jpg
 wwwroot\Uploads\subscribeImgs\f054abab-1e7c-4790-9e5e-2a40852a9547.jpg
 wwwroot\Uploads\subscribeImgs\f2c931f1-c3af-4c94-967d-b689012bca65.jpg

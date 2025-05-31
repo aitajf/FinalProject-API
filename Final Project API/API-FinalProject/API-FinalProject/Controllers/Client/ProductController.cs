@@ -43,7 +43,19 @@ namespace FinalProject.Controllers.UI
 			return Ok(await _productService.FilterAsync(categoryName,colorName,tagName,brandName));
 		}
 
-		
+        [HttpGet("take")]
+        public async Task<IActionResult> GetAllTaken([FromQuery] int take, [FromQuery] int? skip = null)
+        {
+            var products = await _productService.GetAllTakenAsync(take, skip);
+            return Ok(products);
+        }
 
-	}
+        [HttpGet]
+        public async Task<IActionResult> GetProductsCount()
+        {
+            var count = await _productService.GetProductsCountAsync();
+            return Ok(count);
+        }
+
+    }
 }

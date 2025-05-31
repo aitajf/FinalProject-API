@@ -20,5 +20,8 @@ namespace Service.Services.Interfaces
         Task DeleteImageAsync(int productId, int productImageId);
 
         Task<PaginationResponse<ProductDto>> GetPaginateAsync(int page, int take);
+        Task<IEnumerable<ProductDto>> GetAllTakenAsync(int take, int? skip = null);
+        Task<int> GetProductsCountAsync();
+
     }
 }

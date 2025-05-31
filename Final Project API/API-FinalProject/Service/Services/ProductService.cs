@@ -210,5 +210,17 @@ namespace Service.Services
         {
             throw new NotImplementedException();
         }
+
+        public async Task<IEnumerable<ProductDto>> GetAllTakenAsync(int take, int? skip = null)
+        {
+            var products = await _productRepository.GetAllTakenAsync(take, skip);
+            return _mapper.Map<IEnumerable<ProductDto>>(products);
+        }
+
+        public async Task<int> GetProductsCountAsync()
+        {
+            return await _productRepository.GetProductsCount();
+        }
+
     }
 }

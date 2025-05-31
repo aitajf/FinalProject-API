@@ -117,5 +117,22 @@ namespace Repository.Repositories
             return products;
 
         }
+
+        public async Task<IEnumerable<Product>> GetAllTakenAsync(int take, int? skip = null)
+        {
+            return await _context.Products.Include(m => m.Category)
+                                          .Include(m => m.Brand)
+                                          .Include(m => m.ProductImages)
+                                          .Include(m => m.ProductColors)
+                                          .ThenInclude(pc => pc.Color)
+                                          .Include(m => m.ProductTags)
+                                          .ThenInclude(ps => ps.Tag).Skip(skip ?? 0)
+                                          .Take(take).ToListAsync();
+        }
+
+        public async Task<int> GetProductsCount()
+        {
+            return await _context.Products.CountAsync();
+        }
     }
 }

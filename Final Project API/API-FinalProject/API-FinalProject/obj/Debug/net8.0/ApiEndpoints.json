@@ -168,6 +168,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FinalProject.Controllers.Admin.BasketController",
+    "Method": "GetAllBaskets",
+    "RelativePath": "api/admin/Basket/GetAllBaskets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.Admin.BasketController",
+    "Method": "GetBasketByUserId",
+    "RelativePath": "api/admin/Basket/GetBasketByUserId/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_FinalProject.Controllers.Admin.BlogCategoryController",
     "Method": "Create",
     "RelativePath": "api/admin/BlogCategory/Create",
@@ -1506,6 +1532,123 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FinalProject.Controllers.UI.BasketController",
+    "Method": "AddBasket",
+    "RelativePath": "api/Basket/AddBasket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "basketCreateDto",
+        "Type": "Service.DTOs.UI.Basket.BasketCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.BasketController",
+    "Method": "DecreaseQuantity",
+    "RelativePath": "api/Basket/DecreaseQuantity",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "basketCreateDto",
+        "Type": "Service.DTOs.UI.Basket.BasketCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.BasketController",
+    "Method": "DeleteBasket",
+    "RelativePath": "api/Basket/DeleteBasket/DeleteBasket",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.BasketController",
+    "Method": "DeleteBasketProduct",
+    "RelativePath": "api/Basket/DeleteBasketProduct/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.BasketController",
+    "Method": "DeleteProductFromBasket",
+    "RelativePath": "api/Basket/DeleteProductFromBasket",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.BasketController",
+    "Method": "GetBasketByUserId",
+    "RelativePath": "api/Basket/GetBasketByUserId/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.BasketController",
+    "Method": "IncreaseQuantity",
+    "RelativePath": "api/Basket/IncreaseQuantity",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "basketCreateDto",
+        "Type": "Service.DTOs.UI.Basket.BasketCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_FinalProject.Controllers.Client.LandingBannerController",
     "Method": "GetAll",
     "RelativePath": "api/LandingBanner/GetAll",
@@ -1550,6 +1693,37 @@
     "ContainingType": "FinalProject.Controllers.UI.ProductController",
     "Method": "GetAll",
     "RelativePath": "api/Product/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.ProductController",
+    "Method": "GetAllTaken",
+    "RelativePath": "api/Product/GetAllTaken/take",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "skip",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.ProductController",
+    "Method": "GetProductsCount",
+    "RelativePath": "api/Product/GetProductsCount",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

@@ -17,5 +17,6 @@ namespace Repository.Repositories.Interface
         Task<IEnumerable<T>> GetAllWithExpressionAsync(Expression<Func<T, bool>> predicate);
         IQueryable<T> GetAllForPagination(Expression<Func<T, bool>> predicate);
         Task<T> GetByIdAsync(int id);
+        IQueryable<T> FindAllWithIncludes();
     }
 }

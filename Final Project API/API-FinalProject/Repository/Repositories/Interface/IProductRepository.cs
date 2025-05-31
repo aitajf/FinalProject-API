@@ -14,5 +14,7 @@ namespace Repository.Repositories.Interfaces
         Task<IEnumerable<Product>> FilterAsync(string categoryName,string colorName, string tagName, string brandName);
         Task<IEnumerable<Product>> SortBy(string sortKey);
 		Task DeleteProductImage(ProductImage image);
-	}
+        Task<IEnumerable<Product>> GetAllTakenAsync(int take, int? skip = null);
+        Task<int> GetProductsCount();
+    }
 }
