@@ -149,7 +149,7 @@ namespace Service.Services
             await _userManager.UpdateSecurityStampAsync(appUser);
             var roles = await _userManager.GetRolesAsync(appUser);
 
-            return CreateToken(appUser, roles);
+            return CreateToken(appUser, roles);                 
         }
 
 

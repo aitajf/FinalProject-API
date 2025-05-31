@@ -1,8 +1,6 @@
 ﻿using API_FinalProject.Controllers.Client;
 using Microsoft.AspNetCore.Mvc;
 using Service.Services.Interfaces;
-using System.Net.Http;
-using System.Text.Json;
 
 namespace FinalProject.Controllers.UI
 {
