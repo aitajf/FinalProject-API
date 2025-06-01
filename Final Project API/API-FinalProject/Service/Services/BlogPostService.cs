@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Repository.Repositories.Interface;
 using Service.DTO.Admin.BlogPost;
+using Service.DTOs.Admin.Products;
+using Service.Helpers;
 using Service.Services;
 using Service.Services.Interfaces;
 
@@ -173,6 +175,18 @@ namespace Service.Services
             return true;
         }
 
+        public async Task<PaginationResponse<BlogPostDto>> GetPaginateAsync(int page, int take)
+        {
+            var products = _postRepository.GetAllWithExpression(null);
+            int totalItemCount = products.Count();
+            var paginated = products
+                .Skip((page - 1) * take)
+                .Take(take)
+                .ToList();
+            var mappedDatas = _mapper.Map<IEnumerable<BlogPostDto>>(paginated);
+            int totalPage = (int)Math.Ceiling((decimal)totalItemCount / take);
+            return new PaginationResponse<BlogPostDto>(mappedDatas, totalPage, page, totalItemCount);
+        }
     }
 }
 

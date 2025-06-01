@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Service.DTO.Admin.BlogCategory;
 using Service.DTO.Admin.BlogPost;
+using Service.Services;
 using Service.Services.Interfaces;
 
 namespace API_FinalProject.Controllers.Admin
@@ -60,6 +61,10 @@ namespace API_FinalProject.Controllers.Admin
             return Ok(new { message = "Image deleted successfully." });
         }
 
-
+        [HttpGet]
+        public async Task<IActionResult> GetPaginateDatas([FromQuery] int page, [FromQuery] int take)
+        {
+            return Ok(await _blogPostService.GetPaginateAsync(page, take));
+        }
     }
 }

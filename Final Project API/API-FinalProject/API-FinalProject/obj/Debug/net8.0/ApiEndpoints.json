@@ -418,6 +418,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_FinalProject.Controllers.Admin.BlogPostController",
+    "Method": "GetPaginateDatas",
+    "RelativePath": "api/admin/BlogPost/GetPaginateDatas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_FinalProject.Controllers.Admin.BrandController",
     "Method": "Create",
     "RelativePath": "api/admin/Brand/Create",

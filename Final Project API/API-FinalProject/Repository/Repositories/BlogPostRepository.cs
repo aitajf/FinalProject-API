@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Entities;
@@ -24,6 +25,14 @@ namespace Repository.Repositories
         {
             return await _context.BlogPosts.Include(x => x.Images).Include(x => x.BlogCategory)
                                            .FirstOrDefaultAsync(x => x.Id == id); 
+        }
+
+        public IQueryable<BlogPost> GetAllWithExpression(Expression<Func<BlogPost, bool>> predicate)
+        {
+            predicate ??= x => true;
+            return _context.BlogPosts
+             .Include(x=>x.BlogCategory)
+             .Where(predicate);
         }
     }
 }
