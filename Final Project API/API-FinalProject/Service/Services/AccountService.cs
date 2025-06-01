@@ -107,7 +107,9 @@ namespace Service.Services
             {
                 Success = true,
                 Error = null,
-                Token = token
+                Token = token,
+                UserName = user.UserName,
+                Roles = userRoles.ToList()
             };
         }
 
