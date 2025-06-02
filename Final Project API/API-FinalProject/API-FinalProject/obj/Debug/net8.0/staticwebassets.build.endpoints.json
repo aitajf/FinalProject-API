@@ -85,6 +85,88 @@
       ]
     },
     {
+      "Route": "Uploads/aboutbannerimgs/5d186f67-68d5-416f-afe9-49f6614bd872.jpg",
+      "AssetFile": "Uploads/aboutbannerimgs/5d186f67-68d5-416f-afe9-49f6614bd872.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16057"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mBTl9BN9l0b/uPRsPFAdzkRge2TEjtAAsbwleXMHSqQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 13:54:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mBTl9BN9l0b/uPRsPFAdzkRge2TEjtAAsbwleXMHSqQ="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/aboutbannerimgs/5d186f67-68d5-416f-afe9-49f6614bd872.k9l39prcm4.jpg",
+      "AssetFile": "Uploads/aboutbannerimgs/5d186f67-68d5-416f-afe9-49f6614bd872.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16057"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mBTl9BN9l0b/uPRsPFAdzkRge2TEjtAAsbwleXMHSqQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Jun 2025 13:54:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k9l39prcm4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mBTl9BN9l0b/uPRsPFAdzkRge2TEjtAAsbwleXMHSqQ="
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/aboutbannerimgs/5d186f67-68d5-416f-afe9-49f6614bd872.jpg"
+        }
+      ]
+    },
+    {
       "Route": "Uploads/aboutbannerimgs/873faade-47eb-482e-bcd5-317044be7720.jpg",
       "AssetFile": "Uploads/aboutbannerimgs/873faade-47eb-482e-bcd5-317044be7720.jpg",
       "Selectors": [],

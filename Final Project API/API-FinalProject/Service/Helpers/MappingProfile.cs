@@ -13,6 +13,7 @@ using Service.DTO.Admin.LandingBanner;
 using Service.DTO.Admin.Sliders;
 using Service.DTO.Admin.SubscribeImg;
 using Service.DTO.Admin.Tag;
+using Service.DTO.UI.Subscription;
 using Service.DTOs.Admin.Products;
 using Service.DTOs.Admin.Settings;
 using Service.DTOs.UI.Wishlists;
@@ -105,6 +106,9 @@ namespace Service.Helpers
                Name = m.Color.Name,
            }).ToList()));
             CreateMap<ProductEditDto, Product>();
+
+            CreateMap<SubscriptionCreateDto, Subscription>();
+            CreateMap<Subscription, SubscriptionDto>();
         }
     }
 }

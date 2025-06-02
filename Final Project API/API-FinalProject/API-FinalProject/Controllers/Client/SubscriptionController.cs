@@ -17,24 +17,12 @@ namespace API_FinalProject.Controllers.Client
             _subscriptionService = subscriptionService;
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Subscribe([FromBody] SubscriptionCreateDto request)
-        //{
-        //    var success = await _subscriptionService.SubscribeAsync(request.Email);
-
-        //    if (!success)
-        //        return BadRequest("This mail subscribe is exist");
-
-        //    return Ok("Subscription success!");
-        //}
-
         [HttpPost]
-        public async Task<IActionResult> Subscribe([FromBody] SubscriptionCreateDto request)
+        public async Task<IActionResult> Subscribe([FromBody] SubscriptionCreateDto model)
         {
-            if (string.IsNullOrEmpty(request.Email))
-            return BadRequest(new { Message = "Email is required !" });
-            var message = await _subscriptionService.SubscribeAsync(request.Email);
-            return Ok(new { Message = message });
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            await _subscriptionService.SubscribeAsync(model);
+            return Ok("Subscribed successfully!");
         }
     }
 }

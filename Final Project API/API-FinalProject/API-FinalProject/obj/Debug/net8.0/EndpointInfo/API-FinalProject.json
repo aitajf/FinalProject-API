@@ -3512,11 +3512,15 @@
         "additionalProperties": false
       },
       "SubscriptionCreateDto": {
+        "required": [
+          "email"
+        ],
         "type": "object",
         "properties": {
           "email": {
+            "minLength": 1,
             "type": "string",
-            "nullable": true
+            "format": "email"
           }
         },
         "additionalProperties": false

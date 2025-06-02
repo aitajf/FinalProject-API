@@ -1,5 +1,6 @@
 wwwroot\confirm\mailconfirm.html
 wwwroot\Uploads\aboutbannerimgs\111687f0-d4cd-411a-9d1d-540a51b4eaf9.jpg
+wwwroot\Uploads\aboutbannerimgs\5d186f67-68d5-416f-afe9-49f6614bd872.jpg
 wwwroot\Uploads\aboutbannerimgs\873faade-47eb-482e-bcd5-317044be7720.jpg
 wwwroot\Uploads\aboutbannerimgs\99dcde85-479f-4de5-9ba8-ce583c86daae.jpg
 wwwroot\Uploads\aboutbannerimgs\be0f465b-8d0b-4b41-aba3-606e7da5f08e.jpg

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using Domain.Entities;
 using Repository.Repositories.Interface;
+using Service.DTO.UI.Subscription;
 using Service.Services.Interfaces;
 
 namespace Service.Services
@@ -13,58 +15,35 @@ namespace Service.Services
     {
         private readonly ISubscriptionRepository _subscriptionRepository;
         private readonly IAccountService _accountService;
+        private readonly IMapper _mapper;
 
-        public SubscriptionService(ISubscriptionRepository subscriptionRepository, IAccountService accountService)
+        public SubscriptionService(ISubscriptionRepository subscriptionRepository, IAccountService accountService,
+                                    IMapper mapper)
         {
             _subscriptionRepository = subscriptionRepository;
             _accountService = accountService;
+            _mapper = mapper;
         }
 
-        //public async Task<bool> SubscribeAsync(string email)
-        //{
-        //    var existingSubscription = await _subscriptionRepository.GetByEmailAsync(email);
-        //    if (existingSubscription != null) return false; 
-
-        //    var existingUser = await _accountService.GetUserByEmailAsync(email);
-        //    if (existingUser == null) return false;
-
-        //    var subscription = new Subscription
-        //    {
-        //        Email = email,
-        //        CreatedDate = DateTime.UtcNow
-        //    };
-
-        //    await _subscriptionRepository.CreateAsync(subscription);
-        //    return true;
-        //}
-
-
-        public async Task<string> SubscribeAsync(string email)
+        public async Task SubscribeAsync(SubscriptionCreateDto model)
         {
-            var existingUser = await _accountService.GetUserByEmailAsync(email);
+            var existingUser = await _accountService.GetUserByEmailAsync(model.Email);
+            if (existingUser == null) throw new Exception("First be register.");
 
-            if (existingUser == null)
-                return "First be register.";
-
-            var existingSubscription = await _subscriptionRepository.GetByEmailAsync(email);
-
+            var existingSubscription = await _subscriptionRepository.GetByEmailAsync(model.Email);
             if (existingSubscription != null)
-                return "Subscribe with this mail exist!";
+                throw new Exception("Subscribe with this mail already exists!");
 
-            var subscription = new Subscription
-            {
-                Email = email,
-                CreatedDate = DateTime.UtcNow
-            };
+            var subscription = _mapper.Map<Subscription>(model);
+            subscription.CreatedDate = DateTime.UtcNow;
 
             await _subscriptionRepository.CreateAsync(subscription);
-            return "Subscribe succesfully !";
         }
 
-
-        public async Task<IEnumerable<Subscription>> GetAllSubscriptionsAsync()
+        public async Task<IEnumerable<SubscriptionDto>> GetAllSubscriptionsAsync()
         {
-            return await _subscriptionRepository.GetAllAsync();
+            var subscriptions = await _subscriptionRepository.GetAllAsync();
+            return _mapper.Map<IEnumerable<SubscriptionDto>>(subscriptions);
         }
 
         public async Task<bool> UnsubscribeAsync(string email)
