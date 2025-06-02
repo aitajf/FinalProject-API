@@ -30,6 +30,7 @@ namespace Service
             services.AddScoped<ISettingService, SettingService>();
             services.AddScoped<IBasketService, BasketService>();
             services.AddScoped<ISubscriptionService, SubscriptionService>();
+            services.AddScoped<IAboutPromoService, AboutPromoService>();
             return services;
         }
     }

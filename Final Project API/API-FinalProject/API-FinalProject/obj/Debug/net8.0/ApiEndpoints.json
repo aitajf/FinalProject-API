@@ -132,6 +132,105 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_FinalProject.Controllers.Admin.AboutPromoController",
+    "Method": "Create",
+    "RelativePath": "api/admin/AboutPromo/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.AboutPromoController",
+    "Method": "Delete",
+    "RelativePath": "api/admin/AboutPromo/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.AboutPromoController",
+    "Method": "Edit",
+    "RelativePath": "api/admin/AboutPromo/Edit/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.AboutPromoController",
+    "Method": "GetAll",
+    "RelativePath": "api/admin/AboutPromo/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.AboutPromoController",
+    "Method": "GetById",
+    "RelativePath": "api/admin/AboutPromo/GetById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_FinalProject.Controllers.Admin.AccountController",
     "Method": "CreateRoles",
     "RelativePath": "api/admin/Account/CreateRoles",

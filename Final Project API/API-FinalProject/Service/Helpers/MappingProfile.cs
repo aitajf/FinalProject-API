@@ -2,6 +2,7 @@
 using Domain.Entities;
 using Service.DTO.Account;
 using Service.DTO.Admin.AboutBannerImg;
+using Service.DTO.Admin.AboutPromo;
 using Service.DTO.Admin.AskUsFrom;
 using Service.DTO.Admin.BlogCategory;
 using Service.DTO.Admin.BlogPost;
@@ -85,30 +86,34 @@ namespace Service.Helpers
             CreateMap<SettingEditDto, Setting>();
 
             CreateMap<Product, ProductDto>()
-             .ForMember(d => d.Brand, opt => opt.MapFrom(s => s.Brand.Name))
-             .ForMember(d => d.Category, opt => opt.MapFrom(s => s.Category.Name))
-             .ForMember(d => d.Tags, opt => opt.MapFrom(s => s.ProductTags.Select(m => m.Tag.Name).ToList())) 
-             .ForMember(d => d.Colors, opt => opt.MapFrom(s => s.ProductColors.Select(m => m.Color.Name).ToList())) 
-             .ForMember(d => d.MainImage, opt => opt.MapFrom(s => s.ProductImages.FirstOrDefault(i => i.IsMain).Img))
-             .ForMember(d => d.Images, opt => opt.MapFrom(s => s.ProductImages.Select(pi => pi.Img).ToList()));
+              .ForMember(d => d.Brand, opt => opt.MapFrom(s => s.Brand.Name))
+              .ForMember(d => d.Category, opt => opt.MapFrom(s => s.Category.Name))
+              .ForMember(d => d.Tags, opt => opt.MapFrom(s => s.ProductTags.Select(m => m.Tag.Name).ToList())) 
+              .ForMember(d => d.Colors, opt => opt.MapFrom(s => s.ProductColors.Select(m => m.Color.Name).ToList())) 
+              .ForMember(d => d.MainImage, opt => opt.MapFrom(s => s.ProductImages.FirstOrDefault(i => i.IsMain).Img))
+              .ForMember(d => d.Images, opt => opt.MapFrom(s => s.ProductImages.Select(pi => pi.Img).ToList()));
             CreateMap<ProductCreateDto, Product>();
             CreateMap<ProductImage, ProductImageDto>();
             CreateMap<Product, ProductDetailDto>()
-           .ForMember(d => d.Brand, opt => opt.MapFrom(s => s.Brand.Name))
-           .ForMember(d => d.Tags, opt => opt.MapFrom(s => s.ProductTags.Select(m => new TagDto
-            {
-                Id = m.Tag.Id,
-                Name = m.Tag.Name,
-            }).ToList()))
-           .ForMember(d => d.Colors, opt => opt.MapFrom(s => s.ProductColors.Select(m => new ColorDto
-           {
-               Id = m.Color.Id,
-               Name = m.Color.Name,
-           }).ToList()));
+              .ForMember(d => d.Brand, opt => opt.MapFrom(s => s.Brand.Name))
+              .ForMember(d => d.Tags, opt => opt.MapFrom(s => s.ProductTags.Select(m => new TagDto
+               {
+                   Id = m.Tag.Id,
+                   Name = m.Tag.Name,
+               }).ToList()))
+              .ForMember(d => d.Colors, opt => opt.MapFrom(s => s.ProductColors.Select(m => new ColorDto
+              {
+                  Id = m.Color.Id,
+                  Name = m.Color.Name,
+              }).ToList()));
             CreateMap<ProductEditDto, Product>();
 
             CreateMap<SubscriptionCreateDto, Subscription>();
             CreateMap<Subscription, SubscriptionDto>();
+
+            CreateMap<AboutPromo, AboutPromoDto>();
+            CreateMap<AboutPromoCreateDto, AboutPromo>();
+            CreateMap<AboutPromoEditDto, AboutPromo>().ForMember(dest => dest.Image, opt => opt.Ignore());
         }
     }
 }

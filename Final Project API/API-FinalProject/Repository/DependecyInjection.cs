@@ -29,6 +29,7 @@ namespace Repository
             services.AddScoped<IProductRepository, ProductRepository >();
             services.AddScoped<IBasketRepository, BasketRepository >();
             services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
+            services.AddScoped<IAboutPromoRepository, AboutPromoRepository>();
 
             return services;
         }

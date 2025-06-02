@@ -6,6 +6,9 @@ wwwroot\Uploads\aboutbannerimgs\99dcde85-479f-4de5-9ba8-ce583c86daae.jpg
 wwwroot\Uploads\aboutbannerimgs\be0f465b-8d0b-4b41-aba3-606e7da5f08e.jpg
 wwwroot\Uploads\aboutbannerimgs\e418623e-4b5e-4019-b68a-6beedec9a502.jpg
 wwwroot\Uploads\aboutbannerimgs\ebe55fdf-f842-4daa-9798-998ac3f4ccbe.jpg
+wwwroot\Uploads\aboutpromo\8855d125-c39e-455b-9503-9f760e830a2a.jpg
+wwwroot\Uploads\aboutpromo\c841c541-0f86-49db-9034-a20be21db958.jpg
+wwwroot\Uploads\aboutpromo\e76e01c2-01fd-491e-bf13-304ed10d1000.jpg
 wwwroot\Uploads\blogposts\00ce2360-9c93-413a-91c3-b3bfd5d37e40.jpg
 wwwroot\Uploads\blogposts\059bd763-2412-4f8b-b8a4-efbb69cc5916.jpg
 wwwroot\Uploads\blogposts\0792da07-e1a3-4d63-a100-0cf6b1348556.jpg
