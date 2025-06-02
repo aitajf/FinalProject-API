@@ -11,5 +11,6 @@ namespace Service.Services.Interfaces
         Task CreateRoleAsync();
         Task<string> VerifyEmail(string VerifyEmail, string token);
         string CreateToken(AppUser user, IList<string> roles);
+        Task<AppUser> GetUserByEmailAsync(string email);
     }
 }

@@ -5,7 +5,10 @@ wwwroot\Uploads\aboutbannerimgs\99dcde85-479f-4de5-9ba8-ce583c86daae.jpg
 wwwroot\Uploads\aboutbannerimgs\be0f465b-8d0b-4b41-aba3-606e7da5f08e.jpg
 wwwroot\Uploads\aboutbannerimgs\e418623e-4b5e-4019-b68a-6beedec9a502.jpg
 wwwroot\Uploads\aboutbannerimgs\ebe55fdf-f842-4daa-9798-998ac3f4ccbe.jpg
+wwwroot\Uploads\blogposts\00ce2360-9c93-413a-91c3-b3bfd5d37e40.jpg
+wwwroot\Uploads\blogposts\059bd763-2412-4f8b-b8a4-efbb69cc5916.jpg
 wwwroot\Uploads\blogposts\0792da07-e1a3-4d63-a100-0cf6b1348556.jpg
+wwwroot\Uploads\blogposts\0cea6190-a751-4988-af4b-ef237aa27a06.jpg
 wwwroot\Uploads\blogposts\132c7410-631f-479b-996b-edd7355d2813.jpg
 wwwroot\Uploads\blogposts\14cdb20c-af21-4752-8742-8c721988cb13.jpg
 wwwroot\Uploads\blogposts\16dd6f0e-3fc3-42d0-9cbd-e78357378537.jpg
@@ -23,6 +26,7 @@ wwwroot\Uploads\blogposts\31439231-e9a3-4f25-843e-6dcb01c3e009.jpg
 wwwroot\Uploads\blogposts\36e8369d-8018-4e7d-9830-dc1dc7652ea7.jpg
 wwwroot\Uploads\blogposts\37d73f79-9486-41f9-80fc-f6e50dde28b1.jpg
 wwwroot\Uploads\blogposts\3c68a3a4-78ff-460b-9003-024751ad69cb.jpg
+wwwroot\Uploads\blogposts\3f1c6d4f-515d-4295-86d6-2aa3e992c01e.jpg
 wwwroot\Uploads\blogposts\41bfcb0b-e35d-4016-80bc-f2f5d6b7588c.jpg
 wwwroot\Uploads\blogposts\4222f506-e9fd-458d-98ec-46635f9b1a77.jpg
 wwwroot\Uploads\blogposts\485316a4-f664-4965-a847-33325b544ebb.jpg
@@ -40,12 +44,14 @@ wwwroot\Uploads\blogposts\7090fd9c-494c-4361-ace7-c9917548514f.jpg
 wwwroot\Uploads\blogposts\7418e685-f78b-48ae-a85c-ab7e0a4ace55.jpg
 wwwroot\Uploads\blogposts\749c443e-4c41-4ed8-a59b-586595095585.jpg
 wwwroot\Uploads\blogposts\80cbf501-f4bb-4089-9203-3a795302930c.jpg
+wwwroot\Uploads\blogposts\82718cb1-a346-4395-a893-250533b65638.jpg
 wwwroot\Uploads\blogposts\8a165cab-0266-4d40-96d4-bf0273b69d15.jpg
 wwwroot\Uploads\blogposts\8b5df17d-bb80-411d-b3c7-28659a8f8281.jpg
 wwwroot\Uploads\blogposts\8dcdb0ef-fef4-415d-996f-18fbf9705d76.jpg
 wwwroot\Uploads\blogposts\94b2f260-b813-4784-99c4-72f8a2c79ad9.jpg
 wwwroot\Uploads\blogposts\95f143cb-f0f2-4a59-b9a2-c26435353d81.jpg
 wwwroot\Uploads\blogposts\ac46b5ba-9ee7-403b-84fe-a9f7d3c4ebe1.jpg
+wwwroot\Uploads\blogposts\acac352b-63db-4aef-bf56-2297c3ab2a22.jpg
 wwwroot\Uploads\blogposts\af554f9a-4c0f-49b6-a63b-251ac195a952.jpg
 wwwroot\Uploads\blogposts\b1ab6ea8-9885-42f2-be11-f851a493ab07.jpg
 wwwroot\Uploads\blogposts\b7c13e37-90ef-4093-aeef-cf5b04a3f5e3.jpg
@@ -55,8 +61,10 @@ wwwroot\Uploads\blogposts\c96c2538-aa44-4422-aa6a-b064d9debe30.jpg
 wwwroot\Uploads\blogposts\cf2931a4-9dd8-461c-bf9d-b4959b989731.jpg
 wwwroot\Uploads\blogposts\d6c782e9-f0ce-404f-ad63-3ea9c85d8e0a.jpg
 wwwroot\Uploads\blogposts\d87f13bc-c386-49f1-98d6-07e8c2c820d9.jpg
+wwwroot\Uploads\blogposts\d98a2a11-07fe-4f00-8fe3-46796153829b.jpg
 wwwroot\Uploads\blogposts\dadf6d81-f858-41df-ba77-a1fd8f0b4507.jpg
 wwwroot\Uploads\blogposts\e480dc76-7795-4ea3-835f-125afc1f7d34.jpg
+wwwroot\Uploads\blogposts\f00d6a69-4faf-42e6-9733-fb887d3ba7d0.jpg
 wwwroot\Uploads\blogposts\f4eda75b-f984-4cb9-83a1-a6bd3cdaf078.jpg
 wwwroot\Uploads\blogposts\fc8c0d9d-b291-456c-bbc0-4dda95b97691.jpg
 wwwroot\Uploads\brands\0108d61b-e74b-4b70-a62b-d301ee89ccb8.jpg

@@ -3,20 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\api-finalproject\\controllers\\client\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|solutionrelative:api-finalproject\\controllers\\client\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_7MEAR63_SQLEXPRESS/FinalProjectDb/True/SqlTable/dbo.Subscriptions.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\api-finalproject\\controllers\\admin\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|solutionrelative:api-finalproject\\controllers\\admin\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\api-finalproject\\controllers\\client\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|solutionrelative:api-finalproject\\controllers\\client\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\services\\blogpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\blogpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\services\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\subscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\services\\interfaces\\isubscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\isubscriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,63 +25,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BlogPostController.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Client\\BlogPostController.cs",
-              "RelativeDocumentMoniker": "API-FinalProject\\Controllers\\Client\\BlogPostController.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Client\\BlogPostController.cs",
-              "RelativeToolTip": "API-FinalProject\\Controllers\\Client\\BlogPostController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T14:13:37.615Z",
+              "Title": "dbo.Subscriptions [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_7MEAR63_SQLEXPRESS/FinalProjectDb/True/SqlTable/dbo.Subscriptions.sql",
+              "ToolTip": "dbo.Subscriptions [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-06-02T09:19:24.929Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BlogPostController.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Admin\\BlogPostController.cs",
-              "RelativeDocumentMoniker": "API-FinalProject\\Controllers\\Admin\\BlogPostController.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Admin\\BlogPostController.cs",
-              "RelativeToolTip": "API-FinalProject\\Controllers\\Admin\\BlogPostController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAswD8AAAAAAAAAAAAAAA==",
+              "Title": "SubscriptionController.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Client\\SubscriptionController.cs",
+              "RelativeDocumentMoniker": "API-FinalProject\\Controllers\\Client\\SubscriptionController.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Client\\SubscriptionController.cs*",
+              "RelativeToolTip": "API-FinalProject\\Controllers\\Client\\SubscriptionController.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwCAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T14:12:24.41Z",
+              "WhenOpened": "2025-06-02T07:01:28.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BlogPostService.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\BlogPostService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\BlogPostService.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\BlogPostService.cs",
-              "RelativeToolTip": "Service\\Services\\BlogPostService.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAIwLUAAAAkAAAAAAAAAA==",
+              "Title": "SubscriptionService.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\SubscriptionService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\SubscriptionService.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\SubscriptionService.cs",
+              "RelativeToolTip": "Service\\Services\\SubscriptionService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAowDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T14:07:36.394Z",
+              "WhenOpened": "2025-06-02T06:49:37.553Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\Interfaces\\IProductService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IProductService.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\Interfaces\\IProductService.cs",
-              "RelativeToolTip": "Service\\Services\\Interfaces\\IProductService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBUAAAAzAAAAAAAAAA==",
+              "Title": "ISubscriptionService.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\Interfaces\\ISubscriptionService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\ISubscriptionService.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\Interfaces\\ISubscriptionService.cs",
+              "RelativeToolTip": "Service\\Services\\Interfaces\\ISubscriptionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T14:06:30.013Z",
+              "WhenOpened": "2025-06-02T06:49:05.374Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         },

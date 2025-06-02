@@ -584,6 +584,26 @@ namespace Repository.Migrations
                     b.ToTable("SubscribeImgs");
                 });
 
+            modelBuilder.Entity("Domain.Entities.Subscription", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Subscriptions");
+                });
+
             modelBuilder.Entity("Domain.Entities.Tag", b =>
                 {
                     b.Property<int>("Id")

@@ -35,5 +35,6 @@ namespace Repository.Data
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<BasketProduct> BasketProducts { get; set; }
         public DbSet<Setting> Settings { get; set; }
+        public DbSet<Subscription> Subscriptions { get; set; }
     }
 }

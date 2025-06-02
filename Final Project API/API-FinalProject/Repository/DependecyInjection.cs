@@ -28,6 +28,8 @@ namespace Repository
             services.AddScoped<IProductTagRepository, ProductTagRepository>();
             services.AddScoped<IProductRepository, ProductRepository >();
             services.AddScoped<IBasketRepository, BasketRepository >();
+            services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
+
             return services;
         }
     }

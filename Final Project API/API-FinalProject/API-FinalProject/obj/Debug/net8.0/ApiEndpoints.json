@@ -1405,6 +1405,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_FinalProject.Controllers.Admin.SubscriptionController",
+    "Method": "GetAllSubscriptions",
+    "RelativePath": "api/admin/Subscription/GetAllSubscriptions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.SubscriptionController",
+    "Method": "Unsubscribe",
+    "RelativePath": "api/admin/Subscription/Unsubscribe/{email}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_FinalProject.Controllers.Admin.TagController",
     "Method": "Create",
     "RelativePath": "api/admin/Tag/Create",
@@ -1801,6 +1827,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Client.SubscriptionController",
+    "Method": "Subscribe",
+    "RelativePath": "api/Subscription/Subscribe",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Service.DTO.UI.Subscription.SubscriptionCreateDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

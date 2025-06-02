@@ -6,6 +6,7 @@ using AutoMapper;
 using Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -51,6 +52,11 @@ namespace Service.Services
             _configuration = configuration;
         }
 
+        public async Task<AppUser> GetUserByEmailAsync(string email)
+        {
+            return await _userManager.FindByEmailAsync(email);
+        }
+
         public async Task CreateRoleAsync()
         {
             foreach (var role in Enum.GetValues(typeof(Roles)))
@@ -61,7 +67,6 @@ namespace Service.Services
                 }
             }
         }
-
         public async Task<LoginResponse> LoginAsync(LoginDto model)
         {
             var user = await _userManager.FindByEmailAsync(model.EmailOrUserName);
@@ -112,7 +117,6 @@ namespace Service.Services
                 Roles = userRoles.ToList()
             };
         }
-
         public async Task<RegisterResponse> RegisterAsync(RegisterDto model)
         {
             var user = _mapper.Map<AppUser>(model);
@@ -139,7 +143,6 @@ namespace Service.Services
 
             return new RegisterResponse {Success = true, Message = new List<string>() {token}};
         }
-
         public async Task<string> VerifyEmail(string verifyEmail, string token)
         {
             var appUser = await _userManager.FindByEmailAsync(verifyEmail);
@@ -153,8 +156,6 @@ namespace Service.Services
 
             return CreateToken(appUser, roles);                 
         }
-
-
         public string CreateToken(AppUser user, IList<string> roles)
         {
             List<Claim> claims = new List<Claim>
@@ -180,9 +181,6 @@ namespace Service.Services
             var token = securityTokenHandler.CreateToken(tokenDescriptor);
             return securityTokenHandler.WriteToken(token);
         }
-
-
-
         private string GenerateJwtToken(string username, List<string> roles)
         {
             var claims = new List<Claim>
