@@ -30,6 +30,7 @@ namespace Repository
             services.AddScoped<IBasketRepository, BasketRepository >();
             services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
             services.AddScoped<IAboutPromoRepository, AboutPromoRepository>();
+            services.AddScoped<IHelpSectionRepository, HelpSectionRepository>();
 
             return services;
         }

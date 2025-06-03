@@ -1,0 +1,1081 @@
+2025-06-03 12:18:09.482 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 12:18:09.595 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-03 12:18:09.598 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-03 12:18:09.635 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 12:18:09.637 +04:00 [INF] Hosting environment: Development
+2025-06-03 12:18:09.638 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-03 12:49:32.443 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 12:49:32.586 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-03 12:49:32.587 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-03 12:49:32.626 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 12:49:32.628 +04:00 [INF] Hosting environment: Development
+2025-06-03 12:49:32.629 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-03 12:49:39.119 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 12:49:39.228 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-03 12:49:39.229 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-03 12:49:39.265 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 12:49:39.266 +04:00 [INF] Hosting environment: Development
+2025-06-03 12:49:39.267 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-03 12:49:39.554 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-03 12:49:39.685 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 132.4891ms
+2025-06-03 12:49:39.702 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-03 12:49:39.702 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-03 12:49:39.709 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 6.2027ms
+2025-06-03 12:49:39.732 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.3645ms
+2025-06-03 12:49:39.869 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-03 12:49:39.903 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.4039ms
+2025-06-03 12:51:29.636 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 12:51:29.752 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-03 12:51:29.754 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-03 12:51:29.791 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 12:51:29.793 +04:00 [INF] Hosting environment: Development
+2025-06-03 12:51:29.794 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-03 12:51:30.303 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-03 12:51:30.428 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 125.8578ms
+2025-06-03 12:51:30.454 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-03 12:51:30.454 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-03 12:51:30.460 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 5.7269ms
+2025-06-03 12:51:30.479 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.7681ms
+2025-06-03 12:51:30.515 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-03 12:51:30.553 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.507ms
+2025-06-03 12:51:59.426 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/HelpSection/Create - application/json 102
+2025-06-03 12:51:59.462 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Create (API-FinalProject)'
+2025-06-03 12:51:59.489 +04:00 [INF] Route matched with {action = "Create", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.HelpSection.HelpSectionCreateDto) on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 12:52:00.520 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-06-03 12:52:01.549 +04:00 [INF] Executed DbCommand (100ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [HelpSections] ([CreatedDate], [CustomerServiceHours], [IsWeekendClosed], [PhoneNumber])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-06-03 12:52:01.629 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-06-03 12:52:01.657 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.Create (API-FinalProject) in 2159.6594ms
+2025-06-03 12:52:01.661 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Create (API-FinalProject)'
+2025-06-03 12:52:01.673 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/HelpSection/Create - 201 null text/plain; charset=utf-8 2246.7592ms
+2025-06-03 12:55:18.718 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/admin/HelpSection/Create - application/json 98
+2025-06-03 12:55:18.727 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Create (API-FinalProject)'
+2025-06-03 12:55:18.729 +04:00 [INF] Route matched with {action = "Create", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.HelpSection.HelpSectionCreateDto) on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 12:55:18.778 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [HelpSections] ([CreatedDate], [CustomerServiceHours], [IsWeekendClosed], [PhoneNumber])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-06-03 12:55:18.783 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-06-03 12:55:18.784 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.Create (API-FinalProject) in 54.3636ms
+2025-06-03 12:55:18.785 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Create (API-FinalProject)'
+2025-06-03 12:55:18.786 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/admin/HelpSection/Create - 201 null text/plain; charset=utf-8 67.8519ms
+2025-06-03 12:55:24.795 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 12:55:24.802 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 12:55:24.807 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 12:55:25.013 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 12:55:25.038 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-06-03 12:55:25.040 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 231.2476ms
+2025-06-03 12:55:25.041 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 12:55:25.041 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 0 null 246.5219ms
+2025-06-03 12:55:49.805 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 12:55:49.907 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-03 12:55:49.910 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-03 12:55:49.950 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 12:55:49.951 +04:00 [INF] Hosting environment: Development
+2025-06-03 12:55:49.953 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-03 12:55:49.987 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-03 12:55:50.097 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 110.937ms
+2025-06-03 12:55:50.108 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-03 12:55:50.108 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-03 12:55:50.114 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 6.1679ms
+2025-06-03 12:55:50.132 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.8109ms
+2025-06-03 12:55:50.256 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-03 12:55:50.283 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.0896ms
+2025-06-03 12:56:03.382 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 12:56:03.408 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 12:56:03.422 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 12:56:04.264 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-06-03 12:56:04.782 +04:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 12:56:04.841 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 12:56:04.853 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 1423.3106ms
+2025-06-03 12:56:04.855 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 12:56:04.863 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 1481.0725ms
+2025-06-03 12:58:38.040 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-03 12:58:38.048 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 8.0133ms
+2025-06-03 12:58:38.059 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-03 12:58:38.062 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-03 12:58:38.064 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 2.3401ms
+2025-06-03 12:58:38.068 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.5957ms
+2025-06-03 12:58:38.207 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-03 12:58:38.241 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 34.371ms
+2025-06-03 12:58:55.017 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 12:58:55.137 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-03 12:58:55.138 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-03 12:58:55.176 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 12:58:55.178 +04:00 [INF] Hosting environment: Development
+2025-06-03 12:58:55.179 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-03 12:58:55.668 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-03 12:58:55.776 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 109.0383ms
+2025-06-03 12:58:55.780 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-03 12:58:55.780 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-03 12:58:55.786 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 5.8958ms
+2025-06-03 12:58:55.806 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.1009ms
+2025-06-03 12:58:56.028 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-03 12:58:56.067 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.5445ms
+2025-06-03 12:59:18.698 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7004/api/admin/HelpSection/Edit/2 - application/json 92
+2025-06-03 12:59:18.724 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Edit (API-FinalProject)'
+2025-06-03 12:59:18.743 +04:00 [INF] Route matched with {action = "Edit", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32, Service.DTO.Admin.HelpSection.HelpSectionEditDto) on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 12:59:19.471 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-06-03 12:59:20.167 +04:00 [INF] Executed DbCommand (92ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+WHERE [h].[Id] = @__id_0
+2025-06-03 12:59:20.325 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [HelpSections] SET [CreatedDate] = @p0, [CustomerServiceHours] = @p1, [IsWeekendClosed] = @p2, [PhoneNumber] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2025-06-03 12:59:20.340 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-06-03 12:59:20.344 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.Edit (API-FinalProject) in 1597.63ms
+2025-06-03 12:59:20.347 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Edit (API-FinalProject)'
+2025-06-03 12:59:20.354 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7004/api/admin/HelpSection/Edit/2 - 200 0 null 1655.7898ms
+2025-06-03 12:59:32.425 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 12:59:32.434 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 12:59:32.441 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 12:59:32.526 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 12:59:32.547 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 12:59:32.553 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 105.2842ms
+2025-06-03 12:59:32.556 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 12:59:32.558 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 132.7205ms
+2025-06-03 13:27:15.665 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-03 13:27:15.688 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 13:27:15.702 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-03 13:27:29.787 +04:00 [ERR] An error occurred using the connection to database 'FinalProjectDb' on server 'DESKTOP-7MEAR63\SQLEXPRESS'.
+2025-06-03 13:27:29.843 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Repository.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=2; handshake=3; [Login] initialization=0; authentication=1; [Post-Login] complete=14008; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:dc908bf1-ee3d-4845-9e94-c4dc2487b013
+Error Number:-2,State:0,Class:11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=2; handshake=3; [Login] initialization=0; authentication=1; [Post-Login] complete=14008; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:dc908bf1-ee3d-4845-9e94-c4dc2487b013
+Error Number:-2,State:0,Class:11
+2025-06-03 13:27:29.866 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 14162.5622ms
+2025-06-03 13:27:29.869 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 13:27:29.872 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=2; handshake=3; [Login] initialization=0; authentication=1; [Post-Login] complete=14008; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Repository.Repositories.BaseRepository`1.GetAllAsync() in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Repository\Repositories\BaseRepository.cs:line 42
+   at Service.Services.SliderService.GetAllAsync() in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\SliderService.cs:line 70
+   at API_FinalProject.Controllers.Admin.SliderController.GetAll() in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\SliderController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:dc908bf1-ee3d-4845-9e94-c4dc2487b013
+Error Number:-2,State:0,Class:11
+2025-06-03 13:27:29.951 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 500 null text/plain; charset=utf-8 14289.2411ms
+2025-06-03 13:27:42.770 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 13:27:42.909 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-03 13:27:42.910 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-03 13:27:42.954 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 13:27:42.956 +04:00 [INF] Hosting environment: Development
+2025-06-03 13:27:42.956 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-03 13:27:43.429 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-03 13:27:43.547 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 116.8361ms
+2025-06-03 13:27:43.560 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-03 13:27:43.563 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-03 13:27:43.566 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 6.2724ms
+2025-06-03 13:27:43.587 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.6827ms
+2025-06-03 13:27:43.640 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-03 13:27:43.676 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.3559ms
+2025-06-03 13:27:47.060 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-03 13:27:47.079 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 13:27:47.091 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-03 13:27:47.565 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-06-03 13:28:01.969 +04:00 [ERR] An error occurred using the connection to database 'FinalProjectDb' on server 'DESKTOP-7MEAR63\SQLEXPRESS'.
+2025-06-03 13:28:01.989 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Repository.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=26; handshake=16; [Login] initialization=1; authentication=3; [Post-Login] complete=14004; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:a12c21a9-b6ba-45ab-b4a3-7808342ed884
+Error Number:-2,State:0,Class:11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=26; handshake=16; [Login] initialization=1; authentication=3; [Post-Login] complete=14004; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:a12c21a9-b6ba-45ab-b4a3-7808342ed884
+Error Number:-2,State:0,Class:11
+2025-06-03 13:28:02.005 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 14910.157ms
+2025-06-03 13:28:02.006 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 13:28:02.009 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=26; handshake=16; [Login] initialization=1; authentication=3; [Post-Login] complete=14004; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Repository.Repositories.BaseRepository`1.GetAllAsync() in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Repository\Repositories\BaseRepository.cs:line 42
+   at Service.Services.SliderService.GetAllAsync() in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\SliderService.cs:line 70
+   at API_FinalProject.Controllers.Admin.SliderController.GetAll() in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Admin\SliderController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:a12c21a9-b6ba-45ab-b4a3-7808342ed884
+Error Number:-2,State:0,Class:11
+2025-06-03 13:28:02.046 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 500 null text/plain; charset=utf-8 14985.8148ms
+2025-06-03 13:28:16.161 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-03 13:28:16.168 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 13:28:16.170 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-03 13:28:26.130 +04:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-03 13:28:26.188 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:28:26.204 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 10032.6605ms
+2025-06-03 13:28:26.207 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 13:28:26.209 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 10048.0371ms
+2025-06-03 13:28:26.222 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-03 13:28:26.231 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 13:28:26.234 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-03 13:28:26.262 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-03 13:28:26.275 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:28:26.279 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 44.0005ms
+2025-06-03 13:28:26.282 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 13:28:26.283 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 61.8423ms
+2025-06-03 13:28:26.287 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-03 13:28:26.289 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 13:28:26.293 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-03 13:28:26.534 +04:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-06-03 13:28:26.743 +04:00 [INF] Executed DbCommand (181ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-03 13:28:26.872 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:28:26.882 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 586.7191ms
+2025-06-03 13:28:26.884 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 13:28:26.884 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 597.2614ms
+2025-06-03 13:28:26.890 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-03 13:28:26.893 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 13:28:26.896 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-03 13:28:26.912 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-03 13:28:26.916 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:28:26.918 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 20.39ms
+2025-06-03 13:28:26.919 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 13:28:26.920 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 29.694ms
+2025-06-03 13:28:26.922 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-03 13:28:26.925 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 13:28:26.929 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-03 13:28:26.939 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-03 13:28:26.944 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:28:26.946 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 15.6691ms
+2025-06-03 13:28:26.947 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 13:28:26.948 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 26.2073ms
+2025-06-03 13:28:26.950 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-03 13:28:26.952 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 13:28:26.955 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-03 13:28:26.964 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-03 13:28:26.968 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:28:26.970 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 14.1339ms
+2025-06-03 13:28:26.971 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 13:28:26.972 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 21.7304ms
+2025-06-03 13:28:37.233 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Subscription/GetAllSubscriptions - null null
+2025-06-03 13:28:37.236 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscriptionController.GetAllSubscriptions (API-FinalProject)'
+2025-06-03 13:28:37.241 +04:00 [INF] Route matched with {action = "GetAllSubscriptions", controller = "Subscription"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllSubscriptions() on controller API_FinalProject.Controllers.Admin.SubscriptionController (API-FinalProject).
+2025-06-03 13:28:37.271 +04:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Email]
+FROM [Subscriptions] AS [s]
+2025-06-03 13:28:37.278 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.UI.Subscription.SubscriptionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:28:37.281 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscriptionController.GetAllSubscriptions (API-FinalProject) in 38.7493ms
+2025-06-03 13:28:37.282 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscriptionController.GetAllSubscriptions (API-FinalProject)'
+2025-06-03 13:28:37.284 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Subscription/GetAllSubscriptions - 200 null application/json; charset=utf-8 51.2379ms
+2025-06-03 13:28:43.175 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 13:28:43.177 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:28:43.181 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:28:43.608 +04:00 [INF] Executed DbCommand (418ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 13:28:43.620 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:28:43.624 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 441.4839ms
+2025-06-03 13:28:43.626 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:28:43.628 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 453.0716ms
+2025-06-03 13:28:48.882 +04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7004/api/admin/HelpSection/Delete?id=1 - null null
+2025-06-03 13:28:48.886 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Delete (API-FinalProject)'
+2025-06-03 13:28:48.894 +04:00 [INF] Route matched with {action = "Delete", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:28:49.317 +04:00 [INF] Executed DbCommand (382ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+WHERE [h].[Id] = @__id_0
+2025-06-03 13:28:49.486 +04:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [HelpSections]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-06-03 13:28:49.504 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-06-03 13:28:49.505 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.Delete (API-FinalProject) in 609.5555ms
+2025-06-03 13:28:49.506 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Delete (API-FinalProject)'
+2025-06-03 13:28:49.508 +04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7004/api/admin/HelpSection/Delete?id=1 - 200 0 null 625.4882ms
+2025-06-03 13:28:49.514 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 13:28:49.515 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:28:49.516 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:28:49.530 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 13:28:49.532 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:28:49.533 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 15.2893ms
+2025-06-03 13:28:49.535 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:28:49.535 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 21.84ms
+2025-06-03 13:28:50.561 +04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7004/api/admin/HelpSection/Delete?id=2 - null null
+2025-06-03 13:28:50.564 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Delete (API-FinalProject)'
+2025-06-03 13:28:50.565 +04:00 [INF] Route matched with {action = "Delete", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:28:50.575 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+WHERE [h].[Id] = @__id_0
+2025-06-03 13:28:50.579 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [HelpSections]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-06-03 13:28:50.581 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-06-03 13:28:50.581 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.Delete (API-FinalProject) in 15.5662ms
+2025-06-03 13:28:50.582 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Delete (API-FinalProject)'
+2025-06-03 13:28:50.583 +04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7004/api/admin/HelpSection/Delete?id=2 - 200 0 null 21.3515ms
+2025-06-03 13:28:50.586 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 13:28:50.589 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:28:50.589 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:28:50.592 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 13:28:50.593 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:28:50.594 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 3.8094ms
+2025-06-03 13:28:50.595 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:28:50.595 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 8.9205ms
+2025-06-03 13:31:49.195 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7004/api/admin/HelpSection/Create - application/json; charset=utf-8 null
+2025-06-03 13:31:49.199 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Create (API-FinalProject)'
+2025-06-03 13:31:49.205 +04:00 [INF] Route matched with {action = "Create", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.HelpSection.HelpSectionCreateDto) on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:31:49.267 +04:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [HelpSections] ([CreatedDate], [CustomerServiceHours], [IsWeekendClosed], [PhoneNumber])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-06-03 13:31:49.279 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-06-03 13:31:49.303 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.Create (API-FinalProject) in 97.322ms
+2025-06-03 13:31:49.305 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Create (API-FinalProject)'
+2025-06-03 13:31:49.305 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7004/api/admin/HelpSection/Create - 201 null text/plain; charset=utf-8 110.375ms
+2025-06-03 13:31:49.340 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 13:31:49.345 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:31:49.348 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:31:49.356 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 13:31:49.362 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:31:49.364 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 13.3014ms
+2025-06-03 13:31:49.365 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:31:49.367 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 27.0227ms
+2025-06-03 13:45:23.114 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-03 13:45:23.120 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 13:45:23.122 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-03 13:45:23.206 +04:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-03 13:45:23.209 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:45:23.211 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 87.7686ms
+2025-06-03 13:45:23.213 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 13:45:23.214 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 100.5183ms
+2025-06-03 13:45:23.228 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-03 13:45:23.230 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 13:45:23.231 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-03 13:45:23.237 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-03 13:45:23.238 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:45:23.239 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 7.1136ms
+2025-06-03 13:45:23.240 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 13:45:23.241 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 12.3303ms
+2025-06-03 13:45:23.246 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-03 13:45:23.248 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 13:45:23.249 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-03 13:45:23.292 +04:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-03 13:45:23.312 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:45:23.314 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 64.3397ms
+2025-06-03 13:45:23.316 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 13:45:23.317 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 70.6509ms
+2025-06-03 13:45:23.322 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-03 13:45:23.325 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 13:45:23.325 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-03 13:45:23.331 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-03 13:45:23.333 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:45:23.335 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 7.4571ms
+2025-06-03 13:45:23.335 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 13:45:23.336 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 14.4892ms
+2025-06-03 13:45:23.338 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-03 13:45:23.341 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 13:45:23.342 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-03 13:45:23.347 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-03 13:45:23.348 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:45:23.349 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 6.4505ms
+2025-06-03 13:45:23.350 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 13:45:23.351 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 12.5623ms
+2025-06-03 13:45:23.353 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-03 13:45:23.355 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 13:45:23.356 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-03 13:45:23.362 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-03 13:45:23.364 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:45:23.365 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 7.7338ms
+2025-06-03 13:45:23.366 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 13:45:23.366 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 13.4419ms
+2025-06-03 13:45:35.963 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 13:45:35.966 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:45:35.966 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:45:35.981 +04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 13:45:35.983 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:45:35.985 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 17.635ms
+2025-06-03 13:45:35.987 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:45:35.988 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 25.0975ms
+2025-06-03 13:46:36.864 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 13:46:36.869 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:46:36.870 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:46:36.876 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 13:46:36.880 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:46:36.882 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 10.6249ms
+2025-06-03 13:46:36.884 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:46:36.885 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 20.9969ms
+2025-06-03 13:46:52.057 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 13:46:52.060 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:46:52.061 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:46:52.066 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 13:46:52.068 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:46:52.070 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 7.1087ms
+2025-06-03 13:46:52.071 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:46:52.072 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 15.6521ms
+2025-06-03 13:48:16.810 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 13:48:16.814 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:48:16.816 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:48:16.828 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 13:48:16.830 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:48:16.831 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 12.9026ms
+2025-06-03 13:48:16.832 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:48:16.833 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 23.0311ms
+2025-06-03 13:50:05.324 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 13:50:05.327 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:50:05.328 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:50:05.333 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 13:50:05.336 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:50:05.337 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 7.6574ms
+2025-06-03 13:50:05.339 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:50:05.339 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 15.5059ms
+2025-06-03 13:51:13.343 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 13:51:13.349 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:51:13.351 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:51:13.366 +04:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 13:51:13.368 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:51:13.368 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 15.6409ms
+2025-06-03 13:51:13.370 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:51:13.372 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 28.6469ms
+2025-06-03 13:53:06.639 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 13:53:06.643 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:53:06.646 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:53:06.657 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 13:53:06.661 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:53:06.662 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 13.5114ms
+2025-06-03 13:53:06.662 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:53:06.663 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 24.0483ms
+2025-06-03 13:59:34.606 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Subscription/GetAllSubscriptions - null null
+2025-06-03 13:59:34.609 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscriptionController.GetAllSubscriptions (API-FinalProject)'
+2025-06-03 13:59:34.610 +04:00 [INF] Route matched with {action = "GetAllSubscriptions", controller = "Subscription"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllSubscriptions() on controller API_FinalProject.Controllers.Admin.SubscriptionController (API-FinalProject).
+2025-06-03 13:59:34.626 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Email]
+FROM [Subscriptions] AS [s]
+2025-06-03 13:59:34.627 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.UI.Subscription.SubscriptionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:59:34.628 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscriptionController.GetAllSubscriptions (API-FinalProject) in 16.3075ms
+2025-06-03 13:59:34.628 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscriptionController.GetAllSubscriptions (API-FinalProject)'
+2025-06-03 13:59:34.629 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Subscription/GetAllSubscriptions - 200 null application/json; charset=utf-8 22.8843ms
+2025-06-03 13:59:37.392 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 13:59:37.396 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:59:37.398 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:59:37.403 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 13:59:37.405 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:59:37.406 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 6.8162ms
+2025-06-03 13:59:37.407 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:59:37.408 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 15.7007ms
+2025-06-03 13:59:39.026 +04:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7004/api/admin/HelpSection/Delete?id=3 - null null
+2025-06-03 13:59:39.032 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Delete (API-FinalProject)'
+2025-06-03 13:59:39.034 +04:00 [INF] Route matched with {action = "Delete", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:59:39.054 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+WHERE [h].[Id] = @__id_0
+2025-06-03 13:59:39.067 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [HelpSections]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-06-03 13:59:39.072 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-06-03 13:59:39.074 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.Delete (API-FinalProject) in 37.2162ms
+2025-06-03 13:59:39.075 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Delete (API-FinalProject)'
+2025-06-03 13:59:39.075 +04:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7004/api/admin/HelpSection/Delete?id=3 - 200 0 null 49.3611ms
+2025-06-03 13:59:39.080 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 13:59:39.083 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:59:39.084 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 13:59:39.087 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 13:59:39.088 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:59:39.089 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 3.7683ms
+2025-06-03 13:59:39.089 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 13:59:39.090 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 9.8904ms
+2025-06-03 13:59:54.819 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-03 13:59:54.821 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 13:59:54.822 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-03 13:59:54.827 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-03 13:59:54.829 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:59:54.830 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 6.6399ms
+2025-06-03 13:59:54.831 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 13:59:54.832 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 12.9998ms
+2025-06-03 13:59:54.834 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-03 13:59:54.835 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 13:59:54.836 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-03 13:59:54.841 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-03 13:59:54.842 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:59:54.843 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 6.383ms
+2025-06-03 13:59:54.844 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 13:59:54.845 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 10.7544ms
+2025-06-03 13:59:54.847 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-03 13:59:54.849 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 13:59:54.849 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-03 13:59:54.875 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-03 13:59:54.884 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:59:54.885 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 35.1038ms
+2025-06-03 13:59:54.886 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 13:59:54.887 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 40.1174ms
+2025-06-03 13:59:54.892 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-03 13:59:54.894 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 13:59:54.895 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-03 13:59:54.901 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-03 13:59:54.902 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:59:54.903 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 6.495ms
+2025-06-03 13:59:54.903 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 13:59:54.904 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 11.6873ms
+2025-06-03 13:59:54.906 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-03 13:59:54.907 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 13:59:54.908 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-03 13:59:54.912 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-03 13:59:54.914 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:59:54.915 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 6.1246ms
+2025-06-03 13:59:54.916 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 13:59:54.917 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 10.7901ms
+2025-06-03 13:59:54.918 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-03 13:59:54.920 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 13:59:54.920 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-03 13:59:54.925 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-03 13:59:54.927 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 13:59:54.927 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 5.9257ms
+2025-06-03 13:59:54.928 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 13:59:54.929 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 10.4303ms
+2025-06-03 14:00:35.409 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-03 14:00:35.414 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 14:00:35.416 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-03 14:00:35.424 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-03 14:00:35.426 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:00:35.427 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 10.116ms
+2025-06-03 14:00:35.428 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 14:00:35.429 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 19.8793ms
+2025-06-03 14:00:35.441 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-03 14:00:35.444 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 14:00:35.444 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-03 14:00:35.447 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-03 14:00:35.449 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:00:35.449 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 4.1694ms
+2025-06-03 14:00:35.450 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 14:00:35.451 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 9.9463ms
+2025-06-03 14:00:35.453 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-03 14:00:35.454 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 14:00:35.454 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-03 14:00:35.470 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-03 14:00:35.479 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:00:35.480 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 24.6464ms
+2025-06-03 14:00:35.481 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 14:00:35.482 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 29.2395ms
+2025-06-03 14:00:35.486 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-03 14:00:35.488 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 14:00:35.488 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-03 14:00:35.492 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-03 14:00:35.494 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:00:35.494 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 4.9758ms
+2025-06-03 14:00:35.495 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 14:00:35.496 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 9.7592ms
+2025-06-03 14:00:35.500 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-03 14:00:35.502 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 14:00:35.502 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-03 14:00:35.505 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-03 14:00:35.507 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:00:35.508 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 4.5446ms
+2025-06-03 14:00:35.509 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 14:00:35.509 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 9.0581ms
+2025-06-03 14:00:35.511 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-03 14:00:35.513 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 14:00:35.513 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-03 14:00:35.517 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-03 14:00:35.519 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:00:35.520 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 5.7328ms
+2025-06-03 14:00:35.521 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 14:00:35.521 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 10.0621ms
+2025-06-03 14:00:49.641 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 14:00:49.645 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 14:00:49.646 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 14:00:49.649 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 14:00:49.651 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:00:49.652 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 5.8328ms
+2025-06-03 14:00:49.654 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 14:00:49.654 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 13.2644ms
+2025-06-03 14:00:58.794 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 14:00:58.798 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 14:00:58.800 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 14:00:58.804 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 14:00:58.806 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:00:58.807 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 5.8472ms
+2025-06-03 14:00:58.808 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 14:00:58.809 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 14.6201ms
+2025-06-03 14:01:21.650 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 14:01:21.654 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 14:01:21.655 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 14:01:21.659 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 14:01:21.660 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:01:21.662 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 4.7793ms
+2025-06-03 14:01:21.663 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 14:01:21.665 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 14.9772ms
+2025-06-03 14:01:33.276 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7004/api/admin/HelpSection/Create - application/json; charset=utf-8 null
+2025-06-03 14:01:33.280 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Create (API-FinalProject)'
+2025-06-03 14:01:33.280 +04:00 [INF] Route matched with {action = "Create", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.HelpSection.HelpSectionCreateDto) on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 14:01:33.303 +04:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [HelpSections] ([CreatedDate], [CustomerServiceHours], [IsWeekendClosed], [PhoneNumber])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-06-03 14:01:33.308 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'System.String'.
+2025-06-03 14:01:33.312 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.Create (API-FinalProject) in 30.5548ms
+2025-06-03 14:01:33.313 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.Create (API-FinalProject)'
+2025-06-03 14:01:33.314 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7004/api/admin/HelpSection/Create - 201 null text/plain; charset=utf-8 38.6427ms
+2025-06-03 14:01:33.320 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 14:01:33.322 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 14:01:33.323 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 14:01:33.326 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 14:01:33.327 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:01:33.328 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 3.9303ms
+2025-06-03 14:01:33.329 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 14:01:33.330 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 9.6219ms
+2025-06-03 14:01:35.515 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-03 14:01:35.517 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 14:01:35.518 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-03 14:01:35.522 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-03 14:01:35.523 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:01:35.524 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 4.7945ms
+2025-06-03 14:01:35.525 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 14:01:35.526 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 10.8703ms
+2025-06-03 14:01:35.529 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-03 14:01:35.530 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 14:01:35.531 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-03 14:01:35.536 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-03 14:01:35.538 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:01:35.538 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 5.8626ms
+2025-06-03 14:01:35.539 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 14:01:35.540 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 11.2396ms
+2025-06-03 14:01:35.542 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-03 14:01:35.543 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 14:01:35.544 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-03 14:01:35.562 +04:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-03 14:01:35.567 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:01:35.569 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 24ms
+2025-06-03 14:01:35.570 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 14:01:35.570 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 28.6874ms
+2025-06-03 14:01:35.572 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-03 14:01:35.574 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 14:01:35.574 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-03 14:01:35.577 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-03 14:01:35.578 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:01:35.579 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 4.132ms
+2025-06-03 14:01:35.580 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 14:01:35.581 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 8.9482ms
+2025-06-03 14:01:35.583 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-03 14:01:35.585 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 14:01:35.586 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-03 14:01:35.589 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-03 14:01:35.590 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:01:35.591 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 4.3492ms
+2025-06-03 14:01:35.592 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 14:01:35.593 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 9.8298ms
+2025-06-03 14:01:35.595 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-03 14:01:35.596 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 14:01:35.597 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-03 14:01:35.600 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-03 14:01:35.601 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:01:35.602 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 4.5142ms
+2025-06-03 14:01:35.603 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 14:01:35.604 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 8.7556ms
+2025-06-03 14:01:38.359 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 14:01:38.363 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 14:01:38.364 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 14:01:38.367 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 14:01:38.368 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:01:38.369 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 3.8047ms
+2025-06-03 14:01:38.370 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 14:01:38.370 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 11.5503ms
+2025-06-03 14:04:06.319 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 14:04:06.326 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 14:04:06.329 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 14:04:06.337 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 14:04:06.339 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 14:04:06.340 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 10.723ms
+2025-06-03 14:04:06.341 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 14:04:06.342 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 23.0844ms

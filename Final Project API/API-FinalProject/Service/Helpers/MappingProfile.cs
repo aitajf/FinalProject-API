@@ -9,6 +9,7 @@ using Service.DTO.Admin.BlogPost;
 using Service.DTO.Admin.Brand;
 using Service.DTO.Admin.Category;
 using Service.DTO.Admin.Color;
+using Service.DTO.Admin.HelpSection;
 using Service.DTO.Admin.Instagram;
 using Service.DTO.Admin.LandingBanner;
 using Service.DTO.Admin.Sliders;
@@ -114,6 +115,10 @@ namespace Service.Helpers
             CreateMap<AboutPromo, AboutPromoDto>();
             CreateMap<AboutPromoCreateDto, AboutPromo>();
             CreateMap<AboutPromoEditDto, AboutPromo>().ForMember(dest => dest.Image, opt => opt.Ignore());
+
+            CreateMap<HelpSectionCreateDto, HelpSection>();
+            CreateMap<HelpSectionEditDto, HelpSection>();
+            CreateMap<HelpSection, HelpSectionDto>();
         }
     }
 }

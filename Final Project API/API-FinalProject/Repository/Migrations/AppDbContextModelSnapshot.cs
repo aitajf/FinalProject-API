@@ -372,6 +372,33 @@ namespace Repository.Migrations
                     b.ToTable("Colors");
                 });
 
+            modelBuilder.Entity("Domain.Entities.HelpSection", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CustomerServiceHours")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsWeekendClosed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("HelpSections");
+                });
+
             modelBuilder.Entity("Domain.Entities.Instagram", b =>
                 {
                     b.Property<int>("Id")
