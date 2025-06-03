@@ -234,7 +234,7 @@ namespace Service.Services
             };
             var urlHelperFactory = new UrlHelperFactory();
             var urlHelper = urlHelperFactory.GetUrlHelper(actionContext);
-            string link = $"https://localhost:7004/api/Account/ResetPassword?email={HttpUtility.UrlEncode(appUser.Email)}&token={HttpUtility.UrlEncode(token)}";
+            string link = $"https://localhost:7169/Account/ResetPassword?email={HttpUtility.UrlEncode(appUser.Email)}&token={HttpUtility.UrlEncode(token)}";
             await _sendEmail.SendAsync("aitajjf2@gmail.com", "JoiFurn Furniture", appUser.Email, link, "Reset Password");
             return token;
         }

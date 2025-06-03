@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Service.DTO.Admin.AskUsFrom;
+using Service.DTO.UI.Subscription;
+using Service.Services;
 using Service.Services.Interfaces;
 
 namespace API_FinalProject.Controllers.Client
@@ -18,7 +20,7 @@ namespace API_FinalProject.Controllers.Client
         {
             if (!ModelState.IsValid) return BadRequest(request);
             await _askUsFromService.CreateAsync(request);
-            return CreatedAtAction(nameof(Create), "Created success");
-        }
+            return Ok("Subscribed successfully!");
+        }      
     }
 }

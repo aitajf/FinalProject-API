@@ -1,12 +1,17 @@
 ﻿
+using System.ComponentModel.DataAnnotations;
 using FluentValidation;
 
 namespace Service.DTO.Admin.AskUsFrom
 {
     public class AskUsFromCreateDto
     {
+        [Required]
         public string Name { get; set; }
+        [Required]
+        [EmailAddress]
         public string Email { get; set; }
+        [Required]
         public string Message { get; set; }
     }
 
