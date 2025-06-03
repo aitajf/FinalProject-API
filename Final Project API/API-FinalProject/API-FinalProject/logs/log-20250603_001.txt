@@ -6190,3 +6190,1065 @@ VALUES (@p0, @p1, @p2, @p3);
 2025-06-03 19:37:11.014 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject) in 14.4465ms
 2025-06-03 19:37:11.015 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject)'
 2025-06-03 19:37:11.016 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7004/api/AskUsFrom/Create - 200 null text/plain; charset=utf-8 25.2146ms
+2025-06-03 19:41:22.436 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 19:41:22.664 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-03 19:41:22.669 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-03 19:41:22.736 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 19:41:22.749 +04:00 [INF] Hosting environment: Development
+2025-06-03 19:41:22.751 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-03 19:41:23.216 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-03 19:41:23.216 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger - null null
+2025-06-03 19:41:23.282 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 19:41:23.305 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-03 19:41:23.320 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger - 301 0 null 106.1053ms
+2025-06-03 19:41:23.327 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-03 19:41:23.390 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 62.7161ms
+2025-06-03 19:41:23.405 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/swagger-ui-bundle.js - null null
+2025-06-03 19:41:23.405 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-03 19:41:23.405 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/swagger-ui.css - null null
+2025-06-03 19:41:23.405 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/swagger-ui-standalone-preset.js - null null
+2025-06-03 19:41:23.412 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 6.5534ms
+2025-06-03 19:41:23.414 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-03 19:41:23.421 +04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-06-03 19:41:23.421 +04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-06-03 19:41:23.428 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 23.1355ms
+2025-06-03 19:41:23.428 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/swagger-ui.css - 200 152034 text/css 23.6037ms
+2025-06-03 19:41:23.429 +04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-06-03 19:41:23.435 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 30.1886ms
+2025-06-03 19:41:23.477 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.6349ms
+2025-06-03 19:41:23.651 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-03 19:41:23.690 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/favicon-32x32.png - null null
+2025-06-03 19:41:23.691 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.7229ms
+2025-06-03 19:41:23.694 +04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-06-03 19:41:23.697 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/favicon-32x32.png - 200 628 image/png 7.1059ms
+2025-06-03 19:41:24.084 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-06-03 19:41:24.774 +04:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-03 19:41:24.810 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:41:24.821 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 1508.1579ms
+2025-06-03 19:41:24.823 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 19:41:24.830 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 1615.7395ms
+2025-06-03 19:41:24.840 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-03 19:41:24.846 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:41:24.850 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-03 19:41:24.904 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-03 19:41:24.910 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:41:24.912 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 60.6613ms
+2025-06-03 19:41:24.913 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:41:24.914 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 73.5883ms
+2025-06-03 19:41:24.919 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-03 19:41:24.922 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 19:41:24.926 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-03 19:41:25.092 +04:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-06-03 19:41:25.144 +04:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-03 19:41:25.253 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:41:25.261 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 333.7376ms
+2025-06-03 19:41:25.262 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 19:41:25.263 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 344.2072ms
+2025-06-03 19:41:25.269 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-03 19:41:25.272 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 19:41:25.277 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-03 19:41:25.287 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-03 19:41:25.292 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:41:25.294 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 16.3078ms
+2025-06-03 19:41:25.295 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 19:41:25.296 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 26.5884ms
+2025-06-03 19:41:25.298 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-03 19:41:25.300 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 19:41:25.303 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-03 19:41:25.313 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-03 19:41:25.318 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:41:25.320 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 15.1853ms
+2025-06-03 19:41:25.321 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 19:41:25.321 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 23.3035ms
+2025-06-03 19:41:25.324 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-03 19:41:25.326 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 19:41:25.329 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-03 19:41:25.341 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-03 19:41:25.345 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:41:25.347 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 16.3283ms
+2025-06-03 19:41:25.348 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 19:41:25.349 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 24.161ms
+2025-06-03 19:41:25.920 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/sliders/6141a34f-6566-4d50-aafe-9c97620595f0.jpg - null null
+2025-06-03 19:41:25.920 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/sliders/c26da97c-ccf8-4758-bf66-7d6c802789c5.jpg - null null
+2025-06-03 19:41:25.928 +04:00 [INF] Sending file. Request path: '/Uploads/sliders/6141a34f-6566-4d50-aafe-9c97620595f0.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\sliders\6141a34f-6566-4d50-aafe-9c97620595f0.jpg'
+2025-06-03 19:41:25.928 +04:00 [INF] Sending file. Request path: '/Uploads/sliders/c26da97c-ccf8-4758-bf66-7d6c802789c5.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\sliders\c26da97c-ccf8-4758-bf66-7d6c802789c5.jpg'
+2025-06-03 19:41:25.930 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/sliders/6141a34f-6566-4d50-aafe-9c97620595f0.jpg - 200 8459 image/jpeg 10.0202ms
+2025-06-03 19:41:25.931 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/sliders/c26da97c-ccf8-4758-bf66-7d6c802789c5.jpg - 200 12029 image/jpeg 11.2421ms
+2025-06-03 19:41:25.932 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/sliders/bb96ca48-ff76-45e8-a4ec-aa6db5b0758e.jpg - null null
+2025-06-03 19:41:25.933 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/categories/5d4f8584-431e-418a-96d3-e4651c24e6b0.jpg - null null
+2025-06-03 19:41:25.937 +04:00 [INF] Sending file. Request path: '/Uploads/sliders/bb96ca48-ff76-45e8-a4ec-aa6db5b0758e.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\sliders\bb96ca48-ff76-45e8-a4ec-aa6db5b0758e.jpg'
+2025-06-03 19:41:25.939 +04:00 [INF] Sending file. Request path: '/Uploads/categories/5d4f8584-431e-418a-96d3-e4651c24e6b0.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\categories\5d4f8584-431e-418a-96d3-e4651c24e6b0.jpg'
+2025-06-03 19:41:25.940 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/sliders/bb96ca48-ff76-45e8-a4ec-aa6db5b0758e.jpg - 200 13149 image/jpeg 7.3316ms
+2025-06-03 19:41:25.941 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/categories/5d4f8584-431e-418a-96d3-e4651c24e6b0.jpg - 200 7531 image/jpeg 8.3452ms
+2025-06-03 19:41:25.942 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/categories/d8e0556a-57c9-407f-b961-fe103c8236d0.jpg - null null
+2025-06-03 19:41:25.943 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/categories/526a06bb-01a3-4814-87cd-2aa1a9105d6a.jpg - null null
+2025-06-03 19:41:25.947 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/categories/f7288614-b5fc-47ae-9c9d-2de16a7f1ec6.jpg - null null
+2025-06-03 19:41:25.948 +04:00 [INF] Sending file. Request path: '/Uploads/categories/d8e0556a-57c9-407f-b961-fe103c8236d0.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\categories\d8e0556a-57c9-407f-b961-fe103c8236d0.jpg'
+2025-06-03 19:41:25.950 +04:00 [INF] Sending file. Request path: '/Uploads/categories/526a06bb-01a3-4814-87cd-2aa1a9105d6a.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\categories\526a06bb-01a3-4814-87cd-2aa1a9105d6a.jpg'
+2025-06-03 19:41:25.951 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/categories/d8e0556a-57c9-407f-b961-fe103c8236d0.jpg - 200 18564 image/jpeg 9.3009ms
+2025-06-03 19:41:25.951 +04:00 [INF] Sending file. Request path: '/Uploads/categories/f7288614-b5fc-47ae-9c9d-2de16a7f1ec6.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\categories\f7288614-b5fc-47ae-9c9d-2de16a7f1ec6.jpg'
+2025-06-03 19:41:25.952 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/categories/526a06bb-01a3-4814-87cd-2aa1a9105d6a.jpg - 200 18564 image/jpeg 9.5511ms
+2025-06-03 19:41:25.956 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/categories/f7288614-b5fc-47ae-9c9d-2de16a7f1ec6.jpg - 200 30061 image/jpeg 8.2671ms
+2025-06-03 19:41:25.958 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/52271dd0-0282-4707-89a3-e3c84bbf3949.jpg - null null
+2025-06-03 19:41:25.958 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/fae03f68-c8e1-4838-96e0-bd7c22c5abc6.jpg - null null
+2025-06-03 19:41:25.963 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/52271dd0-0282-4707-89a3-e3c84bbf3949.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\52271dd0-0282-4707-89a3-e3c84bbf3949.jpg'
+2025-06-03 19:41:25.965 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/52271dd0-0282-4707-89a3-e3c84bbf3949.jpg - 200 28742 image/jpeg 6.8375ms
+2025-06-03 19:41:25.966 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/fae03f68-c8e1-4838-96e0-bd7c22c5abc6.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\fae03f68-c8e1-4838-96e0-bd7c22c5abc6.jpg'
+2025-06-03 19:41:25.968 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/fae03f68-c8e1-4838-96e0-bd7c22c5abc6.jpg - 200 67169 image/jpeg 10.2505ms
+2025-06-03 19:41:25.971 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/b4374262-c55f-4bea-a196-574a3e98ab31.jpg - null null
+2025-06-03 19:41:25.971 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/3caaf049-1866-4226-8afe-2de2ff4b959f.jpg - null null
+2025-06-03 19:41:25.971 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/ddca1c2a-6b77-4c93-a739-9b16aaaf8d5f.jpg - null null
+2025-06-03 19:41:25.976 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/b4374262-c55f-4bea-a196-574a3e98ab31.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\b4374262-c55f-4bea-a196-574a3e98ab31.jpg'
+2025-06-03 19:41:25.978 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/3caaf049-1866-4226-8afe-2de2ff4b959f.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\3caaf049-1866-4226-8afe-2de2ff4b959f.jpg'
+2025-06-03 19:41:25.979 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/b4374262-c55f-4bea-a196-574a3e98ab31.jpg - 200 14849 image/jpeg 8.3732ms
+2025-06-03 19:41:25.980 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/ddca1c2a-6b77-4c93-a739-9b16aaaf8d5f.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\ddca1c2a-6b77-4c93-a739-9b16aaaf8d5f.jpg'
+2025-06-03 19:41:25.981 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/3caaf049-1866-4226-8afe-2de2ff4b959f.jpg - 200 13149 image/jpeg 9.5273ms
+2025-06-03 19:41:25.983 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/ddca1c2a-6b77-4c93-a739-9b16aaaf8d5f.jpg - 200 71890 image/jpeg 12.0613ms
+2025-06-03 19:41:26.674 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/149b9b80-1e00-4d00-8228-ba2b0b30c8ef.jpg - null null
+2025-06-03 19:41:26.674 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/10fb2579-1fb5-4998-8623-f281490f980e.jpg - null null
+2025-06-03 19:41:26.676 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/149b9b80-1e00-4d00-8228-ba2b0b30c8ef.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\149b9b80-1e00-4d00-8228-ba2b0b30c8ef.jpg'
+2025-06-03 19:41:26.678 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/10fb2579-1fb5-4998-8623-f281490f980e.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\10fb2579-1fb5-4998-8623-f281490f980e.jpg'
+2025-06-03 19:41:26.679 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/149b9b80-1e00-4d00-8228-ba2b0b30c8ef.jpg - 200 13149 image/jpeg 4.6408ms
+2025-06-03 19:41:26.680 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/10fb2579-1fb5-4998-8623-f281490f980e.jpg - 200 15032 image/jpeg 5.7295ms
+2025-06-03 19:41:26.681 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/2dea396a-60b7-4162-9567-0f33dff4a3df.jpg - null null
+2025-06-03 19:41:26.681 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/ed9efc63-6821-434a-9513-ab58b9391c91.jpg - null null
+2025-06-03 19:41:26.685 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/2dea396a-60b7-4162-9567-0f33dff4a3df.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\2dea396a-60b7-4162-9567-0f33dff4a3df.jpg'
+2025-06-03 19:41:26.687 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/2dea396a-60b7-4162-9567-0f33dff4a3df.jpg - 200 16100 image/jpeg 6.3511ms
+2025-06-03 19:41:26.687 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/ed9efc63-6821-434a-9513-ab58b9391c91.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\ed9efc63-6821-434a-9513-ab58b9391c91.jpg'
+2025-06-03 19:41:26.689 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/c6a7e48d-1725-47d9-b94d-c204f434ba5a.jpg - null null
+2025-06-03 19:41:26.690 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/ed9efc63-6821-434a-9513-ab58b9391c91.jpg - 200 67169 image/jpeg 9.2024ms
+2025-06-03 19:41:26.692 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/08621220-cddc-4adc-a088-ce9e5a5ce23d.jpg - null null
+2025-06-03 19:41:26.693 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/c6a7e48d-1725-47d9-b94d-c204f434ba5a.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\c6a7e48d-1725-47d9-b94d-c204f434ba5a.jpg'
+2025-06-03 19:41:26.696 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/c6a7e48d-1725-47d9-b94d-c204f434ba5a.jpg - 200 5468 image/jpeg 7.8029ms
+2025-06-03 19:41:26.699 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/08621220-cddc-4adc-a088-ce9e5a5ce23d.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\08621220-cddc-4adc-a088-ce9e5a5ce23d.jpg'
+2025-06-03 19:41:26.699 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/24e089b3-f34e-40dd-8c4b-6742ef720224.jpg - null null
+2025-06-03 19:41:26.700 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/08621220-cddc-4adc-a088-ce9e5a5ce23d.jpg - 200 421137 image/jpeg 7.5765ms
+2025-06-03 19:41:26.702 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/83472756-e811-4346-9a58-3dc6e68657b7.jpg - null null
+2025-06-03 19:41:26.702 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/24e089b3-f34e-40dd-8c4b-6742ef720224.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\24e089b3-f34e-40dd-8c4b-6742ef720224.jpg'
+2025-06-03 19:41:26.705 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/83472756-e811-4346-9a58-3dc6e68657b7.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\83472756-e811-4346-9a58-3dc6e68657b7.jpg'
+2025-06-03 19:41:26.705 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/24e089b3-f34e-40dd-8c4b-6742ef720224.jpg - 200 16057 image/jpeg 6.1109ms
+2025-06-03 19:41:26.706 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/83472756-e811-4346-9a58-3dc6e68657b7.jpg - 200 15032 image/jpeg 4.3478ms
+2025-06-03 19:41:26.707 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/47e999da-7dd4-4182-839e-0a9b6fa42e94.jpg - null null
+2025-06-03 19:41:26.708 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/b3d79d62-8bb5-4dac-bbfb-36f1b03622aa.jpg - null null
+2025-06-03 19:41:26.711 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/47e999da-7dd4-4182-839e-0a9b6fa42e94.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\47e999da-7dd4-4182-839e-0a9b6fa42e94.jpg'
+2025-06-03 19:41:26.712 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/b3d79d62-8bb5-4dac-bbfb-36f1b03622aa.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\b3d79d62-8bb5-4dac-bbfb-36f1b03622aa.jpg'
+2025-06-03 19:41:26.713 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/47e999da-7dd4-4182-839e-0a9b6fa42e94.jpg - 200 6272 image/jpeg 5.465ms
+2025-06-03 19:41:26.713 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/b3d79d62-8bb5-4dac-bbfb-36f1b03622aa.jpg - 200 13149 image/jpeg 5.6147ms
+2025-06-03 19:41:26.714 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/2cbcbc9a-e8d5-43de-8860-68ce7d956d1c.jpg - null null
+2025-06-03 19:41:26.715 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/78c2cd44-b244-471b-ac57-27cf85344f24.jpg - null null
+2025-06-03 19:41:26.718 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/2cbcbc9a-e8d5-43de-8860-68ce7d956d1c.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\2cbcbc9a-e8d5-43de-8860-68ce7d956d1c.jpg'
+2025-06-03 19:41:26.720 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/78c2cd44-b244-471b-ac57-27cf85344f24.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\78c2cd44-b244-471b-ac57-27cf85344f24.jpg'
+2025-06-03 19:41:26.720 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/2cbcbc9a-e8d5-43de-8860-68ce7d956d1c.jpg - 200 45051 image/jpeg 5.7522ms
+2025-06-03 19:41:26.721 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/78c2cd44-b244-471b-ac57-27cf85344f24.jpg - 200 30061 image/jpeg 6.1008ms
+2025-06-03 19:41:26.721 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/08f95442-5b7c-4e0c-aa12-6fcdfe265197.jpg - null null
+2025-06-03 19:41:26.722 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/3f03c049-ced8-49b6-9ebf-b823e4dbebb2.jpg - null null
+2025-06-03 19:41:26.726 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/08f95442-5b7c-4e0c-aa12-6fcdfe265197.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\08f95442-5b7c-4e0c-aa12-6fcdfe265197.jpg'
+2025-06-03 19:41:26.728 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/3f03c049-ced8-49b6-9ebf-b823e4dbebb2.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\3f03c049-ced8-49b6-9ebf-b823e4dbebb2.jpg'
+2025-06-03 19:41:26.728 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/08f95442-5b7c-4e0c-aa12-6fcdfe265197.jpg - 200 14161 image/jpeg 6.2963ms
+2025-06-03 19:41:26.729 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/3f03c049-ced8-49b6-9ebf-b823e4dbebb2.jpg - 200 71890 image/jpeg 6.4721ms
+2025-06-03 19:41:26.729 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/landingbanners/1de16651-1dd0-4526-9562-adadc61e56e0.jpg - null null
+2025-06-03 19:41:26.730 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/landingbanners/21b7da2f-6ffe-44b6-8514-07f5b548ba8e.jpg - null null
+2025-06-03 19:41:26.734 +04:00 [INF] Sending file. Request path: '/Uploads/landingbanners/1de16651-1dd0-4526-9562-adadc61e56e0.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\landingbanners\1de16651-1dd0-4526-9562-adadc61e56e0.jpg'
+2025-06-03 19:41:26.735 +04:00 [INF] Sending file. Request path: '/Uploads/landingbanners/21b7da2f-6ffe-44b6-8514-07f5b548ba8e.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\landingbanners\21b7da2f-6ffe-44b6-8514-07f5b548ba8e.jpg'
+2025-06-03 19:41:26.735 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/landingbanners/1de16651-1dd0-4526-9562-adadc61e56e0.jpg - 200 112788 image/jpeg 5.8451ms
+2025-06-03 19:41:26.736 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/landingbanners/21b7da2f-6ffe-44b6-8514-07f5b548ba8e.jpg - 200 12029 image/jpeg 5.9452ms
+2025-06-03 19:41:26.737 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/landingbanners/607999f7-1216-47c5-8ab5-8faaf04249e7.jpg - null null
+2025-06-03 19:41:26.737 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/subscribeImgs/63b7301c-0faf-4b7c-9b3f-3e84175b717b.jpg - null null
+2025-06-03 19:41:26.742 +04:00 [INF] Sending file. Request path: '/Uploads/landingbanners/607999f7-1216-47c5-8ab5-8faaf04249e7.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\landingbanners\607999f7-1216-47c5-8ab5-8faaf04249e7.jpg'
+2025-06-03 19:41:26.744 +04:00 [INF] Sending file. Request path: '/Uploads/subscribeImgs/63b7301c-0faf-4b7c-9b3f-3e84175b717b.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\subscribeImgs\63b7301c-0faf-4b7c-9b3f-3e84175b717b.jpg'
+2025-06-03 19:41:26.744 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/landingbanners/607999f7-1216-47c5-8ab5-8faaf04249e7.jpg - 200 30061 image/jpeg 7.3177ms
+2025-06-03 19:41:26.745 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/subscribeImgs/63b7301c-0faf-4b7c-9b3f-3e84175b717b.jpg - 200 7779 image/jpeg 7.7546ms
+2025-06-03 19:41:26.747 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/instagram/fef9c21b-6bd9-4734-8882-789085bb6ab9.jpg - null null
+2025-06-03 19:41:26.752 +04:00 [INF] Sending file. Request path: '/Uploads/instagram/fef9c21b-6bd9-4734-8882-789085bb6ab9.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\instagram\fef9c21b-6bd9-4734-8882-789085bb6ab9.jpg'
+2025-06-03 19:41:26.753 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/instagram/fef9c21b-6bd9-4734-8882-789085bb6ab9.jpg - 200 67169 image/jpeg 5.8578ms
+2025-06-03 19:41:33.676 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 19:41:33.678 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 19:41:33.682 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 19:41:33.697 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 19:41:33.707 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:41:33.709 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 24.3048ms
+2025-06-03 19:41:33.711 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 19:41:33.712 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 35.868ms
+2025-06-03 19:41:42.418 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7004/api/AskUsFrom/Create - application/json; charset=utf-8 null
+2025-06-03 19:41:42.422 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject)'
+2025-06-03 19:41:42.431 +04:00 [INF] Route matched with {action = "Create", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.AskUsFrom.AskUsFromCreateDto) on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-03 19:41:42.563 +04:00 [INF] Executed DbCommand (32ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-06-03 19:41:42.569 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject) in 136.1746ms
+2025-06-03 19:41:42.571 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject)'
+2025-06-03 19:41:42.573 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: First be register.
+   at Service.Services.AskUsFromService.CreateAsync(AskUsFromCreateDto model) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\AskUsFromService.cs:line 26
+   at API_FinalProject.Controllers.Client.AskUsFromController.Create(AskUsFromCreateDto request) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Client\AskUsFromController.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-03 19:41:42.663 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7004/api/AskUsFrom/Create - 500 null text/plain; charset=utf-8 244.928ms
+2025-06-03 19:41:48.746 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7004/api/AskUsFrom/Create - application/json; charset=utf-8 null
+2025-06-03 19:41:48.750 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject)'
+2025-06-03 19:41:48.751 +04:00 [INF] Route matched with {action = "Create", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.AskUsFrom.AskUsFromCreateDto) on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-03 19:41:48.762 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-06-03 19:41:48.914 +04:00 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AskUsFroms] ([CreatedDate], [Email], [Message], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-06-03 19:41:48.964 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-06-03 19:41:48.969 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject) in 216.5493ms
+2025-06-03 19:41:48.972 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject)'
+2025-06-03 19:41:48.975 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7004/api/AskUsFrom/Create - 200 null text/plain; charset=utf-8 228.9731ms
+2025-06-03 19:47:12.615 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-03 19:47:12.625 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:47:12.629 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-03 19:47:12.661 +04:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-03 19:47:12.692 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:47:12.699 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 67.3784ms
+2025-06-03 19:47:12.704 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:47:12.715 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 100.0781ms
+2025-06-03 19:47:12.759 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Brand/GetAll - null null
+2025-06-03 19:47:12.767 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BrandController.GetAll (API-FinalProject)'
+2025-06-03 19:47:12.785 +04:00 [INF] Route matched with {action = "GetAll", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BrandController (API-FinalProject).
+2025-06-03 19:47:12.828 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name]
+FROM [Brands] AS [b]
+2025-06-03 19:47:12.844 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Brand.BrandDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:47:12.854 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BrandController.GetAll (API-FinalProject) in 65.2522ms
+2025-06-03 19:47:12.857 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BrandController.GetAll (API-FinalProject)'
+2025-06-03 19:47:12.860 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Brand/GetAll - 200 null application/json; charset=utf-8 100.6866ms
+2025-06-03 19:47:12.867 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/Product/GetAllTaken/take?take=6&skip=0 - null null
+2025-06-03 19:47:12.873 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.UI.ProductController.GetAllTaken (API-FinalProject)'
+2025-06-03 19:47:12.890 +04:00 [INF] Route matched with {action = "GetAllTaken", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTaken(Int32, System.Nullable`1[System.Int32]) on controller FinalProject.Controllers.UI.ProductController (API-FinalProject).
+2025-06-03 19:47:12.933 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-03 19:47:12.936 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-03 19:47:13.002 +04:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-06-03 19:47:13.112 +04:00 [INF] Executed DbCommand (85ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BrandId], [t].[CategoryId], [t].[CreatedDate], [t].[Description], [t].[Name], [t].[Price], [t].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t0].[Id], [t0].[ColorId], [t0].[CreatedDate], [t0].[ProductId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name], [t1].[Id], [t1].[CreatedDate], [t1].[ProductId], [t1].[TagId], [t1].[Id0], [t1].[CreatedDate0], [t1].[Name]
+FROM (
+    SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [t].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [t].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t2].[Id] AS [Id0], [t2].[CreatedDate] AS [CreatedDate0], [t2].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t2] ON [p2].[TagId] = [t2].[Id]
+) AS [t1] ON [t].[Id] = [t1].[ProductId]
+ORDER BY [t].[Id], [c].[Id], [b].[Id], [p0].[Id], [t0].[Id], [t0].[Id0], [t1].[Id]
+2025-06-03 19:47:13.160 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:47:13.164 +04:00 [INF] Executed action FinalProject.Controllers.UI.ProductController.GetAllTaken (API-FinalProject) in 272.0576ms
+2025-06-03 19:47:13.168 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.UI.ProductController.GetAllTaken (API-FinalProject)'
+2025-06-03 19:47:13.170 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/Product/GetAllTaken/take?take=6&skip=0 - 200 null application/json; charset=utf-8 303.4657ms
+2025-06-03 19:47:13.177 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/Product/GetProductsCount - null null
+2025-06-03 19:47:13.185 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.UI.ProductController.GetProductsCount (API-FinalProject)'
+2025-06-03 19:47:13.196 +04:00 [INF] Route matched with {action = "GetProductsCount", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsCount() on controller FinalProject.Controllers.UI.ProductController (API-FinalProject).
+2025-06-03 19:47:13.320 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2025-06-03 19:47:13.330 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2025-06-03 19:47:13.341 +04:00 [INF] Executed action FinalProject.Controllers.UI.ProductController.GetProductsCount (API-FinalProject) in 139.9733ms
+2025-06-03 19:47:13.345 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.UI.ProductController.GetProductsCount (API-FinalProject)'
+2025-06-03 19:47:13.348 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/Product/GetProductsCount - 200 null application/json; charset=utf-8 171.4512ms
+2025-06-03 19:47:13.566 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/brands/44c66ea3-52d8-4b07-a588-4dcf85cd2c89.jpg - null null
+2025-06-03 19:47:13.566 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/7638dc96-9e0f-4901-aecf-73179db6bf3c.jpg - null null
+2025-06-03 19:47:13.567 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/brands/4f72d926-ef01-47a7-b669-f5b472eb318e.jpg - null null
+2025-06-03 19:47:13.567 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/02f38d3d-d411-49e2-ab6f-2bde84cc3226.jpg - null null
+2025-06-03 19:47:13.568 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/brands/2a144909-c8dc-4bc6-87de-8343684e368e.jpg - null null
+2025-06-03 19:47:13.569 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/brands/6957a27e-5f0a-41fc-a6ec-1df7c2244df8.jpg - null null
+2025-06-03 19:47:13.569 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/15a82d0e-1900-4bf0-9d7f-0949af12e619.jpg - null null
+2025-06-03 19:47:13.569 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/f753eb31-b58a-4786-947d-29046e1a1424.jpg - null null
+2025-06-03 19:47:13.576 +04:00 [INF] Sending file. Request path: '/Uploads/brands/44c66ea3-52d8-4b07-a588-4dcf85cd2c89.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\brands\44c66ea3-52d8-4b07-a588-4dcf85cd2c89.jpg'
+2025-06-03 19:47:13.581 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/7638dc96-9e0f-4901-aecf-73179db6bf3c.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\7638dc96-9e0f-4901-aecf-73179db6bf3c.jpg'
+2025-06-03 19:47:13.584 +04:00 [INF] Sending file. Request path: '/Uploads/brands/4f72d926-ef01-47a7-b669-f5b472eb318e.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\brands\4f72d926-ef01-47a7-b669-f5b472eb318e.jpg'
+2025-06-03 19:47:13.589 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/02f38d3d-d411-49e2-ab6f-2bde84cc3226.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\02f38d3d-d411-49e2-ab6f-2bde84cc3226.jpg'
+2025-06-03 19:47:13.590 +04:00 [INF] Sending file. Request path: '/Uploads/brands/2a144909-c8dc-4bc6-87de-8343684e368e.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\brands\2a144909-c8dc-4bc6-87de-8343684e368e.jpg'
+2025-06-03 19:47:13.594 +04:00 [INF] Sending file. Request path: '/Uploads/brands/6957a27e-5f0a-41fc-a6ec-1df7c2244df8.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\brands\6957a27e-5f0a-41fc-a6ec-1df7c2244df8.jpg'
+2025-06-03 19:47:13.600 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/15a82d0e-1900-4bf0-9d7f-0949af12e619.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\15a82d0e-1900-4bf0-9d7f-0949af12e619.jpg'
+2025-06-03 19:47:13.604 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/brands/44c66ea3-52d8-4b07-a588-4dcf85cd2c89.jpg - 200 15032 image/jpeg 38.2836ms
+2025-06-03 19:47:13.605 +04:00 [INF] Sending file. Request path: '/Uploads/productimages/f753eb31-b58a-4786-947d-29046e1a1424.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\productimages\f753eb31-b58a-4786-947d-29046e1a1424.jpg'
+2025-06-03 19:47:13.607 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/7638dc96-9e0f-4901-aecf-73179db6bf3c.jpg - 200 75110 image/jpeg 40.6489ms
+2025-06-03 19:47:13.609 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/brands/4f72d926-ef01-47a7-b669-f5b472eb318e.jpg - 200 18564 image/jpeg 42.3314ms
+2025-06-03 19:47:13.612 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/02f38d3d-d411-49e2-ab6f-2bde84cc3226.jpg - 200 112788 image/jpeg 45.2172ms
+2025-06-03 19:47:13.614 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/brands/2a144909-c8dc-4bc6-87de-8343684e368e.jpg - 200 30061 image/jpeg 46.7099ms
+2025-06-03 19:47:13.618 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/brands/6957a27e-5f0a-41fc-a6ec-1df7c2244df8.jpg - 200 16100 image/jpeg 49.2908ms
+2025-06-03 19:47:13.619 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/15a82d0e-1900-4bf0-9d7f-0949af12e619.jpg - 200 75110 image/jpeg 49.8633ms
+2025-06-03 19:47:13.625 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/f753eb31-b58a-4786-947d-29046e1a1424.jpg - 200 112788 image/jpeg 55.831ms
+2025-06-03 19:47:19.513 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-03 19:47:19.523 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 19:47:19.527 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-03 19:47:19.605 +04:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-03 19:47:19.640 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:47:19.644 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 111.4504ms
+2025-06-03 19:47:19.647 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 19:47:19.650 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 137.0096ms
+2025-06-03 19:47:19.658 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/Product/GetAllTaken/take?take=8&skip=6 - null null
+2025-06-03 19:47:19.664 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.UI.ProductController.GetAllTaken (API-FinalProject)'
+2025-06-03 19:47:19.666 +04:00 [INF] Route matched with {action = "GetAllTaken", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTaken(Int32, System.Nullable`1[System.Int32]) on controller FinalProject.Controllers.UI.ProductController (API-FinalProject).
+2025-06-03 19:47:19.765 +04:00 [INF] Executed DbCommand (92ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BrandId], [t].[CategoryId], [t].[CreatedDate], [t].[Description], [t].[Name], [t].[Price], [t].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t0].[Id], [t0].[ColorId], [t0].[CreatedDate], [t0].[ProductId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name], [t1].[Id], [t1].[CreatedDate], [t1].[ProductId], [t1].[TagId], [t1].[Id0], [t1].[CreatedDate0], [t1].[Name]
+FROM (
+    SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [t].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [t].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t2].[Id] AS [Id0], [t2].[CreatedDate] AS [CreatedDate0], [t2].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t2] ON [p2].[TagId] = [t2].[Id]
+) AS [t1] ON [t].[Id] = [t1].[ProductId]
+ORDER BY [t].[Id], [c].[Id], [b].[Id], [p0].[Id], [t0].[Id], [t0].[Id0], [t1].[Id]
+2025-06-03 19:47:19.789 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:47:19.792 +04:00 [INF] Executed action FinalProject.Controllers.UI.ProductController.GetAllTaken (API-FinalProject) in 122.0708ms
+2025-06-03 19:47:19.796 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.UI.ProductController.GetAllTaken (API-FinalProject)'
+2025-06-03 19:47:19.798 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/Product/GetAllTaken/take?take=8&skip=6 - 200 null application/json; charset=utf-8 140.3971ms
+2025-06-03 19:52:10.096 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/BlogCategory/GetAll - null null
+2025-06-03 19:52:10.100 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogCategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.106 +04:00 [INF] Route matched with {action = "GetAll", controller = "BlogCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BlogCategoryController (API-FinalProject).
+2025-06-03 19:52:10.223 +04:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[CreatedDate], [b].[Name]
+FROM [BlogCategories] AS [b]
+2025-06-03 19:52:10.230 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.BlogCategory.BlogCategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:52:10.235 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogCategoryController.GetAll (API-FinalProject) in 127.806ms
+2025-06-03 19:52:10.238 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogCategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.240 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/BlogCategory/GetAll - 200 null application/json; charset=utf-8 144.0964ms
+2025-06-03 19:52:10.245 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/BlogPost/GetPaginateDatas?page=1&take=3 - null null
+2025-06-03 19:52:10.249 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetPaginateDatas (API-FinalProject)'
+2025-06-03 19:52:10.253 +04:00 [INF] Route matched with {action = "GetPaginateDatas", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaginateDatas(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-06-03 19:52:10.280 +04:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BlogPosts] AS [b]
+2025-06-03 19:52:10.287 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-03 19:52:10.288 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-03 19:52:10.308 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [b0].[Id], [b0].[CreatedDate], [b0].[Name]
+FROM (
+    SELECT [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title]
+    FROM [BlogPosts] AS [b]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [BlogCategories] AS [b0] ON [t].[BlogCategoryId] = [b0].[Id]
+2025-06-03 19:52:10.333 +04:00 [INF] Executing OkObjectResult, writing value of type 'Service.Helpers.PaginationResponse`1[[Service.DTO.Admin.BlogPost.BlogPostDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:52:10.340 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.GetPaginateDatas (API-FinalProject) in 82.6181ms
+2025-06-03 19:52:10.342 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetPaginateDatas (API-FinalProject)'
+2025-06-03 19:52:10.343 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/BlogPost/GetPaginateDatas?page=1&take=3 - 200 null application/json; charset=utf-8 97.6531ms
+2025-06-03 19:52:10.437 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-03 19:52:10.443 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.445 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-03 19:52:10.457 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-03 19:52:10.459 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:52:10.461 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 13.8354ms
+2025-06-03 19:52:10.463 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.464 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 26.9351ms
+2025-06-03 19:52:10.467 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-03 19:52:10.470 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.471 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-03 19:52:10.479 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-03 19:52:10.481 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:52:10.483 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 10.6287ms
+2025-06-03 19:52:10.485 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.486 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 18.8745ms
+2025-06-03 19:52:10.490 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-03 19:52:10.493 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.493 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-03 19:52:10.542 +04:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-03 19:52:10.553 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:52:10.556 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 61.7851ms
+2025-06-03 19:52:10.558 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.559 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 69.0901ms
+2025-06-03 19:52:10.562 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-03 19:52:10.569 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.571 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-03 19:52:10.579 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-03 19:52:10.584 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:52:10.587 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 13.5977ms
+2025-06-03 19:52:10.589 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.590 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 27.6191ms
+2025-06-03 19:52:10.594 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-03 19:52:10.599 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.602 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-03 19:52:10.608 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-03 19:52:10.610 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:52:10.611 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 8.2636ms
+2025-06-03 19:52:10.612 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.613 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 19.2993ms
+2025-06-03 19:52:10.615 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-03 19:52:10.619 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.621 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-03 19:52:10.628 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-03 19:52:10.630 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:52:10.631 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 8.5202ms
+2025-06-03 19:52:10.631 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 19:52:10.633 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 17.2926ms
+2025-06-03 19:52:22.637 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/BlogPost/GetById/2 - null null
+2025-06-03 19:52:22.642 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetById (API-FinalProject)'
+2025-06-03 19:52:22.650 +04:00 [INF] Route matched with {action = "GetById", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-06-03 19:52:22.691 +04:00 [INF] Executed DbCommand (18ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [t].[Id0], [b1].[Id], [b1].[BlogPostId], [b1].[CreatedDate], [b1].[Image], [b1].[IsMain], [t].[CreatedDate0], [t].[Name]
+FROM (
+    SELECT TOP(1) [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title], [b0].[Id] AS [Id0], [b0].[CreatedDate] AS [CreatedDate0], [b0].[Name]
+    FROM [BlogPosts] AS [b]
+    INNER JOIN [BlogCategories] AS [b0] ON [b].[BlogCategoryId] = [b0].[Id]
+    WHERE [b].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [BlogPostImgs] AS [b1] ON [t].[Id] = [b1].[BlogPostId]
+ORDER BY [t].[Id], [t].[Id0]
+2025-06-03 19:52:22.707 +04:00 [INF] Executing OkObjectResult, writing value of type 'Service.DTO.Admin.BlogPost.BlogPostDto'.
+2025-06-03 19:52:22.712 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.GetById (API-FinalProject) in 56.9623ms
+2025-06-03 19:52:22.715 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetById (API-FinalProject)'
+2025-06-03 19:52:22.716 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/BlogPost/GetById/2 - 200 null application/json; charset=utf-8 79.2083ms
+2025-06-03 19:52:22.771 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/blogposts/1f20bc83-d49a-4605-901e-66019b465614.jpg - null null
+2025-06-03 19:52:22.800 +04:00 [INF] Sending file. Request path: '/Uploads/blogposts/1f20bc83-d49a-4605-901e-66019b465614.jpg'. Physical path: 'C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\blogposts\1f20bc83-d49a-4605-901e-66019b465614.jpg'
+2025-06-03 19:52:22.802 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/blogposts/1f20bc83-d49a-4605-901e-66019b465614.jpg - 200 13149 image/jpeg 31.3083ms
+2025-06-03 19:54:46.941 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/BlogCategory/GetAll - null null
+2025-06-03 19:54:46.956 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogCategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:54:46.960 +04:00 [INF] Route matched with {action = "GetAll", controller = "BlogCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BlogCategoryController (API-FinalProject).
+2025-06-03 19:54:46.990 +04:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[CreatedDate], [b].[Name]
+FROM [BlogCategories] AS [b]
+2025-06-03 19:54:47.001 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.BlogCategory.BlogCategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:54:47.004 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogCategoryController.GetAll (API-FinalProject) in 35.1348ms
+2025-06-03 19:54:47.009 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogCategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:54:47.015 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/BlogCategory/GetAll - 200 null application/json; charset=utf-8 73.7672ms
+2025-06-03 19:54:47.023 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/BlogPost/GetPaginateDatas?page=1&take=3 - null null
+2025-06-03 19:54:47.027 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetPaginateDatas (API-FinalProject)'
+2025-06-03 19:54:47.028 +04:00 [INF] Route matched with {action = "GetPaginateDatas", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaginateDatas(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-06-03 19:54:47.042 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BlogPosts] AS [b]
+2025-06-03 19:54:47.051 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [b0].[Id], [b0].[CreatedDate], [b0].[Name]
+FROM (
+    SELECT [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title]
+    FROM [BlogPosts] AS [b]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [BlogCategories] AS [b0] ON [t].[BlogCategoryId] = [b0].[Id]
+2025-06-03 19:54:47.053 +04:00 [INF] Executing OkObjectResult, writing value of type 'Service.Helpers.PaginationResponse`1[[Service.DTO.Admin.BlogPost.BlogPostDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:54:47.054 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.GetPaginateDatas (API-FinalProject) in 20.9343ms
+2025-06-03 19:54:47.056 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetPaginateDatas (API-FinalProject)'
+2025-06-03 19:54:47.057 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/BlogPost/GetPaginateDatas?page=1&take=3 - 200 null application/json; charset=utf-8 33.2262ms
+2025-06-03 19:54:47.100 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-03 19:54:47.103 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 19:54:47.104 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-03 19:54:47.119 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-03 19:54:47.129 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:54:47.130 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 24.0531ms
+2025-06-03 19:54:47.132 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 19:54:47.133 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 33.2186ms
+2025-06-03 19:54:47.138 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-03 19:54:47.141 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:54:47.143 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-03 19:54:47.150 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-03 19:54:47.153 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:54:47.155 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 9.2754ms
+2025-06-03 19:54:47.158 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:54:47.160 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 21.8535ms
+2025-06-03 19:54:47.165 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-03 19:54:47.169 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 19:54:47.171 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-03 19:54:47.228 +04:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-03 19:54:47.239 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:54:47.241 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 68.2438ms
+2025-06-03 19:54:47.243 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 19:54:47.244 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 78.7237ms
+2025-06-03 19:54:47.247 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-03 19:54:47.250 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 19:54:47.250 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-03 19:54:47.258 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-03 19:54:47.261 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:54:47.262 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 9.9786ms
+2025-06-03 19:54:47.264 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 19:54:47.265 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 17.9664ms
+2025-06-03 19:54:47.269 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-03 19:54:47.273 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 19:54:47.274 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-03 19:54:47.282 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-03 19:54:47.285 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:54:47.288 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 11.8688ms
+2025-06-03 19:54:47.290 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 19:54:47.292 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 23.4635ms
+2025-06-03 19:54:47.297 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-03 19:54:47.301 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 19:54:47.305 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-03 19:54:47.314 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-03 19:54:47.317 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:54:47.319 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 12.1496ms
+2025-06-03 19:54:47.322 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 19:54:47.324 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 26.7324ms
+2025-06-03 19:56:57.684 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/BlogCategory/GetAll - null null
+2025-06-03 19:56:57.692 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogCategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:56:57.697 +04:00 [INF] Route matched with {action = "GetAll", controller = "BlogCategory"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.BlogCategoryController (API-FinalProject).
+2025-06-03 19:56:57.715 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[CreatedDate], [b].[Name]
+FROM [BlogCategories] AS [b]
+2025-06-03 19:56:57.723 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.BlogCategory.BlogCategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:56:57.730 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogCategoryController.GetAll (API-FinalProject) in 25.908ms
+2025-06-03 19:56:57.736 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogCategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:56:57.739 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/BlogCategory/GetAll - 200 null application/json; charset=utf-8 54.5042ms
+2025-06-03 19:56:57.752 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/BlogPost/GetPaginateDatas?page=2&take=3 - null null
+2025-06-03 19:56:57.759 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetPaginateDatas (API-FinalProject)'
+2025-06-03 19:56:57.763 +04:00 [INF] Route matched with {action = "GetPaginateDatas", controller = "BlogPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaginateDatas(Int32, Int32) on controller API_FinalProject.Controllers.Admin.BlogPostController (API-FinalProject).
+2025-06-03 19:56:57.775 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [BlogPosts] AS [b]
+2025-06-03 19:56:57.783 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-03 19:56:57.786 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-06-03 19:56:57.811 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BlogCategoryId], [t].[CreatedDate], [t].[Description], [t].[HighlightText], [t].[Title], [b0].[Id], [b0].[CreatedDate], [b0].[Name]
+FROM (
+    SELECT [b].[Id], [b].[BlogCategoryId], [b].[CreatedDate], [b].[Description], [b].[HighlightText], [b].[Title]
+    FROM [BlogPosts] AS [b]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+) AS [t]
+INNER JOIN [BlogCategories] AS [b0] ON [t].[BlogCategoryId] = [b0].[Id]
+2025-06-03 19:56:57.818 +04:00 [INF] Executing OkObjectResult, writing value of type 'Service.Helpers.PaginationResponse`1[[Service.DTO.Admin.BlogPost.BlogPostDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:56:57.821 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.BlogPostController.GetPaginateDatas (API-FinalProject) in 53.4205ms
+2025-06-03 19:56:57.823 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.BlogPostController.GetPaginateDatas (API-FinalProject)'
+2025-06-03 19:56:57.825 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/BlogPost/GetPaginateDatas?page=2&take=3 - 200 null application/json; charset=utf-8 73.1892ms
+2025-06-03 19:56:57.857 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-03 19:56:57.863 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 19:56:57.865 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-03 19:56:57.870 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-03 19:56:57.873 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:56:57.875 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 7.8723ms
+2025-06-03 19:56:57.876 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 19:56:57.878 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 21.6148ms
+2025-06-03 19:56:57.882 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-03 19:56:57.889 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:56:57.892 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-03 19:56:57.897 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-03 19:56:57.901 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:56:57.902 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 8.9746ms
+2025-06-03 19:56:57.905 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 19:56:57.906 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 23.9816ms
+2025-06-03 19:56:57.912 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-03 19:56:57.918 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 19:56:57.921 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-03 19:56:57.974 +04:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-03 19:56:57.993 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:56:57.997 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 72.7709ms
+2025-06-03 19:56:58.000 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 19:56:58.001 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 89.4713ms
+2025-06-03 19:56:58.008 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-03 19:56:58.014 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 19:56:58.016 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-03 19:56:58.027 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-03 19:56:58.031 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:56:58.034 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 14.443ms
+2025-06-03 19:56:58.038 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 19:56:58.041 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 32.3804ms
+2025-06-03 19:56:58.048 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-03 19:56:58.055 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 19:56:58.057 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-03 19:56:58.069 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-03 19:56:58.075 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:56:58.078 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 16.3628ms
+2025-06-03 19:56:58.081 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 19:56:58.084 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 35.3231ms
+2025-06-03 19:56:58.091 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-03 19:56:58.095 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 19:56:58.098 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-03 19:56:58.107 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-03 19:56:58.111 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:56:58.115 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 13.5804ms
+2025-06-03 19:56:58.118 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 19:56:58.120 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 29.5426ms
+2025-06-03 19:57:48.591 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-03 19:57:48.599 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 19:57:48.603 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-03 19:57:48.620 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-03 19:57:48.627 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 19:57:48.633 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 24.3354ms
+2025-06-03 19:57:48.637 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-03 19:57:48.642 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 50.8084ms
+2025-06-03 20:02:07.928 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7004/api/AskUsFrom/Create - application/json; charset=utf-8 null
+2025-06-03 20:02:07.935 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject)'
+2025-06-03 20:02:07.938 +04:00 [INF] Route matched with {action = "Create", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.AskUsFrom.AskUsFromCreateDto) on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-03 20:02:08.017 +04:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-06-03 20:02:08.056 +04:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AskUsFroms] ([CreatedDate], [Email], [Message], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-06-03 20:02:08.062 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-06-03 20:02:08.065 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject) in 122.9225ms
+2025-06-03 20:02:08.068 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject)'
+2025-06-03 20:02:08.071 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7004/api/AskUsFrom/Create - 200 null text/plain; charset=utf-8 142.9371ms
+2025-06-03 20:04:16.783 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7004/api/AskUsFrom/Create - application/json; charset=utf-8 null
+2025-06-03 20:04:16.788 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject)'
+2025-06-03 20:04:16.790 +04:00 [INF] Route matched with {action = "Create", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Service.DTO.Admin.AskUsFrom.AskUsFromCreateDto) on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-03 20:04:16.832 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-06-03 20:04:16.882 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject) in 86.3006ms
+2025-06-03 20:04:16.885 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.Create (API-FinalProject)'
+2025-06-03 20:04:16.887 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7004/api/AskUsFrom/Create - 400 null application/problem+json; charset=utf-8 104.3377ms
+2025-06-03 23:07:48.589 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 23:07:48.775 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-03 23:07:48.776 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-03 23:07:48.843 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 23:07:48.844 +04:00 [INF] Hosting environment: Development
+2025-06-03 23:07:48.845 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-03 23:07:49.048 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-03 23:07:49.137 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 23:07:49.158 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-03 23:07:49.189 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-03 23:07:49.313 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 123.0748ms
+2025-06-03 23:07:49.362 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-03 23:07:49.363 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-03 23:07:49.376 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 13.9225ms
+2025-06-03 23:07:49.417 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.8746ms
+2025-06-03 23:07:49.632 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-03 23:07:49.679 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.3981ms
+2025-06-03 23:07:50.001 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-06-03 23:07:50.815 +04:00 [INF] Executed DbCommand (81ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-03 23:07:50.858 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 23:07:50.872 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 1705.7699ms
+2025-06-03 23:07:50.873 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 23:07:50.882 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 1835.8948ms
+2025-06-03 23:07:50.893 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-03 23:07:50.900 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 23:07:50.904 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-03 23:07:50.969 +04:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-03 23:07:50.977 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 23:07:50.980 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 74.0664ms
+2025-06-03 23:07:50.982 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 23:07:50.983 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 89.6157ms
+2025-06-03 23:07:50.991 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-03 23:07:50.996 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 23:07:51.000 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-03 23:07:51.175 +04:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-06-03 23:07:51.370 +04:00 [INF] Executed DbCommand (179ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-03 23:07:51.504 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 23:07:51.515 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 512.9717ms
+2025-06-03 23:07:51.517 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 23:07:51.518 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 527.6674ms
+2025-06-03 23:07:51.527 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-03 23:07:51.533 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 23:07:51.538 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-03 23:07:51.557 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-03 23:07:51.565 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 23:07:51.568 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 28.2682ms
+2025-06-03 23:07:51.571 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 23:07:51.576 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 48.6538ms
+2025-06-03 23:07:51.581 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-03 23:07:51.586 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 23:07:51.591 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-03 23:07:51.609 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-03 23:07:51.617 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 23:07:51.620 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 25.7634ms
+2025-06-03 23:07:51.623 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 23:07:51.625 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 43.9693ms
+2025-06-03 23:07:51.630 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-03 23:07:51.634 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 23:07:51.640 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-03 23:07:51.659 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-03 23:07:51.665 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 23:07:51.668 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 24.5816ms
+2025-06-03 23:07:51.670 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 23:07:51.671 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 40.6886ms
+2025-06-03 23:09:06.112 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7004/api/Account/ForgetPassword - application/json; charset=utf-8 20
+2025-06-03 23:09:06.123 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AccountController.ForgetPassword (API-FinalProject)'
+2025-06-03 23:09:06.152 +04:00 [INF] Route matched with {action = "ForgetPassword", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgetPassword(System.String) on controller API_FinalProject.Controllers.Client.AccountController (API-FinalProject).
+2025-06-03 23:09:06.416 +04:00 [INF] Executed DbCommand (71ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-06-03 23:09:27.614 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AccountController.ForgetPassword (API-FinalProject) in 21455.1454ms
+2025-06-03 23:09:27.619 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AccountController.ForgetPassword (API-FinalProject)'
+2025-06-03 23:09:27.627 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToAsyncResult.End(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at Service.Services.SendEmail.SendAsync(String from, String displayName, String to, String messageBody, String subject) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\SendEmail.cs:line 26
+   at Service.Services.AccountService.ForgetPassword(String email, String requestScheme, String requestHost) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\AccountService.cs:line 238
+   at API_FinalProject.Controllers.Client.AccountController.ForgetPassword(String email) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Client\AccountController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-03 23:09:27.755 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7004/api/Account/ForgetPassword - 500 null text/plain; charset=utf-8 21643.0131ms
+2025-06-03 23:11:34.772 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/Account/ForgetPassword - application/json 20
+2025-06-03 23:11:34.782 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AccountController.ForgetPassword (API-FinalProject)'
+2025-06-03 23:11:34.783 +04:00 [INF] Route matched with {action = "ForgetPassword", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgetPassword(System.String) on controller API_FinalProject.Controllers.Client.AccountController (API-FinalProject).
+2025-06-03 23:11:34.828 +04:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-06-03 23:11:55.928 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AccountController.ForgetPassword (API-FinalProject) in 21142.3676ms
+2025-06-03 23:11:55.932 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AccountController.ForgetPassword (API-FinalProject)'
+2025-06-03 23:11:55.938 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToAsyncResult.End(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at Service.Services.SendEmail.SendAsync(String from, String displayName, String to, String messageBody, String subject) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\SendEmail.cs:line 26
+   at Service.Services.AccountService.ForgetPassword(String email, String requestScheme, String requestHost) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\AccountService.cs:line 238
+   at API_FinalProject.Controllers.Client.AccountController.ForgetPassword(String email) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Client\AccountController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-03 23:11:55.974 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/Account/ForgetPassword - 500 null text/plain; charset=utf-8 21201.7716ms
+2025-06-03 23:32:20.800 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 23:32:20.939 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-03 23:32:20.941 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-03 23:32:20.985 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 23:32:20.986 +04:00 [INF] Hosting environment: Development
+2025-06-03 23:32:20.987 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-03 23:32:21.580 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-03 23:32:21.730 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 151.4647ms
+2025-06-03 23:32:21.736 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-03 23:32:21.737 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-03 23:32:21.757 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 19.7147ms
+2025-06-03 23:32:21.778 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.042ms
+2025-06-03 23:32:21.827 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-03 23:32:21.876 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.8452ms
+2025-06-03 23:32:26.684 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-03 23:32:26.712 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 23:32:26.728 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-03 23:32:27.488 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-06-03 23:32:28.617 +04:00 [INF] Executed DbCommand (91ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-03 23:32:28.724 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 23:32:28.750 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 2013.9289ms
+2025-06-03 23:32:28.753 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-03 23:32:28.771 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 2087.1963ms
+2025-06-03 23:32:28.775 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-03 23:32:28.790 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 23:32:28.803 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-03 23:32:28.983 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-03 23:32:28.999 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 23:32:29.004 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 197.9835ms
+2025-06-03 23:32:29.006 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-03 23:32:29.008 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 232.0387ms
+2025-06-03 23:32:29.014 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-03 23:32:29.025 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 23:32:29.034 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-03 23:32:29.526 +04:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-06-03 23:32:29.695 +04:00 [INF] Executed DbCommand (127ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-03 23:32:30.097 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 23:32:30.124 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 1087.0572ms
+2025-06-03 23:32:30.126 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-03 23:32:30.127 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 1113.4726ms
+2025-06-03 23:32:30.134 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-03 23:32:30.139 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 23:32:30.146 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-03 23:32:30.175 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-03 23:32:30.188 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 23:32:30.194 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 44.5714ms
+2025-06-03 23:32:30.197 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-03 23:32:30.199 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 65.231ms
+2025-06-03 23:32:30.204 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-03 23:32:30.208 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 23:32:30.218 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-03 23:32:30.241 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-03 23:32:30.253 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 23:32:30.257 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 36.3059ms
+2025-06-03 23:32:30.260 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-03 23:32:30.262 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 57.6076ms
+2025-06-03 23:32:30.267 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-03 23:32:30.271 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 23:32:30.279 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-03 23:32:30.302 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-03 23:32:30.312 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-03 23:32:30.318 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 35.9085ms
+2025-06-03 23:32:30.320 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-03 23:32:30.322 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 55.3525ms
+2025-06-03 23:33:01.037 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7004/api/Account/ForgetPassword - application/json 20
+2025-06-03 23:33:01.054 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AccountController.ForgetPassword (API-FinalProject)'
+2025-06-03 23:33:01.078 +04:00 [INF] Route matched with {action = "ForgetPassword", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgetPassword(System.String) on controller API_FinalProject.Controllers.Client.AccountController (API-FinalProject).
+2025-06-03 23:33:01.309 +04:00 [INF] Executed DbCommand (74ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-06-03 23:33:22.498 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AccountController.ForgetPassword (API-FinalProject) in 21416.4134ms
+2025-06-03 23:33:22.502 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AccountController.ForgetPassword (API-FinalProject)'
+2025-06-03 23:33:22.508 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToAsyncResult.End(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at Service.Services.SendEmail.SendAsync(String from, String displayName, String to, String messageBody, String subject) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\SendEmail.cs:line 26
+   at Service.Services.AccountService.ForgetPassword(String email, String requestScheme, String requestHost) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\Service\Services\AccountService.cs:line 238
+   at API_FinalProject.Controllers.Client.AccountController.ForgetPassword(String email) in C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\Controllers\Client\AccountController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-06-03 23:33:22.583 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7004/api/Account/ForgetPassword - 500 null text/plain; charset=utf-8 21546.4428ms

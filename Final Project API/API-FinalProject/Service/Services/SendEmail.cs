@@ -23,7 +23,7 @@ namespace Service.Services
             smtpClient.EnableSsl = true;
             smtpClient.Credentials = new NetworkCredential("aitajjf2@gmail.com", "xdcs bkuw oyro sgny");
 
-            await smtpClient.SendMailAsync(mailMessage); // ASYNC olaraq göndər
+            await smtpClient.SendMailAsync(mailMessage); 
         }
 
     }
