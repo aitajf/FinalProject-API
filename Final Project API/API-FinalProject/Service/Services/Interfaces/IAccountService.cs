@@ -12,5 +12,7 @@ namespace Service.Services.Interfaces
         Task<string> VerifyEmail(string VerifyEmail, string token);
         string CreateToken(AppUser user, IList<string> roles);
         Task<AppUser> GetUserByEmailAsync(string email);
+        Task<string> ForgetPassword(string email, string requestScheme, string requestHost);
+        Task<string> ResetPassword(ResetPasswordDto model);
     }
 }

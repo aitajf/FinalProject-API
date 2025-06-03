@@ -8,7 +8,7 @@ namespace Service.Services
 {
     public class SendEmail : ISendEmail
     {
-        public void Send(string from, string displayName, string to, string messageBody, string subject)
+        public async Task SendAsync(string from, string displayName, string to, string messageBody, string subject)
         {
             MailMessage mailMessage = new();
             mailMessage.From = new MailAddress(from, displayName);
@@ -16,12 +16,15 @@ namespace Service.Services
             mailMessage.Subject = subject;
             mailMessage.Body = messageBody;
             mailMessage.IsBodyHtml = true;
-            SmtpClient smtpClient = new SmtpClient();
+
+            using SmtpClient smtpClient = new();
             smtpClient.Port = 587;
             smtpClient.Host = "smtp.gmail.com";
             smtpClient.EnableSsl = true;
             smtpClient.Credentials = new NetworkCredential("aitajjf2@gmail.com", "xdcs bkuw oyro sgny");
-            smtpClient.Send(mailMessage);
+
+            await smtpClient.SendMailAsync(mailMessage); // ASYNC olaraq göndər
         }
+
     }
 }

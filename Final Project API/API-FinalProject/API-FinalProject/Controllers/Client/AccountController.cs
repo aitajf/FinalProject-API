@@ -38,5 +38,25 @@ namespace API_FinalProject.Controllers.Client
             var response = await _accountService.VerifyEmail(verifyEmail, token);
             return Redirect("https://localhost:7169/Account/Login");
         }
+
+        [HttpPost]
+        public async Task<IActionResult> ForgetPassword([FromBody] string email)
+        {
+            if (string.IsNullOrEmpty(email)) return BadRequest("Email not found");
+            var scheme = HttpContext.Request.Scheme;
+            var host = HttpContext.Request.Host.Value;
+            string responseMessage = await _accountService.ForgetPassword(email, scheme, host);
+            if (responseMessage == "User does not exist.") return BadRequest(responseMessage);
+            return Ok(responseMessage);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordDto request)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            string responseMessage = await _accountService.ResetPassword(request);
+            if (responseMessage == "User not found" || responseMessage == "TokenIsNotValid") return BadRequest(responseMessage);
+            return Ok(responseMessage);
+        }
     }
 }

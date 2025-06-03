@@ -32,6 +32,8 @@ namespace Service
             services.AddScoped<ISubscriptionService, SubscriptionService>();
             services.AddScoped<IAboutPromoService, AboutPromoService>();
             services.AddScoped<IHelpSectionService, HelpSectionService>();
+
+            services.AddDistributedMemoryCache();
             return services;
         }
     }
