@@ -32,6 +32,7 @@ namespace Repository.Repositories
             predicate ??= x => true;
             return _context.BlogPosts
              .Include(x=>x.BlogCategory)
+             .Include(x=>x.Images)
              .Where(predicate);
         }
     }

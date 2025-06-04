@@ -97,18 +97,14 @@ wwwroot\Uploads\categories\e2262d24-ae2d-4d59-93d0-20f4ca1ea9c2.jpg
 wwwroot\Uploads\categories\f7288614-b5fc-47ae-9c9d-2de16a7f1ec6.jpg
 wwwroot\Uploads\instagram\18abeae1-403c-4e53-bc81-5dc597c571e3.jpg
 wwwroot\Uploads\instagram\22d717d8-ef40-4fb9-82e0-de0d004bd9fd.jpg
-wwwroot\Uploads\instagram\251c18ff-2462-4684-8273-245409e66c76.jpg
+wwwroot\Uploads\instagram\63834ec5-0241-4b23-a176-e2b9a64f3dbd.jpg
 wwwroot\Uploads\instagram\b1d08b8e-f228-4fb7-85c9-227d5f4e5017.jpg
 wwwroot\Uploads\instagram\bb12f959-7e7a-4288-8790-e5ede7a637fa.jpg
 wwwroot\Uploads\instagram\ef074ec3-b220-4289-b55b-887b426fd583.jpg
-wwwroot\Uploads\instagram\fef9c21b-6bd9-4734-8882-789085bb6ab9.jpg
-wwwroot\Uploads\landingbanners\1de16651-1dd0-4526-9562-adadc61e56e0.jpg
-wwwroot\Uploads\landingbanners\21b7da2f-6ffe-44b6-8514-07f5b548ba8e.jpg
+wwwroot\Uploads\landingbanners\085439d8-c8ff-4327-a99f-0b3ac41dd1b2.jpg
 wwwroot\Uploads\landingbanners\223721ce-9130-4147-8eb3-a903f18e0aef.jpg
 wwwroot\Uploads\landingbanners\3127e086-5033-47c0-9090-1d6db32361dc.jpg
-wwwroot\Uploads\landingbanners\32b64b04-c5d1-4254-88c0-93a62f7007ec.jpg
-wwwroot\Uploads\landingbanners\3ecfc277-64a7-4562-b054-dd6a88acc79d.jpg
-wwwroot\Uploads\landingbanners\607999f7-1216-47c5-8ab5-8faaf04249e7.jpg
+wwwroot\Uploads\landingbanners\6d1f9297-492a-45b3-b54a-f10e6190040b.jpg
 wwwroot\Uploads\landingbanners\b2fb55d9-10d9-4759-aab9-86c0517793b4.jpg
 wwwroot\Uploads\landingbanners\dbd9653f-92a8-48f1-884b-9925b8d8ac0d.jpg
 wwwroot\Uploads\landingbanners\e3d4c69c-946d-4d2d-b4ca-686bd6550c44.jpg
@@ -140,6 +136,7 @@ wwwroot\Uploads\productimages\7638dc96-9e0f-4901-aecf-73179db6bf3c.jpg
 wwwroot\Uploads\productimages\78c2cd44-b244-471b-ac57-27cf85344f24.jpg
 wwwroot\Uploads\productimages\7b83f9ce-5e67-4044-9467-0004212744ef.jpg
 wwwroot\Uploads\productimages\83472756-e811-4346-9a58-3dc6e68657b7.jpg
+wwwroot\Uploads\productimages\8522b14f-4399-4339-81d5-9aa5da0316a1.jpg
 wwwroot\Uploads\productimages\8a929262-e77f-4248-a22e-255858c2199c.jpg
 wwwroot\Uploads\productimages\8c64f138-d784-4081-9dcc-1afddb399140.jpg
 wwwroot\Uploads\productimages\8fd414d0-86a1-4990-9ad6-a99b0dfd1941.jpg
@@ -163,6 +160,7 @@ wwwroot\Uploads\productimages\e5a478d7-6f22-4115-a314-764bd29bdacd.jpg
 wwwroot\Uploads\productimages\e5b43c03-e9a4-46e1-b019-2282f6c796d4.jpg
 wwwroot\Uploads\productimages\ed9efc63-6821-434a-9513-ab58b9391c91.jpg
 wwwroot\Uploads\productimages\f18926ee-a872-404f-b5ed-83230b37697e.jpg
+wwwroot\Uploads\productimages\f25d0f62-3613-4ddd-a499-38f6ee1d320c.jpg
 wwwroot\Uploads\productimages\f753eb31-b58a-4786-947d-29046e1a1424.jpg
 wwwroot\Uploads\productimages\fae03f68-c8e1-4838-96e0-bd7c22c5abc6.jpg
 wwwroot\Uploads\sliders\07eb0a21-d7e8-4ccb-bf87-e91aea29fa3c.png
@@ -185,8 +183,7 @@ wwwroot\Uploads\sliders\c2006119-80a2-43ad-90e6-92b2c62fbe89.jpg
 wwwroot\Uploads\subscribeImgs\1de17c66-c36b-4c40-aebf-f8669312dd50.jpg
 wwwroot\Uploads\subscribeImgs\2073e679-a817-4324-a487-11ed1ee74b95.jpg
 wwwroot\Uploads\subscribeImgs\3854b9af-373f-4a12-957e-4aa53d21bb8a.jpg
-wwwroot\Uploads\subscribeImgs\63b7301c-0faf-4b7c-9b3f-3e84175b717b.jpg
 wwwroot\Uploads\subscribeImgs\a63fade4-ebd5-4c24-9edd-42565de715dc.jpg
-wwwroot\Uploads\subscribeImgs\d14e4337-0ba1-4b31-964e-7e7b8a54a04d.jpg
+wwwroot\Uploads\subscribeImgs\c6677c01-7cdc-48fc-b6b7-b9874687516a.jpg
 wwwroot\Uploads\subscribeImgs\f054abab-1e7c-4790-9e5e-2a40852a9547.jpg
 wwwroot\Uploads\subscribeImgs\f2c931f1-c3af-4c94-967d-b689012bca65.jpg
