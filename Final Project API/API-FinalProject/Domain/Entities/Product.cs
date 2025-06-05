@@ -22,5 +22,6 @@ namespace Domain.Entities
         public ICollection<WishlistProduct> WishlistProducts { get; set; }
         public List<BasketProduct> BasketProducts { get; set; }
         public ICollection<ProductTag> ProductTags { get; set; }
+        public ICollection<Review> Reviews { get; set; }
     }
 }

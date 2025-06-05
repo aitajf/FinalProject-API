@@ -15,6 +15,7 @@ using Service.DTO.Admin.LandingBanner;
 using Service.DTO.Admin.Sliders;
 using Service.DTO.Admin.SubscribeImg;
 using Service.DTO.Admin.Tag;
+using Service.DTO.UI.Review;
 using Service.DTO.UI.Subscription;
 using Service.DTOs.Admin.Products;
 using Service.DTOs.Admin.Settings;
@@ -119,6 +120,15 @@ namespace Service.Helpers
             CreateMap<HelpSectionCreateDto, HelpSection>();
             CreateMap<HelpSectionEditDto, HelpSection>();
             CreateMap<HelpSection, HelpSectionDto>();
+
+            CreateMap<Review, ReviewDto>()
+             .ForMember(dest => dest.ProductName, opt => opt.MapFrom(src => src.Product.Name))
+             .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.AppUser.FullName))
+             .ForMember(dest => dest.AppUserId, opt => opt.MapFrom(src => src.AppUserId));
+            CreateMap<ReviewCreateDto, Review>();      
+            CreateMap<ReviewEditDto, Review>()
+                .ForMember(dest => dest.Comment, opt => opt.Condition(src => src.Comment != null))
+                .ForAllMembers(opt => opt.Ignore());
         }
     }
 }

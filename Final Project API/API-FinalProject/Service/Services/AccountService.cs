@@ -115,7 +115,7 @@ namespace Service.Services
 
             var userRoles = await _userManager.GetRolesAsync(user);
 
-            string token = GenerateJwtToken(user.UserName, userRoles.ToList());
+            string token = GenerateJwtToken(user, userRoles.ToList());
 
             return new LoginResponse
             {
@@ -190,14 +190,46 @@ namespace Service.Services
             var token = securityTokenHandler.CreateToken(tokenDescriptor);
             return securityTokenHandler.WriteToken(token);
         }
-        private string GenerateJwtToken(string username, List<string> roles)
+        //private string GenerateJwtToken(string username, List<string> roles)
+        //{
+        //    var claims = new List<Claim>
+        //{
+        //    new(JwtRegisteredClaimNames.Sub, username),
+        //    new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+        //    new(ClaimTypes.NameIdentifier, username),
+        //    new Claim(JwtRegisteredClaimNames.Email, username),
+        //    new Claim(ClaimTypes.Email, username),
+        //};
+
+        //    roles.ForEach(role =>
+        //    {
+        //        claims.Add(new Claim(ClaimTypes.Role, role));
+        //    });
+
+        //    var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Key));
+        //    var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+        //    var expires = DateTime.Now.AddDays(Convert.ToDouble(_jwtSettings.ExpireDays));
+
+        //    var token = new JwtSecurityToken(
+        //        _jwtSettings.Issuer,
+        //        _jwtSettings.Issuer,
+        //        claims,
+        //        expires: expires,
+        //        signingCredentials: creds
+        //    );
+        //    return new JwtSecurityTokenHandler().WriteToken(token);
+        //}
+
+        private string GenerateJwtToken(AppUser user, List<string> roles)
         {
             var claims = new List<Claim>
-        {
-            new(JwtRegisteredClaimNames.Sub, username),
-            new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new(ClaimTypes.NameIdentifier, username)
-        };
+    {
+        new(JwtRegisteredClaimNames.Sub, user.Email),  // Email düzgün saxlanır
+        new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+        new(ClaimTypes.NameIdentifier, user.Id),  // İstifadəçi ID saxlanır
+        new Claim(JwtRegisteredClaimNames.Email, user.Email),  // Email claim
+        new Claim(ClaimTypes.Email, user.Email)  // Email claim
+    };
 
             roles.ForEach(role =>
             {
@@ -217,6 +249,7 @@ namespace Service.Services
             );
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
 
         public async Task<string> ForgetPassword(string email, string requestScheme, string requestHost)
         {

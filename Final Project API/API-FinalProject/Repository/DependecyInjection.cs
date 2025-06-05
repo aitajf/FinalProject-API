@@ -31,6 +31,7 @@ namespace Repository
             services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
             services.AddScoped<IAboutPromoRepository, AboutPromoRepository>();
             services.AddScoped<IHelpSectionRepository, HelpSectionRepository>();
+            services.AddScoped<IReviewRepository, ReviewRepository>();
 
             return services;
         }
