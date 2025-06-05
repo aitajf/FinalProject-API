@@ -2091,19 +2091,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "ProductId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "AppUserId",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Comment",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "dto",
+        "Type": "Service.DTO.UI.Review.ReviewCreateDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

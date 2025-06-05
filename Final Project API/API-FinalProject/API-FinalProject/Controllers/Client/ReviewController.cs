@@ -32,13 +32,10 @@ namespace API_FinalProject.Controllers.Client
 
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]  
-        public async Task<IActionResult> CreateReview([FromForm] ReviewCreateDto dto)
+        public async Task<IActionResult> CreateReview([FromBody] ReviewCreateDto dto)
         {
-
-            foreach (var claim in User.Claims)
-            {
-                Console.WriteLine($"Type: {claim.Type}, Value: {claim.Value}");
-            }
+            if(!ModelState.IsValid)
+        return BadRequest(dto);
 
             var userEmail = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
 
@@ -94,8 +91,7 @@ namespace API_FinalProject.Controllers.Client
         public async Task<IActionResult> GetAllByProductId(int productId)
         {
             var reviews = await _reviewService.GetAllByProductIdAsync(productId);
-            if (reviews == null || !reviews.Any()) return NotFound();
-            return Ok(reviews);
+            return Ok(reviews ?? Enumerable.Empty<ReviewDto>());
         }
     }
 }

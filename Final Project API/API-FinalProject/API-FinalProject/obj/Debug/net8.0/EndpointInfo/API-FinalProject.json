@@ -2593,32 +2593,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "ProductId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "AppUserId": {
-                    "type": "string"
-                  },
-                  "Comment": {
-                    "type": "string"
-                  }
-                }
-              },
-              "encoding": {
-                "ProductId": {
-                  "style": "form"
-                },
-                "AppUserId": {
-                  "style": "form"
-                },
-                "Comment": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/ReviewCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReviewCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReviewCreateDto"
               }
             }
           }
@@ -4185,6 +4172,24 @@
         },
         "additionalProperties": false
       },
+      "ReviewCreateDto": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "appUserId": {
+            "type": "string",
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "ReviewEditDto": {
         "type": "object",
         "properties": {
@@ -4195,6 +4200,10 @@
           "comment": {
             "type": "string",
             "nullable": true
+          },
+          "productId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
