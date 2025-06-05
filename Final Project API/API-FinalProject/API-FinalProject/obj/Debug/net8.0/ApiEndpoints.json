@@ -1906,6 +1906,43 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_FinalProject.Controllers.Client.BlogPostController",
+    "Method": "GetPaginateDatas",
+    "RelativePath": "api/BlogPost/GetPaginateDatas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Client.BlogPostController",
+    "Method": "SearchByName",
+    "RelativePath": "api/BlogPost/SearchByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_FinalProject.Controllers.Client.LandingBannerController",
     "Method": "GetAll",
     "RelativePath": "api/LandingBanner/GetAll",

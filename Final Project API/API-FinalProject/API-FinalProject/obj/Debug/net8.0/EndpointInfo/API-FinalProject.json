@@ -873,6 +873,57 @@
         }
       }
     },
+    "/api/BlogPost/GetPaginateDatas": {
+      "get": {
+        "tags": [
+          "BlogPost"
+        ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "take",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BlogPost/SearchByName": {
+      "get": {
+        "tags": [
+          "BlogPost"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/admin/BlogPost/Create": {
       "post": {
         "tags": [

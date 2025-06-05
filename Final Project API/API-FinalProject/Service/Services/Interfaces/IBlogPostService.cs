@@ -18,5 +18,6 @@ namespace Service.Services.Interfaces
         Task<BlogPostDto> GetByIdAsync(int id);
         Task<bool> DeleteImageAsync(int productId, int productImageId);
         Task<PaginationResponse<BlogPostDto>> GetPaginateAsync(int page, int take);
+        Task<IEnumerable<BlogPostDto>> SearchByCategoryAndName(string categoryOrProductName);
     }
 }

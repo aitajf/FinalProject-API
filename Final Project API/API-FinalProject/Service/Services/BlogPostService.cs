@@ -187,6 +187,14 @@ namespace Service.Services
             int totalPage = (int)Math.Ceiling((decimal)totalItemCount / take);
             return new PaginationResponse<BlogPostDto>(mappedDatas, totalPage, page, totalItemCount);
         }
+
+        public async Task<IEnumerable<BlogPostDto>> SearchByCategoryAndName(string categoryOrProductName)
+        {
+            var products = _postRepository.GetAllWithExpression(x =>
+                 x.Title.ToLower().Trim().Contains(categoryOrProductName.ToLower().Trim())
+              || x.BlogCategory.Name.ToLower().Trim().Contains(categoryOrProductName.ToLower().Trim()));
+              return _mapper.Map<IEnumerable<BlogPostDto>>(products);
+        }
     }
 }
 
