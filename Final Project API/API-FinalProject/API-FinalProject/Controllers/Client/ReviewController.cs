@@ -57,21 +57,27 @@ namespace API_FinalProject.Controllers.Client
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateReview(int id, [FromBody] ReviewEditDto dto)
+        public async Task<IActionResult> Edit(int id, [FromBody] ReviewEditDto dto)
         {
-            if (id != dto.Id)
-                return BadRequest("Id mismatch");
+            if (!ModelState.IsValid)
+                return BadRequest(dto);
 
-            var userEmail = User.Identity.Name;
-            if (string.IsNullOrEmpty(userEmail))
-                return Unauthorized();
-
-            var success = await _reviewService.UpdateReviewAsync(userEmail, dto);
-            if (!success)
-                return BadRequest("Review not found or you don't have permission.");
+            var result = await _reviewService.EditReviewAsync(id, dto);
+            if (!result) return NotFound();
 
             return NoContent();
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var review = await _reviewService.GetReviewByIdAsync(id);
+            if (review == null)
+                return NotFound();
+
+            return Ok(review);
+        }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteReview(int id)

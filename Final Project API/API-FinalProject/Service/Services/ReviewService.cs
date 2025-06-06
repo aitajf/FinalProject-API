@@ -58,23 +58,29 @@ namespace Service.Services
             return true;
         }
 
-        public async Task<bool> UpdateReviewAsync(string userEmail, ReviewEditDto dto)
+        public async Task<bool> EditReviewAsync(int reviewId, ReviewEditDto dto)
         {
-            var user = await _userManager.FindByEmailAsync(userEmail);
-            if (user == null) return false;
+            var review = await _repository.GetByIdAsync(reviewId);
+            if (review == null) return false;
 
-            var review = await _repository.GetByIdAsync(dto.Id);
-            if (review == null || review.AppUserId != user.Id) return false;
+            if (review.AppUserId != dto.AppUserId) return false;
 
-            review.Comment = dto.Comment;
+            var oldComment = review.Comment;
+            _mapper.Map(dto, review);
+            var newComment = review.Comment;
+
+            Console.WriteLine($"Old: {oldComment}, New: {newComment}");
+
             await _repository.EditAsync(review);
             return true;
         }
 
+
+
         public async Task<bool> DeleteReviewAsync(string userEmail, int reviewId)
         {
             var user = await _userManager.FindByEmailAsync(userEmail);
-            if (user == null)  return false;
+            if (user == null) return false;
 
             var review = await _repository.GetByIdAsync(reviewId);
             if (review == null) return false;

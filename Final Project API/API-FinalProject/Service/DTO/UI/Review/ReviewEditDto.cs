@@ -8,8 +8,7 @@ namespace Service.DTO.UI.Review
 {
     public class ReviewEditDto
     {
-        public int Id { get; set; } 
+        public string AppUserId { get; set; }
         public string Comment { get; set; }
-        public int ProductId { get; set; }
     }
 }

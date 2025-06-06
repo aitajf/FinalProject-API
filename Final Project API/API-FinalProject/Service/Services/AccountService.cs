@@ -123,6 +123,7 @@ namespace Service.Services
                 Error = null,
                 Token = token,
                 UserName = user.UserName,
+                UserId = user.Id.ToString(),
                 Roles = userRoles.ToList()
             };
         }

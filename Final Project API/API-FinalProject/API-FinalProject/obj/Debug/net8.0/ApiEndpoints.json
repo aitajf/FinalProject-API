@@ -2116,6 +2116,27 @@
   },
   {
     "ContainingType": "API_FinalProject.Controllers.Client.ReviewController",
+    "Method": "Edit",
+    "RelativePath": "api/Review/Edit/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Service.DTO.UI.Review.ReviewEditDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Client.ReviewController",
     "Method": "GetAllByProductId",
     "RelativePath": "api/Review/GetAllByProductId",
     "HttpMethod": "GET",
@@ -2132,6 +2153,22 @@
   },
   {
     "ContainingType": "API_FinalProject.Controllers.Client.ReviewController",
+    "Method": "GetById",
+    "RelativePath": "api/Review/GetById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Client.ReviewController",
     "Method": "GetReviewsByProduct",
     "RelativePath": "api/Review/GetReviewsByProduct/product/{productId}",
     "HttpMethod": "GET",
@@ -2141,27 +2178,6 @@
       {
         "Name": "productId",
         "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_FinalProject.Controllers.Client.ReviewController",
-    "Method": "UpdateReview",
-    "RelativePath": "api/Review/UpdateReview/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Service.DTO.UI.Review.ReviewEditDto",
         "IsRequired": true
       }
     ],

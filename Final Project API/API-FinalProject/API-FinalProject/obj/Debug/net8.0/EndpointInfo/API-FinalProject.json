@@ -2617,7 +2617,7 @@
         }
       }
     },
-    "/api/Review/UpdateReview/{id}": {
+    "/api/Review/Edit/{id}": {
       "put": {
         "tags": [
           "Review"
@@ -2652,6 +2652,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Review/GetById/{id}": {
+      "get": {
+        "tags": [
+          "Review"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -4193,17 +4216,13 @@
       "ReviewEditDto": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
+          "appUserId": {
+            "type": "string",
+            "nullable": true
           },
           "comment": {
             "type": "string",
             "nullable": true
-          },
-          "productId": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false

@@ -127,8 +127,7 @@ namespace Service.Helpers
              .ForMember(dest => dest.AppUserId, opt => opt.MapFrom(src => src.AppUserId));
             CreateMap<ReviewCreateDto, Review>();      
             CreateMap<ReviewEditDto, Review>()
-                .ForMember(dest => dest.Comment, opt => opt.Condition(src => src.Comment != null))
-                .ForAllMembers(opt => opt.Ignore());
+                .ForMember(dest => dest.Comment, opt => opt.MapFrom(src => src.Comment));
         }
     }
 }
