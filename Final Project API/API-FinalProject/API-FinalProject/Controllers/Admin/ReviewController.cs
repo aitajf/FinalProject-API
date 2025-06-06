@@ -20,12 +20,12 @@ namespace API_FinalProject.Controllers.Admin
             return Ok(reviews);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteReview(int id)
+        [HttpDelete]
+        public async Task<IActionResult> DeleteReview([FromQuery]int id)
         {
-            var success = await _reviewService.AdminDeleteReviewAsync(id);
-            if (!success)  return NotFound();
-            return NoContent();
+            if (id == 0) return BadRequest("Id is required.");
+            await _reviewService.DeleteAsync(id);
+            return Ok($"Delete review user with id: {id}");
         }
     }
 }

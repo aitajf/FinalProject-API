@@ -12,6 +12,6 @@ namespace Service.Services.Interfaces
     {
         Task SubscribeAsync(SubscriptionCreateDto model);
         Task<IEnumerable<SubscriptionDto>> GetAllSubscriptionsAsync();
-        Task<bool> UnsubscribeAsync(string email);
+        Task UnsubscribeAsync(string email);
     }
 }

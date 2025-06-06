@@ -46,9 +46,17 @@ namespace Service.Services
             return _mapper.Map<IEnumerable<SubscriptionDto>>(subscriptions);
         }
 
-        public async Task<bool> UnsubscribeAsync(string email)
+        public async Task UnsubscribeAsync(string email)
         {
-            return await _subscriptionRepository.RemoveAsync(email);
+            if (string.IsNullOrWhiteSpace(email))
+                throw new ArgumentException("Email cannot be null or empty.");
+
+            var subscription = await _subscriptionRepository.GetByEmailAsync(email);
+            if (subscription == null)
+                throw new Exception("No subscription found with this email.");
+
+            await _subscriptionRepository.DeleteAsync(subscription);
         }
+
     }
 }

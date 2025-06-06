@@ -20,7 +20,13 @@ namespace Repository.Repositories
         }
         public async Task<Subscription> GetByEmailAsync(string email)
         {
-            return await _context.Subscriptions.FirstOrDefaultAsync(s => s.Email == email);
+            if (string.IsNullOrWhiteSpace(email))
+                return null;
+
+            var normalizedEmail = email.Trim().ToLower();
+
+            return await _context.Subscriptions
+                .FirstOrDefaultAsync(s => s.Email.Trim().ToLower() == normalizedEmail);
         }
     }
 }

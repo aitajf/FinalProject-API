@@ -2739,7 +2739,7 @@
         }
       }
     },
-    "/api/admin/Review/DeleteReview/{id}": {
+    "/api/admin/Review/DeleteReview": {
       "delete": {
         "tags": [
           "Review"
@@ -2747,8 +2747,7 @@
         "parameters": [
           {
             "name": "id",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -3278,7 +3277,7 @@
         }
       }
     },
-    "/api/admin/Subscription/Unsubscribe/{email}": {
+    "/api/admin/Subscription/Unsubscribe": {
       "delete": {
         "tags": [
           "Subscription"
@@ -3286,8 +3285,7 @@
         "parameters": [
           {
             "name": "email",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "string"
             }

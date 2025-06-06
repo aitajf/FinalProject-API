@@ -1339,7 +1339,7 @@
   {
     "ContainingType": "API_FinalProject.Controllers.Admin.ReviewController",
     "Method": "DeleteReview",
-    "RelativePath": "api/admin/Review/DeleteReview/{id}",
+    "RelativePath": "api/admin/Review/DeleteReview",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -1347,7 +1347,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -1653,7 +1653,7 @@
   {
     "ContainingType": "API_FinalProject.Controllers.Admin.SubscriptionController",
     "Method": "Unsubscribe",
-    "RelativePath": "api/admin/Subscription/Unsubscribe/{email}",
+    "RelativePath": "api/admin/Subscription/Unsubscribe",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -1661,7 +1661,7 @@
       {
         "Name": "email",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

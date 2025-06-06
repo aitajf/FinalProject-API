@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Service.DTO.UI.Subscription;
 using Service.Services.Interfaces;
 
 namespace API_FinalProject.Controllers.Admin
 {
+    [Authorize(Roles = "SuperAdmin")]
     public class SubscriptionController : BaseController
     {
         private readonly ISubscriptionService _subscriptionService;
@@ -21,11 +23,12 @@ namespace API_FinalProject.Controllers.Admin
             return Ok(subscriptions);
         }
 
-        [HttpDelete("{email}")]
-        public async Task<IActionResult> Unsubscribe([FromRoute]string email)
+        [HttpDelete]
+        public async Task<IActionResult> Unsubscribe([FromQuery] string email)
         {
-            var success = await _subscriptionService.UnsubscribeAsync(email);
-            return success ? Ok("Delete success.") : NotFound("Email not found.");
+            if (string.IsNullOrWhiteSpace(email))  return BadRequest("Email is required.");
+            await _subscriptionService.UnsubscribeAsync(email);
+            return Ok($"Unsubscribed user with email: {email}");
         }
     }
 }

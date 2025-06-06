@@ -12,12 +12,13 @@ namespace Service.Services.Interfaces
     {
         Task<IEnumerable<ReviewDto>> GetAllReviewsAsync();
         Task<IEnumerable<ReviewDto>> GetAllByProductIdAsync(int productId);
-        Task<IEnumerable<ReviewDto>> GetReviewsByProductIdAsync(int productId); 
+        Task<IEnumerable<ReviewDto>> GetReviewsByProductIdAsync(int productId);
+        Task DeleteAsync(int reviewId);
+
+
         Task<ReviewDto> GetReviewByIdAsync(int id);
         Task<bool> CreateReviewAsync(string userEmail, ReviewCreateDto dto);
         Task<bool> EditReviewAsync(int id, ReviewEditDto dto);
-
         Task<bool> DeleteReviewAsync(string userEmail, int reviewId);        
-        Task<bool> AdminDeleteReviewAsync(int reviewId);
     }
 }

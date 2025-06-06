@@ -57,7 +57,6 @@ namespace Service.Services
             await _repository.CreateAsync(review);
             return true;
         }
-
         public async Task<bool> EditReviewAsync(int reviewId, ReviewEditDto dto)
         {
             var review = await _repository.GetByIdAsync(reviewId);
@@ -74,9 +73,6 @@ namespace Service.Services
             await _repository.EditAsync(review);
             return true;
         }
-
-
-
         public async Task<bool> DeleteReviewAsync(string userEmail, int reviewId)
         {
             var user = await _userManager.FindByEmailAsync(userEmail);
@@ -91,12 +87,14 @@ namespace Service.Services
             return true;
         }
 
-        public async Task<bool> AdminDeleteReviewAsync(int reviewId)
+
+
+
+        public async Task DeleteAsync(int reviewId)
         {
             var review = await _repository.GetByIdAsync(reviewId);
-            if (review == null) return false;
-            await _repository.DeleteAsync(review);
-            return true;
+            if (review == null) throw new KeyNotFoundException("Not found");
+            await _repository.DeleteAsync(review);       
         }
 
         public async Task<IEnumerable<ReviewDto>> GetAllByProductIdAsync(int productId)
