@@ -166,70 +166,74 @@ namespace Service.Services
 
             return CreateToken(appUser, roles);                 
         }
-        public string CreateToken(AppUser user, IList<string> roles)
-        {
-            List<Claim> claims = new List<Claim>
-            {
-                new Claim(JwtRegisteredClaimNames.NameId,user.UserName),
-                new Claim(JwtRegisteredClaimNames.Email,user.Email),
-                new Claim("FullName",user.FullName),
-                new Claim(ClaimTypes.NameIdentifier,user.Id)
-            };
+        //    public string CreateToken(AppUser user, IList<string> roles)
+        //    {
+        //        List<Claim> claims = new List<Claim>
+        //        {
+        //            new Claim(JwtRegisteredClaimNames.NameId,user.UserName),
+        //            new Claim(JwtRegisteredClaimNames.Email,user.Email),
+        //            new Claim("FullName",user.FullName),
+        //            new Claim(ClaimTypes.NameIdentifier,user.Id)
+        //        };
 
-            claims.AddRange(roles.Select(r => new Claim(ClaimTypes.Role, r)));
-            SigningCredentials credentials = new SigningCredentials(_securityKey, SecurityAlgorithms.HmacSha256);
-            SecurityTokenDescriptor tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.Now.AddDays(7),
-                SigningCredentials = credentials,
-                Audience = _configuration["Jwt:Audience"],
-                Issuer = _configuration["Jwt:Issuer"]
+        //        claims.AddRange(roles.Select(r => new Claim(ClaimTypes.Role, r)));
+        //        SigningCredentials credentials = new SigningCredentials(_securityKey, SecurityAlgorithms.HmacSha256);
+        //        SecurityTokenDescriptor tokenDescriptor = new SecurityTokenDescriptor
+        //        {
+        //            Subject = new ClaimsIdentity(claims),
+        //            Expires = DateTime.Now.AddDays(7),
+        //            SigningCredentials = credentials,
+        //            Audience = _configuration["Jwt:Audience"],
+        //            Issuer = _configuration["Jwt:Issuer"]
 
-            };
-            JwtSecurityTokenHandler securityTokenHandler = new JwtSecurityTokenHandler();
-            var token = securityTokenHandler.CreateToken(tokenDescriptor);
-            return securityTokenHandler.WriteToken(token);
-        }
-        //private string GenerateJwtToken(string username, List<string> roles)
+        //        };
+        //        JwtSecurityTokenHandler securityTokenHandler = new JwtSecurityTokenHandler();
+        //        var token = securityTokenHandler.CreateToken(tokenDescriptor);
+        //        return securityTokenHandler.WriteToken(token);
+        //    }
+
+
+        //    private string GenerateJwtToken(AppUser user, List<string> roles)
+        //    {
+        //        var claims = new List<Claim>
         //{
-        //    var claims = new List<Claim>
-        //{
-        //    new(JwtRegisteredClaimNames.Sub, username),
+        //    new(JwtRegisteredClaimNames.Sub, user.Email),  // Email düzgün saxlanır
         //    new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-        //    new(ClaimTypes.NameIdentifier, username),
-        //    new Claim(JwtRegisteredClaimNames.Email, username),
-        //    new Claim(ClaimTypes.Email, username),
+        //    new(ClaimTypes.NameIdentifier, user.Id),  // İstifadəçi ID saxlanır
+        //    new Claim(JwtRegisteredClaimNames.Email, user.Email),  // Email claim
+        //    new Claim(ClaimTypes.Email, user.Email)  // Email claim
         //};
 
-        //    roles.ForEach(role =>
-        //    {
-        //        claims.Add(new Claim(ClaimTypes.Role, role));
-        //    });
+        //        roles.ForEach(role =>
+        //        {
+        //            claims.Add(new Claim(ClaimTypes.Role, role));
+        //        });
 
-        //    var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Key));
-        //    var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-        //    var expires = DateTime.Now.AddDays(Convert.ToDouble(_jwtSettings.ExpireDays));
+        //        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Key));
+        //        var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+        //        var expires = DateTime.Now.AddDays(Convert.ToDouble(_jwtSettings.ExpireDays));
 
-        //    var token = new JwtSecurityToken(
-        //        _jwtSettings.Issuer,
-        //        _jwtSettings.Issuer,
-        //        claims,
-        //        expires: expires,
-        //        signingCredentials: creds
-        //    );
-        //    return new JwtSecurityTokenHandler().WriteToken(token);
-        //}
+        //        var token = new JwtSecurityToken(
+        //            _jwtSettings.Issuer,
+        //            _jwtSettings.Issuer,
+        //            claims,
+        //            expires: expires,
+        //            signingCredentials: creds
+        //        );
+        //        return new JwtSecurityTokenHandler().WriteToken(token);
+        //    }
+
 
         private string GenerateJwtToken(AppUser user, List<string> roles)
         {
             var claims = new List<Claim>
     {
-        new(JwtRegisteredClaimNames.Sub, user.Email),  // Email düzgün saxlanır
+        new(JwtRegisteredClaimNames.Sub, user.Email),
         new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-        new(ClaimTypes.NameIdentifier, user.Id),  // İstifadəçi ID saxlanır
-        new Claim(JwtRegisteredClaimNames.Email, user.Email),  // Email claim
-        new Claim(ClaimTypes.Email, user.Email)  // Email claim
+        new(ClaimTypes.NameIdentifier, user.Id),
+        new(ClaimTypes.Name, user.Email), // ⬅️ BURANI ƏLAVƏ ETDİN!
+        new(JwtRegisteredClaimNames.Email, user.Email),
+        new(ClaimTypes.Email, user.Email)
     };
 
             roles.ForEach(role =>
@@ -250,6 +254,53 @@ namespace Service.Services
             );
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
+
+
+
+        public string CreateToken(AppUser user, IList<string> roles)
+        {
+            List<Claim> claims = new List<Claim>
+    {
+        new Claim(JwtRegisteredClaimNames.NameId, user.UserName),
+        new Claim(JwtRegisteredClaimNames.Email, user.Email),
+        new Claim("FullName", user.FullName),
+        new Claim(ClaimTypes.NameIdentifier, user.Id),
+        new Claim(ClaimTypes.Name, user.Email) // ⬅️ BURANI ƏLAVƏ ETDİN!
+    };
+
+            claims.AddRange(roles.Select(r => new Claim(ClaimTypes.Role, r)));
+
+            SigningCredentials credentials = new SigningCredentials(_securityKey, SecurityAlgorithms.HmacSha256);
+            SecurityTokenDescriptor tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(claims),
+                Expires = DateTime.Now.AddDays(7),
+                SigningCredentials = credentials,
+                Audience = _configuration["Jwt:Audience"],
+                Issuer = _configuration["Jwt:Issuer"]
+            };
+
+            JwtSecurityTokenHandler securityTokenHandler = new JwtSecurityTokenHandler();
+            var token = securityTokenHandler.CreateToken(tokenDescriptor);
+            return securityTokenHandler.WriteToken(token);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         public async Task<string> ForgetPassword(string email, string requestScheme, string requestHost)

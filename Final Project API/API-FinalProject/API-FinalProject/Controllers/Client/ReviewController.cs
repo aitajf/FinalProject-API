@@ -78,7 +78,7 @@ namespace API_FinalProject.Controllers.Client
             return Ok(review);
         }
 
-
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteReview(int id)
         {

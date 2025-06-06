@@ -19,12 +19,19 @@ namespace FinalProject.Controllers.Admin
         {
             return Ok(await _productService.GetAllAsync());
         }
+
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] ProductCreateDto request)
         {
-            await _productService.CreateAsync(request);
-
-            return CreatedAtAction(nameof(Create), new { response = "Data successfully created" });
+            try
+            {
+                await _productService.CreateAsync(request);
+                return CreatedAtAction(nameof(Create), new { response = "Product successfully created" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpGet("{id}")]

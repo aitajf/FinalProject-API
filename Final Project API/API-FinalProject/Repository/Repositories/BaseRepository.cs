@@ -25,6 +25,11 @@ namespace Repository.Repositories
             await _context.SaveChangesAsync();
         }
 
+        public async Task CreateRangeAsync(IEnumerable<T> entities)
+        {
+            await _dbSet.AddRangeAsync(entities);
+            await _context.SaveChangesAsync();
+        }
         public async Task DeleteAsync(T entity)
         {
             _dbSet.Remove(entity);

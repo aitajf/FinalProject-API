@@ -3,19 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\api-finalproject\\controllers\\client\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|solutionrelative:api-finalproject\\controllers\\client\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\api-finalproject\\controllers\\client\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|solutionrelative:api-finalproject\\controllers\\client\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\api-finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|solutionrelative:api-finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_7MEAR63_SQLEXPRESS/FinalProjectDb/True/SqlTable/dbo.Reviews.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,59 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\AccountService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\AccountService.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\AccountService.cs",
-              "RelativeToolTip": "Service\\Services\\AccountService.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAkwH8AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T05:57:35.163Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dbo.Reviews [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_7MEAR63_SQLEXPRESS/FinalProjectDb/True/SqlTable/dbo.Reviews.sql",
-              "ToolTip": "dbo.Reviews [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-06-05T19:36:07.021Z",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Program.cs",
+              "RelativeDocumentMoniker": "API-FinalProject\\Program.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Program.cs",
+              "RelativeToolTip": "API-FinalProject\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T15:10:43.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReviewService.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\ReviewService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\ReviewService.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\ReviewService.cs",
-              "RelativeToolTip": "Service\\Services\\ReviewService.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAEwEsAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\AccountService.cs",
+              "RelativeToolTip": "Service\\Services\\AccountService.cs",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAUwBYBAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T08:42:19.79Z",
+              "WhenOpened": "2025-06-06T15:04:19.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Client\\AccountController.cs",
+              "RelativeDocumentMoniker": "API-FinalProject\\Controllers\\Client\\AccountController.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Client\\AccountController.cs",
+              "RelativeToolTip": "API-FinalProject\\Controllers\\Client\\AccountController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T14:54:13.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ReviewController.cs",
               "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Client\\ReviewController.cs",
               "RelativeDocumentMoniker": "API-FinalProject\\Controllers\\Client\\ReviewController.cs",
               "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Client\\ReviewController.cs",
               "RelativeToolTip": "API-FinalProject\\Controllers\\Client\\ReviewController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAIwEQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAxwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T07:59:17.751Z",
+              "WhenOpened": "2025-06-06T14:54:02.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReviewService.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\ReviewService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\ReviewService.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\ReviewService.cs",
+              "RelativeToolTip": "Service\\Services\\ReviewService.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAswFsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T14:53:55.168Z",
               "EditorCaption": ""
             }
           ]

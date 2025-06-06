@@ -27,6 +27,7 @@ namespace Service.Services
                               ITagRepository tagRepository,
                               IProductTagRepository productTagRepository,
                               IProductColorRepository productColorRepository,
+                             
                               IFileService fileService,
                               IMapper mapper)
         {
@@ -73,10 +74,11 @@ namespace Service.Services
 
             foreach (var id in model.ColorIds)
             {
-                if (await _colorRepository.GetByIdAsync(id) == null)  throw new KeyNotFoundException($"Color with ID {id} not found.");
+                if (await _colorRepository.GetByIdAsync(id) == null) throw new KeyNotFoundException($"Color with ID {id} not found.");
                 await _productColorRepository.CreateAsync(new ProductColor { ColorId = id, Product = data });
             }
         }
+
 
         public async Task DeleteAsync(int id)
         {
@@ -221,6 +223,24 @@ namespace Service.Services
         {
             return await _productRepository.GetProductsCount();
         }
+
+
+        //public async Task<ProductDetailColorsDto> GetProductColorsWithImagesAsync(int productId)
+        //{
+        //    var product = await _productRepository.GetProductWithColorsAsync(productId);
+        //    if (product == null) return null;
+
+        //    return new ProductDetailColorsDto
+        //    {
+        //        ProductId = product.Id,
+        //        Colors = product.ProductColors.Select(pc => new ProductColorImageDto
+        //        {
+        //            ColorId = pc.ColorId,
+        //            ColorName = pc.Color.Name,
+        //            ImageUrl = pc.ImageUrl
+        //        }).ToList()
+        //    };
+        //}
 
     }
 }

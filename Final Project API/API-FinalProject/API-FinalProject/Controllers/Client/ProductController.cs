@@ -55,5 +55,16 @@ namespace FinalProject.Controllers.UI
             return Ok(count);
         }
 
+
+        //[HttpGet("{id}/colors")]
+        //public async Task<IActionResult> GetProductColors(int id)
+        //{
+        //    var productColorsDto = await _productService.GetProductColorsWithImagesAsync(id);
+
+        //    if (productColorsDto == null)
+        //        return NotFound();
+
+        //    return Ok(productColorsDto);
+        //}
     }
 }

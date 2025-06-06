@@ -1,5 +1,6 @@
-using System.IdentityModel.Tokens.Jwt;
+﻿using System.IdentityModel.Tokens.Jwt;
 using System.Reflection;
+using System.Security.Claims;
 using System.Text;
 using Domain.Entities;
 using FluentValidation;
@@ -87,7 +88,10 @@ builder.Services
             ValidIssuer = builder.Configuration["JWTSettings:Issuer"],
             ValidAudience = builder.Configuration["JWTSettings:Issuer"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWTSettings:Key"])),
-            ClockSkew = TimeSpan.Zero
+            ClockSkew = TimeSpan.Zero,
+
+              NameClaimType = ClaimTypes.Name,
+            RoleClaimType = ClaimTypes.Role
         };
     });
 
@@ -120,7 +124,6 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-
 
 builder.Host.UseSerilog();
 

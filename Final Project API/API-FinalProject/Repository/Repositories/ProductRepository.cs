@@ -134,5 +134,15 @@ namespace Repository.Repositories
         {
             return await _context.Products.CountAsync();
         }
+
+        public async Task<Product> GetProductWithColorsAsync(int productId)
+        {
+            return await _context.Products
+                .Include(p => p.ProductColors)
+                    .ThenInclude(pc => pc.Color)
+                .FirstOrDefaultAsync(p => p.Id == productId);
+        }
+
+      
     }
 }

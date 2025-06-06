@@ -16,5 +16,6 @@ namespace Repository.Repositories.Interfaces
 		Task DeleteProductImage(ProductImage image);
         Task<IEnumerable<Product>> GetAllTakenAsync(int take, int? skip = null);
         Task<int> GetProductsCount();
+        Task<Product> GetProductWithColorsAsync(int productId);
     }
 }

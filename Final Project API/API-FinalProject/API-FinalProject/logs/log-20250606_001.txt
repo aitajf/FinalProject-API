@@ -1,0 +1,28 @@
+2025-06-06 11:07:59.222 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-06 11:07:59.363 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-06 11:07:59.364 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-06 11:07:59.402 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-06 11:07:59.403 +04:00 [INF] Hosting environment: Development
+2025-06-06 11:07:59.404 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-06 11:07:59.744 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-06 11:07:59.928 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 184.7347ms
+2025-06-06 11:07:59.959 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-06 11:07:59.959 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 11:07:59.967 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 7.9692ms
+2025-06-06 11:07:59.991 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.958ms
+2025-06-06 11:08:00.133 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-06 11:08:00.181 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.1497ms
+2025-06-06 11:11:08.884 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-06 11:11:08.996 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-06 11:11:08.998 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-06 11:11:09.039 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-06 11:11:09.040 +04:00 [INF] Hosting environment: Development
+2025-06-06 11:11:09.041 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-06 11:11:09.177 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-06 11:11:09.284 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 107.4585ms
+2025-06-06 11:11:09.290 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 11:11:09.290 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-06 11:11:09.297 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 6.4859ms
+2025-06-06 11:11:09.315 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.7868ms
+2025-06-06 11:11:09.665 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-06 11:11:09.705 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.8387ms
