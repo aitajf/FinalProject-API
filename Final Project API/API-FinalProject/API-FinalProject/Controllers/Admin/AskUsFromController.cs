@@ -27,5 +27,15 @@ namespace API_FinalProject.Controllers.Admin
             await _askUsFromService.DeleteAsync(id);
             return Ok();
         }
+
+        [HttpPut]
+        public async Task<IActionResult> ApproveMessage([FromQuery] int id)
+        {
+            var message = await _askUsFromService.GetByIdAsync(id);
+            if (message == null) return NotFound($"Message with ID {id} not found.");
+
+            await _askUsFromService.ApproveMessageAsync(id);
+            return Ok("Message approved successfully!");
+        }
     }
 }

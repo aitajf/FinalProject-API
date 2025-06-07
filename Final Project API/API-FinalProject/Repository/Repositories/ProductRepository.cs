@@ -1,6 +1,5 @@
 ﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Repository.Data;
 using Repository.Repositories.Interfaces;
 using System.Linq.Expressions;

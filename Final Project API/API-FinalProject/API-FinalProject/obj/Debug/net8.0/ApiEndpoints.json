@@ -274,6 +274,22 @@
   },
   {
     "ContainingType": "API_FinalProject.Controllers.Admin.AskUsFromController",
+    "Method": "ApproveMessage",
+    "RelativePath": "api/admin/AskUsFrom/ApproveMessage",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.AskUsFromController",
     "Method": "Delete",
     "RelativePath": "api/admin/AskUsFrom/Delete",
     "HttpMethod": "DELETE",
@@ -1832,6 +1848,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Client.AskUsFromController",
+    "Method": "GetApprovedMessages",
+    "RelativePath": "api/AskUsFrom/GetApprovedMessages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

@@ -488,6 +488,18 @@
         }
       }
     },
+    "/api/AskUsFrom/GetApprovedMessages": {
+      "get": {
+        "tags": [
+          "AskUsFrom"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/admin/AskUsFrom/GetAll": {
       "get": {
         "tags": [
@@ -502,6 +514,28 @@
     },
     "/api/admin/AskUsFrom/Delete": {
       "delete": {
+        "tags": [
+          "AskUsFrom"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/AskUsFrom/ApproveMessage": {
+      "put": {
         "tags": [
           "AskUsFrom"
         ],

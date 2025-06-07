@@ -1,0 +1,902 @@
+2025-06-07 15:55:19.711 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-07 15:55:19.839 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-07 15:55:19.842 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-07 15:55:19.893 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:55:19.895 +04:00 [INF] Hosting environment: Development
+2025-06-07 15:55:19.896 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-07 15:55:20.253 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-07 15:55:20.395 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 142.9284ms
+2025-06-07 15:55:20.401 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-07 15:55:20.401 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-07 15:55:20.409 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 8.281ms
+2025-06-07 15:55:20.433 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.3023ms
+2025-06-07 15:55:20.521 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-07 15:55:20.560 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.1362ms
+2025-06-07 15:59:57.899 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-07 15:59:58.050 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-07 15:59:58.050 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-07 15:59:58.095 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 15:59:58.095 +04:00 [INF] Hosting environment: Development
+2025-06-07 15:59:58.096 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-07 15:59:58.626 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-07 15:59:58.774 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 149.0355ms
+2025-06-07 15:59:58.794 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-07 15:59:58.794 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-07 15:59:58.801 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 6.6434ms
+2025-06-07 15:59:58.820 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.7943ms
+2025-06-07 15:59:58.928 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-07 15:59:58.964 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.3247ms
+2025-06-07 16:00:05.621 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:00:05.678 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:00:05.698 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:00:06.290 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-06-07 16:00:06.953 +04:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:00:06.986 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:00:06.994 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 1288.9644ms
+2025-06-07 16:00:06.995 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:00:07.003 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 1381.938ms
+2025-06-07 16:00:25.345 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:00:25.353 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:00:25.355 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:00:25.407 +04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:00:25.411 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:00:25.413 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 56.7858ms
+2025-06-07 16:00:25.414 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:00:25.414 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 69.292ms
+2025-06-07 16:00:35.377 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=14 - null 0
+2025-06-07 16:00:35.395 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:00:35.404 +04:00 [INF] Route matched with {action = "ApproveMessage", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ApproveMessage(Int32) on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:00:35.531 +04:00 [INF] Executed DbCommand (29ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:00:35.539 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:00:35.640 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AskUsFroms] SET [CreatedDate] = @p0, [Email] = @p1, [IsApproved] = @p2, [Message] = @p3, [Name] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2025-06-07 16:00:35.650 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-06-07 16:00:35.651 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject) in 244.1302ms
+2025-06-07 16:00:35.652 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:00:35.653 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=14 - 200 null text/plain; charset=utf-8 276.4596ms
+2025-06-07 16:00:43.873 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:00:43.875 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:00:43.876 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:00:43.880 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:00:43.882 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:00:43.883 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 5.7932ms
+2025-06-07 16:00:43.884 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:00:43.884 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 11.7178ms
+2025-06-07 16:00:50.827 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages/GetApprovedMessages - null null
+2025-06-07 16:00:50.831 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 16:00:50.836 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 16:00:50.841 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:00:50.846 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:00:50.846 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 9.0743ms
+2025-06-07 16:00:50.847 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 16:00:50.848 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages/GetApprovedMessages - 200 null application/json; charset=utf-8 20.9437ms
+2025-06-07 16:01:03.338 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-07 16:01:03.451 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-07 16:01:03.453 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-07 16:01:03.491 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 16:01:03.493 +04:00 [INF] Hosting environment: Development
+2025-06-07 16:01:03.494 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-07 16:01:03.937 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-07 16:01:04.040 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 103.0456ms
+2025-06-07 16:01:04.056 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-07 16:01:04.056 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-07 16:01:04.062 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 5.2842ms
+2025-06-07 16:01:04.078 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.7222ms
+2025-06-07 16:07:53.371 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/api/Basket/ - null null
+2025-06-07 16:07:53.869 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/api/Basket/ - 404 0 null 514.5984ms
+2025-06-07 16:07:53.890 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7004/api/Basket/, Response status code: 404
+2025-06-07 16:19:45.283 +04:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-07 16:19:45.468 +04:00 [INF] Now listening on: https://localhost:7004
+2025-06-07 16:19:45.470 +04:00 [INF] Now listening on: http://localhost:5209
+2025-06-07 16:19:45.528 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 16:19:45.529 +04:00 [INF] Hosting environment: Development
+2025-06-07 16:19:45.530 +04:00 [INF] Content root path: C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject
+2025-06-07 16:19:45.939 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/index.html - null null
+2025-06-07 16:19:46.145 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/index.html - 200 null text/html;charset=utf-8 206.823ms
+2025-06-07 16:19:46.199 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-07 16:19:46.200 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/_vs/browserLink - null null
+2025-06-07 16:19:46.211 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 11.8165ms
+2025-06-07 16:19:46.279 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/_vs/browserLink - 200 null text/javascript; charset=UTF-8 78.9425ms
+2025-06-07 16:19:46.381 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - null null
+2025-06-07 16:19:46.443 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.0516ms
+2025-06-07 16:19:52.394 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-07 16:19:52.464 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-07 16:19:52.511 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-07 16:19:54.328 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-06-07 16:19:56.543 +04:00 [INF] Executed DbCommand (157ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-07 16:19:56.644 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:19:56.672 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 4149.8289ms
+2025-06-07 16:19:56.674 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-07 16:19:56.689 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 4295.0249ms
+2025-06-07 16:19:56.698 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-07 16:19:56.712 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-07 16:19:56.723 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-07 16:19:56.891 +04:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-07 16:19:56.906 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:19:56.912 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 185.1047ms
+2025-06-07 16:19:56.914 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-07 16:19:56.916 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 218.509ms
+2025-06-07 16:19:56.922 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-07 16:19:56.933 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-07 16:19:56.946 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-07 16:19:57.400 +04:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-06-07 16:19:57.542 +04:00 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-07 16:19:57.893 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:19:57.914 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 963.7918ms
+2025-06-07 16:19:57.916 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-07 16:19:57.918 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 996.1159ms
+2025-06-07 16:19:57.926 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-07 16:19:57.930 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-07 16:19:57.941 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-07 16:19:57.964 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-07 16:19:57.976 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:19:57.982 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 36.7681ms
+2025-06-07 16:19:57.983 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-07 16:19:57.985 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 58.689ms
+2025-06-07 16:19:57.988 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-07 16:19:57.993 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-07 16:19:58.002 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-07 16:19:58.027 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-07 16:19:58.039 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:19:58.043 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 37.7734ms
+2025-06-07 16:19:58.045 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-07 16:19:58.047 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 58.5057ms
+2025-06-07 16:19:58.052 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-07 16:19:58.056 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-07 16:19:58.065 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-07 16:19:58.086 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-07 16:19:58.097 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:19:58.102 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 33.4121ms
+2025-06-07 16:19:58.105 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-07 16:19:58.107 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 54.9209ms
+2025-06-07 16:20:10.734 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Subscription/GetAllSubscriptions - null null
+2025-06-07 16:20:10.756 +04:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (SuperAdmin)
+2025-06-07 16:20:10.767 +04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-07 16:20:10.770 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Subscription/GetAllSubscriptions - 401 0 null 36.1765ms
+2025-06-07 16:20:27.008 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Review/GetAllReviews - null null
+2025-06-07 16:20:27.012 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.ReviewController.GetAllReviews (API-FinalProject)'
+2025-06-07 16:20:27.022 +04:00 [INF] Route matched with {action = "GetAllReviews", controller = "Review"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllReviews() on controller API_FinalProject.Controllers.Admin.ReviewController (API-FinalProject).
+2025-06-07 16:20:27.133 +04:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[AppUserId], [r].[Comment], [r].[CreatedDate], [r].[ProductId], [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Reviews] AS [r]
+INNER JOIN [Products] AS [p] ON [r].[ProductId] = [p].[Id]
+INNER JOIN [AspNetUsers] AS [a] ON [r].[AppUserId] = [a].[Id]
+2025-06-07 16:20:27.272 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.UI.Review.ReviewDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:20:27.288 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.ReviewController.GetAllReviews (API-FinalProject) in 263.4393ms
+2025-06-07 16:20:27.292 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.ReviewController.GetAllReviews (API-FinalProject)'
+2025-06-07 16:20:27.295 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Review/GetAllReviews - 200 null application/json; charset=utf-8 287.4761ms
+2025-06-07 16:20:34.248 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:20:34.257 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:20:34.268 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:20:34.310 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:20:34.325 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:20:34.332 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 57.3796ms
+2025-06-07 16:20:34.333 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:20:34.339 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 91.1509ms
+2025-06-07 16:22:04.072 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:22:04.080 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:22:04.083 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:22:04.116 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:22:04.122 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:22:04.125 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 37.4871ms
+2025-06-07 16:22:04.127 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:22:04.130 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 57.8152ms
+2025-06-07 16:25:54.358 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:25:54.378 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:25:54.391 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:25:54.547 +04:00 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:25:54.553 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:25:54.557 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 161.9811ms
+2025-06-07 16:25:54.559 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:25:54.560 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 203.2447ms
+2025-06-07 16:26:11.392 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:26:11.395 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:26:11.396 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:26:11.406 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:26:11.411 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:26:11.413 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 16.1811ms
+2025-06-07 16:26:11.414 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:26:11.414 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 22.4093ms
+2025-06-07 16:26:21.644 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/Approve?id=1 - null 0
+2025-06-07 16:26:21.654 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/Approve?id=1 - 404 0 null 10.0699ms
+2025-06-07 16:26:21.665 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: PUT https://localhost:7004/api/admin/AskUsFrom/Approve, Response status code: 404
+2025-06-07 16:27:04.881 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-07 16:27:04.887 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-07 16:27:04.891 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-07 16:27:04.918 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-07 16:27:04.921 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:27:04.923 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 30.6029ms
+2025-06-07 16:27:04.923 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-07 16:27:04.924 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 43.2081ms
+2025-06-07 16:27:04.948 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-07 16:27:04.953 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-07 16:27:04.954 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-07 16:27:04.968 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-07 16:27:04.971 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:27:04.973 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 17.0137ms
+2025-06-07 16:27:04.974 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-07 16:27:04.975 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 27.3144ms
+2025-06-07 16:27:04.984 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-07 16:27:04.988 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-07 16:27:04.990 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-07 16:27:05.116 +04:00 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-07 16:27:05.146 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:27:05.151 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 159.2733ms
+2025-06-07 16:27:05.152 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-07 16:27:05.153 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 168.9539ms
+2025-06-07 16:27:05.162 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-07 16:27:05.167 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-07 16:27:05.169 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-07 16:27:05.176 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-07 16:27:05.180 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:27:05.182 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 11.3309ms
+2025-06-07 16:27:05.183 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-07 16:27:05.185 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 22.7543ms
+2025-06-07 16:27:05.187 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-07 16:27:05.191 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-07 16:27:05.193 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-07 16:27:05.202 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-07 16:27:05.205 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:27:05.206 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 10.4449ms
+2025-06-07 16:27:05.207 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-07 16:27:05.208 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 21.1684ms
+2025-06-07 16:27:05.212 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-07 16:27:05.215 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-07 16:27:05.216 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-07 16:27:05.222 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-07 16:27:05.224 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:27:05.225 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 7.6641ms
+2025-06-07 16:27:05.226 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-07 16:27:05.228 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 15.7665ms
+2025-06-07 16:27:12.860 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:27:12.865 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:27:12.866 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:27:12.878 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:27:12.884 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:27:12.890 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 20.4375ms
+2025-06-07 16:27:12.892 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:27:12.893 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 33.2899ms
+2025-06-07 16:27:27.106 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/Approve?id=1 - null 0
+2025-06-07 16:27:27.111 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/Approve?id=1 - 404 0 null 4.6589ms
+2025-06-07 16:27:27.117 +04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: PUT https://localhost:7004/api/admin/AskUsFrom/Approve, Response status code: 404
+2025-06-07 16:28:49.264 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-07 16:28:49.279 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-07 16:28:49.284 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-07 16:28:49.331 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-07 16:28:49.337 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:28:49.342 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 56.1442ms
+2025-06-07 16:28:49.343 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-07 16:28:49.345 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 80.9861ms
+2025-06-07 16:28:49.364 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-07 16:28:49.368 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-07 16:28:49.371 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-07 16:28:49.390 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-07 16:28:49.395 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:28:49.398 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 25.8106ms
+2025-06-07 16:28:49.400 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-07 16:28:49.401 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 37.2018ms
+2025-06-07 16:28:49.408 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-07 16:28:49.416 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-07 16:28:49.438 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-07 16:28:49.589 +04:00 [INF] Executed DbCommand (128ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-07 16:28:49.629 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:28:49.636 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 196.1016ms
+2025-06-07 16:28:49.643 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-07 16:28:49.644 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 235.7302ms
+2025-06-07 16:28:49.651 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-07 16:28:49.655 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-07 16:28:49.656 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-07 16:28:49.669 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-07 16:28:49.672 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:28:49.674 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 15.5323ms
+2025-06-07 16:28:49.675 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-07 16:28:49.676 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 25.549ms
+2025-06-07 16:28:49.681 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-07 16:28:49.769 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-07 16:28:49.790 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-07 16:28:49.816 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-07 16:28:49.819 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:28:49.822 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 20.4893ms
+2025-06-07 16:28:49.823 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-07 16:28:49.825 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 143.8369ms
+2025-06-07 16:28:49.833 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-07 16:28:49.835 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-07 16:28:49.836 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-07 16:28:49.843 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-07 16:28:49.847 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:28:49.850 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 12.7717ms
+2025-06-07 16:28:49.853 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-07 16:28:49.854 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 21.2121ms
+2025-06-07 16:28:50.132 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/2efdb74a-56e1-443d-a4fa-78ec311a8cfe.jpg - null null
+2025-06-07 16:28:50.132 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7004/Uploads/productimages/d54b8cd9-f946-4444-9826-cb356d96a6f1.jpg - null null
+2025-06-07 16:28:50.170 +04:00 [INF] The file /Uploads/productimages/d54b8cd9-f946-4444-9826-cb356d96a6f1.jpg was not modified
+2025-06-07 16:28:50.170 +04:00 [INF] The file /Uploads/productimages/2efdb74a-56e1-443d-a4fa-78ec311a8cfe.jpg was not modified
+2025-06-07 16:28:50.173 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/d54b8cd9-f946-4444-9826-cb356d96a6f1.jpg - 304 null image/jpeg 41.2024ms
+2025-06-07 16:28:50.174 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7004/Uploads/productimages/2efdb74a-56e1-443d-a4fa-78ec311a8cfe.jpg - 304 null image/jpeg 42.0862ms
+2025-06-07 16:28:56.868 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:28:56.874 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:28:56.877 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:28:56.890 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:28:56.895 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:28:56.899 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 19.0453ms
+2025-06-07 16:28:56.900 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:28:56.901 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 33.4006ms
+2025-06-07 16:28:59.965 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=9 - null 0
+2025-06-07 16:28:59.974 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:29:00.041 +04:00 [INF] Route matched with {action = "ApproveMessage", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ApproveMessage(Int32) on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:29:00.334 +04:00 [INF] Executed DbCommand (70ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:29:00.360 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:29:00.659 +04:00 [INF] Executed DbCommand (43ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AskUsFroms] SET [CreatedDate] = @p0, [Email] = @p1, [IsApproved] = @p2, [Message] = @p3, [Name] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2025-06-07 16:29:00.695 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-06-07 16:29:00.697 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject) in 651.7746ms
+2025-06-07 16:29:00.699 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:29:00.700 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=9 - 200 null text/plain; charset=utf-8 735.8629ms
+2025-06-07 16:29:00.715 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:29:00.721 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:29:00.724 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:29:00.739 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:29:00.745 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:29:00.749 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 19.4923ms
+2025-06-07 16:29:00.751 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:29:00.754 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 39.3942ms
+2025-06-07 16:29:08.090 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=10 - null 0
+2025-06-07 16:29:08.095 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:29:08.097 +04:00 [INF] Route matched with {action = "ApproveMessage", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ApproveMessage(Int32) on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:29:08.124 +04:00 [INF] Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:29:08.132 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:29:08.150 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AskUsFroms] SET [CreatedDate] = @p0, [Email] = @p1, [IsApproved] = @p2, [Message] = @p3, [Name] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2025-06-07 16:29:08.163 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-06-07 16:29:08.169 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject) in 66.0867ms
+2025-06-07 16:29:08.173 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:29:08.179 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=10 - 200 null text/plain; charset=utf-8 89.2569ms
+2025-06-07 16:29:08.185 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:29:08.193 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:29:08.196 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:29:08.209 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:29:08.213 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:29:08.217 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 13.1962ms
+2025-06-07 16:29:08.220 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:29:08.225 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 40.1041ms
+2025-06-07 16:29:08.969 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=1 - null 0
+2025-06-07 16:29:08.973 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:29:08.976 +04:00 [INF] Route matched with {action = "ApproveMessage", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ApproveMessage(Int32) on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:29:08.989 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:29:08.998 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:29:09.011 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AskUsFroms] SET [CreatedDate] = @p0, [Email] = @p1, [IsApproved] = @p2, [Message] = @p3, [Name] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2025-06-07 16:29:09.017 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-06-07 16:29:09.023 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject) in 43.38ms
+2025-06-07 16:29:09.027 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:29:09.029 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=1 - 200 null text/plain; charset=utf-8 60.2048ms
+2025-06-07 16:29:09.035 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:29:09.044 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:29:09.049 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:29:09.060 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:29:09.064 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:29:09.070 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 15.0068ms
+2025-06-07 16:29:09.072 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:29:09.076 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 40.4271ms
+2025-06-07 16:29:10.152 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=11 - null 0
+2025-06-07 16:29:10.156 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:29:10.159 +04:00 [INF] Route matched with {action = "ApproveMessage", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ApproveMessage(Int32) on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:29:10.167 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:29:10.173 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:29:10.181 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AskUsFroms] SET [CreatedDate] = @p0, [Email] = @p1, [IsApproved] = @p2, [Message] = @p3, [Name] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2025-06-07 16:29:10.191 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-06-07 16:29:10.195 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject) in 33.2562ms
+2025-06-07 16:29:10.199 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:29:10.204 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=11 - 200 null text/plain; charset=utf-8 51.6556ms
+2025-06-07 16:29:10.208 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:29:10.214 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:29:10.219 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:29:10.229 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:29:10.238 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:29:10.242 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 17.0248ms
+2025-06-07 16:29:10.246 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:29:10.249 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 41.0139ms
+2025-06-07 16:29:11.785 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=13 - null 0
+2025-06-07 16:29:11.791 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:29:11.794 +04:00 [INF] Route matched with {action = "ApproveMessage", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ApproveMessage(Int32) on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:29:11.805 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:29:11.813 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:29:11.821 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AskUsFroms] SET [CreatedDate] = @p0, [Email] = @p1, [IsApproved] = @p2, [Message] = @p3, [Name] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2025-06-07 16:29:11.827 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-06-07 16:29:11.832 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject) in 32.9855ms
+2025-06-07 16:29:11.836 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:29:11.840 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=13 - 200 null text/plain; charset=utf-8 54.5361ms
+2025-06-07 16:29:11.846 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:29:11.853 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:29:11.855 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:29:11.866 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:29:11.874 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:29:11.879 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 17.3394ms
+2025-06-07 16:29:11.882 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:29:11.885 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 38.6522ms
+2025-06-07 16:29:13.619 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=12 - null 0
+2025-06-07 16:29:13.623 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:29:13.624 +04:00 [INF] Route matched with {action = "ApproveMessage", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ApproveMessage(Int32) on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:29:13.634 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:29:13.639 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+WHERE [a].[Id] = @__id_0
+2025-06-07 16:29:13.650 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AskUsFroms] SET [CreatedDate] = @p0, [Email] = @p1, [IsApproved] = @p2, [Message] = @p3, [Name] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2025-06-07 16:29:13.655 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-06-07 16:29:13.659 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject) in 32.2421ms
+2025-06-07 16:29:13.662 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.ApproveMessage (API-FinalProject)'
+2025-06-07 16:29:13.663 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7004/api/admin/AskUsFrom/ApproveMessage?id=12 - 200 null text/plain; charset=utf-8 44.1662ms
+2025-06-07 16:29:13.669 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - null null
+2025-06-07 16:29:13.673 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:29:13.675 +04:00 [INF] Route matched with {action = "GetAll", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.AskUsFromController (API-FinalProject).
+2025-06-07 16:29:13.686 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:29:13.691 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:29:13.694 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject) in 13.1234ms
+2025-06-07 16:29:13.697 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.AskUsFromController.GetAll (API-FinalProject)'
+2025-06-07 16:29:13.700 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/AskUsFrom/GetAll - 200 null application/json; charset=utf-8 30.7123ms
+2025-06-07 16:53:52.741 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - null null
+2025-06-07 16:53:52.755 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-07 16:53:52.757 +04:00 [INF] Route matched with {action = "GetAll", controller = "Slider"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SliderController (API-FinalProject).
+2025-06-07 16:53:53.026 +04:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Description], [s].[Image], [s].[Title]
+FROM [Sliders] AS [s]
+2025-06-07 16:53:53.033 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Sliders.SliderDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:53:53.042 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject) in 283.9688ms
+2025-06-07 16:53:53.043 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SliderController.GetAll (API-FinalProject)'
+2025-06-07 16:53:53.044 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Slider/GetAll - 200 null application/json; charset=utf-8 303.5147ms
+2025-06-07 16:53:53.060 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - null null
+2025-06-07 16:53:53.062 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-07 16:53:53.063 +04:00 [INF] Route matched with {action = "GetAll", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.CategoryController (API-FinalProject).
+2025-06-07 16:53:53.070 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name]
+FROM [Categories] AS [c]
+2025-06-07 16:53:53.072 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Category.CategoryDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:53:53.073 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject) in 9.0972ms
+2025-06-07 16:53:53.074 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.CategoryController.GetAll (API-FinalProject)'
+2025-06-07 16:53:53.075 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Category/GetAll - 200 null application/json; charset=utf-8 15.4971ms
+2025-06-07 16:53:53.080 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - null null
+2025-06-07 16:53:53.083 +04:00 [INF] Executing endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-07 16:53:53.084 +04:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller FinalProject.Controllers.Admin.ProductController (API-FinalProject).
+2025-06-07 16:53:53.172 +04:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price], [p].[Stock], [c].[Id], [c].[CreatedDate], [c].[Image], [c].[Name], [b].[Id], [b].[CreatedDate], [b].[Image], [b].[Name], [p0].[Id], [p0].[CreatedDate], [p0].[Img], [p0].[IsMain], [p0].[ProductId], [t].[Id], [t].[ColorId], [t].[CreatedDate], [t].[ProductId], [t].[Id0], [t].[CreatedDate0], [t].[Name], [t0].[Id], [t0].[CreatedDate], [t0].[ProductId], [t0].[TagId], [t0].[Id0], [t0].[CreatedDate0], [t0].[Name]
+FROM [Products] AS [p]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [ProductImages] AS [p0] ON [p].[Id] = [p0].[ProductId]
+LEFT JOIN (
+    SELECT [p1].[Id], [p1].[ColorId], [p1].[CreatedDate], [p1].[ProductId], [c0].[Id] AS [Id0], [c0].[CreatedDate] AS [CreatedDate0], [c0].[Name]
+    FROM [ProductColors] AS [p1]
+    INNER JOIN [Colors] AS [c0] ON [p1].[ColorId] = [c0].[Id]
+) AS [t] ON [p].[Id] = [t].[ProductId]
+LEFT JOIN (
+    SELECT [p2].[Id], [p2].[CreatedDate], [p2].[ProductId], [p2].[TagId], [t1].[Id] AS [Id0], [t1].[CreatedDate] AS [CreatedDate0], [t1].[Name]
+    FROM [ProductTags] AS [p2]
+    INNER JOIN [Tags] AS [t1] ON [p2].[TagId] = [t1].[Id]
+) AS [t0] ON [p].[Id] = [t0].[ProductId]
+ORDER BY [p].[Id], [c].[Id], [b].[Id], [p0].[Id], [t].[Id], [t].[Id0], [t0].[Id]
+2025-06-07 16:53:53.195 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTOs.Admin.Products.ProductDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:53:53.199 +04:00 [INF] Executed action FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject) in 114.0891ms
+2025-06-07 16:53:53.201 +04:00 [INF] Executed endpoint 'FinalProject.Controllers.Admin.ProductController.GetAll (API-FinalProject)'
+2025-06-07 16:53:53.202 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Product/GetAll - 200 null application/json; charset=utf-8 121.9669ms
+2025-06-07 16:53:53.210 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - null null
+2025-06-07 16:53:53.213 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-07 16:53:53.214 +04:00 [INF] Route matched with {action = "GetAll", controller = "LandingBanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.LandingBannerController (API-FinalProject).
+2025-06-07 16:53:53.221 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[CreatedDate], [l].[Description], [l].[Image], [l].[Title]
+FROM [LandingBanners] AS [l]
+2025-06-07 16:53:53.224 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.LandingBanner.LandingBannerDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:53:53.225 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject) in 9.7745ms
+2025-06-07 16:53:53.226 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.LandingBannerController.GetAll (API-FinalProject)'
+2025-06-07 16:53:53.227 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/LandingBanner/GetAll - 200 null application/json; charset=utf-8 17.1942ms
+2025-06-07 16:53:53.229 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - null null
+2025-06-07 16:53:53.231 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-07 16:53:53.232 +04:00 [INF] Route matched with {action = "GetAll", controller = "Instagram"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.InstagramController (API-FinalProject).
+2025-06-07 16:53:53.238 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [i].[Id], [i].[CreatedDate], [i].[Img]
+FROM [Instagrams] AS [i]
+2025-06-07 16:53:53.240 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.Instagram.InstagramDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:53:53.241 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject) in 7.6435ms
+2025-06-07 16:53:53.242 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.InstagramController.GetAll (API-FinalProject)'
+2025-06-07 16:53:53.243 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/Instagram/GetAll - 200 null application/json; charset=utf-8 13.6479ms
+2025-06-07 16:53:53.245 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - null null
+2025-06-07 16:53:53.247 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-07 16:53:53.247 +04:00 [INF] Route matched with {action = "GetAll", controller = "SubscribeImg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.SubscribeImgController (API-FinalProject).
+2025-06-07 16:53:53.252 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[CreatedDate], [s].[Img]
+FROM [SubscribeImgs] AS [s]
+2025-06-07 16:53:53.254 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.SubscribeImg.SubscribeImgDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:53:53.255 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject) in 6.9951ms
+2025-06-07 16:53:53.256 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.SubscribeImgController.GetAll (API-FinalProject)'
+2025-06-07 16:53:53.258 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/SubscribeImg/GetAll - 200 null application/json; charset=utf-8 12.8219ms
+2025-06-07 16:54:09.560 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 16:54:09.567 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 16:54:09.577 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 16:54:09.593 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:54:09.610 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:54:09.612 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 32.2315ms
+2025-06-07 16:54:09.613 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 16:54:09.615 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 54.2867ms
+2025-06-07 16:54:45.555 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 16:54:45.561 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 16:54:45.562 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 16:54:45.572 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:54:45.574 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:54:45.574 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 10.7721ms
+2025-06-07 16:54:45.575 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 16:54:45.576 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 20.6918ms
+2025-06-07 16:55:56.665 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 16:55:56.668 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 16:55:56.670 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 16:55:56.681 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 16:55:56.683 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 16:55:56.684 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 11.5039ms
+2025-06-07 16:55:56.685 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 16:55:56.686 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 21.4746ms
+2025-06-07 17:03:04.082 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:03:04.111 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:03:04.115 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:03:04.411 +04:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:03:04.416 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:03:04.419 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 301.9271ms
+2025-06-07 17:03:04.420 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:03:04.422 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 340.2914ms
+2025-06-07 17:03:28.115 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:03:28.120 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:03:28.120 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:03:28.140 +04:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:03:28.145 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:03:28.146 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 24.6052ms
+2025-06-07 17:03:28.147 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:03:28.148 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 33.0998ms
+2025-06-07 17:04:33.655 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:04:33.658 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:04:33.661 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:04:33.677 +04:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:04:33.682 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:04:33.686 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 21.3559ms
+2025-06-07 17:04:33.687 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:04:33.688 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 33.3984ms
+2025-06-07 17:05:00.665 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:05:00.668 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:05:00.671 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:05:00.675 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:05:00.677 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:05:00.678 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 4.9204ms
+2025-06-07 17:05:00.679 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:05:00.680 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 15.4541ms
+2025-06-07 17:05:48.778 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:05:48.783 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:05:48.785 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:05:48.796 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:05:48.799 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:05:48.800 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 14.3589ms
+2025-06-07 17:05:48.801 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:05:48.802 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 24.3029ms
+2025-06-07 17:07:46.526 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:07:46.530 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:07:46.532 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:07:46.536 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:07:46.537 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:07:46.539 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 5.7309ms
+2025-06-07 17:07:46.540 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:07:46.541 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 15.0297ms
+2025-06-07 17:11:20.197 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:11:20.200 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:11:20.202 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:11:20.208 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:11:20.209 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:11:20.210 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 7.1517ms
+2025-06-07 17:11:20.211 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:11:20.212 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 15.2675ms
+2025-06-07 17:11:46.044 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:11:46.046 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:11:46.048 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:11:46.053 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:11:46.055 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:11:46.056 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 5.3264ms
+2025-06-07 17:11:46.057 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:11:46.058 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 14.8702ms
+2025-06-07 17:11:51.085 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-07 17:11:51.092 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-07 17:11:51.111 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-07 17:11:51.187 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-07 17:11:51.207 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:11:51.225 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 111.8535ms
+2025-06-07 17:11:51.228 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-07 17:11:51.229 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 144.0057ms
+2025-06-07 17:11:59.815 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:11:59.819 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:11:59.820 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:11:59.826 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:11:59.829 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:11:59.830 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 8.7147ms
+2025-06-07 17:11:59.831 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:11:59.832 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 17.1327ms
+2025-06-07 17:12:30.899 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:12:30.902 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:12:30.902 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:12:30.908 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:12:30.910 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:12:30.911 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 5.9459ms
+2025-06-07 17:12:30.912 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:12:30.912 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 13.7089ms
+2025-06-07 17:13:38.435 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:13:38.440 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:13:38.441 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:13:38.444 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:13:38.446 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:13:38.447 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 5.5049ms
+2025-06-07 17:13:38.448 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:13:38.449 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 13.8722ms
+2025-06-07 17:13:56.583 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:13:56.590 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:13:56.591 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:13:56.597 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:13:56.600 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:13:56.602 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 6.9328ms
+2025-06-07 17:13:56.603 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:13:56.604 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 21.3104ms
+2025-06-07 17:17:14.370 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:17:14.375 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:17:14.377 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:17:14.513 +04:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:17:14.519 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:17:14.521 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 140.0186ms
+2025-06-07 17:17:14.525 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:17:14.527 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 156.4386ms
+2025-06-07 17:17:43.959 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:17:43.964 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:17:43.966 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:17:43.983 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:17:43.991 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:17:43.996 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 25.1958ms
+2025-06-07 17:17:43.997 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:17:43.999 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 39.6993ms
+2025-06-07 17:21:22.221 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:21:22.225 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:21:22.226 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:21:22.248 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:21:22.250 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:21:22.252 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 24.6884ms
+2025-06-07 17:21:22.256 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:21:22.257 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 36.2069ms
+2025-06-07 17:21:58.748 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - null null
+2025-06-07 17:21:58.760 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-07 17:21:58.764 +04:00 [INF] Route matched with {action = "GetAll", controller = "HelpSection"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller API_FinalProject.Controllers.Admin.HelpSectionController (API-FinalProject).
+2025-06-07 17:21:58.783 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [h].[Id], [h].[CreatedDate], [h].[CustomerServiceHours], [h].[IsWeekendClosed], [h].[PhoneNumber]
+FROM [HelpSections] AS [h]
+2025-06-07 17:21:58.789 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.HelpSection.HelpSectionDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:21:58.793 +04:00 [INF] Executed action API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject) in 25.4506ms
+2025-06-07 17:21:58.797 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Admin.HelpSectionController.GetAll (API-FinalProject)'
+2025-06-07 17:21:58.799 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/admin/HelpSection/GetAll - 200 null application/json; charset=utf-8 50.9248ms
+2025-06-07 17:22:06.971 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - null null
+2025-06-07 17:22:06.978 +04:00 [INF] Executing endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:22:06.980 +04:00 [INF] Route matched with {action = "GetApprovedMessages", controller = "AskUsFrom"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetApprovedMessages() on controller API_FinalProject.Controllers.Client.AskUsFromController (API-FinalProject).
+2025-06-07 17:22:07.000 +04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreatedDate], [a].[Email], [a].[IsApproved], [a].[Message], [a].[Name]
+FROM [AskUsFroms] AS [a]
+2025-06-07 17:22:07.004 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Service.DTO.Admin.AskUsFrom.AskUsFromDto, Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 17:22:07.007 +04:00 [INF] Executed action API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject) in 22.2598ms
+2025-06-07 17:22:07.009 +04:00 [INF] Executed endpoint 'API_FinalProject.Controllers.Client.AskUsFromController.GetApprovedMessages (API-FinalProject)'
+2025-06-07 17:22:07.012 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7004/api/AskUsFrom/GetApprovedMessages - 200 null application/json; charset=utf-8 40.423ms

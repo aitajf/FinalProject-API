@@ -7,5 +7,8 @@ namespace Service.Services.Interfaces
         Task CreateAsync(AskUsFromCreateDto model);
         Task DeleteAsync(int id);
         Task<IEnumerable<AskUsFromDto>> GetAllAsync();
+        Task<AskUsFromDto> GetByIdAsync(int id);
+        Task<IEnumerable<AskUsFromDto>> GetApprovedMessagesAsync();
+        Task ApproveMessageAsync(int id);
     }
 }
