@@ -2072,6 +2072,22 @@
   },
   {
     "ContainingType": "FinalProject.Controllers.UI.ProductController",
+    "Method": "GetSortedProducts",
+    "RelativePath": "api/Product/GetSortedProducts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sortType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.ProductController",
     "Method": "ProductDetail",
     "RelativePath": "api/Product/ProductDetail/{id}",
     "HttpMethod": "GET",

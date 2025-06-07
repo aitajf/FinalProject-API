@@ -58,15 +58,11 @@ namespace FinalProject.Controllers.UI
         }
 
 
-        //[HttpGet("{id}/colors")]
-        //public async Task<IActionResult> GetProductColors(int id)
-        //{
-        //    var productColorsDto = await _productService.GetProductColorsWithImagesAsync(id);
-
-        //    if (productColorsDto == null)
-        //        return NotFound();
-
-        //    return Ok(productColorsDto);
-        //}
+        [HttpGet]
+        public async Task<IActionResult> GetSortedProducts([FromQuery] string sortType)
+        {
+            var sortedProducts = await _productService.GetSortedProductsAsync(sortType);
+            return Ok(sortedProducts);
+        }
     }
 }

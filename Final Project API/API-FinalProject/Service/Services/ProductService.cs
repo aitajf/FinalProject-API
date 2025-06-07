@@ -78,8 +78,6 @@ namespace Service.Services
                 await _productColorRepository.CreateAsync(new ProductColor { ColorId = id, Product = data });
             }
         }
-
-
         public async Task DeleteAsync(int id)
         {
             var product = await _productRepository.GetByIdWithIncludesAsync(id);
@@ -186,10 +184,6 @@ namespace Service.Services
             return _mapper.Map<IEnumerable<ProductDto>>(products);
         }
 
-        public async Task<IEnumerable<ProductDto>> SortBy(string sortKey)
-        {
-            return _mapper.Map<IEnumerable<ProductDto>>(await _productRepository.SortBy(sortKey));
-        }
 
         public async Task<PaginationResponse<ProductDto>> GetPaginateAsync(int page, int take)
         {
@@ -224,23 +218,10 @@ namespace Service.Services
             return await _productRepository.GetProductsCount();
         }
 
-
-        //public async Task<ProductDetailColorsDto> GetProductColorsWithImagesAsync(int productId)
-        //{
-        //    var product = await _productRepository.GetProductWithColorsAsync(productId);
-        //    if (product == null) return null;
-
-        //    return new ProductDetailColorsDto
-        //    {
-        //        ProductId = product.Id,
-        //        Colors = product.ProductColors.Select(pc => new ProductColorImageDto
-        //        {
-        //            ColorId = pc.ColorId,
-        //            ColorName = pc.Color.Name,
-        //            ImageUrl = pc.ImageUrl
-        //        }).ToList()
-        //    };
-        //}
-
+        public async Task<IEnumerable<ProductDto>> GetSortedProductsAsync(string sortType)
+        {
+            var products = await _productRepository.SortedProductsAsync(sortType);
+            return _mapper.Map<IEnumerable<ProductDto>>(products);
+        }
     }
 }

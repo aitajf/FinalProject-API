@@ -2250,6 +2250,27 @@
         }
       }
     },
+    "/api/Product/GetSortedProducts": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "parameters": [
+          {
+            "name": "sortType",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/admin/Product/GetAll": {
       "get": {
         "tags": [

@@ -12,10 +12,11 @@ namespace Repository.Repositories.Interfaces
         IQueryable<Product> GetAllWithExpression(Expression<Func<Product, bool>> predicate);
         Task<Product> GetByIdWithIncludesAsync(int id);
         Task<IEnumerable<Product>> FilterAsync(string categoryName,string colorName, string tagName, string brandName);
-        Task<IEnumerable<Product>> SortBy(string sortKey);
 		Task DeleteProductImage(ProductImage image);
         Task<IEnumerable<Product>> GetAllTakenAsync(int take, int? skip = null);
         Task<int> GetProductsCount();
         Task<Product> GetProductWithColorsAsync(int productId);
+
+        Task<IEnumerable<Product>> SortedProductsAsync(string sortType);
     }
 }
