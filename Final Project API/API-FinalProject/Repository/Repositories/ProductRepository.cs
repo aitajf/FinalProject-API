@@ -17,43 +17,81 @@ namespace Repository.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Product>> FilterAsync(string categoryName, string colorName, string tagName, string brandName)
-        {
-            IEnumerable<Product> query = await GetAllWithIncludes().ToListAsync();
+        //public async Task<IEnumerable<Product>> FilterAsync(string categoryName, string colorName, string tagName, string brandName)
+        //{
+        //    IEnumerable<Product> query = await GetAllWithIncludes().ToListAsync();
 
-             List<Product> datas = new();
-            if (categoryName == null && colorName == null && tagName == null && brandName == null)
+        //     List<Product> datas = new();
+        //    if (categoryName == null && colorName == null && tagName == null && brandName == null)
+        //    {
+        //        return query.ToList();
+        //    }
+        //    else if (categoryName != null && colorName != null && tagName == null && brandName != null)
+        //    {
+        //        datas = query.Where(x => x.ProductColors.Any(x => x.Color.Name.ToLower() == colorName.ToLower()) ||
+        //                x.ProductTags.Any(x => x.Tag.Name.ToLower() == tagName.ToLower()) ||
+        //                x.Category.Name.ToLower() == categoryName.ToLower() ||
+        //                x.Brand.Name.ToLower() == brandName.ToLower()).ToList();
+        //    }
+        //    else
+        //    {
+        //        if (categoryName is not null)
+        //        {
+        //            datas = query.Where(m => m.Category.Name == categoryName).ToList();
+        //        }
+        //        if (colorName is not null)
+        //        {
+        //            datas = query.Where(m => m.ProductColors.Any(c => c.Color.Name == colorName)).ToList();
+        //        }
+        //        if (tagName is not null)
+        //        {
+        //            datas = query.Where(m => m.ProductTags.Any(c => c.Tag.Name == colorName)).ToList();
+        //        }
+        //        if (brandName is not null)
+        //        {
+        //            datas = query.Where(m => m.Brand.Name == brandName).ToList();
+        //        }
+        //    }
+        //    return datas;
+        //}
+
+
+
+        public async Task<IEnumerable<Product>> FilterAsync(string? categoryName, string? colorName, string? tagName, string? brandName)
+        {
+            var query = GetAllWithIncludes();
+
+            if (!string.IsNullOrEmpty(categoryName))
             {
-                return query.ToList();
+                query = query.Where(p => p.Category.Name.ToLower() == categoryName.ToLower());
             }
-            else if (categoryName != null && colorName != null && tagName == null && brandName != null)
+
+            if (!string.IsNullOrEmpty(colorName))
             {
-                datas = query.Where(x => x.ProductColors.Any(x => x.Color.Name.ToLower() == colorName.ToLower()) ||
-                        x.ProductTags.Any(x => x.Tag.Name.ToLower() == tagName.ToLower()) ||
-                        x.Category.Name.ToLower() == categoryName.ToLower() ||
-                        x.Brand.Name.ToLower() == brandName.ToLower()).ToList();
+                query = query.Where(p => p.ProductColors.Any(pc => pc.Color.Name.ToLower() == colorName.ToLower()));
             }
-            else
+
+            if (!string.IsNullOrEmpty(tagName))
             {
-                if (categoryName is not null)
-                {
-                    datas = query.Where(m => m.Category.Name == categoryName).ToList();
-                }
-                if (colorName is not null)
-                {
-                    datas = query.Where(m => m.ProductColors.Any(c => c.Color.Name == colorName)).ToList();
-                }
-                if (tagName is not null)
-                {
-                    datas = query.Where(m => m.ProductTags.Any(c => c.Tag.Name == colorName)).ToList();
-                }
-                if (brandName is not null)
-                {
-                    datas = query.Where(m => m.Brand.Name == brandName).ToList();
-                }
+                query = query.Where(p => p.ProductTags.Any(pt => pt.Tag.Name.ToLower() == tagName.ToLower()));
             }
-            return datas;
+
+            if (!string.IsNullOrEmpty(brandName))
+            {
+                query = query.Where(p => p.Brand.Name.ToLower() == brandName.ToLower());
+            }
+
+            return await query.ToListAsync();
         }
+
+
+
+
+
+
+
+
+
 
         public IQueryable<Product> GetAllWithExpression(Expression<Func<Product, bool>> predicate)
         {

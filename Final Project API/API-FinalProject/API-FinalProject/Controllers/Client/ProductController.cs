@@ -35,11 +35,13 @@ namespace FinalProject.Controllers.UI
 		}
 
 
-		[HttpGet]
-		public async Task<IActionResult> Filter([FromQuery]string categoryName, [FromQuery] string colorName, [FromQuery] string tagName, [FromQuery] string brandName)
-		{
-			return Ok(await _productService.FilterAsync(categoryName,colorName,tagName,brandName));
-		}
+        [HttpGet]
+        public async Task<IActionResult> Filter([FromQuery] string? categoryName,[FromQuery] string? colorName,
+                                                [FromQuery] string? tagName, [FromQuery] string? brandName)
+        {
+            return Ok(await _productService.FilterAsync(categoryName, colorName, tagName, brandName));
+        }
+
 
         [HttpGet("take")]
         public async Task<IActionResult> GetAllTaken([FromQuery] int take, [FromQuery] int? skip = null)
