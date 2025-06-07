@@ -15,5 +15,6 @@ namespace Service.Services.Interfaces
         Task DeleteAsync(int id);
         Task<IEnumerable<BrandDto>> GetAllAsync();
         Task<BrandDto> GetByIdAsync(int id);
+        Task<Dictionary<string, int>> GetBrandProductCountsAsync();
     }
 }

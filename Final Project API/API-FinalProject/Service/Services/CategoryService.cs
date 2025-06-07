@@ -96,5 +96,10 @@ namespace Service.Services
 
             return new PaginationResponse<CategoryDto>(mappedDatas, totalPage, page, totalItemCount);
         }
+
+        public async Task<Dictionary<string, int>> GetCategoryProductCountsAsync()
+        {
+            return await _categoryRepository.GetCategoryProductCountsAsync();
+        }
     }
 }

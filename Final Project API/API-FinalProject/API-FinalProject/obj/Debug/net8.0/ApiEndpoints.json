@@ -644,6 +644,16 @@
   },
   {
     "ContainingType": "API_FinalProject.Controllers.Admin.BrandController",
+    "Method": "GetBrandProductCounts",
+    "RelativePath": "api/admin/Brand/GetBrandProductCounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.BrandController",
     "Method": "GetById",
     "RelativePath": "api/admin/Brand/GetById/{id}",
     "HttpMethod": "GET",
@@ -745,6 +755,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.CategoryController",
+    "Method": "GetCategoryProductCounts",
+    "RelativePath": "api/admin/Category/GetCategoryProductCounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

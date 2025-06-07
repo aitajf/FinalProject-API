@@ -20,5 +20,13 @@ namespace Repository.Repositories
             predicate ??= x => true;
             return _context.Categories.Include(m => m.Products).Where(predicate);
         }
+
+        public async Task<Dictionary<string, int>> GetCategoryProductCountsAsync()
+        {
+            return await _context.Categories
+                .Select(c => new { c.Name, ProductCount = c.Products.Count })
+                .ToDictionaryAsync(c => c.Name, c => c.ProductCount);
+        }
+
     }
 }

@@ -17,5 +17,6 @@ namespace Service.Services.Interfaces
         Task<IEnumerable<CategoryDto>> GetAllAsync();
         Task<CategoryDto> GetByIdAsync(int id);
         Task<PaginationResponse<CategoryDto>> GetPaginateAsync(int page, int take);
+        Task<Dictionary<string, int>> GetCategoryProductCountsAsync();
     }
 }

@@ -1322,6 +1322,18 @@
         }
       }
     },
+    "/api/admin/Brand/GetBrandProductCounts": {
+      "get": {
+        "tags": [
+          "Brand"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/admin/Category/Create": {
       "post": {
         "tags": [
@@ -1488,6 +1500,18 @@
               "format": "int32"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/Category/GetCategoryProductCounts": {
+      "get": {
+        "tags": [
+          "Category"
         ],
         "responses": {
           "200": {

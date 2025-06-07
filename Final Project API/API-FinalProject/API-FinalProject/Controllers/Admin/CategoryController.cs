@@ -54,5 +54,13 @@ namespace API_FinalProject.Controllers.Admin
             return Ok(await _categoryService.GetPaginateAsync(page, take));
 
         }
+
+
+        [HttpGet]
+        public async Task<IActionResult> GetCategoryProductCounts()
+        {
+            var categoryCounts = await _categoryService.GetCategoryProductCountsAsync();
+            return Ok(categoryCounts);
+        }
     }
 }

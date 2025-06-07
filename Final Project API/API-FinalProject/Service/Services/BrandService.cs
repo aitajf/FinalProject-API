@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using Domain.Entities;
+using Repository.Repositories;
 using Repository.Repositories.Interface;
 using Service.DTO.Admin.Brand;
 using Service.DTO.Admin.Category;
@@ -20,7 +21,6 @@ namespace Service.Services
         public BrandService(IBrandRepository brandRepository,
                              IFileService fileService,
                              IMapper mapper)
-
         {
             _brandRepository = brandRepository;
             _fileService = fileService;
@@ -33,7 +33,6 @@ namespace Service.Services
             brand.Image = imageUrl;
             await _brandRepository.CreateAsync(brand);
         }
-
         public async Task DeleteAsync(int id)
         {
             Brand brand = await _brandRepository.GetByIdAsync(id);
@@ -65,17 +64,19 @@ namespace Service.Services
             _mapper.Map(model, brand);
             await _brandRepository.EditAsync(brand);
         }
-
         public async Task<IEnumerable<BrandDto>> GetAllAsync()
         {
             return _mapper.Map<IEnumerable<BrandDto>>(await _brandRepository.GetAllAsync());
         }
-
         public async Task<BrandDto> GetByIdAsync(int id)
         {
             var category = await _brandRepository.GetByIdAsync(id);
             if (category == null) throw new KeyNotFoundException($"Brand with ID {id} not found.");
             return _mapper.Map<BrandDto>(category);
+        }
+        public async Task<Dictionary<string, int>> GetBrandProductCountsAsync()
+        {
+            return await _brandRepository.GetBrandProductCountsAsync();
         }
     }
 }

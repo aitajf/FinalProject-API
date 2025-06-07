@@ -9,5 +9,6 @@ namespace Repository.Repositories.Interface
 {
     public interface IBrandRepository : IBaseRepository<Brand>
     {
+        Task<Dictionary<string, int>> GetBrandProductCountsAsync();
     }
 }
