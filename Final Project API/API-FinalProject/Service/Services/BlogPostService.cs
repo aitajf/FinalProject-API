@@ -62,32 +62,7 @@ namespace Service.Services
             }
         }
 
-        //public async Task EditAsync(int id, BlogPostEditDto model)
-        //{
-        //    var blogPost = await _postRepository.GetByIdWithIncludesAsync(id);
-        //    if (blogPost == null) throw new KeyNotFoundException($"Blog post with ID {id} not found.");
-
-        //    var categoryExists = await _categoryRepository.GetByIdAsync(model.BlogCategoryId);
-        //    if (categoryExists == null) throw new KeyNotFoundException($"Category with ID {model.BlogCategoryId} not found.");
-
-        //    _mapper.Map(model, blogPost);
-        //    blogPost.Images ??= new List<BlogPostImg>();
-
-        //    if (model.Images != null && model.Images.Any())
-        //    {
-        //        foreach (var file in model.Images)
-        //        {
-        //            string imageUrl = await _fileService.UploadFileAsync(file, "blogposts");
-        //            blogPost.Images.Add(new BlogPostImg { Image = imageUrl, BlogPostId = blogPost.Id, IsMain = false });
-        //        }
-        //    }
-
-
-
-        //    await _postRepository.EditAsync(blogPost);
-        //}
-
-
+       
 
         public async Task EditAsync(int id, BlogPostEditDto model)
         {
@@ -135,23 +110,7 @@ namespace Service.Services
             return _mapper.Map<BlogPostDto>(blogPost);
         }
 
-        //public async Task DeleteImageAsync(int blogPostId, int blogPostImageId)
-        //{
-        //    var blogPost = await _postRepository.GetByIdWithIncludesAsync(blogPostId);
-        //    if (blogPost == null) throw new KeyNotFoundException("Blog post not found.");
-
-        //    var image = blogPost.Images.FirstOrDefault(i => i.Id == blogPostImageId);
-        //    if (image == null) throw new KeyNotFoundException("Image not found.");
-
-        //    string imageName = Path.GetFileName(image.Image);
-        //    string filePath = Path.Combine(_env.WebRootPath, "Uploads", "blogposts", imageName);
-
-        //    if (File.Exists(filePath))  _fileService.Delete(imageName, "blogposts");
-
-        //    blogPost.Images.Remove(image);
-        //    await _postRepository.EditAsync(blogPost);
-        //}
-
+       
         public async Task<bool> DeleteImageAsync(int blogPostId, int blogPostImageId)
         {
             var blogPost = await _postRepository.GetByIdWithIncludesAsync(blogPostId);
