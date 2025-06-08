@@ -76,6 +76,58 @@ namespace Service.Services
                 }
             }
         }
+        //public async Task<LoginResponse> LoginAsync(LoginDto model)
+        //{
+        //    var user = await _userManager.FindByEmailAsync(model.EmailOrUserName);
+
+        //    if (user is null)
+        //        user = await _userManager.FindByNameAsync(model.EmailOrUserName);
+
+        //    if (user is null)
+        //    {
+        //        return new LoginResponse
+        //        {
+        //            Success = false,
+        //            Error = "Login failed.",
+        //            Token = null
+        //        };
+        //    }
+        //    var result = await _userManager.CheckPasswordAsync(user, model.Password);
+        //    if (!result)
+        //    {
+        //        return new LoginResponse
+        //        {
+        //            Success = false,
+        //            Error = "Login failed.",
+        //            Token = null
+        //        };
+        //    }
+
+        //    if (!await _userManager.IsEmailConfirmedAsync(user))
+        //    {
+        //        return new LoginResponse
+        //        {
+        //            Success = false,
+        //            Error = "Login failed: Email not confirmed.",
+        //            Token = null
+        //        };
+        //    }
+
+        //    var userRoles = await _userManager.GetRolesAsync(user);
+
+        //    string token = GenerateJwtToken(user, userRoles.ToList());
+
+        //    return new LoginResponse
+        //    {
+        //        Success = true,
+        //        Error = null,
+        //        Token = token,
+        //        UserName = user.UserName,
+        //        UserId = user.Id.ToString(),
+        //        Roles = userRoles.ToList()
+        //    };
+        //}
+
         public async Task<LoginResponse> LoginAsync(LoginDto model)
         {
             var user = await _userManager.FindByEmailAsync(model.EmailOrUserName);
@@ -88,17 +140,18 @@ namespace Service.Services
                 return new LoginResponse
                 {
                     Success = false,
-                    Error = "Login failed.",
+                    Error = "User not found. Please register first.",
                     Token = null
                 };
             }
+
             var result = await _userManager.CheckPasswordAsync(user, model.Password);
             if (!result)
             {
                 return new LoginResponse
                 {
                     Success = false,
-                    Error = "Login failed.",
+                    Error = "Incorrect password.",
                     Token = null
                 };
             }
@@ -108,7 +161,7 @@ namespace Service.Services
                 return new LoginResponse
                 {
                     Success = false,
-                    Error = "Login failed: Email not confirmed.",
+                    Error = "Email not confirmed.",
                     Token = null
                 };
             }
@@ -127,8 +180,63 @@ namespace Service.Services
                 Roles = userRoles.ToList()
             };
         }
+
+
+        //public async Task<RegisterResponse> RegisterAsync(RegisterDto model)
+        //{
+        //    var user = _mapper.Map<AppUser>(model);
+        //    IdentityResult result = await _userManager.CreateAsync(user, model.Password);
+
+        //    if (!result.Succeeded)
+        //    {
+        //        return new RegisterResponse
+        //        {
+        //            Success = false,
+        //            Message = result.Errors.Select(m => m.Description)
+        //        };
+        //    }
+        //    await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
+
+        //    //Email confirm
+        //    string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+        //    var request = _httpContextAccessor.HttpContext.Request;
+        //    string baseUrl = $"{request.Scheme}://{request.Host}{request.PathBase}";
+        //    string url = $"https://localhost:7004/api/Account/VerifyEmail?verifyEmail={HttpUtility.UrlEncode(user.Email)}&token={HttpUtility.UrlEncode(token)}";
+        //    var template = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "confirm", "mailconfirm.html"));
+        //    template = template.Replace("{{link}}", url);
+        //    _emailService.Send(user.Email, "Email confirmation", template);
+
+        //    return new RegisterResponse {Success = true, Message = new List<string>() {token}};
+        //}
+
+
+
+
+
         public async Task<RegisterResponse> RegisterAsync(RegisterDto model)
         {
+            // Check if user already exists by email or username
+            var existingUserByEmail = await _userManager.FindByEmailAsync(model.Email);
+            if (existingUserByEmail != null)
+            {
+                return new RegisterResponse
+                {
+                    Success = false,
+                    Message = new List<string> { "This email is already registered." }
+                };
+            }
+
+            var existingUserByUserName = await _userManager.FindByNameAsync(model.UserName);
+            if (existingUserByUserName != null)
+            {
+                return new RegisterResponse
+                {
+                    Success = false,
+                    Message = new List<string> { "This username is already taken." }
+                };
+            }
+
+            // Map and create user
             var user = _mapper.Map<AppUser>(model);
             IdentityResult result = await _userManager.CreateAsync(user, model.Password);
 
@@ -137,22 +245,31 @@ namespace Service.Services
                 return new RegisterResponse
                 {
                     Success = false,
-                    Message = result.Errors.Select(m => m.Description)
+                    Message = result.Errors.Select(e => e.Description)
                 };
             }
+
             await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
 
-            //Email confirm
+            // Email confirmation
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             var request = _httpContextAccessor.HttpContext.Request;
-            string baseUrl = $"{request.Scheme}://{request.Host}{request.PathBase}";
             string url = $"https://localhost:7004/api/Account/VerifyEmail?verifyEmail={HttpUtility.UrlEncode(user.Email)}&token={HttpUtility.UrlEncode(token)}";
+
             var template = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "confirm", "mailconfirm.html"));
             template = template.Replace("{{link}}", url);
+
             _emailService.Send(user.Email, "Email confirmation", template);
 
-            return new RegisterResponse {Success = true, Message = new List<string>() {token}};
+            return new RegisterResponse
+            {
+                Success = true,
+                Message = new List<string> { "Registration successful. Please check your email for confirmation." }
+            };
         }
+
+
+
         public async Task<string> VerifyEmail(string verifyEmail, string token)
         {
             var appUser = await _userManager.FindByEmailAsync(verifyEmail);

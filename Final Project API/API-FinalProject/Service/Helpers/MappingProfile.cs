@@ -90,6 +90,7 @@ namespace Service.Helpers
             CreateMap<Product, ProductDto>()
               .ForMember(d => d.Brand, opt => opt.MapFrom(s => s.Brand.Name))
               .ForMember(d => d.Category, opt => opt.MapFrom(s => s.Category.Name))
+              .ForMember(d => d.CategoryId, opt => opt.MapFrom(s => s.Category.Id))
               .ForMember(d => d.Tags, opt => opt.MapFrom(s => s.ProductTags.Select(m => m.Tag.Name).ToList())) 
               .ForMember(d => d.Colors, opt => opt.MapFrom(s => s.ProductColors.Select(m => m.Color.Name).ToList())) 
               .ForMember(d => d.MainImage, opt => opt.MapFrom(s => s.ProductImages.FirstOrDefault(i => i.IsMain).Img))

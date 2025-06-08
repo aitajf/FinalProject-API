@@ -25,11 +25,23 @@ namespace API_FinalProject.Controllers.Client
             return Ok(response);
         }
 
+        //[HttpPost]
+        //public async Task<IActionResult> Login([FromBody] LoginDto request)
+        //{
+        //    return Ok(await _accountService.LoginAsync(request));
+        //}
+
         [HttpPost]
         public async Task<IActionResult> Login([FromBody] LoginDto request)
         {
-            return Ok(await _accountService.LoginAsync(request));
+            var response = await _accountService.LoginAsync(request);
+
+            if (!response.Success)
+                return BadRequest(response);
+
+            return Ok(response);
         }
+
 
         [HttpGet]
         public async Task<IActionResult> VerifyEmail(string verifyEmail, string token)

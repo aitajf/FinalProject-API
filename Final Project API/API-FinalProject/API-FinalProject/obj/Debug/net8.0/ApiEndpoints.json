@@ -2088,6 +2088,27 @@
   },
   {
     "ContainingType": "FinalProject.Controllers.UI.ProductController",
+    "Method": "GetComparisonProducts",
+    "RelativePath": "api/Product/GetComparisonProducts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "selectedProduct",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.ProductController",
     "Method": "GetProductsCount",
     "RelativePath": "api/Product/GetProductsCount",
     "HttpMethod": "GET",

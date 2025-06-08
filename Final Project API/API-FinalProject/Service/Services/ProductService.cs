@@ -223,5 +223,19 @@ namespace Service.Services
             var products = await _productRepository.SortedProductsAsync(sortType);
             return _mapper.Map<IEnumerable<ProductDto>>(products);
         }
+
+        public async Task<IEnumerable<ProductDto>> GetComparisonProductsAsync(int categoryId, int selectedProductId, int count = 3)
+        {
+           var compareProducts = _productRepository.GetComparisonProducts(categoryId, selectedProductId, count);
+            return  _mapper.Map<IEnumerable<ProductDto>>(compareProducts);
+        }
+
+        //public async Task<IEnumerable<ProductDto>> GetComparisonProductsAsync(int categoryId)
+        //{
+        //    var products = _productRepository.GetRandomProductsByCategory(categoryId);
+        //    return _mapper.Map<IEnumerable<ProductDto>>(products);
+        //}
+
+
     }
 }

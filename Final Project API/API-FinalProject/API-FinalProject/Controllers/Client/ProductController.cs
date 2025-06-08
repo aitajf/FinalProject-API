@@ -64,5 +64,20 @@ namespace FinalProject.Controllers.UI
             var sortedProducts = await _productService.GetSortedProductsAsync(sortType);
             return Ok(sortedProducts);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetComparisonProducts([FromQuery]int categoryId, [FromQuery] int selectedProduct)
+        {
+            if (categoryId <= 0) return BadRequest("Invalid category ID");
+
+            var products = await _productService.GetComparisonProductsAsync(categoryId, selectedProduct);
+
+            if (products == null || !products.Any())
+            {
+                return NotFound("No products found for the given category");
+            }
+
+            return Ok(products);
+        }
     }
 }

@@ -21,5 +21,9 @@ namespace Service.Services.Interfaces
         Task<IEnumerable<ProductDto>> GetAllTakenAsync(int take, int? skip = null);
         Task<int> GetProductsCountAsync();
         Task<IEnumerable<ProductDto>> GetSortedProductsAsync(string sortType);
+
+        Task<IEnumerable<ProductDto>> GetComparisonProductsAsync(int categoryId ,int selectedProductId, int count = 3);
+
+
     }
 }

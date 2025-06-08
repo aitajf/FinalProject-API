@@ -84,9 +84,7 @@ namespace Repository.Repositories
               .AsNoTracking()
               .FirstOrDefaultAsync();
         }
-
-    
-
+  
         public async Task<IEnumerable<Product>> GetAllTakenAsync(int take, int? skip = null)
         {
             return await _context.Products.Include(m => m.Category)
@@ -141,6 +139,47 @@ namespace Repository.Repositories
 
             return await query.ToListAsync();
         }
+
+        //public IEnumerable<Product> GetRandomProductsByCategory(int categoryId, int count = 3)
+        //{
+        //    return _context.Products
+        //                   .Where(p => p.CategoryId == categoryId)
+        //                   .Include(p => p.Category) 
+        //                   .Include(p => p.Brand)
+        //                   .Include(m => m.ProductColors)
+        //                   .ThenInclude(pc => pc.Color)
+        //                   .Include(p => p.ProductImages)   
+        //                   .OrderBy(r => Guid.NewGuid())
+        //                   .Take(count).ToList();
+        //}
+
+        public IEnumerable<Product> GetComparisonProducts(int categoryId, int selectedProductId, int count = 3)
+        {
+            // 1. Seçilmiş məhsulu gətir
+            var selectedProduct = _context.Products
+                       .Include(p => p.Category)
+                       .Include(p => p.Brand)
+                       .Include(m => m.ProductColors)
+                       .ThenInclude(pc => pc.Color)
+                       .Include(p => p.ProductImages)   
+                .FirstOrDefault(p => p.Id == selectedProductId);
+
+            if (selectedProduct == null)
+            {
+                throw new KeyNotFoundException($"Product with ID {selectedProductId} not found!");
+            }
+
+            var randomProducts = _context.Products
+                .Where(p => p.CategoryId == categoryId && p.Id != selectedProductId) 
+                .OrderBy(r => Guid.NewGuid()) 
+                .Take(count - 1) 
+                .ToList();
+
+            randomProducts.Insert(0, selectedProduct);
+
+            return randomProducts;
+        }
+
 
     }
 }
