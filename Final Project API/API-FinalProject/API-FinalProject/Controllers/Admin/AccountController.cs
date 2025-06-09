@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Service.DTO.Account;
 using Service.Services.Interfaces;
@@ -86,6 +87,20 @@ namespace API_FinalProject.Controllers.Admin
                 return NotFound("User not found or no roles assigned.");
 
             return Ok(roles);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SendMessageToAdmin([FromBody] AdminMessageDto model)
+        {
+            var result = await _accountService.SendMessageToAdminAsync(model.Email, model.Subject, model.Body);
+            return Ok(result);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAdminsEmails()
+        {
+            var emails = await _accountService.GetAdminsEmailsAsync();
+            return Ok(emails);
         }
     }
 }

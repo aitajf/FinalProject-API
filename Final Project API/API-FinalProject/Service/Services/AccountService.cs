@@ -516,5 +516,22 @@ namespace Service.Services
             var roles = await _userManager.GetRolesAsync(user);
             return roles.ToList();
         }
+
+
+        public async Task<string> SendMessageToAdminAsync(string email, string subject, string messageBody)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null || !await _userManager.IsInRoleAsync(user, "Admin"))
+                return "Admin user not found.";
+
+            await _sendEmail.SendAsync("aitajjf2@gmail.com", "JoiFurn System", email, messageBody, subject);
+            return "Message sent to admin successfully.";
+        }
+
+        public async Task<List<string>> GetAdminsEmailsAsync()
+        {
+            var admins = await _userManager.GetUsersInRoleAsync("Admin");
+            return admins.Select(u => u.Email).ToList();
+        }
     }
 }

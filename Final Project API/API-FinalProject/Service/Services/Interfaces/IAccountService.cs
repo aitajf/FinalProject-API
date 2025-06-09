@@ -19,5 +19,9 @@ namespace Service.Services.Interfaces
         Task<string> RemoveRoleAsync(string username, string roleName);
         Task<List<string>> GetAllRolesAsync();
         Task<List<string>> GetUserRolesAsync(string username);
+
+
+        Task<string> SendMessageToAdminAsync(string email, string subject, string messageBody);
+        Task<List<string>> GetAdminsEmailsAsync();
     }
 }

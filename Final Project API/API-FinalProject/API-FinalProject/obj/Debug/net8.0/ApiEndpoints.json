@@ -295,6 +295,16 @@
   },
   {
     "ContainingType": "API_FinalProject.Controllers.Admin.AccountController",
+    "Method": "GetAdminsEmails",
+    "RelativePath": "api/admin/Account/GetAdminsEmails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.AccountController",
     "Method": "GetAllRoles",
     "RelativePath": "api/admin/Account/GetAllRoles",
     "HttpMethod": "GET",
@@ -346,6 +356,22 @@
         "Name": "RoleName",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.AccountController",
+    "Method": "SendMessageToAdmin",
+    "RelativePath": "api/admin/Account/SendMessageToAdmin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Service.DTO.Account.AdminMessageDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
