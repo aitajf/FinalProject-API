@@ -19,6 +19,8 @@ using Service.Helpers.Enums;
 using Service.Services.Interfaces;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
 
 namespace Service.Services
 {
@@ -375,9 +377,6 @@ namespace Service.Services
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-
-
-
         public string CreateToken(AppUser user, IList<string> roles)
         {
             List<Claim> claims = new List<Claim>
@@ -405,23 +404,6 @@ namespace Service.Services
             var token = securityTokenHandler.CreateToken(tokenDescriptor);
             return securityTokenHandler.WriteToken(token);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         public async Task<string> ForgetPassword(string email, string requestScheme, string requestHost)
         {
@@ -457,6 +439,82 @@ namespace Service.Services
             await _userManager.UpdateSecurityStampAsync(appUser);
             await _distributedCache.RemoveAsync(appUser.Email);
             return "Password successfully reset";
+        }
+
+
+        public async Task<IEnumerable<UserDto>> GetAllUsersAsync()
+        {
+            var users = await _userManager.Users.ToListAsync();
+            var userDtos = _mapper.Map<IEnumerable<UserDto>>(users);
+
+            foreach (var userDto in userDtos)
+            {
+                var roles = await _userManager.GetRolesAsync(await _userManager.FindByNameAsync(userDto.UserName));
+                userDto.Roles = roles.ToList();
+            }
+
+            return userDtos;
+        }
+
+
+        public async Task<string> AddRoleAsync(string username, string roleName)
+        {
+            var user = await _userManager.FindByNameAsync(username);
+            if (user == null) return "User does not exist.";
+
+            if (!await _roleManager.RoleExistsAsync(roleName)) return "Role does not exist.";
+
+            var result = await _userManager.AddToRoleAsync(user, roleName);
+            if (!result.Succeeded)
+            {
+                return $"Failed to add role: {string.Join(", ", result.Errors.Select(error => error.Description))}";
+            }
+
+            return $"Role '{roleName}' added to user '{username}' successfully.";
+        }
+
+
+        public async Task<string> RemoveRoleAsync(string username, string roleName)
+        {
+            var user = await _userManager.FindByNameAsync(username);
+            if (user == null)
+            {
+                return "User does not exist.";
+            }
+
+            if (!await _roleManager.RoleExistsAsync(roleName))
+            {
+                return "Role does not exist.";
+            }
+
+            if (roleName.Equals(Roles.SuperAdmin.ToString(), StringComparison.OrdinalIgnoreCase))
+            {
+                return "The 'SuperAdmin' role cannot be removed.";
+            }
+
+            var result = await _userManager.RemoveFromRoleAsync(user, roleName);
+            if (!result.Succeeded)
+            {
+                return $"Failed to remove role: {string.Join(", ", result.Errors.Select(error => error.Description))}";
+            }
+
+            return $"Role '{roleName}' removed from user '{username}' successfully.";
+        }
+
+        public async Task<List<string>> GetAllRolesAsync()
+        {
+            var roles = _roleManager.Roles.Select(r => r.Name).ToList();
+            return await Task.FromResult(roles);
+        }
+
+        public async Task<List<string>> GetUserRolesAsync(string username)
+        {
+            var user = await _userManager.FindByNameAsync(username);
+            if (user == null)
+                return new List<string>();
+
+            var roles = await _userManager.GetRolesAsync(user);
+            return roles.ToList();
         }
     }
 }

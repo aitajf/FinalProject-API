@@ -28,6 +28,8 @@ namespace Service.Helpers
         public MappingProfile()
         {
             CreateMap<RegisterDto, AppUser>();
+            CreateMap<AppUser, UserDto>();
+
 
             CreateMap<Slider, SliderDto>();            
             CreateMap<SliderCreateDto, Slider>();
