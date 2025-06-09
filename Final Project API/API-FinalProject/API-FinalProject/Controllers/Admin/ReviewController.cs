@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Service.Services.Interfaces;
 
 namespace API_FinalProject.Controllers.Admin
 {
+    [Authorize(Roles = "SuperAdmin")]
     public class ReviewController : BaseController
     {
         private readonly IReviewService _reviewService;

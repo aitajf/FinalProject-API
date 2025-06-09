@@ -170,6 +170,11 @@ namespace Repository.Repositories
             }
 
             var randomProducts = _context.Products
+                .Include(p => p.Category)
+                       .Include(p => p.Brand)
+                       .Include(m => m.ProductColors)
+                       .ThenInclude(pc => pc.Color)
+                       .Include(p => p.ProductImages)
                 .Where(p => p.CategoryId == categoryId && p.Id != selectedProductId) 
                 .OrderBy(r => Guid.NewGuid()) 
                 .Take(count - 1) 

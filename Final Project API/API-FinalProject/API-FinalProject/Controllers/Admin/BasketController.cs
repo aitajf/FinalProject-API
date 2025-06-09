@@ -1,9 +1,11 @@
 ﻿using API_FinalProject.Controllers.Admin;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Services.Interfaces;
 
 namespace FinalProject.Controllers.Admin
 {
+    [Authorize(Roles = "SuperAdmin")]
     public class BasketController : BaseController
     {
         private readonly IBasketService _basketService;

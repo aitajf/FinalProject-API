@@ -283,6 +283,9 @@ namespace Service.Services
 
             return CreateToken(appUser, roles);                 
         }
+
+
+
         //    public string CreateToken(AppUser user, IList<string> roles)
         //    {
         //        List<Claim> claims = new List<Claim>

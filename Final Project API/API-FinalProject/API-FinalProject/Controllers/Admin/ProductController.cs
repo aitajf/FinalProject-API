@@ -1,4 +1,5 @@
 ﻿using API_FinalProject.Controllers.Admin;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Admin.Products;
 using Service.Services;

@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.UI.Wishlists;
 using Service.Services.Interfaces;
 
 namespace API_FinalProject.Controllers.Admin
 {
+    [Authorize(Roles = "SuperAdmin")]
+
     public class WishlistController : BaseController
     {
         private readonly IWishlistService _wishlistService;

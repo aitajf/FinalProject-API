@@ -5,8 +5,8 @@
       "PackagePath": "staticwebassets\\Uploads\\aboutbannerimgs\\111687f0-d4cd-411a-9d1d-540a51b4eaf9.jpg"
     },
     {
-      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\aboutbannerimgs\\5d186f67-68d5-416f-afe9-49f6614bd872.jpg",
-      "PackagePath": "staticwebassets\\Uploads\\aboutbannerimgs\\5d186f67-68d5-416f-afe9-49f6614bd872.jpg"
+      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\aboutbannerimgs\\53b90f09-d6be-4d94-a2e3-37d71bcb43f3.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\aboutbannerimgs\\53b90f09-d6be-4d94-a2e3-37d71bcb43f3.jpg"
     },
     {
       "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\aboutbannerimgs\\873faade-47eb-482e-bcd5-317044be7720.jpg",
@@ -325,10 +325,6 @@
       "PackagePath": "staticwebassets\\Uploads\\brands\\4f72d926-ef01-47a7-b669-f5b472eb318e.jpg"
     },
     {
-      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\brands\\6957a27e-5f0a-41fc-a6ec-1df7c2244df8.jpg",
-      "PackagePath": "staticwebassets\\Uploads\\brands\\6957a27e-5f0a-41fc-a6ec-1df7c2244df8.jpg"
-    },
-    {
       "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\brands\\72614d57-cc9f-4a48-8b01-788d35ab1ecb.jpg",
       "PackagePath": "staticwebassets\\Uploads\\brands\\72614d57-cc9f-4a48-8b01-788d35ab1ecb.jpg"
     },
@@ -349,12 +345,12 @@
       "PackagePath": "staticwebassets\\Uploads\\brands\\e9afc500-443e-4af0-93f8-2688c0b1fd59.jpg"
     },
     {
-      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\categories\\0b193073-1086-4040-ac18-402251cf297b.jpg",
-      "PackagePath": "staticwebassets\\Uploads\\categories\\0b193073-1086-4040-ac18-402251cf297b.jpg"
+      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\brands\\ffaa2e28-918e-4f06-ab36-b006d556a43d.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\brands\\ffaa2e28-918e-4f06-ab36-b006d556a43d.jpg"
     },
     {
-      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\categories\\3814ce93-a7d2-48f5-8487-01a1e639cc10.jpg",
-      "PackagePath": "staticwebassets\\Uploads\\categories\\3814ce93-a7d2-48f5-8487-01a1e639cc10.jpg"
+      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\categories\\0b193073-1086-4040-ac18-402251cf297b.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\categories\\0b193073-1086-4040-ac18-402251cf297b.jpg"
     },
     {
       "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\categories\\526a06bb-01a3-4814-87cd-2aa1a9105d6a.jpg",
@@ -369,8 +365,20 @@
       "PackagePath": "staticwebassets\\Uploads\\categories\\602ad64b-156a-41a5-b5db-85c7918ab95c.jpg"
     },
     {
+      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\categories\\750ffa79-e41a-44da-a7a6-7351d3e4aa66.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\categories\\750ffa79-e41a-44da-a7a6-7351d3e4aa66.jpg"
+    },
+    {
       "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\categories\\772e9e9f-2fcc-49f4-a965-47169cc794e2.jpg",
       "PackagePath": "staticwebassets\\Uploads\\categories\\772e9e9f-2fcc-49f4-a965-47169cc794e2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\categories\\87a4647a-c39e-4b3f-8314-9c4058cb1437.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\categories\\87a4647a-c39e-4b3f-8314-9c4058cb1437.jpg"
+    },
+    {
+      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\categories\\a8082c72-dc2c-4f31-abdc-d1fb89adde3d.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\categories\\a8082c72-dc2c-4f31-abdc-d1fb89adde3d.jpg"
     },
     {
       "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\categories\\abbb348d-1d14-4b12-b572-b099e5a9581e.jpg",
@@ -393,8 +401,16 @@
       "PackagePath": "staticwebassets\\Uploads\\categories\\e2262d24-ae2d-4d59-93d0-20f4ca1ea9c2.jpg"
     },
     {
+      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\categories\\ef7432e7-d827-4a91-9e06-eb5b41385f1d.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\categories\\ef7432e7-d827-4a91-9e06-eb5b41385f1d.jpg"
+    },
+    {
       "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\categories\\f7288614-b5fc-47ae-9c9d-2de16a7f1ec6.jpg",
       "PackagePath": "staticwebassets\\Uploads\\categories\\f7288614-b5fc-47ae-9c9d-2de16a7f1ec6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\categories\\f823e423-c7ba-4b6b-a1ed-7576baf51a99.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\categories\\f823e423-c7ba-4b6b-a1ed-7576baf51a99.jpg"
     },
     {
       "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\instagram\\18abeae1-403c-4e53-bc81-5dc597c571e3.jpg",
@@ -919,6 +935,10 @@
     {
       "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\a245ddfe-6815-432d-8d00-b2bea13ff7a8.jpg",
       "PackagePath": "staticwebassets\\Uploads\\sliders\\a245ddfe-6815-432d-8d00-b2bea13ff7a8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\a56b8e82-b006-4cbe-a278-b87b03d68b2e.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\sliders\\a56b8e82-b006-4cbe-a278-b87b03d68b2e.jpg"
     },
     {
       "Id": "C:\\Users\\acer\\OneDrive\\İş masası\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\wwwroot\\Uploads\\sliders\\c2006119-80a2-43ad-90e6-92b2c62fbe89.jpg",
