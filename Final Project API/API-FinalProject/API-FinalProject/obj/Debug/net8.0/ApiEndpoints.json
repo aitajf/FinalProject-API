@@ -285,6 +285,27 @@
   },
   {
     "ContainingType": "API_FinalProject.Controllers.Admin.AccountController",
+    "Method": "BlockUser",
+    "RelativePath": "api/admin/Account/BlockUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "minutes",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.AccountController",
     "Method": "CreateRoles",
     "RelativePath": "api/admin/Account/CreateRoles",
     "HttpMethod": "POST",
@@ -297,6 +318,16 @@
     "ContainingType": "API_FinalProject.Controllers.Admin.AccountController",
     "Method": "GetAdminsEmails",
     "RelativePath": "api/admin/Account/GetAdminsEmails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.AccountController",
+    "Method": "GetAllBlockedUsers",
+    "RelativePath": "api/admin/Account/GetAllBlockedUsers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -372,6 +403,22 @@
         "Name": "model",
         "Type": "Service.DTO.Account.AdminMessageDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.AccountController",
+    "Method": "UnblockUser",
+    "RelativePath": "api/admin/Account/UnblockUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

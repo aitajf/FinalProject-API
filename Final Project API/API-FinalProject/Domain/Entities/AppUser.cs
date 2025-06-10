@@ -6,5 +6,6 @@ namespace Domain.Entities
     {
         public string FullName { get; set; }
         public ICollection<Review> Reviews { get; set; }
+        public bool IsBlocked { get; set; } = false;
     }
 }

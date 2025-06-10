@@ -23,5 +23,11 @@ namespace Service.Services.Interfaces
 
         Task<string> SendMessageToAdminAsync(string email, string subject, string messageBody);
         Task<List<string>> GetAdminsEmailsAsync();
+
+
+        Task<string> BlockUserAsync(string username, TimeSpan blockDuration);
+        Task<string> UnblockUserAsync(string username);
+        Task<AppUser> GetUserByUsernameAsync(string username);
+        Task<List<UserDto>> GetAllBlockedUsersAsync();
     }
 }

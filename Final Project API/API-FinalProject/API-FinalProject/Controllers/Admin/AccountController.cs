@@ -102,5 +102,35 @@ namespace API_FinalProject.Controllers.Admin
             var emails = await _accountService.GetAdminsEmailsAsync();
             return Ok(emails);
         }
+
+
+        [HttpPost]
+        public async Task<IActionResult> BlockUser([FromQuery] string username, [FromQuery] int minutes)
+        {
+            if (string.IsNullOrEmpty(username) || minutes <= 0)
+                return BadRequest(new { message = "Invalid parameters." });
+
+            var result = await _accountService.BlockUserAsync(username, TimeSpan.FromMinutes(minutes));
+
+            return Ok(new { message = result });
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> UnblockUser([FromQuery] string userId)
+        {
+            if (string.IsNullOrEmpty(userId))
+                return BadRequest("Invalid userId.");
+
+            var result = await _accountService.UnblockUserAsync(userId);
+            return Ok(new { message = result });
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllBlockedUsers()
+        {
+            var blockedUsers = await _accountService.GetAllBlockedUsersAsync();
+            return Ok(blockedUsers);
+        }
     }
 }

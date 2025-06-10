@@ -6,7 +6,6 @@ using Service.Services.Interfaces;
 
 namespace API_FinalProject.Controllers.Admin
 {
-    [Authorize(Roles = "SuperAdmin")]
     public class SubscriptionController : BaseController
     {
         private readonly ISubscriptionService _subscriptionService;

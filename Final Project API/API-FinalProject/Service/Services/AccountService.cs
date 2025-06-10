@@ -130,58 +130,68 @@ namespace Service.Services
         //    };
         //}
 
-        public async Task<LoginResponse> LoginAsync(LoginDto model)
-        {
-            var user = await _userManager.FindByEmailAsync(model.EmailOrUserName);
+        //public async Task<LoginResponse> LoginAsync(LoginDto model)
+        //{
+        //    var user = await _userManager.FindByEmailAsync(model.EmailOrUserName);
 
-            if (user is null)
-                user = await _userManager.FindByNameAsync(model.EmailOrUserName);
+        //    if (user is null)
+        //        user = await _userManager.FindByNameAsync(model.EmailOrUserName);
 
-            if (user is null)
-            {
-                return new LoginResponse
-                {
-                    Success = false,
-                    Error = "User not found. Please register first.",
-                    Token = null
-                };
-            }
+        //    if (user is null)
+        //    {
+        //        return new LoginResponse
+        //        {
+        //            Success = false,
+        //            Error = "User not found. Please register first.",
+        //            Token = null
+        //        };
+        //    }
 
-            var result = await _userManager.CheckPasswordAsync(user, model.Password);
-            if (!result)
-            {
-                return new LoginResponse
-                {
-                    Success = false,
-                    Error = "Incorrect password.",
-                    Token = null
-                };
-            }
+        //    if (user.IsBlocked)
+        //    {
+        //        return new LoginResponse
+        //        {
+        //            Success = false,
+        //            Error = "Your account has been blocked by administrator. Please try again later.",
+        //            Token = null
+        //        };
+        //    }
 
-            if (!await _userManager.IsEmailConfirmedAsync(user))
-            {
-                return new LoginResponse
-                {
-                    Success = false,
-                    Error = "Email not confirmed.",
-                    Token = null
-                };
-            }
+        //    var result = await _userManager.CheckPasswordAsync(user, model.Password);
+        //    if (!result)
+        //    {
+        //        return new LoginResponse
+        //        {
+        //            Success = false,
+        //            Error = "Incorrect password.",
+        //            Token = null
+        //        };
+        //    }
 
-            var userRoles = await _userManager.GetRolesAsync(user);
+        //    if (!await _userManager.IsEmailConfirmedAsync(user))
+        //    {
+        //        return new LoginResponse
+        //        {
+        //            Success = false,
+        //            Error = "Email not confirmed.",
+        //            Token = null
+        //        };
+        //    }
 
-            string token = GenerateJwtToken(user, userRoles.ToList());
+        //    var userRoles = await _userManager.GetRolesAsync(user);
 
-            return new LoginResponse
-            {
-                Success = true,
-                Error = null,
-                Token = token,
-                UserName = user.UserName,
-                UserId = user.Id.ToString(),
-                Roles = userRoles.ToList()
-            };
-        }
+        //    string token = GenerateJwtToken(user, userRoles.ToList());
+
+        //    return new LoginResponse
+        //    {
+        //        Success = true,
+        //        Error = null,
+        //        Token = token,
+        //        UserName = user.UserName,
+        //        UserId = user.Id.ToString(),
+        //        Roles = userRoles.ToList()
+        //    };
+        //}
 
 
         //public async Task<RegisterResponse> RegisterAsync(RegisterDto model)
@@ -212,8 +222,76 @@ namespace Service.Services
         //}
 
 
+        public async Task<LoginResponse> LoginAsync(LoginDto model)
+        {
+            var user = await _userManager.FindByEmailAsync(model.EmailOrUserName)
+                       ?? await _userManager.FindByNameAsync(model.EmailOrUserName);
 
+            if (user is null)
+            {
+                return new LoginResponse
+                {
+                    Success = false,
+                    Error = "User not found. Please register first.",
+                    Token = null
+                };
+            }
 
+            if (user.LockoutEnd.HasValue && user.LockoutEnd <= DateTimeOffset.UtcNow)
+            {
+                user.IsBlocked = false;
+                user.AccessFailedCount = 0;
+                await _userManager.UpdateAsync(user);
+            }
+
+            if (user.IsBlocked || await _userManager.IsLockedOutAsync(user))
+            {
+                return new LoginResponse
+                {
+                    Success = false,
+                    Error = "Your account is temporarily locked. Please try again later.",
+                    Token = null
+                };
+            }
+
+            var result = await _userManager.CheckPasswordAsync(user, model.Password);
+            if (!result)
+            {
+                await _userManager.AccessFailedAsync(user);
+
+                return new LoginResponse
+                {
+                    Success = false,
+                    Error = "Incorrect password.",
+                    Token = null
+                };
+            }
+
+            if (!await _userManager.IsEmailConfirmedAsync(user))
+            {
+                return new LoginResponse
+                {
+                    Success = false,
+                    Error = "Email not confirmed.",
+                    Token = null
+                };
+            }
+
+            await _userManager.ResetAccessFailedCountAsync(user);
+
+            var userRoles = await _userManager.GetRolesAsync(user);
+            string token = GenerateJwtToken(user, userRoles.ToList());
+
+            return new LoginResponse
+            {
+                Success = true,
+                Error = null,
+                Token = token,
+                UserName = user.UserName,
+                UserId = user.Id.ToString(),
+                Roles = userRoles.ToList()
+            };
+        }
 
         public async Task<RegisterResponse> RegisterAsync(RegisterDto model)
         {
@@ -533,5 +611,75 @@ namespace Service.Services
             var admins = await _userManager.GetUsersInRoleAsync("Admin");
             return admins.Select(u => u.Email).ToList();
         }
+
+
+        public async Task<string> BlockUserAsync(string username, TimeSpan blockDuration)
+        {
+            var user = await _userManager.FindByNameAsync(username);
+            if (user == null)
+                return "User not found.";
+
+            var roles = await _userManager.GetRolesAsync(user);
+            if (roles.Contains("SuperAdmin"))
+                return "SuperAdmin users cannot be blocked.";
+
+            user.IsBlocked = true;
+            user.LockoutEnabled = true;
+            user.LockoutEnd = DateTimeOffset.UtcNow.Add(blockDuration);
+
+            var result = await _userManager.UpdateAsync(user);
+            if (result.Succeeded)
+                return $"User {username} successfully blocked.";
+
+            return $"Failed to block user: {string.Join(", ", result.Errors.Select(e => e.Description))}";
+        }
+
+        public async Task<string> UnblockUserAsync(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+                return "User not found.";
+
+            user.IsBlocked = false;
+            user.LockoutEnabled = false;
+            user.LockoutEnd = null;
+
+            var result = await _userManager.UpdateAsync(user);
+            if (result.Succeeded)
+                return $"User {user.UserName} successfully unblocked.";
+
+            return $"Failed to unblock user: {string.Join(", ", result.Errors.Select(e => e.Description))}";
+        }
+
+
+        public async Task<AppUser> GetUserByUsernameAsync(string username)
+        {
+            return await _userManager.FindByNameAsync(username);
+        }
+
+        public async Task<List<UserDto>> GetAllBlockedUsersAsync()
+        {
+            var blockedUsers = await _userManager.Users
+                .Where(u => u.IsBlocked && u.LockoutEnd.HasValue && u.LockoutEnd > DateTimeOffset.UtcNow)
+                .ToListAsync();
+
+            var result = new List<UserDto>();
+
+            foreach (var user in blockedUsers)
+            {
+                var roles = await _userManager.GetRolesAsync(user);
+                result.Add(new UserDto
+                {
+                    Id = user.Id,
+                    UserName = user.UserName,
+                    Email = user.Email,
+                    FullName = user.FullName,
+                    Roles = roles.ToList()
+                });
+            }
+
+            return result;
+        }
+
     }
 }
