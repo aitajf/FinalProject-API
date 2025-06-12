@@ -16,7 +16,6 @@ namespace API_FinalProject.Controllers.Admin
             _sliderService = sliderService;
         }
 
-        [Authorize(Roles = "Admin,SuperAdmin")]
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] SliderCreateDto request)
         {
@@ -31,7 +30,6 @@ namespace API_FinalProject.Controllers.Admin
             return Ok(await _sliderService.GetByIdAsync(id));
         }
 
-        [Authorize(Roles = "Admin,SuperAdmin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Edit([FromRoute] int id, [FromForm] SliderEditDto request)
         {
@@ -39,7 +37,6 @@ namespace API_FinalProject.Controllers.Admin
             return Ok();
         }
 
-        [Authorize(Roles = "Admin,SuperAdmin")]
         [HttpDelete]
         public async Task<IActionResult> Delete([FromQuery] int id)
         {
