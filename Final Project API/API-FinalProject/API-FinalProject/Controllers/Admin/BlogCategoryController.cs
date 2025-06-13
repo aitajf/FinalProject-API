@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Service.DTO.Admin.BlogCategory;
+using Service.Services;
 using Service.Services.Interfaces;
 
 namespace API_FinalProject.Controllers.Admin
@@ -48,6 +49,13 @@ namespace API_FinalProject.Controllers.Admin
         {
             await _blogCategoryService.DeleteAsync(id);
             return Ok();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetCategoryPostCounts()
+        {
+            var categoryCounts = await _blogCategoryService.GetCategoryPostCountsAsync();
+            return Ok(categoryCounts);
         }
     }
 }

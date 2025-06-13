@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq.Expressions;
 using Domain.Entities;
 
 namespace Repository.Repositories.Interface
@@ -13,5 +8,7 @@ namespace Repository.Repositories.Interface
         IQueryable<BlogPost> ApplyIncludes();
         Task<BlogPost> GetByIdWithIncludesAsync(int id);
         IQueryable<BlogPost> GetAllWithExpression(Expression<Func<BlogPost, bool>> predicate);
+        Task<IEnumerable<BlogPost>> FilterAsync(string categoryName);
+
     }
 }

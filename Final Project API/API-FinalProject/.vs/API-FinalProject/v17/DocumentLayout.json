@@ -3,34 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\api-finalproject\\controllers\\client\\blogreviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|solutionrelative:api-finalproject\\controllers\\client\\blogreviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\api-finalproject\\controllers\\client\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|solutionrelative:api-finalproject\\controllers\\client\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\services\\blogreviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\blogreviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\services\\blogpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\blogpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\services\\interfaces\\iblogpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\iblogpostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\dto\\ui\\blogreview\\blogreviewcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\dto\\ui\\blogreview\\blogreviewcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\api-finalproject\\controllers\\admin\\blogreviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFE273D2-435B-4E94-A004-21FF8F4188F4}|API-FinalProject\\API-FinalProject.csproj|solutionrelative:api-finalproject\\controllers\\admin\\blogreviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_7MEAR63_SQLEXPRESS/FinalProjectDb/True/SqlTable/dbo.BlogReviews.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_7MEAR63_SQLEXPRESS/FinalProjectDb/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\service\\dto\\admin\\blogpost\\blogpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34A14011-F1DE-4A99-842C-9DB1BC72BD61}|Service\\Service.csproj|solutionrelative:service\\dto\\admin\\blogpost\\blogpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CDF841F4-6CA0-46A5-895F-36F5815446E1}|Repository\\Repository.csproj|c:\\users\\acer\\onedrive\\\u0130\u015F masas\u0131\\final project api\\finalproject-api\\final project api\\api-finalproject\\repository\\repositories\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF841F4-6CA0-46A5-895F-36F5815446E1}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,109 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "dbo.BlogReviews [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_7MEAR63_SQLEXPRESS/FinalProjectDb/True/SqlTable/dbo.BlogReviews.sql",
-              "ToolTip": "dbo.BlogReviews [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-06-13T07:22:28.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "dbo.AspNetUsers [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_7MEAR63_SQLEXPRESS/FinalProjectDb/True/SqlTable/dbo.AspNetUsers.sql",
-              "ToolTip": "dbo.AspNetUsers [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-06-13T07:20:54.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Helpers\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "Service\\Helpers\\MappingProfile.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Helpers\\MappingProfile.cs",
-              "RelativeToolTip": "Service\\Helpers\\MappingProfile.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAQwI0AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T06:55:49.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BlogReviewController.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Admin\\BlogReviewController.cs",
-              "RelativeDocumentMoniker": "API-FinalProject\\Controllers\\Admin\\BlogReviewController.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Admin\\BlogReviewController.cs",
-              "RelativeToolTip": "API-FinalProject\\Controllers\\Admin\\BlogReviewController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T06:15:44.119Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BlogReviewController.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Client\\BlogReviewController.cs",
-              "RelativeDocumentMoniker": "API-FinalProject\\Controllers\\Client\\BlogReviewController.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Client\\BlogReviewController.cs",
-              "RelativeToolTip": "API-FinalProject\\Controllers\\Client\\BlogReviewController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAmwDEAAAAfAAAAAAAAAA==",
+              "Title": "BlogPostController.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Client\\BlogPostController.cs",
+              "RelativeDocumentMoniker": "API-FinalProject\\Controllers\\Client\\BlogPostController.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\API-FinalProject\\Controllers\\Client\\BlogPostController.cs",
+              "RelativeToolTip": "API-FinalProject\\Controllers\\Client\\BlogPostController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAIwB4AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T18:35:30.765Z",
+              "WhenOpened": "2025-06-13T14:54:10.546Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BlogReviewService.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\BlogReviewService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\BlogReviewService.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\BlogReviewService.cs",
-              "RelativeToolTip": "Service\\Services\\BlogReviewService.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAqwDYAAAAIAAAAAAAAAA==",
+              "Title": "BlogPostService.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\BlogPostService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\BlogPostService.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\BlogPostService.cs",
+              "RelativeToolTip": "Service\\Services\\BlogPostService.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAUwIsAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T08:28:12.004Z",
+              "WhenOpened": "2025-06-13T14:43:07.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IBlogPostService.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\Interfaces\\IBlogPostService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IBlogPostService.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\Interfaces\\IBlogPostService.cs",
+              "RelativeToolTip": "Service\\Services\\Interfaces\\IBlogPostService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T14:41:46.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BlogReviewCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\DTO\\UI\\BlogReview\\BlogReviewCreateDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTO\\UI\\BlogReview\\BlogReviewCreateDto.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\DTO\\UI\\BlogReview\\BlogReviewCreateDto.cs",
-              "RelativeToolTip": "Service\\DTO\\UI\\BlogReview\\BlogReviewCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Repository\\Repositories\\Interface\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\Interface\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Repository\\Repositories\\Interface\\IProductRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\Interface\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T08:25:34.652Z",
+              "WhenOpened": "2025-06-13T14:34:38.778Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BlogPostDto.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\DTO\\Admin\\BlogPost\\BlogPostDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTO\\Admin\\BlogPost\\BlogPostDto.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\DTO\\Admin\\BlogPost\\BlogPostDto.cs",
-              "RelativeToolTip": "Service\\DTO\\Admin\\BlogPost\\BlogPostDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T06:55:33.062Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         },

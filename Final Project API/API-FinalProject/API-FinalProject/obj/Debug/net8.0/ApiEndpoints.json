@@ -571,6 +571,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_FinalProject.Controllers.Admin.BlogCategoryController",
+    "Method": "GetCategoryPostCounts",
+    "RelativePath": "api/admin/BlogCategory/GetCategoryPostCounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_FinalProject.Controllers.Admin.BlogPostController",
     "Method": "Create",
     "RelativePath": "api/admin/BlogPost/Create",
@@ -2150,6 +2160,22 @@
         "Name": "basketCreateDto",
         "Type": "Service.DTOs.UI.Basket.BasketCreateDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Client.BlogPostController",
+    "Method": "Filter",
+    "RelativePath": "api/BlogPost/Filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryName",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

@@ -16,11 +16,7 @@ namespace Repository.Repositories.Interfaces
         Task<IEnumerable<Product>> GetAllTakenAsync(int take, int? skip = null);
         Task<int> GetProductsCount();
         Task<Product> GetProductWithColorsAsync(int productId);
-
         Task<IEnumerable<Product>> SortedProductsAsync(string sortType);
-
-        //IEnumerable<Product> GetRandomProductsByCategory(int categoryId, int count = 3);
-
         IEnumerable<Product> GetComparisonProducts(int categoryId, int selectedProductId, int count = 3);
     }
 }

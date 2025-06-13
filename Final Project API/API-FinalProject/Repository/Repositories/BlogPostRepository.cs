@@ -35,5 +35,16 @@ namespace Repository.Repositories
              .Include(x=>x.Images)
              .Where(predicate);
         }
+
+        public async Task<IEnumerable<BlogPost>> FilterAsync(string? categoryName)
+        {
+            var query = ApplyIncludes();
+
+            if (!string.IsNullOrEmpty(categoryName))
+            {
+                query = query.Where(p => p.BlogCategory.Name.ToLower() == categoryName.ToLower());
+            }
+            return await query.ToListAsync();
+        }
     }
 }

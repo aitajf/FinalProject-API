@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Service.Services;
 using Service.Services.Interfaces;
 
 namespace API_FinalProject.Controllers.Client
@@ -22,6 +23,12 @@ namespace API_FinalProject.Controllers.Client
         public async Task<IActionResult> SearchByName([FromQuery] string name)
         {
             return Ok(await _blogPostService.SearchByCategoryAndName(name));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Filter([FromQuery] string? categoryName)
+        {
+            return Ok(await _blogPostService.FilterAsync(categoryName));
         }
     }
 }

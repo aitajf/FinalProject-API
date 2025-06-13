@@ -14,5 +14,7 @@ namespace Service.Services.Interfaces
         Task DeleteAsync(int id);
         Task<IEnumerable<BlogCategoryDto>> GetAllAsync();
         Task<BlogCategoryDto> GetByIdAsync(int id);
+
+        Task<Dictionary<string, int>> GetCategoryPostCountsAsync();
     }
 }

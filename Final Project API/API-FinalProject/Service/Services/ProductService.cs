@@ -56,6 +56,7 @@ namespace Service.Services
             }
 
             images.FirstOrDefault().IsMain = true;
+
             model.ProductImages = images;
 
             var data = _mapper.Map<Product>(model);

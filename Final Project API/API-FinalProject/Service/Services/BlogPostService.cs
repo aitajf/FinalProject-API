@@ -154,6 +154,12 @@ namespace Service.Services
               || x.BlogCategory.Name.ToLower().Trim().Contains(categoryOrProductName.ToLower().Trim()));
               return _mapper.Map<IEnumerable<BlogPostDto>>(products);
         }
+
+        public async Task<IEnumerable<BlogPostDto>> FilterAsync(string categoryName)
+        {
+            return _mapper.Map<IEnumerable<BlogPostDto>>(await _postRepository.FilterAsync(categoryName));
+
+        }
     }
 }
 

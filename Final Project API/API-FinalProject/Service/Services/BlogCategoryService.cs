@@ -58,5 +58,10 @@ namespace Service.Services
             if (category == null) throw new KeyNotFoundException($"Category with ID {id} not found.");
             return _mapper.Map<BlogCategoryDto>(category);
         }
+
+        public async Task<Dictionary<string, int>> GetCategoryPostCountsAsync()
+        {
+          return await _blogCategoryRepository.GetCategoryPostCountsAsync();
+        }
     }
 }

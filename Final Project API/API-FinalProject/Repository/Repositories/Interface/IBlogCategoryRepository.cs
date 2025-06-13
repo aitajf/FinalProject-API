@@ -9,5 +9,6 @@ namespace Repository.Repositories.Interface
 {
     public interface IBlogCategoryRepository : IBaseRepository<BlogCategory>
     {
+        Task<Dictionary<string, int>> GetCategoryPostCountsAsync();
     }
 }

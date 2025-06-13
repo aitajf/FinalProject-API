@@ -1113,6 +1113,18 @@
         }
       }
     },
+    "/api/admin/BlogCategory/GetCategoryPostCounts": {
+      "get": {
+        "tags": [
+          "BlogCategory"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/BlogPost/GetPaginateDatas": {
       "get": {
         "tags": [
@@ -1151,6 +1163,27 @@
         "parameters": [
           {
             "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BlogPost/Filter": {
+      "get": {
+        "tags": [
+          "BlogPost"
+        ],
+        "parameters": [
+          {
+            "name": "categoryName",
             "in": "query",
             "schema": {
               "type": "string"

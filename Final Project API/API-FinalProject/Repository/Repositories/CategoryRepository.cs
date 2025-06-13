@@ -27,6 +27,5 @@ namespace Repository.Repositories
                 .Select(c => new { c.Name, ProductCount = c.Products.Count })
                 .ToDictionaryAsync(c => c.Name, c => c.ProductCount);
         }
-
     }
 }
