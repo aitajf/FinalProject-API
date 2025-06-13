@@ -14,14 +14,16 @@ namespace Repository.Repositories
         {
             await _context.Baskets.AddAsync(basket);
         }
-		public async Task<Basket> GetByUserIdAsync(string userId)
-		{
-			return await _context.Baskets
-		.Include(b => b.BasketProducts).ThenInclude(c => c.Color)
-		.Include(b => b.BasketProducts).ThenInclude(c => c.Product).ThenInclude(p => p.ProductImages)
-		.FirstOrDefaultAsync(b => b.AppUserId == userId);
-		}
-		public void Delete(BasketProduct basketProduct)
+        public async Task<Basket> GetByUserIdAsync(string userId)
+        {
+            return await _context.Baskets
+                .Include(b => b.AppUser)
+                .Include(b => b.BasketProducts).ThenInclude(c => c.Color)
+                .Include(b => b.BasketProducts).ThenInclude(c => c.Product).ThenInclude(p => p.ProductImages)
+                .FirstOrDefaultAsync(b => b.AppUserId == userId);
+        }
+
+        public void Delete(BasketProduct basketProduct)
         {
             _context.BasketProducts.Remove(basketProduct);
         }
@@ -33,6 +35,11 @@ namespace Repository.Repositories
                 .FirstOrDefaultAsync(b => b.AppUserId == userId);
             _context.Baskets.Remove(data);
             await _context.SaveChangesAsync();  
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _context.SaveChangesAsync();
         }
     }
 }

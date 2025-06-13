@@ -15,6 +15,7 @@ using Service.DTO.Admin.LandingBanner;
 using Service.DTO.Admin.Sliders;
 using Service.DTO.Admin.SubscribeImg;
 using Service.DTO.Admin.Tag;
+using Service.DTO.UI.BlogReview;
 using Service.DTO.UI.Review;
 using Service.DTO.UI.Subscription;
 using Service.DTOs.Admin.Products;
@@ -58,7 +59,8 @@ namespace Service.Helpers
             CreateMap<BlogCategoryCreateDto, BlogCategory>();
             CreateMap<BlogCategoryEditDto, BlogCategory>();
 
-            CreateMap<BlogPost, BlogPostDto>().ForMember(dest => dest.Images, opt => opt.MapFrom(src => src.Images)); 
+            CreateMap<BlogPost, BlogPostDto>().ForMember(dest => dest.Images, opt => opt.MapFrom(src => src.Images))
+                                              .ForMember(d => d.BlogCategory, opt => opt.MapFrom(s => s.BlogCategory.Name)); 
             CreateMap<BlogPostImg, BlogPostImgDto>(); 
             CreateMap<BlogPostCreateDto, BlogPost>().ForMember(dest => dest.Images, opt => opt.Ignore());
             CreateMap<BlogPostEditDto, BlogPost>().ForMember(dest => dest.Images, opt => opt.Ignore());
@@ -130,6 +132,15 @@ namespace Service.Helpers
              .ForMember(dest => dest.AppUserId, opt => opt.MapFrom(src => src.AppUserId));
             CreateMap<ReviewCreateDto, Review>();      
             CreateMap<ReviewEditDto, Review>()
+                .ForMember(dest => dest.Comment, opt => opt.MapFrom(src => src.Comment)); 
+            
+            
+            CreateMap<BlogReview, BlogReviewDto>()
+             .ForMember(dest => dest.BlogPostName, opt => opt.MapFrom(src => src.BlogPost.Title))
+             .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.AppUser.FullName))
+             .ForMember(dest => dest.AppUserId, opt => opt.MapFrom(src => src.AppUserId));
+            CreateMap<BlogReviewCreateDto, BlogReview>().ForMember(dest => dest.BlogPostId, opt => opt.MapFrom(src => src.PostId));      
+            CreateMap<BlogReviewEditDto, BlogReview>()
                 .ForMember(dest => dest.Comment, opt => opt.MapFrom(src => src.Comment));
         }
     }

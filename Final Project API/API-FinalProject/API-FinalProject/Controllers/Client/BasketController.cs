@@ -22,12 +22,15 @@ namespace FinalProject.Controllers.UI
             if (basket == null) throw new KeyNotFoundException("User not found");
             return Ok(basket);
         }
+
 		[HttpPost]
 		public async Task<IActionResult> AddBasket([FromBody] BasketCreateDto basketCreateDto)
 		{
 			await _basketService.AddBasketAsync(basketCreateDto);
 			return Ok();
 		}
+
+
         [HttpDelete("{userId}")]
         public async Task<IActionResult> DeleteBasketProduct([FromRoute] string userId)
         {

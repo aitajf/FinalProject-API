@@ -54,42 +54,51 @@ namespace Service.Services
              await _basketRepository.DeleteProductByUserIdAsync(userId);
         }
 
-            public async Task AddBasketAsync(BasketCreateDto basketCreateDto)
-		{
-			if (string.IsNullOrEmpty(basketCreateDto.UserId) || basketCreateDto.ProductId == 0)
-			{
-				throw new ArgumentNullException("UserId or ProductId cannot be null or zero.");
-			}
-			else if (!await _colorRepository.GetWithIncludes(c => c.Id == basketCreateDto.ColorId && c.ProductColors.Any(p => p.ProductId == basketCreateDto.ProductId)))
-			{
-				throw new KeyNotFoundException("color id  not found");
-			}
-			var existBasket = await _basketRepository.GetByUserIdAsync(basketCreateDto.UserId);
+        public async Task AddBasketAsync(BasketCreateDto basketCreateDto)
+        {
+            if (string.IsNullOrEmpty(basketCreateDto.UserId) || basketCreateDto.ProductId == 0)
+            {
+                throw new BadHttpRequestException("UserId or ProductId cannot be null or zero.");
+            }
 
-			if (existBasket == null)
-			{
-				existBasket = new Basket
-				{
-					AppUserId = basketCreateDto.UserId
-				};
-				existBasket.BasketProducts.Add(new BasketProduct { ProductId = basketCreateDto.ProductId, Quantity = 1, ColorId = basketCreateDto.ColorId });
-				await _basketRepository.AddAsync(existBasket);
-			}
-			else
-			{
-				var existingProduct = existBasket.BasketProducts.FirstOrDefault(x => x.ProductId == basketCreateDto.ProductId);
-				if (existingProduct == null || existBasket.BasketProducts.Any( x=>x.ColorId != basketCreateDto.ColorId))
-				{
-					existBasket.BasketProducts.Add(new BasketProduct { ProductId = basketCreateDto.ProductId, Quantity = 1, ColorId = basketCreateDto.ColorId });
-				}
-				else
-				{
-					existingProduct.Quantity++;
-				}
-			}
-		}
 
-		public async Task IncreaseQuantityAsync(BasketCreateDto basketCreateDto)
+            else if (!await _colorRepository.GetWithIncludes(c => c.Id == basketCreateDto.ColorId && c.ProductColors.Any(p => p.ProductId == basketCreateDto.ProductId)))
+            {
+                throw new KeyNotFoundException("color id  not found");
+            }
+
+
+
+
+            var existBasket = await _basketRepository.GetByUserIdAsync(basketCreateDto.UserId);
+
+            if (existBasket == null)
+            {
+                existBasket = new Basket
+                {
+                    AppUserId = basketCreateDto.UserId
+                };
+                existBasket.BasketProducts.Add(new BasketProduct { ProductId = basketCreateDto.ProductId, Quantity = 1, ColorId = basketCreateDto.ColorId });
+                await _basketRepository.AddAsync(existBasket);
+            }
+            else
+            {
+                var existingProduct = existBasket.BasketProducts.FirstOrDefault(bp => bp.ProductId == basketCreateDto.ProductId);
+                if (existingProduct == null || existBasket.BasketProducts.Any(p => p.ColorId != basketCreateDto.ColorId))
+                {
+                    existBasket.BasketProducts.Add(new BasketProduct { ProductId = basketCreateDto.ProductId, Quantity = 1, ColorId = basketCreateDto.ColorId });
+
+                }
+                else
+                {
+                    existingProduct.Quantity++;
+                }
+            }
+            await _basketRepository.SaveChangesAsync();
+        }
+
+
+        public async Task IncreaseQuantityAsync(BasketCreateDto basketCreateDto)
         {
             if (string.IsNullOrEmpty(basketCreateDto.UserId) || basketCreateDto.ProductId == 0)
             {
@@ -112,6 +121,7 @@ namespace Service.Services
             if (product != null)
             {
                 product.Quantity++;
+                await _basketRepository.SaveChangesAsync();
             }
         }
 
@@ -143,6 +153,7 @@ namespace Service.Services
             {
                 basket.BasketProducts.Remove(product);
             }
+            await _basketRepository.SaveChangesAsync();
         }
 
 		public async Task DeleteProductFromBasketAsync(int productId, string userId)
@@ -166,6 +177,7 @@ namespace Service.Services
                 if (product != null)
                 {
                     basket.BasketProducts.Remove(product);
+                    await _basketRepository.SaveChangesAsync();
                 }
             }
         }

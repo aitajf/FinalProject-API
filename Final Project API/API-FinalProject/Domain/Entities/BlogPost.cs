@@ -17,5 +17,6 @@ namespace Domain.Entities
         public BlogCategory BlogCategory { get; set; } 
 
         public ICollection<BlogPostImg> Images { get; set; }
+        public ICollection<BlogReview> BlogReviews { get; set; }
     }
 }

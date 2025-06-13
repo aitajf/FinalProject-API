@@ -14,5 +14,6 @@ namespace Repository.Repositories.Interfaces
         void Delete(BasketProduct basketProduct);
         Task<Basket> GetByUserIdAsync(string userId);
         Task DeleteProductByUserIdAsync(string userId);
+        Task SaveChangesAsync();
     }
 }

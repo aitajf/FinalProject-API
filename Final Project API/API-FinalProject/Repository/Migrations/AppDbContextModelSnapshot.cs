@@ -310,6 +310,37 @@ namespace Repository.Migrations
                     b.ToTable("BlogPostImgs");
                 });
 
+            modelBuilder.Entity("Domain.Entities.BlogReview", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AppUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("BlogPostId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
+
+                    b.HasIndex("BlogPostId");
+
+                    b.ToTable("BlogReviews");
+                });
+
             modelBuilder.Entity("Domain.Entities.Brand", b =>
                 {
                     b.Property<int>("Id")
@@ -957,6 +988,25 @@ namespace Repository.Migrations
                     b.Navigation("BlogPost");
                 });
 
+            modelBuilder.Entity("Domain.Entities.BlogReview", b =>
+                {
+                    b.HasOne("Domain.Entities.AppUser", "AppUser")
+                        .WithMany("BlogReviews")
+                        .HasForeignKey("AppUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Entities.BlogPost", "BlogPost")
+                        .WithMany("BlogReviews")
+                        .HasForeignKey("BlogPostId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("BlogPost");
+                });
+
             modelBuilder.Entity("Domain.Entities.Product", b =>
                 {
                     b.HasOne("Domain.Entities.Brand", "Brand")
@@ -1127,6 +1177,8 @@ namespace Repository.Migrations
 
             modelBuilder.Entity("Domain.Entities.AppUser", b =>
                 {
+                    b.Navigation("BlogReviews");
+
                     b.Navigation("Reviews");
                 });
 
@@ -1142,6 +1194,8 @@ namespace Repository.Migrations
 
             modelBuilder.Entity("Domain.Entities.BlogPost", b =>
                 {
+                    b.Navigation("BlogReviews");
+
                     b.Navigation("Images");
                 });
 

@@ -33,6 +33,7 @@ namespace Service
             services.AddScoped<IAboutPromoService, AboutPromoService>();
             services.AddScoped<IHelpSectionService, HelpSectionService>();
             services.AddScoped<IReviewService, ReviewService>();
+            services.AddScoped<IBlogReviewService, BlogReviewService>();
 
             services.AddDistributedMemoryCache();
             return services;

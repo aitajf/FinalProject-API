@@ -1418,6 +1418,204 @@
         }
       }
     },
+    "/api/BlogReview/GetReviewsByPost/post/{postId}": {
+      "get": {
+        "tags": [
+          "BlogReview"
+        ],
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BlogReview/CreateReview": {
+      "post": {
+        "tags": [
+          "BlogReview"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlogReviewCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlogReviewCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlogReviewCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BlogReview/Edit/{id}": {
+      "put": {
+        "tags": [
+          "BlogReview"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlogReviewEditDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlogReviewEditDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlogReviewEditDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BlogReview/GetById/{id}": {
+      "get": {
+        "tags": [
+          "BlogReview"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BlogReview/DeleteReview/{id}": {
+      "delete": {
+        "tags": [
+          "BlogReview"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BlogReview/GetAllByPostId": {
+      "get": {
+        "tags": [
+          "BlogReview"
+        ],
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/BlogReview/GetAllReviews": {
+      "get": {
+        "tags": [
+          "BlogReview"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/BlogReview/DeleteReview": {
+      "delete": {
+        "tags": [
+          "BlogReview"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/admin/Brand/Create": {
       "post": {
         "tags": [
@@ -3991,6 +4189,13 @@
             },
             "nullable": true
           },
+          "blogReviews": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BlogReview"
+            },
+            "nullable": true
+          },
           "isBlocked": {
             "type": "boolean"
           }
@@ -4106,6 +4311,31 @@
         },
         "additionalProperties": false
       },
+      "BlogCategory": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "blogPosts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BlogPost"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "BlogCategoryCreateDto": {
         "type": "object",
         "properties": {
@@ -4120,6 +4350,145 @@
         "type": "object",
         "properties": {
           "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BlogPost": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "highlightText": {
+            "type": "string",
+            "nullable": true
+          },
+          "blogCategoryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "blogCategory": {
+            "$ref": "#/components/schemas/BlogCategory"
+          },
+          "images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BlogPostImg"
+            },
+            "nullable": true
+          },
+          "blogReviews": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BlogReview"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BlogPostImg": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "image": {
+            "type": "string",
+            "nullable": true
+          },
+          "isMain": {
+            "type": "boolean"
+          },
+          "blogPostId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "blogPost": {
+            "$ref": "#/components/schemas/BlogPost"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BlogReview": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "blogPostId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "appUserId": {
+            "type": "string",
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          },
+          "blogPost": {
+            "$ref": "#/components/schemas/BlogPost"
+          },
+          "appUser": {
+            "$ref": "#/components/schemas/AppUser"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BlogReviewCreateDto": {
+        "type": "object",
+        "properties": {
+          "postId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "appUserId": {
+            "type": "string",
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BlogReviewEditDto": {
+        "type": "object",
+        "properties": {
+          "appUserId": {
+            "type": "string",
+            "nullable": true
+          },
+          "comment": {
             "type": "string",
             "nullable": true
           }

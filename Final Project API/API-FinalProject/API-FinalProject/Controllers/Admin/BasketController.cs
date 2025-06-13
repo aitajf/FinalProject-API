@@ -5,7 +5,6 @@ using Service.Services.Interfaces;
 
 namespace FinalProject.Controllers.Admin
 {
-    [Authorize(Roles = "SuperAdmin")]
     public class BasketController : BaseController
     {
         private readonly IBasketService _basketService;

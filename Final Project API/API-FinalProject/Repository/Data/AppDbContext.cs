@@ -39,5 +39,6 @@ namespace Repository.Data
         public DbSet<AboutPromo> AboutPromos { get; set; }
         public DbSet<HelpSection> HelpSections { get; set; }
         public DbSet<Review> Reviews { get; set; }
+        public DbSet<BlogReview> BlogReviews { get; set; }
     }
 }

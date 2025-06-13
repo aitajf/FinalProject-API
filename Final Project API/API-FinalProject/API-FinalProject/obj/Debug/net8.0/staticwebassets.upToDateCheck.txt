@@ -94,7 +94,6 @@ wwwroot\Uploads\brands\c5c2dc76-1582-4ef6-b32b-bfc778434609.jpg
 wwwroot\Uploads\brands\e9afc500-443e-4af0-93f8-2688c0b1fd59.jpg
 wwwroot\Uploads\brands\ffaa2e28-918e-4f06-ab36-b006d556a43d.jpg
 wwwroot\Uploads\categories\0b193073-1086-4040-ac18-402251cf297b.jpg
-wwwroot\Uploads\categories\1df06dc0-d03d-4da4-90ff-f2acf6d70095.jpg
 wwwroot\Uploads\categories\526a06bb-01a3-4814-87cd-2aa1a9105d6a.jpg
 wwwroot\Uploads\categories\5cf3acce-d792-44d3-870b-a49e3fe32001.jpg
 wwwroot\Uploads\categories\602ad64b-156a-41a5-b5db-85c7918ab95c.jpg

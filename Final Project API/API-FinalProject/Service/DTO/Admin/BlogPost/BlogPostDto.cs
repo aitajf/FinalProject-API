@@ -14,6 +14,8 @@ namespace Service.DTO.Admin.BlogPost
         public string Description { get; set; }
         public string HighlightText { get; set; }
         public int BlogCategoryId { get; set; }
+        public string BlogCategory { get; set; }
+
         public List<BlogPostImgDto> Images { get; set; }
     }
 }
