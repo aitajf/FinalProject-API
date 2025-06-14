@@ -78,6 +78,8 @@ namespace Service.Services
                 }
             }
         }
+
+
         //public async Task<LoginResponse> LoginAsync(LoginDto model)
         //{
         //    var user = await _userManager.FindByEmailAsync(model.EmailOrUserName);
@@ -293,27 +295,84 @@ namespace Service.Services
             };
         }
 
-        public async Task<RegisterResponse> RegisterAsync(RegisterDto model)
+        //public async Task<RegisterResponse> RegisterAsync(RegisterDto model)
+        //{
+        //    // Check if user already exists by email or username
+        //    var existingUserByEmail = await _userManager.FindByEmailAsync(model.Email);
+        //    if (existingUserByEmail != null)
+        //    {
+        //        //return new RegisterResponse
+        //        //{
+        //        //    Success = false,
+        //        //    Message = new List<string> { "This email is already registered." }
+        //        //};
+
+        //    }
+
+        //    var existingUserByUserName = await _userManager.FindByNameAsync(model.UserName);
+        //    if (existingUserByUserName != null)
+        //    {
+        //        return new RegisterResponse
+        //        {
+        //            Success = false,
+        //            Message = new List<string> { "This username is already taken." }
+        //        };
+        //    }
+
+        //    // Map and create user
+        //    var user = _mapper.Map<AppUser>(model);
+        //    IdentityResult result = await _userManager.CreateAsync(user, model.Password);
+
+        //    if (!result.Succeeded)
+        //    {
+        //        return new RegisterResponse
+        //        {
+        //            Success = false,
+        //            Message = result.Errors.Select(e => e.Description)
+        //        };
+        //    }
+
+        //    await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
+
+        //    // Email confirmation
+        //    string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+        //    var request = _httpContextAccessor.HttpContext.Request;
+        //    string url = $"https://localhost:7004/api/Account/VerifyEmail?verifyEmail={HttpUtility.UrlEncode(user.Email)}&token={HttpUtility.UrlEncode(token)}";
+
+        //    var template = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "confirm", "mailconfirm.html"));
+        //    template = template.Replace("{{link}}", url);
+
+        //    _emailService.Send(user.Email, "Email confirmation", template);
+
+        //    return new RegisterResponse
+        //    {
+        //        Success = true,
+        //        Message = new List<string> { "Registration successful. Please check your email for confirmation." }
+        //    };
+        //}
+
+
+        public async Task<IResult> RegisterAsync(RegisterDto model)
         {
             // Check if user already exists by email or username
             var existingUserByEmail = await _userManager.FindByEmailAsync(model.Email);
             if (existingUserByEmail != null)
             {
-                return new RegisterResponse
+                return Results.BadRequest(new RegisterResponse
                 {
                     Success = false,
                     Message = new List<string> { "This email is already registered." }
-                };
+                });
             }
 
             var existingUserByUserName = await _userManager.FindByNameAsync(model.UserName);
             if (existingUserByUserName != null)
             {
-                return new RegisterResponse
+                return Results.BadRequest(new RegisterResponse
                 {
                     Success = false,
                     Message = new List<string> { "This username is already taken." }
-                };
+                });
             }
 
             // Map and create user
@@ -322,11 +381,11 @@ namespace Service.Services
 
             if (!result.Succeeded)
             {
-                return new RegisterResponse
+                return Results.BadRequest(new RegisterResponse
                 {
                     Success = false,
                     Message = result.Errors.Select(e => e.Description)
-                };
+                });
             }
 
             await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
@@ -341,11 +400,11 @@ namespace Service.Services
 
             _emailService.Send(user.Email, "Email confirmation", template);
 
-            return new RegisterResponse
+            return Results.Ok(new RegisterResponse
             {
                 Success = true,
                 Message = new List<string> { "Registration successful. Please check your email for confirmation." }
-            };
+            });
         }
 
 
@@ -504,20 +563,47 @@ namespace Service.Services
             return token;
         }
 
+        //public async Task<string> ResetPassword(ResetPasswordDto model)
+        //{
+        //    AppUser appUser = await _userManager.FindByEmailAsync(model.Email);
+        //    if (appUser == null) return "User not found";
+
+        //    var isSucceeded = await _userManager.VerifyUserTokenAsync(appUser, _userManager.Options.Tokens.PasswordResetTokenProvider, "ResetPassword", model.Token);
+        //    if (!isSucceeded) return "TokenIsNotValid";
+
+        //    IdentityResult result = await _userManager.ResetPasswordAsync(appUser, model.Token, model.Password);
+        //    if (!result.Succeeded) return string.Join(", ", result.Errors.Select(error => error.Description));
+        //    await _userManager.UpdateSecurityStampAsync(appUser);
+        //    await _distributedCache.RemoveAsync(appUser.Email);
+        //    return "Password successfully reset";
+        //}
+
         public async Task<string> ResetPassword(ResetPasswordDto model)
         {
             AppUser appUser = await _userManager.FindByEmailAsync(model.Email);
             if (appUser == null) return "User not found";
 
+            var passwordHasher = new PasswordHasher<AppUser>();
+            var passwordVerificationResult = passwordHasher.VerifyHashedPassword(appUser, appUser.PasswordHash, model.Password);
+
+            if (passwordVerificationResult == PasswordVerificationResult.Success)
+            {
+                return "New password cannot be the same as the old password.";
+            }
+
             var isSucceeded = await _userManager.VerifyUserTokenAsync(appUser, _userManager.Options.Tokens.PasswordResetTokenProvider, "ResetPassword", model.Token);
-            if (!isSucceeded) return "TokenIsNotValid";
+            if (!isSucceeded) return "Token is not valid.";
 
             IdentityResult result = await _userManager.ResetPasswordAsync(appUser, model.Token, model.Password);
             if (!result.Succeeded) return string.Join(", ", result.Errors.Select(error => error.Description));
+
             await _userManager.UpdateSecurityStampAsync(appUser);
             await _distributedCache.RemoveAsync(appUser.Email);
+
             return "Password successfully reset";
         }
+      
+
 
 
         public async Task<IEnumerable<UserDto>> GetAllUsersAsync()

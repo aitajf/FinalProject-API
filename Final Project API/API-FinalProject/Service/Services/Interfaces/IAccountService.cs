@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Microsoft.AspNetCore.Http;
 using Service.DTO.Account;
 using Service.Helpers.Account;
 
@@ -6,7 +7,7 @@ namespace Service.Services.Interfaces
 {
     public interface IAccountService
     {
-        Task<RegisterResponse> RegisterAsync(RegisterDto model);
+        Task<IResult> RegisterAsync(RegisterDto model);
         Task<LoginResponse> LoginAsync(LoginDto model);
         Task CreateRoleAsync();
         Task<string> VerifyEmail(string VerifyEmail, string token);
