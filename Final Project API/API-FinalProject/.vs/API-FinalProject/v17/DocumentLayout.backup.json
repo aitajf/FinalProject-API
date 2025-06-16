@@ -26,20 +26,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ProductEditDto.cs",
               "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\DTO\\Admin\\Products\\ProductEditDto.cs",
               "RelativeDocumentMoniker": "Service\\DTO\\Admin\\Products\\ProductEditDto.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\DTO\\Admin\\Products\\ProductEditDto.cs*",
-              "RelativeToolTip": "Service\\DTO\\Admin\\Products\\ProductEditDto.cs*",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\DTO\\Admin\\Products\\ProductEditDto.cs",
+              "RelativeToolTip": "Service\\DTO\\Admin\\Products\\ProductEditDto.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T11:05:37.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T11:05:37.962Z"
             },
             {
               "$type": "Document",
@@ -51,8 +54,7 @@
               "RelativeToolTip": "API-FinalProject\\Controllers\\Admin\\ProductController.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAmwEIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T09:58:20.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T09:58:20.576Z"
             },
             {
               "$type": "Document",
@@ -64,8 +66,7 @@
               "RelativeToolTip": "Service\\Services\\Interfaces\\IProductService.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAzwBkAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T09:57:00.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T09:57:00.055Z"
             },
             {
               "$type": "Document",
@@ -73,16 +74,12 @@
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\ProductService.cs*",
-              "RelativeToolTip": "Service\\Services\\ProductService.cs*",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwL0AAAA0AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\ProductService.cs",
+              "RelativeToolTip": "Service\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T09:56:40.688Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         },
