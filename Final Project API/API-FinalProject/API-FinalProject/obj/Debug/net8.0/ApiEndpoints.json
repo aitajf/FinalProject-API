@@ -1349,6 +1349,53 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_FinalProject.Controllers.Admin.LoginHistoryController",
+    "Method": "Create",
+    "RelativePath": "api/admin/LoginHistory/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Service.DTO.Admin.LoginHistory.LoginHistoryCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.LoginHistoryController",
+    "Method": "GetAll",
+    "RelativePath": "api/admin/LoginHistory/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Admin.LoginHistoryController",
+    "Method": "GetByUser",
+    "RelativePath": "api/admin/LoginHistory/GetByUser/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FinalProject.Controllers.Admin.ProductController",
     "Method": "Create",
     "RelativePath": "api/admin/Product/Create",
@@ -1500,13 +1547,18 @@
         "IsRequired": false
       },
       {
-        "Name": "ProductImages",
-        "Type": "System.Collections.Generic.ICollection\u00601[[Domain.Entities.ProductImage, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Name": "UploadImages",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
         "IsRequired": false
       },
       {
-        "Name": "UploadImages",
-        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "Name": "MainImageId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProductImages",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Domain.Entities.ProductImage, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": false
       }
     ],
@@ -1526,6 +1578,22 @@
     "ContainingType": "FinalProject.Controllers.Admin.ProductController",
     "Method": "GetById",
     "RelativePath": "api/admin/Product/GetById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.Admin.ProductController",
+    "Method": "GetByIdWithImages",
+    "RelativePath": "api/admin/Product/GetByIdWithImages/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

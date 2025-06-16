@@ -33,6 +33,7 @@ namespace Repository
             services.AddScoped<IHelpSectionRepository, HelpSectionRepository>();
             services.AddScoped<IReviewRepository, ReviewRepository>();
             services.AddScoped<IBlogReviewRepository, BlogReviewRepository>();
+            services.AddScoped<ILoginHistoryRepository, LoginHistoryRepository>();
 
             return services;
         }

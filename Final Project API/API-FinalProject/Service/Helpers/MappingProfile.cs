@@ -12,6 +12,7 @@ using Service.DTO.Admin.Color;
 using Service.DTO.Admin.HelpSection;
 using Service.DTO.Admin.Instagram;
 using Service.DTO.Admin.LandingBanner;
+using Service.DTO.Admin.LoginHistory;
 using Service.DTO.Admin.Sliders;
 using Service.DTO.Admin.SubscribeImg;
 using Service.DTO.Admin.Tag;
@@ -99,8 +100,19 @@ namespace Service.Helpers
               .ForMember(d => d.Colors, opt => opt.MapFrom(s => s.ProductColors.Select(m => m.Color.Name).ToList())) 
               .ForMember(d => d.MainImage, opt => opt.MapFrom(s => s.ProductImages.FirstOrDefault(i => i.IsMain).Img))
               .ForMember(d => d.Images, opt => opt.MapFrom(s => s.ProductImages.Select(pi => pi.Img).ToList()));
-            CreateMap<ProductCreateDto, Product>();
+            CreateMap<ProductCreateDto, Product>()
+              .ForMember(dest => dest.ProductTags, opt => opt.Ignore());
+
+
+            CreateMap<Product, ProductWithImagesDto>()
+             .ForMember(d => d.Brand, opt => opt.MapFrom(s => s.Brand.Name))
+             .ForMember(d => d.Category, opt => opt.MapFrom(s => s.Category.Name))
+             .ForMember(d => d.CategoryId, opt => opt.MapFrom(s => s.Category.Id))
+             .ForMember(d => d.Tags, opt => opt.MapFrom(s => s.ProductTags.Select(pt => pt.Tag.Name)))
+             .ForMember(d => d.Colors, opt => opt.MapFrom(s => s.ProductColors.Select(pc => pc.Color.Name)))
+             .ForMember(d => d.ProductImages, opt => opt.MapFrom(s => s.ProductImages));
             CreateMap<ProductImage, ProductImageDto>();
+
             CreateMap<Product, ProductDetailDto>()
               .ForMember(d => d.Brand, opt => opt.MapFrom(s => s.Brand.Name))
               .ForMember(d => d.Tags, opt => opt.MapFrom(s => s.ProductTags.Select(m => new TagDto
@@ -142,6 +154,9 @@ namespace Service.Helpers
             CreateMap<BlogReviewCreateDto, BlogReview>().ForMember(dest => dest.BlogPostId, opt => opt.MapFrom(src => src.PostId));      
             CreateMap<BlogReviewEditDto, BlogReview>()
                 .ForMember(dest => dest.Comment, opt => opt.MapFrom(src => src.Comment));
+
+            CreateMap<LoginHistoryCreateDto, LoginHistory>();
+            CreateMap<LoginHistory, LoginHistoryListDto>();
         }
     }
 }

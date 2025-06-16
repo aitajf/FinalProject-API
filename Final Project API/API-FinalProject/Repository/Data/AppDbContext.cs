@@ -40,5 +40,6 @@ namespace Repository.Data
         public DbSet<HelpSection> HelpSections { get; set; }
         public DbSet<Review> Reviews { get; set; }
         public DbSet<BlogReview> BlogReviews { get; set; }
+        public DbSet<LoginHistory> LoginHistories { get; set; }
     }
 }

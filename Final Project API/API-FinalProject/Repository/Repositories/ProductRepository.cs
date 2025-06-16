@@ -81,10 +81,12 @@ namespace Repository.Repositories
               .ThenInclude(pc => pc.Color)
               .Include(m => m.ProductTags)
               .ThenInclude(ps => ps.Tag)  
-              .AsNoTracking()
               .FirstOrDefaultAsync();
         }
-  
+        
+     
+
+
         public async Task<IEnumerable<Product>> GetAllTakenAsync(int take, int? skip = null)
         {
             return await _context.Products.Include(m => m.Category)
@@ -155,7 +157,6 @@ namespace Repository.Repositories
 
         public IEnumerable<Product> GetComparisonProducts(int categoryId, int selectedProductId, int count = 3)
         {
-            // 1. Seçilmiş məhsulu gətir
             var selectedProduct = _context.Products
                        .Include(p => p.Category)
                        .Include(p => p.Brand)
@@ -184,7 +185,31 @@ namespace Repository.Repositories
 
             return randomProducts;
         }
+        public async Task<ProductImage> GetByIdAsync(int id)
+        {
+            return await _context.ProductImages.FindAsync(id);
+        }
 
+        public void Delete(ProductImage image)
+        {
+            _context.ProductImages.Remove(image);
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<Product> GetByIdImagesWithIncludesAsync(int id)
+        {
+            return await _context.Products
+                .Include(p => p.Category)
+                .Include(p => p.Brand)
+                .Include(p => p.ProductImages)
+                .Include(p => p.ProductTags).ThenInclude(pt => pt.Tag)
+                .Include(p => p.ProductColors).ThenInclude(pc => pc.Color)
+                .FirstOrDefaultAsync(p => p.Id == id);
+        }
 
     }
 }

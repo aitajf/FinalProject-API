@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Domain.Entities;
+using Microsoft.AspNetCore.Hosting;
 using Repository.Repositories.Interface;
 using Repository.Repositories.Interfaces;
 using Service.DTOs.Admin.Products;
@@ -19,6 +20,8 @@ namespace Service.Services
         private readonly IProductColorRepository _productColorRepository;
         private readonly IFileService _fileService;
         private readonly IMapper _mapper;
+        private readonly IWebHostEnvironment _env;
+
 
         public ProductService(IProductRepository productRepository,
                               ICategoryRepository categoryRepository,
@@ -26,10 +29,10 @@ namespace Service.Services
                               IColorRepository colorRepository,
                               ITagRepository tagRepository,
                               IProductTagRepository productTagRepository,
-                              IProductColorRepository productColorRepository,
-                             
+                              IProductColorRepository productColorRepository,                             
                               IFileService fileService,
-                              IMapper mapper)
+                              IMapper mapper,
+                              IWebHostEnvironment env)
         {
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
@@ -40,6 +43,7 @@ namespace Service.Services
             _productColorRepository = productColorRepository;
             _fileService = fileService;
             _mapper = mapper;
+            _env = env;
         }
 
         public async Task CreateAsync(ProductCreateDto model)
@@ -67,16 +71,36 @@ namespace Service.Services
 
             await _productRepository.CreateAsync(data);
 
-            foreach (int id in model.TagIds)
-            {
-                if (await _tagRepository.GetByIdAsync(id) == null) throw new KeyNotFoundException($"Tag with ID {id} not found.");
-                await _productTagRepository.CreateAsync(new ProductTag { TagId = id, Product = data });
-            }
+            //foreach (int id in model.TagIds)
+            //{
+            //    if (await _tagRepository.GetByIdAsync(id) == null) throw new KeyNotFoundException($"Tag with ID {id} not found.");
+            //    await _productTagRepository.CreateAsync(new ProductTag { TagId = id, Product = data });
+            //}
 
-            foreach (var id in model.ColorIds)
+            if (model.TagIds != null && model.TagIds.Any(x => x > 0))
             {
-                if (await _colorRepository.GetByIdAsync(id) == null) throw new KeyNotFoundException($"Color with ID {id} not found.");
-                await _productColorRepository.CreateAsync(new ProductColor { ColorId = id, Product = data });
+                data.ProductTags = new List<ProductTag>();
+
+                foreach (int id in model.TagIds.Distinct())
+                {
+                    if (await _tagRepository.GetByIdAsync(id) == null)
+                        throw new KeyNotFoundException($"Tag with ID {id} not found.");
+
+                    data.ProductTags.Add(new ProductTag { TagId = id });
+                }
+            }
+            else
+            {
+                data.ProductTags = new List<ProductTag>(); // tag yoxdursa belə boş saxlanılır
+
+
+
+
+                foreach (var id in model.ColorIds)
+                {
+                    if (await _colorRepository.GetByIdAsync(id) == null) throw new KeyNotFoundException($"Color with ID {id} not found.");
+                    await _productColorRepository.CreateAsync(new ProductColor { ColorId = id, Product = data });
+                }
             }
         }
         public async Task DeleteAsync(int id)
@@ -98,66 +122,80 @@ namespace Service.Services
         public async Task EditAsync(int id, ProductEditDto model)
         {
             ArgumentNullException.ThrowIfNull(nameof(id));
-            var exist = await _productRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
-            if (exist.ToList().Count > 0) throw new ArgumentException("This product has already exist");
 
-            var product = await _productRepository.GetByIdWithIncludesAsync(id) ?? throw new KeyNotFoundException("Data not found");
-            
-            List<ProductImage> images = new();
+            var product = await _productRepository.GetByIdWithIncludesAsync(id)
+                ?? throw new KeyNotFoundException("Product not found");
 
-            foreach (var item in model.UploadImages)
+            // Yeni şəkilləri yüklə və əlavə et
+            if (model.UploadImages != null && model.UploadImages.Any())
             {
-                string fileUrl = await _fileService.UploadFileAsync(item, "productimages");
-                images.Add(new ProductImage { Img = fileUrl });
-            }
-
-            if (images.Any())
-            {
-                images.FirstOrDefault().IsMain = true;
-            }
-
-            model.ProductImages = images;
-            foreach (var item in model.ColorIds)
-            {
-                if (!product.ProductColors.Any(pc => pc.ColorId == item))
+                foreach (var file in model.UploadImages)
                 {
-                    var color = await _colorRepository.GetByIdAsync(item);
-                    if (color == null)
+                    string fileUrl = await _fileService.UploadFileAsync(file, "productimages");
+                    var newImage = new ProductImage
                     {
-                        throw new KeyNotFoundException("Color not found");
-                    }
-                    product.ProductColors.Add(new ProductColor { ColorId = item, Product = product });
+                        Img = fileUrl,
+                        IsMain = false, // Default olaraq main deyil
+                        ProductId = product.Id
+                    };
+                    product.ProductImages.Add(newImage);
                 }
             }
 
-            var colorsToRemove = product.ProductColors.Where(pc => !model.ColorIds.Contains(pc.ColorId)).ToList();
-            foreach (var color in colorsToRemove)
+            // Əgər MainImageId göndərilibsə – istər köhnə, istər yeni şəkil
+            if (model.MainImageId.HasValue)
             {
-                product.ProductColors.Remove(color);
-            }
-
-            foreach (var item in model.TagIds)
-            {
-                if (!product.ProductTags.Any(pt => pt.TagId == item))
+                foreach (var image in product.ProductImages)
                 {
-                    var tag = await _tagRepository.GetByIdAsync(item);
-                    if (tag == null)
-                    {
-                        throw new KeyNotFoundException("Tag not found");
-                    }
-                    product.ProductTags.Add(new ProductTag { TagId = item, Product = product });
+                    image.IsMain = image.Id == model.MainImageId.Value;
                 }
             }
 
-            var tagsToRemove = product.ProductTags.Where(pt => !model.TagIds.Contains(pt.TagId)).ToList();
+            // Tag-ları güncəllə
+            foreach (var tagId in model.TagIds)
+            {
+                if (!product.ProductTags.Any(pt => pt.TagId == tagId))
+                {
+                    product.ProductTags.Add(new ProductTag { TagId = tagId });
+                }
+            }
+
+            var tagsToRemove = product.ProductTags
+                .Where(pt => !model.TagIds.Contains(pt.TagId))
+                .ToList();
             foreach (var tag in tagsToRemove)
             {
                 product.ProductTags.Remove(tag);
             }
 
-            _mapper.Map(model, product);
+            // Color-ları güncəllə
+            foreach (var colorId in model.ColorIds)
+            {
+                if (!product.ProductColors.Any(pc => pc.ColorId == colorId))
+                {
+                    product.ProductColors.Add(new ProductColor { ColorId = colorId });
+                }
+            }
+
+            var colorsToRemove = product.ProductColors
+                .Where(pc => !model.ColorIds.Contains(pc.ColorId))
+                .ToList();
+            foreach (var color in colorsToRemove)
+            {
+                product.ProductColors.Remove(color);
+            }
+
+            // Əsas məlumatları map et
+            product.Name = model.Name;
+            product.Description = model.Description;
+            product.Price = model.Price;
+            product.Stock = model.Stock;
+            product.BrandId = model.BrandId;
+            product.CategoryId = model.CategoryId;
+
             await _productRepository.EditAsync(product);
         }
+
 
         public async Task<IEnumerable<ProductDto>> FilterAsync(string categoryName, string colorName, string tagName, string brandName)
         {
@@ -173,7 +211,8 @@ namespace Service.Services
         public async Task<ProductDto> GetByIdAsync(int id)
         {
             ArgumentNullException.ThrowIfNull(id);
-            var product = await _productRepository.GetByIdWithIncludesAsync(id) ?? throw new KeyNotFoundException($"Data with ID{id} not found");
+            var product = await _productRepository.GetByIdWithIncludesAsync(id)
+                          ?? throw new KeyNotFoundException($"Data with ID {id} not found");
             return _mapper.Map<ProductDto>(product);
         }
 
@@ -203,10 +242,43 @@ namespace Service.Services
             return new PaginationResponse<ProductDto>(mappedDatas, totalPage, page, totalItemCount);
         }
 
-        public Task DeleteImageAsync(int productId, int productImageId)
+
+        public async Task<bool> DeleteImageAsync(int productId, int productImageId)
         {
-            throw new NotImplementedException();
+            var product = await _productRepository.GetByIdWithIncludesAsync(productId);
+            if (product == null) return false;
+
+            var image = product.ProductImages.FirstOrDefault(i => i.Id == productImageId);
+            if (image == null) return false;
+
+            string imageName = Path.GetFileName(image.Img);
+            string filePath = Path.Combine(AppContext.BaseDirectory, "wwwroot", "Uploads", "productimages", imageName);
+
+            if (File.Exists(filePath))
+            {
+                File.Delete(filePath); // və ya _fileService.Delete(imageName, "productimages");
+            }
+
+            // Əgər əsas şəkildirsə, başqasını əsas et
+            if (image.IsMain && product.ProductImages.Any(x => x.Id != image.Id))
+            {
+                var newMain = product.ProductImages.FirstOrDefault(x => x.Id != image.Id);
+                if (newMain != null)
+                {
+                    newMain.IsMain = true;
+                }
+            }
+
+            product.ProductImages.Remove(image); // navigation property-dən silirik
+            await _productRepository.EditAsync(product); // bu həm update, həm save edir
+
+            return true;
         }
+
+
+
+
+
 
         public async Task<IEnumerable<ProductDto>> GetAllTakenAsync(int take, int? skip = null)
         {
@@ -237,6 +309,13 @@ namespace Service.Services
         //    return _mapper.Map<IEnumerable<ProductDto>>(products);
         //}
 
+        public async Task<ProductWithImagesDto> GetByIdWithImagesAsync(int id)
+        {
+            var product = await _productRepository.GetByIdImagesWithIncludesAsync(id)
+                ?? throw new KeyNotFoundException($"Product with ID {id} not found");
+
+            return _mapper.Map<ProductWithImagesDto>(product);
+        }
 
     }
 }

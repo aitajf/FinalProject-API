@@ -11,6 +11,7 @@ namespace Repository.Repositories.Interfaces
         IQueryable<Product> GetAllWithIncludes();
         IQueryable<Product> GetAllWithExpression(Expression<Func<Product, bool>> predicate);
         Task<Product> GetByIdWithIncludesAsync(int id);
+        Task<Product> GetByIdImagesWithIncludesAsync(int id);
         Task<IEnumerable<Product>> FilterAsync(string categoryName, string colorName, string tagName, string brandName);
         Task DeleteProductImage(ProductImage image);
         Task<IEnumerable<Product>> GetAllTakenAsync(int take, int? skip = null);
@@ -18,5 +19,8 @@ namespace Repository.Repositories.Interfaces
         Task<Product> GetProductWithColorsAsync(int productId);
         Task<IEnumerable<Product>> SortedProductsAsync(string sortType);
         IEnumerable<Product> GetComparisonProducts(int categoryId, int selectedProductId, int count = 3);
+        Task<ProductImage> GetByIdAsync(int id);
+        void Delete(ProductImage image);
+        Task SaveChangesAsync();
     }
 }

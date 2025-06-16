@@ -34,6 +34,7 @@ namespace Service
             services.AddScoped<IHelpSectionService, HelpSectionService>();
             services.AddScoped<IReviewService, ReviewService>();
             services.AddScoped<IBlogReviewService, BlogReviewService>();
+            services.AddScoped<ILoginHistoryService, LoginHistoryService>();
 
             services.AddDistributedMemoryCache();
             return services;

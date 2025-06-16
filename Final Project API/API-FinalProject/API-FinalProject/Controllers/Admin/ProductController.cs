@@ -59,19 +59,30 @@ namespace FinalProject.Controllers.Admin
             return Ok();
         }
 
-        [HttpPost]
-        public async Task<IActionResult> DeleteImage(int productId, int productImageId)
-        {
-            await _productService.DeleteImageAsync(productId, productImageId);
-
-            return Ok(new { message = "Image deleted successfully." });
-        }
-
         [HttpGet]
         public async Task<IActionResult> GetPaginateDatas([FromQuery] int page, [FromQuery] int take)
         {
             return Ok(await _productService.GetPaginateAsync(page, take));
 
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteImage([FromForm] int productId, [FromForm] int productImageId)
+        {
+            bool isDeleted = await _productService.DeleteImageAsync(productId, productImageId);
+            if (!isDeleted)
+            {
+                return NotFound(new { message = "Image not found or product does not exist." });
+            }
+
+            return Ok(new { message = "Image deleted successfully." });
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetByIdWithImages([FromRoute]int id)
+        {
+            var product = await _productService.GetByIdWithImagesAsync(id);
+            return Ok(product);
         }
     }
 }

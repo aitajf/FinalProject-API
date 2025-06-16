@@ -2581,6 +2581,78 @@
         }
       }
     },
+    "/api/admin/LoginHistory/Create": {
+      "post": {
+        "tags": [
+          "LoginHistory"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginHistoryCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginHistoryCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginHistoryCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/LoginHistory/GetAll": {
+      "get": {
+        "tags": [
+          "LoginHistory"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/LoginHistory/GetByUser/{userId}": {
+      "get": {
+        "tags": [
+          "LoginHistory"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Product/GetAll": {
       "get": {
         "tags": [
@@ -2992,17 +3064,21 @@
                       "format": "int32"
                     }
                   },
-                  "ProductImages": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/ProductImage"
-                    }
-                  },
                   "UploadImages": {
                     "type": "array",
                     "items": {
                       "type": "string",
                       "format": "binary"
+                    }
+                  },
+                  "MainImageId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ProductImages": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/ProductImage"
                     }
                   }
                 }
@@ -3032,46 +3108,19 @@
                 "ColorIds": {
                   "style": "form"
                 },
-                "ProductImages": {
+                "UploadImages": {
                   "style": "form"
                 },
-                "UploadImages": {
+                "MainImageId": {
+                  "style": "form"
+                },
+                "ProductImages": {
                   "style": "form"
                 }
               }
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/admin/Product/DeleteImage": {
-      "post": {
-        "tags": [
-          "Product"
-        ],
-        "parameters": [
-          {
-            "name": "productId",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "productImageId",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -3096,6 +3145,68 @@
           {
             "name": "take",
             "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/Product/DeleteImage": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "productId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "productImageId": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "productId": {
+                  "style": "form"
+                },
+                "productImageId": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/Product/GetByIdWithImages/{id}": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -4675,6 +4786,28 @@
           "password": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginHistoryCreateDto": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "ipAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "userAgent": {
+            "type": "string",
+            "nullable": true
+          },
+          "loginTime": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false
