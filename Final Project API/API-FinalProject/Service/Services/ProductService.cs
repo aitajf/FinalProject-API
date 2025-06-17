@@ -46,11 +46,69 @@ namespace Service.Services
             _env = env;
         }
 
+        //public async Task CreateAsync(ProductCreateDto model)
+        //{
+        //    if (model is null) throw new ArgumentNullException();
+        //    var exist = await _productRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
+        //    if (exist.ToList().Count > 0) throw new ArgumentException("This product has already exist");
+
+        //    List<ProductImage> images = new();
+        //    foreach (var item in model.Images)
+        //    {
+        //        string fileUrl = await _fileService.UploadFileAsync(item, "productimages");
+        //        images.Add(new ProductImage { Img = fileUrl });
+        //    }
+
+        //    images.FirstOrDefault().IsMain = true;
+
+        //    model.ProductImages = images;
+
+        //    var data = _mapper.Map<Product>(model);
+
+        //    if (await _brandRepository.GetByIdAsync(model.BrandId) is null) throw new KeyNotFoundException("Brand not found");
+
+        //    if (await _categoryRepository.GetByIdAsync(model.CategoryId) is null) throw new KeyNotFoundException("Category not found");
+
+        //    await _productRepository.CreateAsync(data);
+
+        //    //foreach (int id in model.TagIds)
+        //    //{
+        //    //    if (await _tagRepository.GetByIdAsync(id) == null) throw new KeyNotFoundException($"Tag with ID {id} not found.");
+        //    //    await _productTagRepository.CreateAsync(new ProductTag { TagId = id, Product = data });
+        //    //}
+
+        //    if (model.TagIds != null && model.TagIds.Any(x => x > 0))
+        //    {
+        //        data.ProductTags = new List<ProductTag>();
+
+        //        foreach (int id in model.TagIds.Distinct())
+        //        {
+        //            if (await _tagRepository.GetByIdAsync(id) == null)
+        //                throw new KeyNotFoundException($"Tag with ID {id} not found.");
+
+        //            data.ProductTags.Add(new ProductTag { TagId = id });
+        //        }
+        //    }
+        //    else
+        //    {
+        //        data.ProductTags = new List<ProductTag>();
+
+        //        foreach (var id in model.ColorIds)
+        //        {
+        //            if (await _colorRepository.GetByIdAsync(id) == null) throw new KeyNotFoundException($"Color with ID {id} not found.");
+        //            await _productColorRepository.CreateAsync(new ProductColor { ColorId = id, Product = data });
+        //        }
+        //    }
+        //}
+
+
+
         public async Task CreateAsync(ProductCreateDto model)
         {
             if (model is null) throw new ArgumentNullException();
+
             var exist = await _productRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
-            if (exist.ToList().Count > 0) throw new ArgumentException("This product has already exist");
+            if (exist.ToList().Count > 0) throw new ArgumentException("This product already exists");
 
             List<ProductImage> images = new();
             foreach (var item in model.Images)
@@ -60,27 +118,17 @@ namespace Service.Services
             }
 
             images.FirstOrDefault().IsMain = true;
-
             model.ProductImages = images;
 
             var data = _mapper.Map<Product>(model);
 
             if (await _brandRepository.GetByIdAsync(model.BrandId) is null) throw new KeyNotFoundException("Brand not found");
-
             if (await _categoryRepository.GetByIdAsync(model.CategoryId) is null) throw new KeyNotFoundException("Category not found");
 
-            await _productRepository.CreateAsync(data);
-
-            //foreach (int id in model.TagIds)
-            //{
-            //    if (await _tagRepository.GetByIdAsync(id) == null) throw new KeyNotFoundException($"Tag with ID {id} not found.");
-            //    await _productTagRepository.CreateAsync(new ProductTag { TagId = id, Product = data });
-            //}
-
+            // Tag-ları pivot üçün hazırla (ProductTags navigation ilə bağlanır)
             if (model.TagIds != null && model.TagIds.Any(x => x > 0))
             {
                 data.ProductTags = new List<ProductTag>();
-
                 foreach (int id in model.TagIds.Distinct())
                 {
                     if (await _tagRepository.GetByIdAsync(id) == null)
@@ -89,20 +137,31 @@ namespace Service.Services
                     data.ProductTags.Add(new ProductTag { TagId = id });
                 }
             }
-            else
+
+            // ƏVVƏL PRODUCT YAZILIR → data.Id yaranacaq
+            await _productRepository.CreateAsync(data);
+
+            // İndi Color-ları əlavə etmək olar
+            if (model.ColorIds != null && model.ColorIds.Any(x => x > 0))
             {
-                data.ProductTags = new List<ProductTag>(); // tag yoxdursa belə boş saxlanılır
-
-
-
-
-                foreach (var id in model.ColorIds)
+                foreach (var id in model.ColorIds.Distinct())
                 {
-                    if (await _colorRepository.GetByIdAsync(id) == null) throw new KeyNotFoundException($"Color with ID {id} not found.");
-                    await _productColorRepository.CreateAsync(new ProductColor { ColorId = id, Product = data });
+                    if (await _colorRepository.GetByIdAsync(id) == null)
+                        throw new KeyNotFoundException($"Color with ID {id} not found.");
+
+                    await _productColorRepository.CreateAsync(new ProductColor
+                    {
+                        ColorId = id,
+                        ProductId = data.Id  // Artıq təhlükəsizdir
+                    });
                 }
             }
         }
+
+
+
+
+
         public async Task DeleteAsync(int id)
         {
             var product = await _productRepository.GetByIdWithIncludesAsync(id);

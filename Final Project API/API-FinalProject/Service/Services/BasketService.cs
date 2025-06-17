@@ -67,9 +67,6 @@ namespace Service.Services
                 throw new KeyNotFoundException("color id  not found");
             }
 
-
-
-
             var existBasket = await _basketRepository.GetByUserIdAsync(basketCreateDto.UserId);
 
             if (existBasket == null)
