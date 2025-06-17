@@ -1,0 +1,3 @@
+C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\blogposts\3ce270c5-5643-4eee-96b3-68e21adaba91.jpg
+C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\blogposts\3ea86eea-8741-4d32-b443-013a62c6a3dc.jpg
+C:\Users\acer\OneDrive\İş masası\Final Project API\FinalProject-API\Final Project API\API-FinalProject\API-FinalProject\wwwroot\Uploads\blogposts\607d8f56-3b9c-4d9a-ae2f-e0d06a2ad334.jpg

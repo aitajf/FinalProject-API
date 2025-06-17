@@ -19,7 +19,6 @@ namespace FinalProject.Controllers.UI
         public async Task<IActionResult> GetBasketByUserId([FromRoute]string userId)
         {
             var basket = await _basketService.GetBasketByUserIdAsync(userId);
-            if (basket == null) throw new KeyNotFoundException("User not found");
             return Ok(basket);
         }
 

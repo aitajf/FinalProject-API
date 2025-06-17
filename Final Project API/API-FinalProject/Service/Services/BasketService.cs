@@ -26,10 +26,20 @@ namespace Service.Services
         public async Task<BasketDto> GetBasketByUserIdAsync(string userId)
         {
             var basket = await _basketRepository.GetByUserIdAsync(userId);
-            if (basket == null) return null;
 
             var request = _httpContextAccessor.HttpContext.Request;
             string baseUrl = $"{request.Scheme}://{request.Host}{request.PathBase}";
+
+            if (basket == null)
+            {
+                return new BasketDto
+                {
+                    AppUserId = userId,
+                    BasketProducts = new List<BasketProductDto>(),
+                    TotalProductCount = 0,
+                    TotalPrice = 0
+                };
+            }
 
             return new BasketDto
             {
@@ -42,12 +52,13 @@ namespace Service.Services
                     ColorId = x.ColorId,
                     ColorName = x.Color.Name,
                     Price = x.Product.Price,
-                    ProductImage = $"{Path.Combine(baseUrl, "productimages", x.Product.ProductImages.FirstOrDefault()?.Img)}"
+                    ProductImage = $"{baseUrl}/productimages/{x.Product.ProductImages.FirstOrDefault()?.Img}"
                 }).ToList(),
                 TotalProductCount = basket.BasketProducts.Sum(x => x.Quantity),
                 TotalPrice = basket.BasketProducts.Sum(x => x.Product.Price * x.Quantity)
             };
         }
+
 
         public async Task DeleteProductByUserIdAsync(string userId)
         {
