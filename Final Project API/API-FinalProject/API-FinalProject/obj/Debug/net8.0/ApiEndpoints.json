@@ -1655,38 +1655,6 @@
   },
   {
     "ContainingType": "FinalProject.Controllers.Admin.SettingController",
-    "Method": "Create",
-    "RelativePath": "api/admin/Setting/Create",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "Service.DTOs.Admin.Settings.SettingCreateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FinalProject.Controllers.Admin.SettingController",
-    "Method": "Delete",
-    "RelativePath": "api/admin/Setting/Delete",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FinalProject.Controllers.Admin.SettingController",
     "Method": "Edit",
     "RelativePath": "api/admin/Setting/Edit/{id}",
     "HttpMethod": "PUT",

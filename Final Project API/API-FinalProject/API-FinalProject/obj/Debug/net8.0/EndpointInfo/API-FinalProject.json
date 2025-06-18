@@ -3430,37 +3430,6 @@
         }
       }
     },
-    "/api/admin/Setting/Create": {
-      "post": {
-        "tags": [
-          "Setting"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SettingCreateDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SettingCreateDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SettingCreateDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/admin/Setting/GetAll": {
       "get": {
         "tags": [
@@ -3482,29 +3451,6 @@
           {
             "name": "id",
             "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/admin/Setting/Delete": {
-      "delete": {
-        "tags": [
-          "Setting"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
             "required": true,
             "schema": {
               "type": "integer",
@@ -5100,20 +5046,6 @@
             "nullable": true
           },
           "comment": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "SettingCreateDto": {
-        "type": "object",
-        "properties": {
-          "key": {
-            "type": "string",
-            "nullable": true
-          },
-          "value": {
             "type": "string",
             "nullable": true
           }

@@ -4,9 +4,9 @@ namespace Service.Services.Interfaces
 {
     public interface ISettingService
     {
-        Task CreateAsync(SettingCreateDto model);
+        //Task CreateAsync(SettingCreateDto model);
         Task EditAsync(int id, SettingEditDto model);
-        Task DeleteAsync(int id);
+        //Task DeleteAsync(int id);
         Task<IEnumerable<SettingDto>> GetAllAsync();
         Task<SettingDto> GetByIdAsync(int id);
     }
