@@ -1,4 +1,5 @@
-﻿using Service.DTOs.UI.Basket;
+﻿using Service.DTO.UI.Basket;
+using Service.DTOs.UI.Basket;
 
 namespace Service.Services.Interfaces
 {
@@ -11,5 +12,6 @@ namespace Service.Services.Interfaces
         Task DecreaseQuantityAsync(BasketCreateDto basketCreateDto);    
         Task DeleteProductFromBasketAsync(int productId, string userId);
         Task DeleteProductByUserIdAsync(string userId);
+        Task<List<BasketItemDto>> GetLastTwoProductsAsync(string userId);
     }
 }

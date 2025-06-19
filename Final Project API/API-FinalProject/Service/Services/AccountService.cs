@@ -80,150 +80,6 @@ namespace Service.Services
         }
 
 
-        //public async Task<LoginResponse> LoginAsync(LoginDto model)
-        //{
-        //    var user = await _userManager.FindByEmailAsync(model.EmailOrUserName);
-
-        //    if (user is null)
-        //        user = await _userManager.FindByNameAsync(model.EmailOrUserName);
-
-        //    if (user is null)
-        //    {
-        //        return new LoginResponse
-        //        {
-        //            Success = false,
-        //            Error = "Login failed.",
-        //            Token = null
-        //        };
-        //    }
-        //    var result = await _userManager.CheckPasswordAsync(user, model.Password);
-        //    if (!result)
-        //    {
-        //        return new LoginResponse
-        //        {
-        //            Success = false,
-        //            Error = "Login failed.",
-        //            Token = null
-        //        };
-        //    }
-
-        //    if (!await _userManager.IsEmailConfirmedAsync(user))
-        //    {
-        //        return new LoginResponse
-        //        {
-        //            Success = false,
-        //            Error = "Login failed: Email not confirmed.",
-        //            Token = null
-        //        };
-        //    }
-
-        //    var userRoles = await _userManager.GetRolesAsync(user);
-
-        //    string token = GenerateJwtToken(user, userRoles.ToList());
-
-        //    return new LoginResponse
-        //    {
-        //        Success = true,
-        //        Error = null,
-        //        Token = token,
-        //        UserName = user.UserName,
-        //        UserId = user.Id.ToString(),
-        //        Roles = userRoles.ToList()
-        //    };
-        //}
-
-        //public async Task<LoginResponse> LoginAsync(LoginDto model)
-        //{
-        //    var user = await _userManager.FindByEmailAsync(model.EmailOrUserName);
-
-        //    if (user is null)
-        //        user = await _userManager.FindByNameAsync(model.EmailOrUserName);
-
-        //    if (user is null)
-        //    {
-        //        return new LoginResponse
-        //        {
-        //            Success = false,
-        //            Error = "User not found. Please register first.",
-        //            Token = null
-        //        };
-        //    }
-
-        //    if (user.IsBlocked)
-        //    {
-        //        return new LoginResponse
-        //        {
-        //            Success = false,
-        //            Error = "Your account has been blocked by administrator. Please try again later.",
-        //            Token = null
-        //        };
-        //    }
-
-        //    var result = await _userManager.CheckPasswordAsync(user, model.Password);
-        //    if (!result)
-        //    {
-        //        return new LoginResponse
-        //        {
-        //            Success = false,
-        //            Error = "Incorrect password.",
-        //            Token = null
-        //        };
-        //    }
-
-        //    if (!await _userManager.IsEmailConfirmedAsync(user))
-        //    {
-        //        return new LoginResponse
-        //        {
-        //            Success = false,
-        //            Error = "Email not confirmed.",
-        //            Token = null
-        //        };
-        //    }
-
-        //    var userRoles = await _userManager.GetRolesAsync(user);
-
-        //    string token = GenerateJwtToken(user, userRoles.ToList());
-
-        //    return new LoginResponse
-        //    {
-        //        Success = true,
-        //        Error = null,
-        //        Token = token,
-        //        UserName = user.UserName,
-        //        UserId = user.Id.ToString(),
-        //        Roles = userRoles.ToList()
-        //    };
-        //}
-
-
-        //public async Task<RegisterResponse> RegisterAsync(RegisterDto model)
-        //{
-        //    var user = _mapper.Map<AppUser>(model);
-        //    IdentityResult result = await _userManager.CreateAsync(user, model.Password);
-
-        //    if (!result.Succeeded)
-        //    {
-        //        return new RegisterResponse
-        //        {
-        //            Success = false,
-        //            Message = result.Errors.Select(m => m.Description)
-        //        };
-        //    }
-        //    await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
-
-        //    //Email confirm
-        //    string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-        //    var request = _httpContextAccessor.HttpContext.Request;
-        //    string baseUrl = $"{request.Scheme}://{request.Host}{request.PathBase}";
-        //    string url = $"https://localhost:7004/api/Account/VerifyEmail?verifyEmail={HttpUtility.UrlEncode(user.Email)}&token={HttpUtility.UrlEncode(token)}";
-        //    var template = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "confirm", "mailconfirm.html"));
-        //    template = template.Replace("{{link}}", url);
-        //    _emailService.Send(user.Email, "Email confirmation", template);
-
-        //    return new RegisterResponse {Success = true, Message = new List<string>() {token}};
-        //}
-
-
         public async Task<LoginResponse> LoginAsync(LoginDto model)
         {
             var user = await _userManager.FindByEmailAsync(model.EmailOrUserName)
@@ -407,8 +263,6 @@ namespace Service.Services
             });
         }
 
-
-
         public async Task<string> VerifyEmail(string verifyEmail, string token)
         {
             var appUser = await _userManager.FindByEmailAsync(verifyEmail);
@@ -422,66 +276,6 @@ namespace Service.Services
 
             return CreateToken(appUser, roles);                 
         }
-
-
-
-        //    public string CreateToken(AppUser user, IList<string> roles)
-        //    {
-        //        List<Claim> claims = new List<Claim>
-        //        {
-        //            new Claim(JwtRegisteredClaimNames.NameId,user.UserName),
-        //            new Claim(JwtRegisteredClaimNames.Email,user.Email),
-        //            new Claim("FullName",user.FullName),
-        //            new Claim(ClaimTypes.NameIdentifier,user.Id)
-        //        };
-
-        //        claims.AddRange(roles.Select(r => new Claim(ClaimTypes.Role, r)));
-        //        SigningCredentials credentials = new SigningCredentials(_securityKey, SecurityAlgorithms.HmacSha256);
-        //        SecurityTokenDescriptor tokenDescriptor = new SecurityTokenDescriptor
-        //        {
-        //            Subject = new ClaimsIdentity(claims),
-        //            Expires = DateTime.Now.AddDays(7),
-        //            SigningCredentials = credentials,
-        //            Audience = _configuration["Jwt:Audience"],
-        //            Issuer = _configuration["Jwt:Issuer"]
-
-        //        };
-        //        JwtSecurityTokenHandler securityTokenHandler = new JwtSecurityTokenHandler();
-        //        var token = securityTokenHandler.CreateToken(tokenDescriptor);
-        //        return securityTokenHandler.WriteToken(token);
-        //    }
-
-
-        //    private string GenerateJwtToken(AppUser user, List<string> roles)
-        //    {
-        //        var claims = new List<Claim>
-        //{
-        //    new(JwtRegisteredClaimNames.Sub, user.Email),  // Email düzgün saxlanır
-        //    new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-        //    new(ClaimTypes.NameIdentifier, user.Id),  // İstifadəçi ID saxlanır
-        //    new Claim(JwtRegisteredClaimNames.Email, user.Email),  // Email claim
-        //    new Claim(ClaimTypes.Email, user.Email)  // Email claim
-        //};
-
-        //        roles.ForEach(role =>
-        //        {
-        //            claims.Add(new Claim(ClaimTypes.Role, role));
-        //        });
-
-        //        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Key));
-        //        var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-        //        var expires = DateTime.Now.AddDays(Convert.ToDouble(_jwtSettings.ExpireDays));
-
-        //        var token = new JwtSecurityToken(
-        //            _jwtSettings.Issuer,
-        //            _jwtSettings.Issuer,
-        //            claims,
-        //            expires: expires,
-        //            signingCredentials: creds
-        //        );
-        //        return new JwtSecurityTokenHandler().WriteToken(token);
-        //    }
-
 
         private string GenerateJwtToken(AppUser user, List<string> roles)
         {
@@ -542,41 +336,61 @@ namespace Service.Services
             return securityTokenHandler.WriteToken(token);
         }
 
-        public async Task<string> ForgetPassword(string email, string requestScheme, string requestHost)
+        //public async Task<string> ForgetPassword(string email, string requestScheme, string requestHost)
+        //{
+        //    AppUser appUser = await _userManager.FindByEmailAsync(email);
+        //    if (appUser == null) return "User does not exist.";
+
+        //    string token = await _userManager.GeneratePasswordResetTokenAsync(appUser);
+
+        //    var httpContext = new DefaultHttpContext();
+        //    var actionContext = new ActionContext
+        //    {
+        //        HttpContext = httpContext,
+        //        RouteData = new RouteData(),
+        //        ActionDescriptor = new ActionDescriptor(),
+        //    };
+        //    var urlHelperFactory = new UrlHelperFactory();
+        //    var urlHelper = urlHelperFactory.GetUrlHelper(actionContext);
+        //    string link = $"https://localhost:7169/Account/ResetPassword?email={HttpUtility.UrlEncode(appUser.Email)}&token={HttpUtility.UrlEncode(token)}";
+        //    await _sendEmail.SendAsync("aitajjf2@gmail.com", "JoiFurn Furniture", appUser.Email, link, "Reset Password");
+        //    return token;
+        //}
+
+
+
+
+        public async Task<ResponseObject> ForgetPassword(string email, string requestScheme, string requestHost)
         {
             AppUser appUser = await _userManager.FindByEmailAsync(email);
-            if (appUser == null) return "User does not exist.";
+            if (appUser == null)
+            {
+                return new ResponseObject
+                {
+                    ResponseMessage = "User does not exist.",
+                    StatusCode = (int)StatusCodes.Status400BadRequest
+                };
+            }
 
             string token = await _userManager.GeneratePasswordResetTokenAsync(appUser);
-
-            var httpContext = new DefaultHttpContext();
-            var actionContext = new ActionContext
-            {
-                HttpContext = httpContext,
-                RouteData = new RouteData(),
-                ActionDescriptor = new ActionDescriptor(),
-            };
-            var urlHelperFactory = new UrlHelperFactory();
-            var urlHelper = urlHelperFactory.GetUrlHelper(actionContext);
             string link = $"https://localhost:7169/Account/ResetPassword?email={HttpUtility.UrlEncode(appUser.Email)}&token={HttpUtility.UrlEncode(token)}";
-            await _sendEmail.SendAsync("aitajjf2@gmail.com", "JoiFurn Furniture", appUser.Email, link, "Reset Password");
-            return token;
+            var template = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "confirm", "resetpassword.html"));
+            template = template.Replace("{{confirmlink}}", link);
+
+            // Email göndəririk
+            _sendEmail.SendAsync("aitajjf2@gmail.com", "JoiFurn Furniture", appUser.Email, template, "Reset Password");
+
+            IList<string> roles = await _userManager.GetRolesAsync(appUser);
+
+            return new ResponseObject
+            {
+                ResponseMessage = token,
+                StatusCode = (int)StatusCodes.Status200OK
+            };
         }
 
-        //public async Task<string> ResetPassword(ResetPasswordDto model)
-        //{
-        //    AppUser appUser = await _userManager.FindByEmailAsync(model.Email);
-        //    if (appUser == null) return "User not found";
 
-        //    var isSucceeded = await _userManager.VerifyUserTokenAsync(appUser, _userManager.Options.Tokens.PasswordResetTokenProvider, "ResetPassword", model.Token);
-        //    if (!isSucceeded) return "TokenIsNotValid";
 
-        //    IdentityResult result = await _userManager.ResetPasswordAsync(appUser, model.Token, model.Password);
-        //    if (!result.Succeeded) return string.Join(", ", result.Errors.Select(error => error.Description));
-        //    await _userManager.UpdateSecurityStampAsync(appUser);
-        //    await _distributedCache.RemoveAsync(appUser.Email);
-        //    return "Password successfully reset";
-        //}
 
         public async Task<string> ResetPassword(ResetPasswordDto model)
         {
@@ -602,9 +416,6 @@ namespace Service.Services
 
             return "Password successfully reset";
         }
-      
-
-
 
         public async Task<IEnumerable<UserDto>> GetAllUsersAsync()
         {

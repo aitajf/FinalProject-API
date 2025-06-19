@@ -1,6 +1,7 @@
 ﻿using Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Service.DTO.Account;
+using Service.Helpers;
 using Service.Helpers.Account;
 
 namespace Service.Services.Interfaces
@@ -13,7 +14,7 @@ namespace Service.Services.Interfaces
         Task<string> VerifyEmail(string VerifyEmail, string token);
         string CreateToken(AppUser user, IList<string> roles);
         Task<AppUser> GetUserByEmailAsync(string email);
-        Task<string> ForgetPassword(string email, string requestScheme, string requestHost);
+        Task<ResponseObject> ForgetPassword(string email, string requestScheme, string requestHost);
         Task<string> ResetPassword(ResetPasswordDto model);
         Task<IEnumerable<UserDto>> GetAllUsersAsync();
         Task<string> AddRoleAsync(string username, string roleName);

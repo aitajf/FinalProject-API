@@ -2186,6 +2186,22 @@
   },
   {
     "ContainingType": "FinalProject.Controllers.UI.BasketController",
+    "Method": "GetLastTwoProducts",
+    "RelativePath": "api/Basket/GetLastTwoProducts/last-two",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FinalProject.Controllers.UI.BasketController",
     "Method": "IncreaseQuantity",
     "RelativePath": "api/Basket/IncreaseQuantity",
     "HttpMethod": "POST",

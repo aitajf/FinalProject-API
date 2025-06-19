@@ -949,6 +949,27 @@
         }
       }
     },
+    "/api/Basket/GetLastTwoProducts/last-two": {
+      "get": {
+        "tags": [
+          "Basket"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/admin/Basket/GetAllBaskets": {
       "get": {
         "tags": [

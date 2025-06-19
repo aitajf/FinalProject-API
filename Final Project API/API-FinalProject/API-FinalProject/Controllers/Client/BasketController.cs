@@ -51,12 +51,14 @@ namespace FinalProject.Controllers.UI
             await _basketService.DecreaseQuantityAsync(basketCreateDto);
             return Ok();
         }
+
         [HttpDelete]
         public async Task<IActionResult> DeleteProductFromBasket(int productId, string userId)
         {
             await _basketService.DeleteProductFromBasketAsync(productId, userId);
             return Ok();
         }
+
         [HttpDelete("DeleteBasket")]
         public async Task<IActionResult> DeleteBasket([FromHeader] string token)
         {
@@ -80,6 +82,13 @@ namespace FinalProject.Controllers.UI
                 return userId;
             }
             return null; 
+        }
+
+        [HttpGet("last-two")]
+        public async Task<IActionResult> GetLastTwoProducts(string userId)
+        {
+            var result = await _basketService.GetLastTwoProductsAsync(userId);
+            return Ok(result);
         }
     }
 }

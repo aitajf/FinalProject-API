@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Service.DTO.Account;
+using Service.Helpers;
 using Service.Services;
 using Service.Services.Interfaces;
 
@@ -54,14 +55,18 @@ namespace API_FinalProject.Controllers.Client
         [HttpPost]
         public async Task<IActionResult> ForgetPassword([FromBody] string email)
         {
-            if (string.IsNullOrEmpty(email)) return BadRequest("Email not found");
+            if (string.IsNullOrWhiteSpace(email))
+                return BadRequest("Email not found. Make sure you typed correctly");
+
+            if (email == null) return BadRequest("Email not found. Make sure you typed correctly");
             var scheme = HttpContext.Request.Scheme;
             var host = HttpContext.Request.Host.Value;
-            string responseMessage = await _accountService.ForgetPassword(email, scheme, host);
-            if (responseMessage == "User does not exist.") return BadRequest(responseMessage);
-            return Ok(responseMessage);
-        }
+            ResponseObject responseObj = await _accountService.ForgetPassword(email, scheme, host);
+            if (responseObj.StatusCode == (int)StatusCodes.Status400BadRequest) return BadRequest(responseObj.ResponseMessage);
+            else if (responseObj.StatusCode == (int)StatusCodes.Status404NotFound) return NotFound(responseObj.ResponseMessage);
 
+            return Ok(responseObj);
+        }
         [HttpPost]
         public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordDto request)
         {

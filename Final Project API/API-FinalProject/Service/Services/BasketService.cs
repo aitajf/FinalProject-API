@@ -6,6 +6,7 @@ using Service.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Repository.Repositories.Interface;
 using Service.DTOs.UI.Basket;
+using Service.DTO.UI.Basket;
 
 namespace Service.Services
 {
@@ -28,8 +29,7 @@ namespace Service.Services
             var basket = await _basketRepository.GetByUserIdAsync(userId);
 
             var request = _httpContextAccessor.HttpContext.Request;
-            string baseUrl = $"{request.Scheme}://{request.Host}{request.PathBase}";
-
+           
             if (basket == null)
             {
                 return new BasketDto
@@ -52,14 +52,12 @@ namespace Service.Services
                     ColorId = x.ColorId,
                     ColorName = x.Color.Name,
                     Price = x.Product.Price,
-                    ProductImage = $"{baseUrl}/productimages/{x.Product.ProductImages.FirstOrDefault()?.Img}"
+                    ProductImage = x.Product.ProductImages.FirstOrDefault()?.Img     
                 }).ToList(),
                 TotalProductCount = basket.BasketProducts.Sum(x => x.Quantity),
                 TotalPrice = basket.BasketProducts.Sum(x => x.Product.Price * x.Quantity)
             };
         }
-
-
         public async Task DeleteProductByUserIdAsync(string userId)
         {
              await _basketRepository.DeleteProductByUserIdAsync(userId);
@@ -131,8 +129,6 @@ namespace Service.Services
             product.Quantity++;
             await _basketRepository.SaveChangesAsync();
         }
-
-
         public async Task DecreaseQuantityAsync(BasketCreateDto basketCreateDto)
         {
             if (string.IsNullOrEmpty(basketCreateDto.UserId) || basketCreateDto.ProductId == 0)
@@ -165,7 +161,6 @@ namespace Service.Services
 
             await _basketRepository.SaveChangesAsync();
         }
-
 
         public async Task DeleteProductFromBasketAsync(int productId, string userId)
         {
@@ -223,5 +218,28 @@ namespace Service.Services
                 TotalPrice = basket.BasketProducts.Sum(x => x.Product.Price * x.Quantity)
             }).ToList();
         }
+
+        public async Task<List<BasketItemDto>> GetLastTwoProductsAsync(string userId)
+        {
+            var basket = await _basketRepository.GetByUserIdAsync(userId);
+            if (basket == null || basket.BasketProducts == null)
+                return new List<BasketItemDto>();
+
+            var lastTwo = basket.BasketProducts
+                .OrderByDescending(x => x.CreatedDate) 
+                .Take(2)
+                .Select(x => new BasketItemDto
+                {
+                    ProductId = x.ProductId,
+                    ProductName = x.Product.Name,
+                    Quantity = x.Quantity,
+                    Price = x.Product.Price,
+                    ImageUrl = x.Product.ProductImages.FirstOrDefault()?.Img
+                })
+                .ToList();
+
+            return lastTwo;
+        }
+
     }
 }
