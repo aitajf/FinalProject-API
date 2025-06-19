@@ -105,7 +105,6 @@ namespace Service.Services
             await _basketRepository.SaveChangesAsync();
         }
 
-
         public async Task IncreaseQuantityAsync(BasketCreateDto basketCreateDto)
         {
             if (string.IsNullOrEmpty(basketCreateDto.UserId) || basketCreateDto.ProductId == 0)
@@ -120,22 +119,22 @@ namespace Service.Services
                 throw new KeyNotFoundException("Basket not found for the given user.");
             }
 
-            var product = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == basketCreateDto.ProductId);
+            var product = basket.BasketProducts.FirstOrDefault(bp =>
+                bp.ProductId == basketCreateDto.ProductId &&
+                bp.ColorId == basketCreateDto.ColorId); 
 
             if (product == null)
             {
-                throw new KeyNotFoundException("Product not found in the basket.");
+                throw new KeyNotFoundException("Product with selected color not found in the basket.");
             }
-            if (product != null)
-            {
-                product.Quantity++;
-                await _basketRepository.SaveChangesAsync();
-            }
+
+            product.Quantity++;
+            await _basketRepository.SaveChangesAsync();
         }
+
 
         public async Task DecreaseQuantityAsync(BasketCreateDto basketCreateDto)
         {
-
             if (string.IsNullOrEmpty(basketCreateDto.UserId) || basketCreateDto.ProductId == 0)
             {
                 throw new ArgumentNullException("UserId or ProductId cannot be null or zero.");
@@ -148,11 +147,13 @@ namespace Service.Services
                 throw new KeyNotFoundException("Basket not found for the given user.");
             }
 
-            var product = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == basketCreateDto.ProductId);
+            var product = basket.BasketProducts.FirstOrDefault(bp =>
+                bp.ProductId == basketCreateDto.ProductId &&
+                bp.ColorId == basketCreateDto.ColorId);
 
             if (product == null)
             {
-                throw new KeyNotFoundException("Product not found in the basket.");
+                throw new KeyNotFoundException("Product with selected color not found in the basket.");
             }
 
             product.Quantity--;
@@ -161,10 +162,12 @@ namespace Service.Services
             {
                 basket.BasketProducts.Remove(product);
             }
+
             await _basketRepository.SaveChangesAsync();
         }
 
-		public async Task DeleteProductFromBasketAsync(int productId, string userId)
+
+        public async Task DeleteProductFromBasketAsync(int productId, string userId)
         {
             if (string.IsNullOrEmpty(userId) || productId == 0)
             {
