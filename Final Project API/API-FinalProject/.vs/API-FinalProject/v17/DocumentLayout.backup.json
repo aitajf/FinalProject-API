@@ -33,8 +33,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -45,18 +49,16 @@
               "RelativeToolTip": "Repository\\Repositories\\BlogPostRepository.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAQwDoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T12:38:13.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T12:38:13.147Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "dbo.BlogPosts [Data]",
+              "Title": "dbo.BlogPosts.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_7MEAR63_SQLEXPRESS/FinalProjectDb/True/SqlTable/dbo.BlogPosts.sql",
-              "ToolTip": "dbo.BlogPosts [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_7MEAR63_SQLEXPRESS/FinalProjectDb/True/SqlTable/dbo.BlogPosts.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-06-20T12:37:30.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T12:37:30.641Z"
             },
             {
               "$type": "Document",
@@ -66,7 +68,7 @@
               "RelativeDocumentMoniker": "Service\\Services\\BlogPostService.cs",
               "ToolTip": "C:\\Users\\acer\\OneDrive\\\u0130\u015F masas\u0131\\Final Project API\\FinalProject-API\\Final Project API\\API-FinalProject\\Service\\Services\\BlogPostService.cs",
               "RelativeToolTip": "Service\\Services\\BlogPostService.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAA0wKkAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T12:33:05.416Z",
               "EditorCaption": ""
@@ -81,8 +83,7 @@
               "RelativeToolTip": "API-FinalProject\\Controllers\\Client\\BlogPostController.cs",
               "ViewState": "AgIAABwAAAAAAAAAAIA0wC8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T12:31:30.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T12:31:30.304Z"
             },
             {
               "$type": "Document",
@@ -94,12 +95,7 @@
               "RelativeToolTip": "Service\\Services\\Interfaces\\IBlogPostService.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAzwBUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T12:29:20.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2025-06-20T12:29:20.969Z"
             },
             {
               "$type": "Document",
