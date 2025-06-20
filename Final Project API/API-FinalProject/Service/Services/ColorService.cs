@@ -38,8 +38,14 @@ namespace Service.Services
             var color = await _colorRepository.GetByIdAsync(id);
             if (color == null) throw new KeyNotFoundException($"Color with ID {id} not found.");
 
-            var data = await _colorRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
-            if (data.ToList().Count > 0) throw new ArgumentException("This color has already exist");
+            if (!string.Equals(color.Name.Trim(), model.Name.Trim(), StringComparison.OrdinalIgnoreCase))
+            {
+                var sameNameCategory = await _colorRepository
+                    .GetAllWithExpressionAsync(x => x.Name.Trim().ToLower() == model.Name.Trim().ToLower() && x.Id != id);
+
+                if (sameNameCategory.Any())
+                    throw new ArgumentException("This color name already exists.");
+            }
 
             _mapper.Map(model, color);
             await _colorRepository.EditAsync(color);                   

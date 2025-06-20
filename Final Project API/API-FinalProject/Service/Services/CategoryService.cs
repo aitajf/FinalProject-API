@@ -26,7 +26,7 @@ namespace Service.Services
         }
         public async Task CreateAsync(CategoryCreateDto model)
         {
-            var categoryExists = await _categoryRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
+            var categoryExists = await _categoryRepository.GetAllWithExpressionAsync(x => x.Name.Trim().ToLower() == model.Name.Trim().ToLower());
             if (categoryExists.ToList().Count > 0) throw new ArgumentException("This category has already exist");
             string imageUrl = await _fileService.UploadFileAsync(model.Image, "categories");
             Category category = _mapper.Map<Category>(model);
@@ -46,14 +46,44 @@ namespace Service.Services
             }
             await _categoryRepository.DeleteAsync(category);
         }
-        
+
+        //public async Task EditAsync(CategoryEditDto model, int id)
+        //{
+        //  var category = await _categoryRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
+        //  if (category.ToList().Count > 0) throw new ArgumentException("This category has already exist");
+
+        //    Category existCategory = await _categoryRepository.GetByIdAsync(id);
+        //    if (existCategory == null) throw new KeyNotFoundException($"Category with ID {id} not found.");
+
+        //    if (model.Image != null)
+        //    {
+        //        if (!string.IsNullOrEmpty(existCategory.Image))
+        //        {
+        //            string oldFileName = Path.GetFileName(existCategory.Image);
+        //            _fileService.Delete(oldFileName, "categories");
+        //        }
+        //        string newImage = await _fileService.UploadFileAsync(model.Image, "categories");
+        //        existCategory.Image = newImage;
+        //    }
+        //    _mapper.Map(model, existCategory);
+        //    await _categoryRepository.EditAsync(existCategory);
+        //}
+
+
         public async Task EditAsync(CategoryEditDto model, int id)
         {
-            //var category = await _categoryRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
-            //if (category.ToList().Count > 0) throw new ArgumentException("This category has already exist");
-
             Category existCategory = await _categoryRepository.GetByIdAsync(id);
-            if (existCategory == null) throw new KeyNotFoundException($"Category with ID {id} not found.");
+            if (existCategory == null)
+                throw new KeyNotFoundException($"Category with ID {id} not found.");
+
+            if (!string.Equals(existCategory.Name.Trim(), model.Name.Trim(), StringComparison.OrdinalIgnoreCase))
+            {
+                var sameNameCategory = await _categoryRepository
+                    .GetAllWithExpressionAsync(x => x.Name.Trim().ToLower() == model.Name.Trim().ToLower() && x.Id != id);
+
+                if (sameNameCategory.Any())
+                    throw new ArgumentException("This category name already exists.");
+            }
 
             if (model.Image != null)
             {
@@ -62,9 +92,11 @@ namespace Service.Services
                     string oldFileName = Path.GetFileName(existCategory.Image);
                     _fileService.Delete(oldFileName, "categories");
                 }
+
                 string newImage = await _fileService.UploadFileAsync(model.Image, "categories");
                 existCategory.Image = newImage;
             }
+
             _mapper.Map(model, existCategory);
             await _categoryRepository.EditAsync(existCategory);
         }

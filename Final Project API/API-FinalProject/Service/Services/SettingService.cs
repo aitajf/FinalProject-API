@@ -25,22 +25,6 @@ namespace Service.Services
             
         }
 
-
-        //public async Task CreateAsync(SettingCreateDto model)
-        //{
-        //    if (model is null) throw new ArgumentNullException();
-        //    await _settingRepository.CreateAsync(_mapper.Map<Setting>(model));
-        //}
-
-        //public async Task DeleteAsync(int id)
-        //{
-        //    var setting = await _settingRepository.GetByIdAsync(id);
-        //    if (setting == null) throw new KeyNotFoundException($"Setting with ID {id} not found.");
-        //    await _settingRepository.DeleteAsync(setting);
-        //}
-
-
-
         public async Task EditAsync(int id, SettingEditDto model)
         {
             Setting setting = await _settingRepository.GetByIdAsync(id);

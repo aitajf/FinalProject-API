@@ -24,7 +24,7 @@ namespace Service.Services
         }
         public async Task CreateAsync(BlogCategoryCreateDto model)
         {
-            var category = await _blogCategoryRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
+            var category = await _blogCategoryRepository.GetAllWithExpressionAsync(x => x.Name.Trim().ToLower() == model.Name.Trim().ToLower());
             if (category.ToList().Count > 0) throw new ArgumentException("This Category has already exist");
             await _blogCategoryRepository.CreateAsync(_mapper.Map<BlogCategory>(model));
         }
@@ -38,11 +38,19 @@ namespace Service.Services
         }
 
         public async Task EditAsync(BlogCategoryEditDto model, int id)
-        {
-            var category = await _blogCategoryRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
-            if (category.ToList().Count > 0) throw new ArgumentException("This color has already exist");
+        {      
             var existingCategory = await _blogCategoryRepository.GetByIdAsync(id);
-            if (existingCategory == null) throw new KeyNotFoundException($"Category with ID {id} not found.");
+            if (existingCategory == null)
+                throw new KeyNotFoundException($"Category with ID {id} not found.");
+
+            if (!string.Equals(existingCategory.Name.Trim(), model.Name.Trim(), StringComparison.OrdinalIgnoreCase))
+            {
+                var sameNameCategory = await _blogCategoryRepository
+                    .GetAllWithExpressionAsync(x => x.Name.Trim().ToLower() == model.Name.Trim().ToLower() && x.Id != id);
+
+                if (sameNameCategory.Any())
+                    throw new ArgumentException("This category name already exists.");
+            }
             _mapper.Map(model, existingCategory);
             await _blogCategoryRepository.EditAsync(existingCategory);
         }
