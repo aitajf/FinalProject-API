@@ -20,6 +20,7 @@ namespace Service.Services.Interfaces
         Task<PaginationResponse<BlogPostDto>> GetPaginateAsync(int page, int take);
         Task<IEnumerable<BlogPostDto>> SearchByCategoryAndName(string categoryOrProductName);
         Task<IEnumerable<BlogPostDto>> FilterAsync(string categoryName);
-
+        Task<BlogPostDto> GetPreviousAsync(int currentId);
+        Task<BlogPostDto> GetNextAsync(int currentId);
     }
 }

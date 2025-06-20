@@ -160,6 +160,18 @@ namespace Service.Services
             return _mapper.Map<IEnumerable<BlogPostDto>>(await _postRepository.FilterAsync(categoryName));
 
         }
+
+        public async Task<BlogPostDto> GetPreviousAsync(int currentId)
+        {
+            var previous = await _postRepository.GetPreviousAsync(currentId);
+            return _mapper.Map<BlogPostDto>(previous);
+        }
+
+        public async Task<BlogPostDto> GetNextAsync(int currentId)
+        {
+            var next = await _postRepository.GetNextAsync(currentId);
+            return _mapper.Map<BlogPostDto>(next);
+        }
     }
 }
 

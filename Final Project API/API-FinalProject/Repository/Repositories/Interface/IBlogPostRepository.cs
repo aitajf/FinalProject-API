@@ -1,4 +1,5 @@
 ﻿using System.Linq.Expressions;
+using System.Reflection.Metadata;
 using Domain.Entities;
 
 namespace Repository.Repositories.Interface
@@ -9,6 +10,7 @@ namespace Repository.Repositories.Interface
         Task<BlogPost> GetByIdWithIncludesAsync(int id);
         IQueryable<BlogPost> GetAllWithExpression(Expression<Func<BlogPost, bool>> predicate);
         Task<IEnumerable<BlogPost>> FilterAsync(string categoryName);
-
+        Task<BlogPost> GetPreviousAsync(int currentId);
+        Task<BlogPost> GetNextAsync(int currentId);
     }
 }

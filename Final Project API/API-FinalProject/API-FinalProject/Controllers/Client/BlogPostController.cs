@@ -30,5 +30,21 @@ namespace API_FinalProject.Controllers.Client
         {
             return Ok(await _blogPostService.FilterAsync(categoryName));
         }
+
+        [HttpGet("get-previous/{id}")]
+        public async Task<IActionResult> GetPrevious(int id)
+        {
+            var result = await _blogPostService.GetPreviousAsync(id);
+            if (result == null) return NotFound();
+            return Ok(result);
+        }
+
+        [HttpGet("get-next/{id}")]
+        public async Task<IActionResult> GetNext(int id)
+        {
+            var result = await _blogPostService.GetNextAsync(id);
+            if (result == null) return NotFound();
+            return Ok(result);
+        }
     }
 }

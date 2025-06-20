@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Entities;
@@ -45,6 +46,23 @@ namespace Repository.Repositories
                 query = query.Where(p => p.BlogCategory.Name.ToLower() == categoryName.ToLower());
             }
             return await query.ToListAsync();
+        }
+        public async Task<BlogPost> GetPreviousAsync(int currentId)
+        {
+            return await _context.BlogPosts.Include(x=>x.BlogCategory)
+                .Include(x=>x.Images)
+                .Where(b => b.Id < currentId)
+                .OrderByDescending(b => b.Id)
+                .FirstOrDefaultAsync();
+        }
+
+        public async Task<BlogPost> GetNextAsync(int currentId)
+        {
+            return await _context.BlogPosts.Include(x => x.BlogCategory)
+                .Include(x => x.Images)
+                .Where(b => b.Id > currentId)
+                .OrderBy(b => b.Id)
+                .FirstOrDefaultAsync();
         }
     }
 }
