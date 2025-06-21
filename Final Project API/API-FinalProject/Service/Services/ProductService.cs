@@ -18,7 +18,9 @@ namespace Service.Services
         private readonly ITagRepository _tagRepository;
         private readonly IProductTagRepository _productTagRepository;
         private readonly IProductColorRepository _productColorRepository;
+        private readonly ISendEmail _sendMail;
         private readonly IFileService _fileService;
+        private readonly ISubscriptionService _subscriptionService;
         private readonly IMapper _mapper;
         private readonly IWebHostEnvironment _env;
 
@@ -32,7 +34,8 @@ namespace Service.Services
                               IProductColorRepository productColorRepository,                             
                               IFileService fileService,
                               IMapper mapper,
-                              IWebHostEnvironment env)
+                              IWebHostEnvironment env,
+                              ISubscriptionService subscriptionService, ISendEmail sendEmail)
         {
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
@@ -41,8 +44,10 @@ namespace Service.Services
             _tagRepository = tagRepository;
             _productTagRepository = productTagRepository;
             _productColorRepository = productColorRepository;
+            _subscriptionService = subscriptionService;
             _fileService = fileService;
             _mapper = mapper;
+            _sendMail = sendEmail;
             _env = env;
         }
 
@@ -81,10 +86,8 @@ namespace Service.Services
                 }
             }
 
-            // ƏVVƏL PRODUCT YAZILIR → data.Id yaranacaq
             await _productRepository.CreateAsync(data);
 
-            // İndi Color-ları əlavə etmək olar
             if (model.ColorIds != null && model.ColorIds.Any(x => x > 0))
             {
                 foreach (var id in model.ColorIds.Distinct())
@@ -95,10 +98,62 @@ namespace Service.Services
                     await _productColorRepository.CreateAsync(new ProductColor
                     {
                         ColorId = id,
-                        ProductId = data.Id  // Artıq təhlükəsizdir
+                        ProductId = data.Id 
                     });
                 }
             }
+
+
+            //var subscribers = await _subscriptionService.GetAllSubscriptionsAsync();
+            //foreach (var subscriber in subscribers)
+            //{
+            //    var subject = $"New Product Added: {data.Name}";
+            //    var messageBody = $"Hello,<br/>A new product <b>{data.Name}</b> has just been added to our store. Check it out!";
+
+            //    await _sendMail.SendAsync(
+            //        from: "aitajjf2@gmail.com",
+            //        displayName: "JoinFurn",
+            //        to: subscriber.Email,
+            //        messageBody: messageBody,
+            //        subject: subject
+            //    );
+            //}
+
+
+
+
+            var templateHtml = await File.ReadAllTextAsync(
+            Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "confirm", "mailsubscribes.html"));
+
+            string productUrl = $"https://localhost:7169/ProductDetail/Detail/{data.Id}";
+     
+            var subscribers = await _subscriptionService.GetAllSubscriptionsAsync();
+
+            foreach (var subscriber in subscribers)
+            {
+                var messageBody = templateHtml
+                    .Replace("{{ProductName}}", data.Name)
+                    .Replace("{{ProductLink}}", productUrl);
+
+                var subject = $"🆕 New Product Added: {data.Name}";
+
+                try
+                {
+                    await _sendMail.SendAsync(
+                        from: "aitajjf2@gmail.com",
+                        displayName: "JoinFurn",
+                        to: subscriber.Email,
+                        messageBody: messageBody,
+                        subject: subject
+                    );
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Mail göndərmə xətası: " + ex.Message);
+                }
+            }
+
+
         }
 
         public async Task DeleteAsync(int id)

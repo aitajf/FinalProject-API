@@ -336,30 +336,6 @@ namespace Service.Services
             return securityTokenHandler.WriteToken(token);
         }
 
-        //public async Task<string> ForgetPassword(string email, string requestScheme, string requestHost)
-        //{
-        //    AppUser appUser = await _userManager.FindByEmailAsync(email);
-        //    if (appUser == null) return "User does not exist.";
-
-        //    string token = await _userManager.GeneratePasswordResetTokenAsync(appUser);
-
-        //    var httpContext = new DefaultHttpContext();
-        //    var actionContext = new ActionContext
-        //    {
-        //        HttpContext = httpContext,
-        //        RouteData = new RouteData(),
-        //        ActionDescriptor = new ActionDescriptor(),
-        //    };
-        //    var urlHelperFactory = new UrlHelperFactory();
-        //    var urlHelper = urlHelperFactory.GetUrlHelper(actionContext);
-        //    string link = $"https://localhost:7169/Account/ResetPassword?email={HttpUtility.UrlEncode(appUser.Email)}&token={HttpUtility.UrlEncode(token)}";
-        //    await _sendEmail.SendAsync("aitajjf2@gmail.com", "JoiFurn Furniture", appUser.Email, link, "Reset Password");
-        //    return token;
-        //}
-
-
-
-
         public async Task<ResponseObject> ForgetPassword(string email, string requestScheme, string requestHost)
         {
             AppUser appUser = await _userManager.FindByEmailAsync(email);
