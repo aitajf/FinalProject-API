@@ -46,63 +46,6 @@ namespace Service.Services
             _env = env;
         }
 
-        //public async Task CreateAsync(ProductCreateDto model)
-        //{
-        //    if (model is null) throw new ArgumentNullException();
-        //    var exist = await _productRepository.GetAllWithExpressionAsync(x => x.Name.ToLower() == model.Name.ToLower());
-        //    if (exist.ToList().Count > 0) throw new ArgumentException("This product has already exist");
-
-        //    List<ProductImage> images = new();
-        //    foreach (var item in model.Images)
-        //    {
-        //        string fileUrl = await _fileService.UploadFileAsync(item, "productimages");
-        //        images.Add(new ProductImage { Img = fileUrl });
-        //    }
-
-        //    images.FirstOrDefault().IsMain = true;
-
-        //    model.ProductImages = images;
-
-        //    var data = _mapper.Map<Product>(model);
-
-        //    if (await _brandRepository.GetByIdAsync(model.BrandId) is null) throw new KeyNotFoundException("Brand not found");
-
-        //    if (await _categoryRepository.GetByIdAsync(model.CategoryId) is null) throw new KeyNotFoundException("Category not found");
-
-        //    await _productRepository.CreateAsync(data);
-
-        //    //foreach (int id in model.TagIds)
-        //    //{
-        //    //    if (await _tagRepository.GetByIdAsync(id) == null) throw new KeyNotFoundException($"Tag with ID {id} not found.");
-        //    //    await _productTagRepository.CreateAsync(new ProductTag { TagId = id, Product = data });
-        //    //}
-
-        //    if (model.TagIds != null && model.TagIds.Any(x => x > 0))
-        //    {
-        //        data.ProductTags = new List<ProductTag>();
-
-        //        foreach (int id in model.TagIds.Distinct())
-        //        {
-        //            if (await _tagRepository.GetByIdAsync(id) == null)
-        //                throw new KeyNotFoundException($"Tag with ID {id} not found.");
-
-        //            data.ProductTags.Add(new ProductTag { TagId = id });
-        //        }
-        //    }
-        //    else
-        //    {
-        //        data.ProductTags = new List<ProductTag>();
-
-        //        foreach (var id in model.ColorIds)
-        //        {
-        //            if (await _colorRepository.GetByIdAsync(id) == null) throw new KeyNotFoundException($"Color with ID {id} not found.");
-        //            await _productColorRepository.CreateAsync(new ProductColor { ColorId = id, Product = data });
-        //        }
-        //    }
-        //}
-
-
-
         public async Task CreateAsync(ProductCreateDto model)
         {
             if (model is null) throw new ArgumentNullException();
@@ -158,10 +101,6 @@ namespace Service.Services
             }
         }
 
-
-
-
-
         public async Task DeleteAsync(int id)
         {
             var product = await _productRepository.GetByIdWithIncludesAsync(id);
@@ -185,7 +124,6 @@ namespace Service.Services
             var product = await _productRepository.GetByIdWithIncludesAsync(id)
                 ?? throw new KeyNotFoundException("Product not found");
 
-            // Yeni şəkilləri yüklə və əlavə et
             if (model.UploadImages != null && model.UploadImages.Any())
             {
                 foreach (var file in model.UploadImages)
@@ -194,14 +132,13 @@ namespace Service.Services
                     var newImage = new ProductImage
                     {
                         Img = fileUrl,
-                        IsMain = false, // Default olaraq main deyil
+                        IsMain = false,
                         ProductId = product.Id
                     };
                     product.ProductImages.Add(newImage);
                 }
             }
 
-            // Əgər MainImageId göndərilibsə – istər köhnə, istər yeni şəkil
             if (model.MainImageId.HasValue)
             {
                 foreach (var image in product.ProductImages)
@@ -210,7 +147,6 @@ namespace Service.Services
                 }
             }
 
-            // Tag-ları güncəllə
             foreach (var tagId in model.TagIds)
             {
                 if (!product.ProductTags.Any(pt => pt.TagId == tagId))
@@ -227,7 +163,6 @@ namespace Service.Services
                 product.ProductTags.Remove(tag);
             }
 
-            // Color-ları güncəllə
             foreach (var colorId in model.ColorIds)
             {
                 if (!product.ProductColors.Any(pc => pc.ColorId == colorId))
@@ -244,7 +179,6 @@ namespace Service.Services
                 product.ProductColors.Remove(color);
             }
 
-            // Əsas məlumatları map et
             product.Name = model.Name;
             product.Description = model.Description;
             product.Price = model.Price;
@@ -283,7 +217,6 @@ namespace Service.Services
             return _mapper.Map<IEnumerable<ProductDto>>(products);
         }
 
-
         public async Task<PaginationResponse<ProductDto>> GetPaginateAsync(int page, int take)
         {
             var products = _productRepository.GetAllWithExpression(null);
@@ -300,7 +233,6 @@ namespace Service.Services
 
             return new PaginationResponse<ProductDto>(mappedDatas, totalPage, page, totalItemCount);
         }
-
 
         public async Task<bool> DeleteImageAsync(int productId, int productImageId)
         {
@@ -334,11 +266,6 @@ namespace Service.Services
             return true;
         }
 
-
-
-
-
-
         public async Task<IEnumerable<ProductDto>> GetAllTakenAsync(int take, int? skip = null)
         {
             var products = await _productRepository.GetAllTakenAsync(take, skip);
@@ -362,12 +289,6 @@ namespace Service.Services
             return  _mapper.Map<IEnumerable<ProductDto>>(compareProducts);
         }
 
-        //public async Task<IEnumerable<ProductDto>> GetComparisonProductsAsync(int categoryId)
-        //{
-        //    var products = _productRepository.GetRandomProductsByCategory(categoryId);
-        //    return _mapper.Map<IEnumerable<ProductDto>>(products);
-        //}
-
         public async Task<ProductWithImagesDto> GetByIdWithImagesAsync(int id)
         {
             var product = await _productRepository.GetByIdImagesWithIncludesAsync(id)
@@ -375,6 +296,5 @@ namespace Service.Services
 
             return _mapper.Map<ProductWithImagesDto>(product);
         }
-
     }
 }
