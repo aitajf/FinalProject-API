@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Entities;
 using Repository.Repositories.Interface;
+using Service.DTO.UI.Wishlists;
 using Service.DTOs.UI.Wishlists;
 using Service.Services.Interfaces;
 
@@ -21,44 +22,83 @@ namespace Service.Services
             _productService = productService;
         }
 
-        public async Task<WishlistDto> GetByUserIdAsync(string userId)
+        public async Task<WishlistItemDto> GetByUserIdAsync(string userId)
         {
             var wishlist = await _wishlistRepository.GetByUserIdAsync(userId);
             if (wishlist == null) return null;
 
-            return new WishlistDto
+            var productDtos = wishlist.WishlistProducts.Select(wp => new WishlistProductDto
+            {
+                ProductId = wp.ProductId,
+                ProductName = wp.Product.Name,
+                ProductPrice = wp.Product.Price,
+                Stock = wp.Product.Stock,
+                ProductImage = wp.Product.ProductImages.FirstOrDefault()?.Img
+            }).ToList();
+
+            return new WishlistItemDto
             {
                 AppUserId = wishlist.AppUserId,
-                ProductId = wishlist.WishlistProducts.ToList().Count > 0 ? wishlist.WishlistProducts.ToList()[0].ProductId : 0 
+                Products = productDtos
             };
         }
 
-        public async Task AddWishlistAsync(WishlistDto wishlistDto)
+
+        public async Task<WishlistResult> AddWishlistAsync(WishlistDto wishlistDto)
         {
-            WishlistDto existWishListDto = await GetByUserIdAsync(wishlistDto.AppUserId);
-            if (existWishListDto == null)
+            Wishlist existWishlist = await _wishlistRepository.GetByUserIdAsync(wishlistDto.AppUserId);
+
+            if (existWishlist == null)
             {
-                List<WishlistProduct> wishlistProducts = new List<WishlistProduct>
-            {
-                new WishlistProduct { ProductId = wishlistDto.ProductId }
-            };
-                var wishlist = new Wishlist
+                var newWishlist = new Wishlist
                 {
                     AppUserId = wishlistDto.AppUserId,
-                    WishlistProducts = wishlistProducts
+                    WishlistProducts = new List<WishlistProduct>
+            {
+                new WishlistProduct { ProductId = wishlistDto.ProductId }
+            }
                 };
 
-                ArgumentNullException.ThrowIfNull(nameof(AppUser.Id));
+                await _wishlistRepository.AddAsync(newWishlist);
+                await _wishlistRepository.SaveChangesAsync();
 
-                var wishList = await _wishlistRepository.GetByUserIdAsync(wishlistDto.AppUserId) ?? throw new KeyNotFoundException("User not found");
-                await _wishlistRepository.AddAsync(wishlist);
+                return new WishlistResult
+                {
+                    Success = true,
+                    Message = "Product added wishlist."
+                };
             }
             else
             {
-                Wishlist existWishList = await _wishlistRepository.GetByUserIdAsync(existWishListDto.AppUserId);
-                existWishList.WishlistProducts.Add(new WishlistProduct { ProductId = wishlistDto.ProductId });
+                bool alreadyExists = existWishlist.WishlistProducts
+                    .Any(wp => wp.ProductId == wishlistDto.ProductId);
+
+                if (alreadyExists)
+                {
+                    return new WishlistResult
+                    {
+                        Success = false,
+                        Message = "This product is already exist in wishlist."
+                    };
+                }
+
+                existWishlist.WishlistProducts.Add(new WishlistProduct
+                {
+                    ProductId = wishlistDto.ProductId
+                });
+
+                await _wishlistRepository.UpdateAsync(existWishlist);
+                await _wishlistRepository.SaveChangesAsync();
+
+                return new WishlistResult
+                {
+                    Success = true,
+                    Message = "Added succesfully !."
+                };
             }
         }
+
+
 
         public async Task DeleteProductFromWishList(int productId, int wishListId)
         {

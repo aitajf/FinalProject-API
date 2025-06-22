@@ -40,6 +40,11 @@ namespace Repository.Repositories
         {
             return await _context.Wishlists.Include(w => w.WishlistProducts).ThenInclude(wp => wp.Product)
                                            .ThenInclude(p => p.ProductImages).FirstOrDefaultAsync(w => w.AppUserId == userId);
-        }      
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _context.SaveChangesAsync();
+        }
     }
 }

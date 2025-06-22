@@ -14,5 +14,6 @@ namespace Repository.Repositories.Interface
         Task DeleteAsync(int id);
         Task<Wishlist> GetByUserIdAsync(string userId);
         Task<Wishlist> GetByIdAsync(int id);
+        Task SaveChangesAsync();
     }
 }

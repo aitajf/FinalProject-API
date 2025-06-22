@@ -26,9 +26,11 @@ namespace API_FinalProject.Controllers.Client
         public async Task<IActionResult> AddWishlist([FromQuery] string appUserId, [FromQuery] int productId)
         {
             var wishlist = new WishlistDto { AppUserId = appUserId, ProductId = productId };
-            await _wishlistService.AddWishlistAsync(wishlist);
-            return CreatedAtAction(nameof(GetWishlistByUserId), new { userId = appUserId }, wishlist);
+            var result = await _wishlistService.AddWishlistAsync(wishlist);
+
+            return Ok(result); 
         }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProductFromWishlist([FromRoute] int id, [FromQuery] int productId)
