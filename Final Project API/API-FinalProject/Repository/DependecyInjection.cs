@@ -34,6 +34,7 @@ namespace Repository
             services.AddScoped<IReviewRepository, ReviewRepository>();
             services.AddScoped<IBlogReviewRepository, BlogReviewRepository>();
             services.AddScoped<ILoginHistoryRepository, LoginHistoryRepository>();
+            services.AddScoped<IPromoCodeRepository, PromoCodeRepository>();
 
             return services;
         }

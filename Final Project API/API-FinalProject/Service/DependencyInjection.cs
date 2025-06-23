@@ -35,6 +35,7 @@ namespace Service
             services.AddScoped<IReviewService, ReviewService>();
             services.AddScoped<IBlogReviewService, BlogReviewService>();
             services.AddScoped<ILoginHistoryService, LoginHistoryService>();
+            services.AddScoped<IPromoCodeService, PromoCodeService>();
 
             services.AddDistributedMemoryCache();
             return services;

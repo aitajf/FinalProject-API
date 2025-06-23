@@ -41,5 +41,6 @@ namespace Repository.Data
         public DbSet<Review> Reviews { get; set; }
         public DbSet<BlogReview> BlogReviews { get; set; }
         public DbSet<LoginHistory> LoginHistories { get; set; }
+        public DbSet<PromoCode> PromoCodes { get; set; }
     }
 }
