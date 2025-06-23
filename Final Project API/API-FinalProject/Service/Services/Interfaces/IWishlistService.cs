@@ -12,7 +12,7 @@ namespace Service.Services.Interfaces
     {
         Task<WishlistResult> AddWishlistAsync(WishlistDto wishlistDto);
         Task DeleteWishlistAsync(int id);
-        Task DeleteProductFromWishList(int productId, int wishListId);
+        Task DeleteProductFromWishList(int productId, string userId);
         Task<WishlistItemDto> GetByUserIdAsync(string userId);
     }
 }

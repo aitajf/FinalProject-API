@@ -100,11 +100,12 @@ namespace Service.Services
 
 
 
-        public async Task DeleteProductFromWishList(int productId, int wishListId)
+        public async Task DeleteProductFromWishList(int productId, string userId)
         {
-            Wishlist existWishList = await _wishlistRepository.GetByIdAsync(wishListId);
-            existWishList.WishlistProducts.RemoveAll(wp => wp.ProductId == productId);
+            await _wishlistRepository.RemoveProductFromWishlistAsync(userId, productId);
+            await _wishlistRepository.SaveChangesAsync();
         }
+
 
         public async Task DeleteWishlistAsync(int id)
         {

@@ -32,10 +32,10 @@ namespace API_FinalProject.Controllers.Client
         }
 
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProductFromWishlist([FromRoute] int id, [FromQuery] int productId)
+        [HttpDelete("{userId}")]
+        public async Task<IActionResult> DeleteProductFromWishlist([FromRoute] string userId, [FromQuery] int productId)
         {
-            await _wishlistService.DeleteProductFromWishList(productId, id);
+            await _wishlistService.DeleteProductFromWishList(productId, userId);
             return NoContent();
         }
 

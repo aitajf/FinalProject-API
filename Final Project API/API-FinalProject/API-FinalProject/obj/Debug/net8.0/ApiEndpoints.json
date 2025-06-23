@@ -2714,14 +2714,14 @@
   {
     "ContainingType": "API_FinalProject.Controllers.Client.WishlistController",
     "Method": "DeleteProductFromWishlist",
-    "RelativePath": "api/Wishlist/DeleteProductFromWishlist/{id}",
+    "RelativePath": "api/Wishlist/DeleteProductFromWishlist/{userId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "userId",
+        "Type": "System.String",
         "IsRequired": true
       },
       {

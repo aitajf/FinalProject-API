@@ -4179,19 +4179,18 @@
         }
       }
     },
-    "/api/Wishlist/DeleteProductFromWishlist/{id}": {
+    "/api/Wishlist/DeleteProductFromWishlist/{userId}": {
       "delete": {
         "tags": [
           "Wishlist"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "userId",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           },
           {

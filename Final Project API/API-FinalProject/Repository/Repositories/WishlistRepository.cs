@@ -46,5 +46,21 @@ namespace Repository.Repositories
         {
             await _context.SaveChangesAsync();
         }
+
+        public async Task RemoveProductFromWishlistAsync(string userId, int productId)
+        {
+            var wishlist = await _context.Wishlists
+                .Include(w => w.WishlistProducts).ThenInclude (wp => wp.Product)
+                .FirstOrDefaultAsync(w => w.AppUserId == userId);
+
+            if (wishlist == null) return;
+
+            var productToRemove = wishlist.WishlistProducts.FirstOrDefault(wp => wp.ProductId == productId);
+            if (productToRemove != null)
+            {
+                _context.WishlistProducts.Remove(productToRemove);
+            }
+        }
+
     }
 }
