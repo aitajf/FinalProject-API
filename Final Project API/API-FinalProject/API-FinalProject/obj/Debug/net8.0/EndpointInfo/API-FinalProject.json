@@ -2911,6 +2911,37 @@
         }
       }
     },
+    "/api/Product/FilterByPrice": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductFilterDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductFilterDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductFilterDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/admin/Product/GetAll": {
       "get": {
         "tags": [
@@ -3388,6 +3419,28 @@
       "get": {
         "tags": [
           "PromoCode"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/PromoCode/Delete": {
+      "delete": {
+        "tags": [
+          "PromoCode"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -5043,6 +5096,22 @@
           },
           "color": {
             "$ref": "#/components/schemas/Color"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductFilterDto": {
+        "type": "object",
+        "properties": {
+          "minPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "maxPrice": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
           }
         },
         "additionalProperties": false

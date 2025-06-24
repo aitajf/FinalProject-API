@@ -1,6 +1,7 @@
 ﻿
 
 using Microsoft.AspNetCore.Http;
+using Service.DTO.Admin.Products;
 using Service.DTOs.Admin.Products;
 using Service.Helpers;
 
@@ -24,7 +25,7 @@ namespace Service.Services.Interfaces
 
         Task<IEnumerable<ProductDto>> GetComparisonProductsAsync(int categoryId ,int selectedProductId, int count = 3);
         Task<ProductWithImagesDto> GetByIdWithImagesAsync(int id);
-
+        Task<List<ProductDto>> FilterByPriceAsync(ProductFilterDto filterDto);
 
     }
 }

@@ -3,6 +3,7 @@ using Domain.Entities;
 using Microsoft.AspNetCore.Hosting;
 using Repository.Repositories.Interface;
 using Repository.Repositories.Interfaces;
+using Service.DTO.Admin.Products;
 using Service.DTOs.Admin.Products;
 using Service.Helpers;
 using Service.Services.Interfaces;
@@ -302,10 +303,9 @@ namespace Service.Services
 
             if (File.Exists(filePath))
             {
-                File.Delete(filePath); // və ya _fileService.Delete(imageName, "productimages");
+                File.Delete(filePath);
             }
 
-            // Əgər əsas şəkildirsə, başqasını əsas et
             if (image.IsMain && product.ProductImages.Any(x => x.Id != image.Id))
             {
                 var newMain = product.ProductImages.FirstOrDefault(x => x.Id != image.Id);
@@ -350,6 +350,12 @@ namespace Service.Services
                 ?? throw new KeyNotFoundException($"Product with ID {id} not found");
 
             return _mapper.Map<ProductWithImagesDto>(product);
+        }
+
+        public async Task<List<ProductDto>> FilterByPriceAsync(ProductFilterDto filterDto)
+        {
+            var products = await _productRepository.FilterByPriceAsync(filterDto.MinPrice, filterDto.MaxPrice);
+            return _mapper.Map<List<ProductDto>>(products);
         }
     }
 }

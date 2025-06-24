@@ -1,5 +1,6 @@
 ﻿using API_FinalProject.Controllers.Client;
 using Microsoft.AspNetCore.Mvc;
+using Service.DTO.Admin.Products;
 using Service.Services.Interfaces;
 
 namespace FinalProject.Controllers.UI
@@ -78,6 +79,13 @@ namespace FinalProject.Controllers.UI
             }
 
             return Ok(products);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> FilterByPrice([FromBody] ProductFilterDto filterDto)
+        {
+            var result = await _productService.FilterByPriceAsync(filterDto);
+            return Ok(result);
         }
     }
 }

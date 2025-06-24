@@ -84,9 +84,6 @@ namespace Repository.Repositories
               .FirstOrDefaultAsync();
         }
         
-     
-
-
         public async Task<IEnumerable<Product>> GetAllTakenAsync(int take, int? skip = null)
         {
             return await _context.Products.Include(m => m.Category)
@@ -211,5 +208,23 @@ namespace Repository.Repositories
                 .FirstOrDefaultAsync(p => p.Id == id);
         }
 
+        public async Task<List<Product>> FilterByPriceAsync(decimal? minPrice, decimal? maxPrice)
+        {
+            var query = _context.Products.Include(m => m.Category)
+                                          .Include(m => m.Brand)
+                                          .Include(m => m.ProductImages)
+                                          .Include(m => m.ProductColors)
+                                          .ThenInclude(pc => pc.Color)
+                                          .Include(m => m.ProductTags)
+                                          .ThenInclude(ps => ps.Tag).AsQueryable();
+
+            if (minPrice.HasValue)
+                query = query.Where(p => p.Price >= minPrice.Value);
+
+            if (maxPrice.HasValue)
+                query = query.Where(p => p.Price <= maxPrice.Value);
+
+            return await query.ToListAsync();
+        }
     }
 }

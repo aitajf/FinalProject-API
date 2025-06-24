@@ -15,11 +15,18 @@ namespace API_FinalProject.Controllers.Admin
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] PromoCodeCreateDto dto)
+        public async Task<IActionResult> Create([FromBody]PromoCodeCreateDto dto)
         {
+            var existingPromo = await _promoCodeService.GetByCodeAsync(dto.Code);
+            if (existingPromo != null)
+            {
+                return BadRequest(new { message = $"Promo code '{dto.Code}' already exist." });
+            }
+
             await _promoCodeService.CreateAsync(dto);
-            return Ok(new { message = "Promokod yaradıldı və istifadəçilərə göndərildi." });
+            return Ok(new { message = "Promo code create." });
         }
+
 
         [HttpGet("{code}")]
         public async Task<IActionResult> GetByCode([FromRoute]string code)
@@ -53,5 +60,15 @@ namespace API_FinalProject.Controllers.Admin
             return Ok(promos);
         }
 
+        [HttpDelete]
+        public async Task<IActionResult> Delete([FromQuery]int id)
+        {
+            var success = await _promoCodeService.DeleteAsync(id);
+
+            if (!success)
+                return NotFound(new { message = "Promokod tapılmadı və ya silinmədi." });
+
+            return Ok(new { message = "Promokod uğurla silindi." });
+        }
     }
 }

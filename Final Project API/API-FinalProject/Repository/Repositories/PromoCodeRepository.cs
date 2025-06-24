@@ -44,5 +44,12 @@ namespace Repository.Repositories
         {
             return await _context.PromoCodes.ToListAsync();
         }
+
+        public async Task DeleteAsync(PromoCode promoCode)
+        {
+            _context.PromoCodes.Remove(promoCode);
+            await _context.SaveChangesAsync();
+        }
+
     }
 }

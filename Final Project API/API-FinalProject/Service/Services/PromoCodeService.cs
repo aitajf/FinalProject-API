@@ -23,6 +23,12 @@ namespace Service.Services
 
         public async Task CreateAsync(PromoCodeCreateDto dto)
         {
+            var existingPromo = await _promoRepo.GetByCodeAsync(dto.Code);
+            if (existingPromo != null)
+            {
+                throw new InvalidOperationException($"Promokod '{dto.Code}' artıq mövcuddur.");
+            }
+
             var promo = new PromoCode
             {
                 Code = dto.Code,
@@ -37,8 +43,9 @@ namespace Service.Services
 
             string from = "aitajjf2@gmail.com";
             string displayName = "JoiFurn";
-            string subject = "Yeni Promokod Endirimi";
-            string body = $"Salam! Sizə xüsusi <b>{dto.DiscountPercent}%</b> endirim imkanı verən promokod yaradıldı: <b>{dto.Code}</b>. Qaçırmayın!";
+            string subject = "🎉 New Promo Code at JoiFurn!";
+            string body = $"Hey friend! " +
+                $"JoiFurn has a sweet deal just for you! Use promo code <b>{dto.Code}</b> and grab a cool <b>{dto.DiscountPercent}%</b> discount! Start shopping, grab your favorite furniture for less, and make your home awesome! Don’t miss out — this deal is just for you! 🚀✨";
 
             foreach (var user in members)
             {
@@ -119,6 +126,16 @@ namespace Service.Services
                 UsageLimit = x.UsageLimit,
                 IsActive = x.IsActive
             }).ToList();
+        }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            var promo = await _promoRepo.GetByIdAsync(id);
+            if (promo == null)
+                return false;
+
+            await _promoRepo.DeleteAsync(promo);
+            return true;
         }
     }
 }

@@ -14,5 +14,6 @@ namespace Repository.Repositories.Interface
         Task UpdateAsync(PromoCode promoCode);
         Task<List<AppUser>> GetAllMembersAsync();
         Task<List<PromoCode>> GetAllAsync();
+        Task DeleteAsync(PromoCode promoCode);
     }
 }

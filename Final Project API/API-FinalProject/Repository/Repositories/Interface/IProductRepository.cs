@@ -22,5 +22,7 @@ namespace Repository.Repositories.Interfaces
         Task<ProductImage> GetByIdAsync(int id);
         void Delete(ProductImage image);
         Task SaveChangesAsync();
+
+        Task<List<Product>> FilterByPriceAsync(decimal? minPrice, decimal? maxPrice);
     }
 }
