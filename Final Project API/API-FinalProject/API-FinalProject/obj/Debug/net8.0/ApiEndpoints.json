@@ -65,6 +65,38 @@
   },
   {
     "ContainingType": "API_FinalProject.Controllers.Client.AccountController",
+    "Method": "UpdateEmail",
+    "RelativePath": "api/Account/UpdateEmail",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Service.DTO.Account.UpdateEmailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Client.AccountController",
+    "Method": "UpdateUsername",
+    "RelativePath": "api/Account/UpdateUsername",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Service.DTO.Account.UpdateUsernameDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_FinalProject.Controllers.Client.AccountController",
     "Method": "VerifyEmail",
     "RelativePath": "api/Account/VerifyEmail",
     "HttpMethod": "GET",

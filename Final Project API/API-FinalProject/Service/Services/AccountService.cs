@@ -44,7 +44,7 @@ namespace Service.Services
                             IHttpContextAccessor httpContextAccessor,
                             IEmailService emailService,
                             IMapper mapper,
-                            IOptions<JwtSettings> jwtSettings,                          
+                            IOptions<JwtSettings> jwtSettings,
                             IConfiguration configuration,
                             ISendEmail sendEmail,
                             IDistributedCache distributedCache
@@ -55,7 +55,7 @@ namespace Service.Services
             _signInManager = signInManager;
             _httpContextAccessor = httpContextAccessor;
             _emailService = emailService;
-            _mapper = mapper;          
+            _mapper = mapper;
             _jwtSettings = jwtSettings.Value;
             _sendEmail = sendEmail;
             _distributedCache = distributedCache;
@@ -67,19 +67,16 @@ namespace Service.Services
         {
             return await _userManager.FindByEmailAsync(email);
         }
-
         public async Task CreateRoleAsync()
         {
             foreach (var role in Enum.GetValues(typeof(Roles)))
             {
                 if (!await _roleManager.RoleExistsAsync(role.ToString()))
                 {
-                    await _roleManager.CreateAsync(new IdentityRole {Name = role.ToString()});
+                    await _roleManager.CreateAsync(new IdentityRole { Name = role.ToString() });
                 }
             }
         }
-
-
         public async Task<LoginResponse> LoginAsync(LoginDto model)
         {
             var user = await _userManager.FindByEmailAsync(model.EmailOrUserName)
@@ -150,64 +147,6 @@ namespace Service.Services
                 Roles = userRoles.ToList()
             };
         }
-
-        //public async Task<RegisterResponse> RegisterAsync(RegisterDto model)
-        //{
-        //    // Check if user already exists by email or username
-        //    var existingUserByEmail = await _userManager.FindByEmailAsync(model.Email);
-        //    if (existingUserByEmail != null)
-        //    {
-        //        //return new RegisterResponse
-        //        //{
-        //        //    Success = false,
-        //        //    Message = new List<string> { "This email is already registered." }
-        //        //};
-
-        //    }
-
-        //    var existingUserByUserName = await _userManager.FindByNameAsync(model.UserName);
-        //    if (existingUserByUserName != null)
-        //    {
-        //        return new RegisterResponse
-        //        {
-        //            Success = false,
-        //            Message = new List<string> { "This username is already taken." }
-        //        };
-        //    }
-
-        //    // Map and create user
-        //    var user = _mapper.Map<AppUser>(model);
-        //    IdentityResult result = await _userManager.CreateAsync(user, model.Password);
-
-        //    if (!result.Succeeded)
-        //    {
-        //        return new RegisterResponse
-        //        {
-        //            Success = false,
-        //            Message = result.Errors.Select(e => e.Description)
-        //        };
-        //    }
-
-        //    await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
-
-        //    // Email confirmation
-        //    string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-        //    var request = _httpContextAccessor.HttpContext.Request;
-        //    string url = $"https://localhost:7004/api/Account/VerifyEmail?verifyEmail={HttpUtility.UrlEncode(user.Email)}&token={HttpUtility.UrlEncode(token)}";
-
-        //    var template = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "confirm", "mailconfirm.html"));
-        //    template = template.Replace("{{link}}", url);
-
-        //    _emailService.Send(user.Email, "Email confirmation", template);
-
-        //    return new RegisterResponse
-        //    {
-        //        Success = true,
-        //        Message = new List<string> { "Registration successful. Please check your email for confirmation." }
-        //    };
-        //}
-
-
         public async Task<IResult> RegisterAsync(RegisterDto model)
         {
             // Check if user already exists by email or username
@@ -262,7 +201,6 @@ namespace Service.Services
                 Message = new List<string> { "Registration successful. Please check your email for confirmation." }
             });
         }
-
         public async Task<string> VerifyEmail(string verifyEmail, string token)
         {
             var appUser = await _userManager.FindByEmailAsync(verifyEmail);
@@ -274,19 +212,49 @@ namespace Service.Services
             await _userManager.UpdateSecurityStampAsync(appUser);
             var roles = await _userManager.GetRolesAsync(appUser);
 
-            return CreateToken(appUser, roles);                 
+            return CreateToken(appUser, roles);
         }
+        //    private string GenerateJwtToken(AppUser user, List<string> roles)
+        //    {
+        //        var claims = new List<Claim>
+        //{
+        //    new(JwtRegisteredClaimNames.Sub, user.Email),
+        //    new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+        //    new(ClaimTypes.NameIdentifier, user.Id),
+        //    new(ClaimTypes.Name, user.Email), // ⬅️ BURANI ƏLAVƏ ETDİN!
+        //    new(JwtRegisteredClaimNames.Email, user.Email),
+        //    new(ClaimTypes.Email, user.Email)
+        //};
+
+        //        roles.ForEach(role =>
+        //        {
+        //            claims.Add(new Claim(ClaimTypes.Role, role));
+        //        });
+
+        //        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Key));
+        //        var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+        //        var expires = DateTime.Now.AddDays(Convert.ToDouble(_jwtSettings.ExpireDays));
+
+        //        var token = new JwtSecurityToken(
+        //            _jwtSettings.Issuer,
+        //            _jwtSettings.Issuer,
+        //            claims,
+        //            expires: expires,
+        //            signingCredentials: creds
+        //        );
+        //        return new JwtSecurityTokenHandler().WriteToken(token);
+        //    }
 
         private string GenerateJwtToken(AppUser user, List<string> roles)
         {
             var claims = new List<Claim>
     {
-        new(JwtRegisteredClaimNames.Sub, user.Email),
-        new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
         new(ClaimTypes.NameIdentifier, user.Id),
-        new(ClaimTypes.Name, user.Email), // ⬅️ BURANI ƏLAVƏ ETDİN!
+        new(ClaimTypes.Name, user.UserName),              // 👈 düzəliş
+        new(ClaimTypes.Email, user.Email),
+        new(JwtRegisteredClaimNames.Sub, user.Email),
         new(JwtRegisteredClaimNames.Email, user.Email),
-        new(ClaimTypes.Email, user.Email)
+        new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
     };
 
             roles.ForEach(role =>
@@ -299,12 +267,13 @@ namespace Service.Services
             var expires = DateTime.Now.AddDays(Convert.ToDouble(_jwtSettings.ExpireDays));
 
             var token = new JwtSecurityToken(
-                _jwtSettings.Issuer,
-                _jwtSettings.Issuer,
-                claims,
+                issuer: _jwtSettings.Issuer,
+                audience: _jwtSettings.Issuer,
+                claims: claims,
                 expires: expires,
                 signingCredentials: creds
             );
+
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
@@ -335,7 +304,6 @@ namespace Service.Services
             var token = securityTokenHandler.CreateToken(tokenDescriptor);
             return securityTokenHandler.WriteToken(token);
         }
-
         public async Task<ResponseObject> ForgetPassword(string email, string requestScheme, string requestHost)
         {
             AppUser appUser = await _userManager.FindByEmailAsync(email);
@@ -364,10 +332,6 @@ namespace Service.Services
                 StatusCode = (int)StatusCodes.Status200OK
             };
         }
-
-
-
-
         public async Task<string> ResetPassword(ResetPasswordDto model)
         {
             AppUser appUser = await _userManager.FindByEmailAsync(model.Email);
@@ -392,7 +356,6 @@ namespace Service.Services
 
             return "Password successfully reset";
         }
-
         public async Task<IEnumerable<UserDto>> GetAllUsersAsync()
         {
             var users = await _userManager.Users.ToListAsync();
@@ -406,8 +369,6 @@ namespace Service.Services
 
             return userDtos;
         }
-
-
         public async Task<string> AddRoleAsync(string username, string roleName)
         {
             var user = await _userManager.FindByNameAsync(username);
@@ -423,8 +384,6 @@ namespace Service.Services
 
             return $"Role '{roleName}' added to user '{username}' successfully.";
         }
-
-
         public async Task<string> RemoveRoleAsync(string username, string roleName)
         {
             var user = await _userManager.FindByNameAsync(username);
@@ -451,13 +410,11 @@ namespace Service.Services
 
             return $"Role '{roleName}' removed from user '{username}' successfully.";
         }
-
         public async Task<List<string>> GetAllRolesAsync()
         {
             var roles = _roleManager.Roles.Select(r => r.Name).ToList();
             return await Task.FromResult(roles);
         }
-
         public async Task<List<string>> GetUserRolesAsync(string username)
         {
             var user = await _userManager.FindByNameAsync(username);
@@ -467,8 +424,6 @@ namespace Service.Services
             var roles = await _userManager.GetRolesAsync(user);
             return roles.ToList();
         }
-
-
         public async Task<string> SendMessageToAdminAsync(string email, string subject, string messageBody)
         {
             var user = await _userManager.FindByEmailAsync(email);
@@ -478,14 +433,11 @@ namespace Service.Services
             await _sendEmail.SendAsync("aitajjf2@gmail.com", "JoiFurn System", email, messageBody, subject);
             return "Message sent to admin successfully.";
         }
-
         public async Task<List<string>> GetAdminsEmailsAsync()
         {
             var admins = await _userManager.GetUsersInRoleAsync("Admin");
             return admins.Select(u => u.Email).ToList();
         }
-
-
         public async Task<string> BlockUserAsync(string username, TimeSpan blockDuration)
         {
             var user = await _userManager.FindByNameAsync(username);
@@ -506,7 +458,6 @@ namespace Service.Services
 
             return $"Failed to block user: {string.Join(", ", result.Errors.Select(e => e.Description))}";
         }
-
         public async Task<string> UnblockUserAsync(string userId)
         {
             var user = await _userManager.FindByIdAsync(userId);
@@ -523,13 +474,10 @@ namespace Service.Services
 
             return $"Failed to unblock user: {string.Join(", ", result.Errors.Select(e => e.Description))}";
         }
-
-
         public async Task<AppUser> GetUserByUsernameAsync(string username)
         {
             return await _userManager.FindByNameAsync(username);
         }
-
         public async Task<List<UserDto>> GetAllBlockedUsersAsync()
         {
             var blockedUsers = await _userManager.Users
@@ -552,6 +500,56 @@ namespace Service.Services
             }
 
             return result;
+        }
+
+        public async Task<string> UpdateEmailAsync(string userId, string newEmail)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null) return "User not found";
+
+            if (string.IsNullOrWhiteSpace(newEmail)) return "Email cannot be empty";
+
+            if (user.Email == newEmail)
+                return "New email cannot be the same as the current one.";
+
+            var emailExists = await _userManager.FindByEmailAsync(newEmail);
+            if (emailExists != null)
+                return "This email is already taken.";
+
+            user.Email = newEmail;
+            user.NormalizedEmail = newEmail.ToUpper();
+
+            var result = await _userManager.UpdateAsync(user);
+            if (!result.Succeeded)
+                return string.Join(", ", result.Errors.Select(e => e.Description));
+
+            return "Email successfully updated.";
+        }
+
+
+
+        public async Task<string> UpdateUsernameAsync(string userId, string newUsername)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null) return "User not found";
+
+            if (string.IsNullOrWhiteSpace(newUsername)) return "Username cannot be empty";
+
+            if (user.UserName == newUsername)
+                return "New username cannot be the same as the current one.";
+
+            var usernameExists = await _userManager.FindByNameAsync(newUsername);
+            if (usernameExists != null)
+                return "This username is already taken.";
+
+            user.UserName = newUsername;
+            user.NormalizedUserName = newUsername.ToUpper();
+
+            var result = await _userManager.UpdateAsync(user);
+            if (!result.Succeeded)
+                return string.Join(", ", result.Errors.Select(e => e.Description));
+
+            return "Username successfully updated.";
         }
 
     }

@@ -31,5 +31,9 @@ namespace Service.Services.Interfaces
         Task<string> UnblockUserAsync(string username);
         Task<AppUser> GetUserByUsernameAsync(string username);
         Task<List<UserDto>> GetAllBlockedUsersAsync();
+
+
+        Task<string> UpdateUsernameAsync(string userId, string newUsername);
+        Task<string> UpdateEmailAsync(string userId, string newEmail);
     }
 }

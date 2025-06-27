@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Service.DTO.Account;
 using Service.Helpers;
@@ -75,5 +77,37 @@ namespace API_FinalProject.Controllers.Client
             if (responseMessage == "User not found" || responseMessage == "TokenIsNotValid") return BadRequest(responseMessage);
             return Ok(responseMessage);
         }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateEmail([FromBody] UpdateEmailDto model)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null)
+                return Unauthorized(new { Message = "User not authenticated." });
+
+            var result = await _accountService.UpdateEmailAsync(userId, model.NewEmail);
+
+            if (result.Contains("successfully"))
+                return Ok(new { Message = result });
+
+            return BadRequest(new { Message = result });
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateUsername([FromBody] UpdateUsernameDto model)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null)
+                return Unauthorized(new { Message = "User not authenticated." });
+
+            var result = await _accountService.UpdateUsernameAsync(userId, model.NewUsername);
+
+            if (result.Contains("successfully"))
+                return Ok(new { Message = result });
+
+            return BadRequest(new { Message = result });
+        }
+
+
     }
 }

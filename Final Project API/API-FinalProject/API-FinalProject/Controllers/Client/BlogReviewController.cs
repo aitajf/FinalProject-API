@@ -83,7 +83,7 @@ namespace API_FinalProject.Controllers.Client
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteReview(int id)
         {
-            var userEmail = User.Identity.Name;
+            var userEmail = User.FindFirstValue(ClaimTypes.Email); 
             if (string.IsNullOrEmpty(userEmail))
                 return Unauthorized();
 
