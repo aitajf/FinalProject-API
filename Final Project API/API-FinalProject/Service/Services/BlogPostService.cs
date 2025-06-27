@@ -63,7 +63,6 @@ namespace Service.Services
         }
 
        
-
         public async Task EditAsync(int id, BlogPostEditDto model)
         {
             var blogPost = await _postRepository.GetByIdWithIncludesAsync(id);
@@ -149,11 +148,20 @@ namespace Service.Services
 
         public async Task<IEnumerable<BlogPostDto>> SearchByCategoryAndName(string categoryOrProductName)
         {
+            if (string.IsNullOrWhiteSpace(categoryOrProductName))
+            {
+                var allPosts = await  _postRepository.GetAllWithIncludeAsync();
+                return _mapper.Map<IEnumerable<BlogPostDto>>(allPosts);
+            }
+            var keyword = categoryOrProductName.ToLower().Trim();
+
             var products = _postRepository.GetAllWithExpression(x =>
-                 x.Title.ToLower().Trim().Contains(categoryOrProductName.ToLower().Trim())
-              || x.BlogCategory.Name.ToLower().Trim().Contains(categoryOrProductName.ToLower().Trim()));
-              return _mapper.Map<IEnumerable<BlogPostDto>>(products);
+                x.Title.ToLower().Contains(keyword) ||
+                x.BlogCategory.Name.ToLower().Contains(keyword));
+
+            return _mapper.Map<IEnumerable<BlogPostDto>>(products);
         }
+
 
         public async Task<IEnumerable<BlogPostDto>> FilterAsync(string categoryName)
         {

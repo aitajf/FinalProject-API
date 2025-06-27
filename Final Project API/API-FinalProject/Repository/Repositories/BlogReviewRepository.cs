@@ -40,7 +40,8 @@ namespace Repository.Repositories
 
         public async Task<IEnumerable<BlogReview>> GetAllByPostAsync(int postId)
         {
-            return await _context.BlogReviews
+            return await _context.BlogReviews.Include(r => r.AppUser)
+                .Include(x => x.BlogPost)
            .Where(r => r.BlogPostId == postId)
            .OrderByDescending(r => r.CreatedDate)
            .ToListAsync();

@@ -20,7 +20,7 @@ namespace API_FinalProject.Controllers.Client
         }
 
         [HttpGet]
-        public async Task<IActionResult> SearchByName([FromQuery] string name)
+        public async Task<IActionResult> SearchByName([FromQuery] string? name)
         {
             return Ok(await _blogPostService.SearchByCategoryAndName(name));
         }

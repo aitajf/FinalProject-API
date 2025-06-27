@@ -40,7 +40,7 @@ namespace Repository.Repositories
 
         public async Task<IEnumerable<Review>> GetAllByProductIdAsync(int productId)
         {
-            return await _context.Reviews
+            return await _context.Reviews.Include(r => r.AppUser).Include(x=>x.Product)
            .Where(r => r.ProductId == productId)
            .OrderByDescending(r => r.CreatedDate)
            .ToListAsync();

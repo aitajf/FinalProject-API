@@ -12,5 +12,6 @@ namespace Repository.Repositories.Interface
         Task<IEnumerable<BlogPost>> FilterAsync(string categoryName);
         Task<BlogPost> GetPreviousAsync(int currentId);
         Task<BlogPost> GetNextAsync(int currentId);
+        Task<IEnumerable<BlogPost>> GetAllWithIncludeAsync();
     }
 }

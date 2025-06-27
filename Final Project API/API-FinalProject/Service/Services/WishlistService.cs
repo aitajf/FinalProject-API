@@ -39,7 +39,8 @@ namespace Service.Services
             return new WishlistItemDto
             {
                 AppUserId = wishlist.AppUserId,
-                Products = productDtos
+                Products = productDtos,
+                ProductCount = productDtos.Count()
             };
         }
 

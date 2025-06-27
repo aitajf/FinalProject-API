@@ -64,5 +64,11 @@ namespace Repository.Repositories
                 .OrderBy(b => b.Id)
                 .FirstOrDefaultAsync();
         }
+
+        public async Task<IEnumerable<BlogPost>> GetAllWithIncludeAsync()
+        {
+                return await _context.BlogPosts.Include(x => x.BlogCategory)
+                                               .Include(x => x.Images).ToListAsync();
+        }
     }
 }
