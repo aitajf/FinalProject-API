@@ -990,7 +990,7 @@
         }
       }
     },
-    "/api/Basket/DeleteBasket/DeleteBasket": {
+    "/api/Basket/DeleteBasket": {
       "delete": {
         "tags": [
           "Basket"

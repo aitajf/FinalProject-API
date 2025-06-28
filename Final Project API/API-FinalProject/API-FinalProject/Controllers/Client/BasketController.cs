@@ -4,6 +4,7 @@ using Service.DTOs.UI.Basket;
 using Service.Services;
 using Service.Services.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace FinalProject.Controllers.UI
 {
@@ -59,7 +60,7 @@ namespace FinalProject.Controllers.UI
             return Ok();
         }
 
-        [HttpDelete("DeleteBasket")]
+        [HttpDelete]
         public async Task<IActionResult> DeleteBasket([FromHeader] string token)
         {
             var userId = GetUserIdFromToken(token);
@@ -71,6 +72,8 @@ namespace FinalProject.Controllers.UI
 
             return StatusCode(500, "Failed to delete basket.");
         }
+
+
         private string GetUserIdFromToken(string token)
         {
             var handler = new JwtSecurityTokenHandler();
@@ -78,10 +81,12 @@ namespace FinalProject.Controllers.UI
             if (handler.CanReadToken(token))
             {
                 var jwtToken = handler.ReadJwtToken(token);
-                var userId = jwtToken.Claims.First(claim => claim.Type == "sub").Value;
-                return userId;
+                var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier || c.Type == "nameid");
+
+                return userIdClaim?.Value;
             }
-            return null; 
+
+            return null;
         }
 
         [HttpGet("last-two")]

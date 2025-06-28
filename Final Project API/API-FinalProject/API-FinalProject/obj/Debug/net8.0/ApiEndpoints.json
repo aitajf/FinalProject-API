@@ -2240,7 +2240,7 @@
   {
     "ContainingType": "FinalProject.Controllers.UI.BasketController",
     "Method": "DeleteBasket",
-    "RelativePath": "api/Basket/DeleteBasket/DeleteBasket",
+    "RelativePath": "api/Basket/DeleteBasket",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
